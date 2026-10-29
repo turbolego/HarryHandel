@@ -23,11 +23,9 @@
                 </svg>
                 <h1 class="brand-name">HarryHandel</h1>
             </div>
-
             <button class="nav-toggle js-nav-toggle" aria-controls="main-nav" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="nav-toggle-box" aria-hidden="true"><span class="nav-toggle-line"></span></span>
             </button>
-
             <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main navigation" data-mobile="false">
                 <ul class="nav-list">
                     <li><a href="#overview" class="nav-link is-active" data-section="overview">Overview</a></li>
@@ -47,7 +45,6 @@
                     <h1 id="overview-title">Food Prices: Norway <span class="vs">vs</span> Sweden</h1>
                     <p class="section-lead">Compare grocery prices across Norwegian and Swedish retailers. Data updated weekly.</p>
                 </header>
-
                 <dl class="meta-stats" role="list">
                     <div class="meta-stat"><dt id="norway-count-label">Products (NO)</dt><dd id="norway-count" aria-describedby="norway-count-label">—</dd></div>
                     <div class="meta-stat"><dt id="sweden-count-label">Products (SE)</dt><dd id="sweden-count" aria-describedby="sweden-count-label">—</dd></div>
@@ -64,7 +61,6 @@
                     <h2 id="compare-title">Price Comparison</h2>
                     <p class="section-lead">Top products normalised to SEK for direct price comparison.</p>
                 </header>
-
                 <div class="chart-controls" role="group" aria-label="Chart display options">
                     <label class="control control--select">
                         <span class="control-label" for="chart-sort">Sort by</span>
@@ -86,11 +82,9 @@
                         </select>
                     </label>
                 </div>
-
                 <div class="chart-wrapper" aria-label="Bar chart comparing Norway vs Sweden food prices in SEK">
                     <canvas id="comparisonChart"></canvas>
                 </div>
-
                 <div class="chart-legend" aria-hidden="true">
                     <span class="legend-item"><span class="legend-swatch" style="background: var(--color-norway)"></span>Norway (SEK)</span>
                     <span class="legend-item"><span class="legend-swatch" style="background: var(--color-sweden)"></span>Sweden (SEK)</span>
@@ -105,7 +99,6 @@
                     <h2 id="products-title">All Matched Products</h2>
                     <p class="section-lead">Products available in both countries, matched by name. Prices shown in local currency with SEK conversion and gap.</p>
                 </header>
-
                 <div class="table-toolbar" role="group" aria-label="Table filters">
                     <label class="control control--search">
                         <svg class="control-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -127,7 +120,6 @@
                         </select>
                     </label>
                 </div>
-
                 <div class="table-wrapper" role="region" aria-label="Product price comparison table" tabindex="0">
                     <table id="products-table" class="data-table">
                         <thead>
@@ -147,7 +139,6 @@
                         </tbody>
                     </table>
                 </div>
-
                 <p id="products-empty" class="empty-state" hidden>No matching products found.</p>
                 <p id="products-count" class="table-count" aria-live="polite"></p>
             </div>
