@@ -1,10 +1,3 @@
-/*
- * HarryHandel — Food Price Comparison Dashboard
- * Responsive, accessible, zero-API-keys design.
- * Data: /data/prices.json (Norway + Sweden)
- * Layout & typography: taste-skill principles (v2)
- */
-
 let allPrices = { norway: [], sweden: [] };
 let chart = null;
 
@@ -15,6 +8,27 @@ const FX_RATES = {
     USD: 0.09,
     EUR: 0.085
 };
+
+// Generate a tiny sparkline SVG from history array [{date, price}]
+function generateSparkline(history) {
+    if (!history || history.length < 2) return '';
+    const prices = history.map(h => h.price);
+    const min = Math.min(...prices);
+    const max = Math.max(...prices);
+    const range = max - min || 1;
+    const width = 80;
+    const height = 20;
+    const padding = 2;
+    const points = history.map((h, i) => {
+        const x = padding + (i / (history.length - 1)) * (width - 2 * padding);
+        const y = height - padding - ((h.price - min) / range) * (height - 2 * padding);
+        return `${x},${y}`;
+    }).join(' ');
+    const svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polyline fill="none" stroke="var(--accent)" stroke-width="1.5" points="${points}"/>
+    </svg>`;
+    return svg;
+}
 
 // ----- 1. Load prices from the data file -----
 async function loadPrices() {
@@ -124,6 +138,7 @@ function updateDisplay() {
             const diffPct = se.price ? ((noInSEK - se.price) / se.price) * 100 : 0;
 
             const tr = document.createElement("tr");
+            const sparkline = generateSparkline(no.history);
             tr.innerHTML = `
         <td>${no.name}</td>
         <td>${no.category || "-"}</td>
@@ -131,7 +146,8 @@ function updateDisplay() {
         <td class="numeric">${no.price.toFixed(1)}</td>
         <td class="numeric">${se.price.toFixed(1)}</td>
         <td class="numeric">${diff >= 0 ? "+" : ""}${diff.toFixed(1)}</td>
-        <td class="${diff >= 0 ? "more-expensive" : "cheaper"}">${diffPct >= 0 ? "+" : ""}${diffPct.toFixed(1)}%</td>`;
+        <td class="${diff >= 0 ? "more-expensive" : "cheaper"}">${diffPct >= 0 ? "+" : ""}${diffPct.toFixed(1)}%</td>
+        <td class="sparkline-cell">${sparkline}</td>`;
             tbody.appendChild(tr);
         });
     }

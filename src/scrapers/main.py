@@ -8,6 +8,7 @@ Scrapes prices from:
 - kassal.app (Norwegian grocery comparison)
 - rema.no (Norwegian grocery store)
 - nordby.se (Swedish grocery store)
+- ica.se (Swedish grocery store)
 
 Run via: cd src && python -m scrapers.main
 """
@@ -75,14 +76,11 @@ class RemaScraper(PriceScraper):
                     price_str = match.group(1).replace(',', '.')
                     price = float(price_str)
                     # Parse product info from the parent context
-                    # The price element is within a product card - find nearby name element
                     parent = el.parent
                     name = "Unknown"
                     if parent:
-                        # Look for name in the same card - typically a few levels up
-                        for _ in range(3):  # navigate up a few levels
+                        for _ in range(3):
                             if parent.name:
-                                # Check if this parent has a name-like element
                                 name_candidate = parent.select_one('a, [class*="product-name"], h3')
                                 if name_candidate and name_candidate.get_text(strip=True):
                                     name = self.clean_text(name_candidate.get_text(strip=True))
@@ -97,7 +95,7 @@ class RemaScraper(PriceScraper):
                         'stores': ['Rema 1000'],
                         'price': price,
                         'currency': 'NOK',
-                        'unit': 'per item',  # rema often doesn't specify unit in this view
+                        'unit': 'per item',
                         'market': 'rema-norway'
                     })
             except Exception as e:
@@ -112,55 +110,43 @@ class NordbyScraper(PriceScraper):
     BASE_URL = "https://nordby.se"
 
     def scrape_category(self, category_url: str) -> List[Dict[str, Any]]:
-        """Scrape products from nordby.se category page."""
         soup = self.fetch_page(category_url)
         if not soup:
             return []
 
         products = []
 
-        # nordby.se: price elements have class 'be-offer-price'
-        # Format variants: "1299", "29:95/ST", "139:95/kg", "799:", "1,399 kr"
         price_elements = soup.select('[class*="be-offer-price"]')
 
         for el in price_elements:
             try:
                 price_text = el.get_text(strip=True)
 
-                # Parse price based on format
                 price = None
                 unit = 'per kg'
 
                 if re.match(r'^\d+$', price_text):
-                    # Simple integer: likely øre or kr
                     price = float(price_text)
-                    # Check context for unit
                     unit = self._get_nordby_unit(el)
                 elif ':' in price_text and '/ST' in price_text:
-                    # Format: "29:95/ST"
                     parts = price_text.split('/')
                     price = float(parts[0].replace(':', '.'))
                     unit = 'per st'
                 elif 'kg' in price_text.lower():
-                    # Format: "139:95/kg"
                     parts = price_text.split('/')
                     price = float(parts[0].replace(':', '.'))
                     unit = 'per kg'
                 elif price_text.endswith(' kr'):
-                    # Format: "1,399 kr"
                     p = price_text.replace(' kr', '').replace(',', '.')
                     price = float(p)
                     unit = 'per item'
                 else:
-                    # Try to extract any number
                     match = re.search(r'(\d[\d,]*)', price_text.replace(' ', ''))
                     if match:
                         price = float(match.group(1).replace(',', '.'))
 
                 if price is not None:
-                    # Find product name - look in the parent product container
                     name = self._get_nordby_name(el)
-
                     products.append({
                         'name': name,
                         'category': 'supermarket',
@@ -176,13 +162,10 @@ class NordbyScraper(PriceScraper):
         return products
 
     def _get_nordby_unit(self, el) -> str:
-        """Try to determine unit from the price element's context."""
-        # Look at sibling elements or parent for unit info
         parent = el.parent
         for _ in range(3):
             if not parent or not parent.name:
                 break
-            # Check parent's parent for unit text
             siblings = parent.find_next_siblings()
             for sib in siblings[:3]:
                 sib_text = sib.get_text(strip=True)
@@ -194,23 +177,18 @@ class NordbyScraper(PriceScraper):
         return 'per kg'
 
     def _get_nordby_name(self, el) -> str:
-        """Extract product name from nordby context."""
-        # Look in the parent product container for name info
         parent = el.parent
         for _ in range(4):
             if not parent or not parent.name:
                 break
-            # Check for name in parent or siblings
             name_candidate = parent.select_one('a, h3, [class*="product"]')
             if name_candidate:
                 text = self.clean_text(name_candidate.get_text(strip=True))
                 if text and len(text) > 3:
                     return text
-            parent = parent.parent
+                parent = parent.parent
 
-        # Fallback: look at the price element's parent text and remove the price
         parent_text = el.parent.get_text(strip=True)
-        # Remove common price patterns
         cleaned = re.sub(r'[\d:,/.]+', '', parent_text).strip()
         if cleaned:
             return cleaned[:50]
@@ -218,20 +196,14 @@ class NordbyScraper(PriceScraper):
 
 
 class KassalScraper(PriceScraper):
-    """Scrape prices from kassal.app using Playwright."""
-
     BASE_URL = "https://kassal.app"
 
     def scrape_category(self, category_url: str) -> List[Dict[str, Any]]:
-        """Scrape kassal.app - JS rendered, extract product data."""
         soup = self.fetch_page(category_url)
         if not soup:
             return []
 
         products = []
-
-        # kassal.app: products are in <li> elements with price as first text node
-        # Structure: <li class=""> -50.00Tynnribbe Fryst, ca. 4 kgOda</li>
         product_lis = soup.select('li')
 
         for li in product_lis:
@@ -240,35 +212,23 @@ class KassalScraper(PriceScraper):
                 if not li_text:
                     continue
 
-                # Extract price: the text starts with a number (possibly with minus sign)
-                # Format: "-50.00Tynnribbe..." or "25.00..."
                 price_match = re.match(r'(-?\d+\.?\d*)', li_text)
                 if not price_match:
                     continue
 
                 price = float(price_match.group(1))
-                # The rest of the text is the product name (minus the price)
                 name_raw = li_text[price_match.end():].strip()
-                # Remove any non-product text (the page seems to have "Oda" etc. as store tags)
-                # Keep only the product name part - typically everything before store tags
-                # The format is: "priceProduct nameStoreTag"
-                # We'll take the name as everything after the price until obvious store tags
                 store_tags = ['Oda', 'SPAR', 'Meny', 'Kiwi', 'Joker', 'Reitan']
                 name = name_raw
                 for tag in store_tags:
                     if tag in name:
-                        # Truncate at the store tag
                         idx = name.index(tag)
                         name = name[:idx].strip()
 
-                # Also filter out very short names or just symbols
                 if len(name) < 3:
                     continue
 
-                # Determine unit - from the kassal page structure, most are "per item"
-                # but we can try to detect from the product context
                 unit = 'per item'
-
                 products.append({
                     'name': name,
                     'category': 'unknown',
@@ -284,10 +244,122 @@ class KassalScraper(PriceScraper):
         return products
 
 
+class IcaScraper(PriceScraper):
+    """Scrape prices from ica.se using Playwright."""
+
+    BASE_URL = "https://www.ica.se"
+
+    def scrape_category(self, category_url: str) -> List[Dict[str, Any]]:
+        soup = self.fetch_page(category_url)
+        if not soup:
+            return []
+
+        products = []
+
+        # ICA product cards - adjust selectors as needed
+        product_cards = soup.select('[class*="product-card"], [class*="ProductCard"]')
+        for card in product_cards:
+            try:
+                # Product name
+                name_el = card.select_one('[class*="product-name"], h3, a')
+                name = self.clean_text(name_el.get_text(strip=True)) if name_el else "Unknown"
+
+                # Price
+                price_el = card.select_one('[class*="price"], [class*="Price"]')
+                price = None
+                if price_el:
+                    price_text = price_el.get_text(strip=True)
+                    match = re.search(r'(\d+[,\d]*)\s*kr', price_text.replace(' ', ''))
+                    if match:
+                        price = float(match.group(1).replace(',', '.'))
+
+                # Unit
+                unit_el = card.select_one('[class*="unit"], [class*="Unit"]')
+                unit = self.clean_text(unit_el.get_text(strip=True)) if unit_el else 'per item'
+
+                if price is not None:
+                    products.append({
+                        'name': name,
+                        'category': 'supermarket',
+                        'stores': ['ICA'],
+                        'price': price,
+                        'currency': 'SEK',
+                        'unit': unit,
+                        'market': 'ica-sweden'
+                    })
+            except Exception as e:
+                print(f"Warning: Failed to parse ICA product: {e}")
+
+        return products
+
+
+def load_existing_data(output_path: Path) -> Dict[str, Any]:
+    """Load existing price data from file."""
+    if output_path.exists():
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Warning: Could not load existing data: {e}")
+    return {'norway': [], 'sweden': []}
+
+
+def normalize_name(name: str) -> str:
+    """Normalize product name for matching."""
+    return name.lower().replace('\s+', ' ').strip()
+
+
+def merge_products(existing: List[Dict], new_products: List[Dict], country: str) -> List[Dict]:
+    """Merge new products into existing list, preserving history."""
+    # Build lookup by normalized name + market
+    existing_map = {}
+    for p in existing:
+        key = (normalize_name(p['name']), p.get('market', ''))
+        existing_map[key] = p
+
+    for new_p in new_products:
+        key = (normalize_name(new_p['name']), new_p.get('market', ''))
+        now = datetime.utcnow().isoformat()
+        price_point = {'date': datetime.utcnow().isoformat(), 'price': new_p['price']}
+
+        if key in existing_map:
+            # Update existing product
+            existing_p = existing_map[key]
+            # Update current price and other fields
+            existing_p['price'] = new_p['price']
+            existing_p['currency'] = new_p['currency']
+            existing_p['unit'] = new_p.get('unit', existing_p.get('unit', 'per item'))
+            existing_p['stores'] = new_p.get('stores', existing_p.get('stores', []))
+            existing_p['category'] = new_p.get('category', existing_p.get('category', 'supermarket'))
+            # Append to history
+            history = existing_p.get('history', [])
+            # Avoid duplicate price on same day
+            if not any(h['price'] == new_p['price'] and h['date'].startswith(datetime.utcnow().date().isoformat()) for h in history):
+                history.append(price_point)
+            existing_p['history'] = history
+            existing_p['last_seen'] = now
+        else:
+            # New product
+            new_p['history'] = [{'date': datetime.utcnow().isoformat(), 'price': new_p['price']}]
+            new_p['first_seen'] = datetime.utcnow().isoformat()
+            new_p['last_seen'] = datetime.utcnow().isoformat()
+            existing_map[key] = new_p
+
+    return list(existing_map.values())
+
+
 def main():
     parser = argparse.ArgumentParser(description='Scrape food prices and save to JSON')
     parser.add_argument('--output', default='data/prices.json', help='Output JSON file path')
     args = parser.parse_args()
+
+    output_path = Path(args.output)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Load existing data
+    existing_data = load_existing_data(output_path)
+    existing_norway = existing_data.get('norway', [])
+    existing_sweden = existing_data.get('sweden', [])
 
     scraper = PriceScraper(headless=True)
 
@@ -313,11 +385,21 @@ def main():
     all_products['norway'].extend(kassal_products)
     print(f"  Found {len(kassal_products)} products from kassal.app")
 
+    print("Scraping ica.se (Swedish grocery)...")
+    ica_products = IcaScraper().scrape_category("https://www.ica.se/")
+    all_products['sweden'].extend(ica_products)
+    print(f"  Found {len(ica_products)} products from ica.se")
+
+    # Merge with existing data preserving history
+    all_products['norway'] = merge_products(existing_norway, all_products['norway'], 'norway')
+    all_products['sweden'] = merge_products(existing_sweden, all_products['sweden'], 'sweden')
+
     # Sort by price (lowest first)
     for country in ['norway', 'sweden']:
         all_products[country].sort(key=lambda x: (x.get('price') or float('inf'), x['name']))
 
     # Write output
+    all_products['last_updated'] = datetime.utcnow().isoformat()
     print(f"Saving {len(all_products['norway'])} Norway products, {len(all_products['sweden'])} Sweden products...")
     with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(all_products, f, indent=2, ensure_ascii=False)

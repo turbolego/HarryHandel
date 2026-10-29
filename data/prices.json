@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-29T20:03:38.324092",
+  "last_updated": "2026-10-29T20:28:46.347663",
   "norway": [
     {
       "name": "Tynnribbe Fryst, ca. 4 kg",
@@ -10,7 +10,14 @@
       "price": -50.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.332783",
+          "price": -50.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.332741"
     },
     {
       "name": "Smågodt-favoritter Maks 2 til nedsatt pris, Mikspose, 600 g",
@@ -21,7 +28,14 @@
       "price": -42.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.334914",
+          "price": -42.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.334862"
     },
     {
       "name": "Fylt gresskarbøtte 700 g",
@@ -32,7 +46,14 @@
       "price": -39.8,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.335521",
+          "price": -39.8
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.335477"
     },
     {
       "name": "Rundpinne 80cm 4,0mm Addi",
@@ -43,7 +64,14 @@
       "price": -35.96,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.336664",
+          "price": -35.96
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.336618"
     },
     {
       "name": "Ristorante Pizza Prosciutto 340g Dr. Oetker",
@@ -54,7 +82,14 @@
       "price": -35.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.337167",
+          "price": -35.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.337123"
     },
     {
       "name": "Grillpølser Kylling/kalkun 600g Prior",
@@ -65,7 +100,14 @@
       "price": -30.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.337648",
+          "price": -30.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.337604"
     },
     {
       "name": "GILDE SMÅRETTSKINKE 200 gBunnpris",
@@ -76,7 +118,14 @@
       "price": -29.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.337792",
+          "price": -29.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.337756"
     },
     {
       "name": "Tynnribbe krydret fersk Rutet svor, ca. 2,25 kg",
@@ -87,7 +136,14 @@
       "price": -26.2,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.338455",
+          "price": -26.2
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.338414"
     },
     {
       "name": "Rotmiks 1kg Gartner",
@@ -98,7 +154,14 @@
       "price": -24.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.338567",
+          "price": -24.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.338535"
     },
     {
       "name": "Cheezy Dip 250g El Taco Truck",
@@ -109,7 +172,14 @@
       "price": -23.96,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.339215",
+          "price": -23.96
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.339174"
     },
     {
       "name": "Kålrot Økologisk",
@@ -120,7 +190,14 @@
       "price": -22.08,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.339764",
+          "price": -22.08
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.339721"
     },
     {
       "name": "Sportsbokser Navy / sort, str. L, 2 stk, 1 pk",
@@ -131,7 +208,14 @@
       "price": -20.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.340862",
+          "price": -20.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.340822"
     },
     {
       "name": "Sportsbokser Sort, Str L, 2 stk, 1 pk",
@@ -142,7 +226,14 @@
       "price": -20.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.340353",
+          "price": -20.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.340286"
     },
     {
       "name": "Biola Syrnet Melk Mango uten 1000g Tine",
@@ -153,7 +244,14 @@
       "price": -17.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.340946",
+          "price": -17.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.340924"
     },
     {
       "name": "Kålrot pr stk",
@@ -164,7 +262,14 @@
       "price": -16.2,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.341491",
+          "price": -16.2
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.341441"
     },
     {
       "name": "Gulrot Økologisk 750g Vilje",
@@ -175,7 +280,14 @@
       "price": -15.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.341611",
+          "price": -15.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.341582"
     },
     {
       "name": "måneder sidenExtra NedenesVesterveien 778, 4823 Nedenes",
@@ -186,7 +298,14 @@
       "price": 4.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.342001",
+          "price": 4.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.341980"
     },
     {
       "name": "måneder sidenExtra Saga SenterDampsaga Allè 2, 2050 Jessheim",
@@ -197,7 +316,14 @@
       "price": 4.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.341932",
+          "price": 4.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.341910"
     },
     {
       "name": "måneder sidenExtra StovnerveienStovnerveien 54, 0982 Oslo",
@@ -208,7 +334,14 @@
       "price": 4.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.341847",
+          "price": 4.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.341817"
     },
     {
       "name": "måneder sidenExtra ÅmotSporpindveien 1, 3340 Åmot",
@@ -219,7 +352,14 @@
       "price": 4.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "kassal"
+      "market": "kassal",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.341689",
+          "price": 4.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.341667"
     },
     {
       "name": "CORNY 0% PEANUT",
@@ -230,29 +370,14 @@
       "price": 100010.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "SMOOTHIE",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.328531",
+          "price": 100010.0
+        }
       ],
-      "price": 119011.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "SMOOTHIE",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
-      ],
-      "price": 119011.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.328509"
     },
     {
       "name": "BUBBLEGUM",
@@ -263,7 +388,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330016",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329995"
     },
     {
       "name": "CHEEKY TOUNGES",
@@ -274,7 +406,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.329811",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329784"
     },
     {
       "name": "COLA BOTTLES",
@@ -285,7 +424,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.329140",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329111"
     },
     {
       "name": "FIZZY STRAWBERRY",
@@ -296,7 +442,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326944",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.326904"
     },
     {
       "name": "HAPPY FARM",
@@ -307,7 +460,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.325050",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325028"
     },
     {
       "name": "KLESRULLE",
@@ -318,7 +478,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323465",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323444"
     },
     {
       "name": "PEACH PARTY",
@@ -329,7 +496,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318742",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318720"
     },
     {
       "name": "SALTY SMILES",
@@ -340,7 +514,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315286",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315265"
     },
     {
       "name": "SOUR COLA SKULLS",
@@ -351,7 +532,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.311342",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.311321"
     },
     {
       "name": "SWEET LOVE",
@@ -362,7 +550,14 @@
       "price": 129012.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.308641",
+          "price": 129012.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.308581"
     },
     {
       "name": "GRØT SØTPOT/BLÅBÆR",
@@ -373,7 +568,14 @@
       "price": 149014.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.332263",
+          "price": 149014.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.332241"
     },
     {
       "name": "SELSKAPSERTER",
@@ -384,7 +586,14 @@
       "price": 149014.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.319773",
+          "price": 149014.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.319751"
     },
     {
       "name": "POPCORN S&O",
@@ -395,7 +604,14 @@
       "price": 169016.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318306",
+          "price": 169016.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318285"
     },
     {
       "name": "BRØDPOSE 6L",
@@ -406,7 +622,14 @@
       "price": 179017.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330092",
+          "price": 179017.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330065"
     },
     {
       "name": "AVFALLSPOSE 15L",
@@ -417,7 +640,14 @@
       "price": 189018.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.332081",
+          "price": 189018.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.332037"
     },
     {
       "name": "JAPP PEANUT",
@@ -428,18 +658,14 @@
       "price": 189018.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "JAPP PEANUT",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.324013",
+          "price": 189018.9
+        }
       ],
-      "price": 189018.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.324609"
     },
     {
       "name": "SKYR AKTIV FERSK&P",
@@ -450,7 +676,14 @@
       "price": 189018.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.314715",
+          "price": 189018.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.314673"
     },
     {
       "name": "APPELSIN&INGEFÆR",
@@ -461,7 +694,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327774",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327752"
     },
     {
       "name": "BUBBLE BUBBLIZZ",
@@ -472,7 +712,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.322113",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.322091"
     },
     {
       "name": "GRØT GULROT/BANAN",
@@ -483,7 +730,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.325188",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325166"
     },
     {
       "name": "GRØT PASTI/FERSKEN",
@@ -494,7 +748,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.325116",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325095"
     },
     {
       "name": "HÅNDSÅPE SENSITIV",
@@ -505,7 +766,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.324844",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.324822"
     },
     {
       "name": "JORDBÆRFISK",
@@ -516,7 +784,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330232",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330206"
     },
     {
       "name": "PROTEINBAR NOUGAT",
@@ -527,7 +802,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.317276",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.317224"
     },
     {
       "name": "PROTEINBAR PEANØTT",
@@ -538,7 +820,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.317171",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.317149"
     },
     {
       "name": "R TUNFISK",
@@ -549,7 +838,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.307576",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.307532"
     },
     {
       "name": "R VAFFELKJEKS",
@@ -560,7 +856,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.316308",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.316285"
     },
     {
       "name": "SJOKO POPP",
@@ -571,7 +874,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.314875",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.314854"
     },
     {
       "name": "SOUR CHEWY CANDY",
@@ -582,7 +892,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330603",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330582"
     },
     {
       "name": "SPAGETTISAUS",
@@ -593,7 +910,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.310610",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.310563"
     },
     {
       "name": "SPARKLING MANDARIN",
@@ -604,7 +928,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.310090",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.310068"
     },
     {
       "name": "SURE PÆRER",
@@ -615,7 +946,14 @@
       "price": 199019.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330160",
+          "price": 199019.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330139"
     },
     {
       "name": "GROVREV MAKR CHILI",
@@ -626,7 +964,14 @@
       "price": 209020.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.321338",
+          "price": 209020.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.321315"
     },
     {
       "name": "PROTEINBAR DADDEL",
@@ -637,7 +982,14 @@
       "price": 219021.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.317933",
+          "price": 219021.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.317891"
     },
     {
       "name": "RED BULL CHERRY",
@@ -648,7 +1000,14 @@
       "price": 219021.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.316237",
+          "price": 219021.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.316215"
     },
     {
       "name": "KARDEMOMMESKILLING",
@@ -659,7 +1018,14 @@
       "price": 229022.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323805",
+          "price": 229022.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323780"
     },
     {
       "name": "SKYR BLÅBÆR & ACAI",
@@ -670,7 +1036,14 @@
       "price": 229022.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.314040",
+          "price": 229022.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.313991"
     },
     {
       "name": "SKYR MANGO&VAN",
@@ -681,7 +1054,14 @@
       "price": 229022.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.313508",
+          "price": 229022.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.313487"
     },
     {
       "name": "YT SHAKE JORDB/BA",
@@ -692,7 +1072,14 @@
       "price": 231023.1,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.292926",
+          "price": 231023.1
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.292865"
     },
     {
       "name": "ITALIENSK SALAT",
@@ -703,7 +1090,14 @@
       "price": 239023.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.324770",
+          "price": 239023.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.324749"
     },
     {
       "name": "SKYR LUFTIG SALT K",
@@ -714,7 +1108,14 @@
       "price": 245024.5,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.313573",
+          "price": 245024.5
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.313552"
     },
     {
       "name": "CHERRY CRUSH",
@@ -725,18 +1126,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "CHERRY CRUSH",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.305474",
+          "price": 249024.9
+        }
       ],
-      "price": 249024.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.309281"
     },
     {
       "name": "COLG HARRY POTTER",
@@ -747,7 +1144,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.329061",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329025"
     },
     {
       "name": "DANETTE",
@@ -758,7 +1162,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.328366",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.328324"
     },
     {
       "name": "DLN SJOKOPEANØTT",
@@ -769,7 +1180,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327708",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327686"
     },
     {
       "name": "FRESH BOWLS AND",
@@ -780,7 +1198,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.329950",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329923"
     },
     {
       "name": "GOURMET REVEL",
@@ -791,7 +1216,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.325837",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325791"
     },
     {
       "name": "GRØNNSAKSBASE",
@@ -802,7 +1234,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320246",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320204"
     },
     {
       "name": "KJØKKEN HÅNDSÅPE",
@@ -813,7 +1252,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323535",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323513"
     },
     {
       "name": "KRYSSORDPENN",
@@ -824,7 +1270,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323329",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323308"
     },
     {
       "name": "MAKRELL GROVHAKKET",
@@ -835,7 +1288,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.306370",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.306344"
     },
     {
       "name": "NIVEA CREME",
@@ -846,7 +1306,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320400",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320378"
     },
     {
       "name": "SOYASAUS SALTREDUS",
@@ -857,7 +1324,14 @@
       "price": 249024.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.311121",
+          "price": 249024.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.311073"
     },
     {
       "name": "ALOE VERA DEO",
@@ -868,7 +1342,14 @@
       "price": 251025.1,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327505",
+          "price": 251025.1
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327478"
     },
     {
       "name": "RITZ KJEKS",
@@ -879,7 +1360,14 @@
       "price": 254025.4,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.316026",
+          "price": 254025.4
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315995"
     },
     {
       "name": "BATTERY ZERO APPLE",
@@ -890,7 +1378,14 @@
       "price": 259025.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330666",
+          "price": 259025.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330645"
     },
     {
       "name": "MONSTER VICE GUAVA",
@@ -901,7 +1396,14 @@
       "price": 259025.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320562",
+          "price": 259025.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320540"
     },
     {
       "name": "SURE SKALLER",
@@ -912,7 +1414,14 @@
       "price": 269026.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309225",
+          "price": 269026.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309180"
     },
     {
       "name": "OVNSBAKT SØTPOTET",
@@ -923,7 +1432,14 @@
       "price": 275027.5,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318946",
+          "price": 275027.5
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318918"
     },
     {
       "name": "SNACK MARGHERITA",
@@ -934,7 +1450,14 @@
       "price": 295029.5,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.311477",
+          "price": 295029.5
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.311454"
     },
     {
       "name": "SNACK MEATFEAST",
@@ -945,7 +1468,14 @@
       "price": 295029.5,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.311405",
+          "price": 295029.5
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.311384"
     },
     {
       "name": "BALSAM SENSITIV",
@@ -956,7 +1486,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.331477",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.331456"
     },
     {
       "name": "CHAMPAGNEGLASS",
@@ -967,7 +1504,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.329877",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329856"
     },
     {
       "name": "DUSJSÅPE SENSITIVE",
@@ -978,7 +1522,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327304",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327281"
     },
     {
       "name": "EUCAMENTHOL",
@@ -989,7 +1540,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327199",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327173"
     },
     {
       "name": "FLASKEPOSE",
@@ -1000,7 +1558,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326437",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.326412"
     },
     {
       "name": "FRUKT TYGGIS",
@@ -1011,7 +1576,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326011",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325978"
     },
     {
       "name": "GAVEPOSE 3PK",
@@ -1022,7 +1594,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.325920",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325898"
     },
     {
       "name": "MAXIM GEL DRINK",
@@ -1033,7 +1612,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320942",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320911"
     },
     {
       "name": "POTETCHIPS M/SALT",
@@ -1044,7 +1630,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318243",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318222"
     },
     {
       "name": "RAB/HYLLEBLOMST",
@@ -1055,7 +1648,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326180",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.326150"
     },
     {
       "name": "REKESALAT",
@@ -1066,7 +1666,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.316107",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.316080"
     },
     {
       "name": "SJAMPO SENSITIVE",
@@ -1077,7 +1684,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.314947",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.314922"
     },
     {
       "name": "SJOKOBÆR BJØRNEBÆR",
@@ -1088,7 +1702,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.314810",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.314787"
     },
     {
       "name": "SPEARMINT",
@@ -1099,7 +1720,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.310024",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309997"
     },
     {
       "name": "SPRINKLED FOAMIES",
@@ -1110,18 +1738,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "SPRINKLED FOAMIES",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.321173",
+          "price": 299029.9
+        }
       ],
-      "price": 299029.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.321218"
     },
     {
       "name": "VINGLASS",
@@ -1132,7 +1756,14 @@
       "price": 299029.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.304631",
+          "price": 299029.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.304609"
     },
     {
       "name": "JORDBÆRSYLTETØY FL",
@@ -1143,7 +1774,14 @@
       "price": 318031.8,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309687",
+          "price": 318031.8
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309665"
     },
     {
       "name": "FRUS MANDARIN MANG",
@@ -1154,7 +1792,14 @@
       "price": 319031.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327131",
+          "price": 319031.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327109"
     },
     {
       "name": "KVARG",
@@ -1165,7 +1810,14 @@
       "price": 319031.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.295481",
+          "price": 319031.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.295434"
     },
     {
       "name": "FRANSKE SMØRKJEKS",
@@ -1176,7 +1828,14 @@
       "price": 329032.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.312096",
+          "price": 329032.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.312050"
     },
     {
       "name": "YOGHURT NATURELL",
@@ -1187,7 +1846,14 @@
       "price": 329032.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.297348",
+          "price": 329032.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.297307"
     },
     {
       "name": "PENNE GLUTENFRI",
@@ -1198,7 +1864,14 @@
       "price": 334033.4,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318678",
+          "price": 334033.4
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318657"
     },
     {
       "name": "FRANSKE CREPES",
@@ -1209,7 +1882,14 @@
       "price": 339033.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326262",
+          "price": 339033.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.326240"
     },
     {
       "name": "R PROTEINRINGER",
@@ -1220,7 +1900,14 @@
       "price": 339033.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.316443",
+          "price": 339033.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.316421"
     },
     {
       "name": "SULKE HAZY IPA",
@@ -1231,7 +1918,14 @@
       "price": 339033.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309396",
+          "price": 339033.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309374"
     },
     {
       "name": "CHOCOLATE CAKE",
@@ -1242,7 +1936,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.331408",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.331374"
     },
     {
       "name": "CINNAMON BUN",
@@ -1253,7 +1954,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.331295",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.331250"
     },
     {
       "name": "GRANA PADANO FLAK",
@@ -1264,7 +1972,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.325322",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325300"
     },
     {
       "name": "LEPPEPOMADE ROSY",
@@ -1275,7 +1990,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.304484",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.304442"
     },
     {
       "name": "SALTY CARAMEL",
@@ -1286,7 +2008,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330801",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330779"
     },
     {
       "name": "SALTY PEANUT",
@@ -1297,7 +2026,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330731",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330708"
     },
     {
       "name": "TABS COLLAGEN V.C",
@@ -1308,7 +2044,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320470",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320444"
     },
     {
       "name": "UTS JORDBÆR",
@@ -1319,7 +2062,14 @@
       "price": 349034.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309478",
+          "price": 349034.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309455"
     },
     {
       "name": "FLØTESAUS",
@@ -1330,7 +2080,14 @@
       "price": 350035.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326332",
+          "price": 350035.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.326310"
     },
     {
       "name": "MASKINOPPVASK.60PK",
@@ -1341,7 +2098,14 @@
       "price": 354035.4,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.321085",
+          "price": 354035.4
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.321056"
     },
     {
       "name": "DR. GREVE ANTIPERS",
@@ -1352,7 +2116,14 @@
       "price": 359035.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327433",
+          "price": 359035.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327411"
     },
     {
       "name": "MINIPIZZABUNN 4PK",
@@ -1363,7 +2134,14 @@
       "price": 369036.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320635",
+          "price": 369036.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320613"
     },
     {
       "name": "PISTASJKJERNER",
@@ -1374,7 +2152,14 @@
       "price": 369036.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318614",
+          "price": 369036.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318592"
     },
     {
       "name": "WIPE EDDIK",
@@ -1385,7 +2170,14 @@
       "price": 369036.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323941",
+          "price": 369036.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323920"
     },
     {
       "name": "RED BULL WINTER 26",
@@ -1396,7 +2188,14 @@
       "price": 374037.4,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.316173",
+          "price": 374037.4
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.316152"
     },
     {
       "name": "CHOKO KARMEL",
@@ -1407,7 +2206,14 @@
       "price": 379037.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.319555",
+          "price": 379037.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.319512"
     },
     {
       "name": "LATZ SOUP FARM SEL",
@@ -1418,7 +2224,14 @@
       "price": 379037.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323191",
+          "price": 379037.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323167"
     },
     {
       "name": "MINI PERLER",
@@ -1429,7 +2242,14 @@
       "price": 379037.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.319077",
+          "price": 379037.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.319056"
     },
     {
       "name": "POTETGULL INTENSE",
@@ -1440,7 +2260,14 @@
       "price": 379037.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318179",
+          "price": 379037.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318158"
     },
     {
       "name": "YOGHURT VANILJE",
@@ -1451,7 +2278,14 @@
       "price": 379037.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.296286",
+          "price": 379037.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.296237"
     },
     {
       "name": "TORTIGLIONI GFR",
@@ -1462,7 +2296,14 @@
       "price": 381038.1,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.305295",
+          "price": 381038.1
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.305256"
     },
     {
       "name": "PRESTOST",
@@ -1473,7 +2314,14 @@
       "price": 389038.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.332183",
+          "price": 389038.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.332158"
     },
     {
       "name": "R SPECULOOS",
@@ -1484,7 +2332,14 @@
       "price": 389038.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309952",
+          "price": 389038.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309931"
     },
     {
       "name": "PASTASLEIV 31CM R",
@@ -1495,7 +2350,14 @@
       "price": 390039.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318806",
+          "price": 390039.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318784"
     },
     {
       "name": "BARISTA KOKOS",
@@ -1506,7 +2368,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.311278",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.311257"
     },
     {
       "name": "CHOCO CARAMEL",
@@ -1517,7 +2386,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327911",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327889"
     },
     {
       "name": "DLN SWEET & SPICY",
@@ -1528,7 +2404,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.308537",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.308515"
     },
     {
       "name": "EKTE REVET",
@@ -1539,7 +2422,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.308472",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.308450"
     },
     {
       "name": "GRESK YOGHURT",
@@ -1550,7 +2440,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.325251",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.325230"
     },
     {
       "name": "LYS SJOKOLADESAUS",
@@ -1561,7 +2458,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.322020",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.321973"
     },
     {
       "name": "MAGNESIUMSITRAT",
@@ -1572,7 +2476,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320846",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320816"
     },
     {
       "name": "MAIS EXTRA CRISPY",
@@ -1583,7 +2494,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.321407",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.321385"
     },
     {
       "name": "MATCHA STRAWBERRY",
@@ -1594,7 +2512,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.324979",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.324958"
     },
     {
       "name": "NUDLER BIFFSMAK",
@@ -1605,7 +2530,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.288278",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.285926"
     },
     {
       "name": "SOYADRIKK",
@@ -1616,7 +2548,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.311214",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.311191"
     },
     {
       "name": "SPORTSVASK",
@@ -1627,7 +2566,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309887",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309865"
     },
     {
       "name": "SRIRACHA OST",
@@ -1638,18 +2584,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "SRIRACHA OST",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323606",
+          "price": 399039.9
+        }
       ],
-      "price": 399039.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.323650"
     },
     {
       "name": "TØYVASK HVITT",
@@ -1660,7 +2602,14 @@
       "price": 399039.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.304762",
+          "price": 399039.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.304741"
     },
     {
       "name": "BRINGEBÆRSY. FL",
@@ -1671,7 +2620,14 @@
       "price": 409040.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309812",
+          "price": 409040.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309787"
     },
     {
       "name": "EXT.PROT SUPERPLUS",
@@ -1682,7 +2638,14 @@
       "price": 429042.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.319635",
+          "price": 429042.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.319613"
     },
     {
       "name": "EXTRAPROTECT SUPER",
@@ -1693,7 +2656,14 @@
       "price": 429042.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.319702",
+          "price": 429042.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.319678"
     },
     {
       "name": "PRO KNÄCKE",
@@ -1704,7 +2674,14 @@
       "price": 439043.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315149",
+          "price": 439043.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315128"
     },
     {
       "name": "R PROTEIN GRANOLA",
@@ -1715,7 +2692,14 @@
       "price": 445044.5,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.317078",
+          "price": 445044.5
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.317034"
     },
     {
       "name": "PIZZABUNN FERSK",
@@ -1726,7 +2710,14 @@
       "price": 449044.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318543",
+          "price": 449044.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318518"
     },
     {
       "name": "SPEKESKINKEFLAK",
@@ -1737,7 +2728,14 @@
       "price": 449044.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.306228",
+          "price": 449044.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.306186"
     },
     {
       "name": "UTS BRINGEBÆR",
@@ -1748,7 +2746,14 @@
       "price": 449044.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309544",
+          "price": 449044.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309522"
     },
     {
       "name": "VANILLA ICE CREAM",
@@ -1759,7 +2764,14 @@
       "price": 467046.7,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318115",
+          "price": 467046.7
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318092"
     },
     {
       "name": "LETTMELK VANILJE",
@@ -1770,7 +2782,14 @@
       "price": 482048.2,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323090",
+          "price": 482048.2
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323046"
     },
     {
       "name": "KORMA",
@@ -1781,7 +2800,14 @@
       "price": 484048.4,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323395",
+          "price": 484048.4
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323372"
     },
     {
       "name": "BITES ORIGINAL",
@@ -1792,7 +2818,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.303367",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.303345"
     },
     {
       "name": "CHOCOLATE NO SUGAR",
@@ -1803,7 +2836,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.324915",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.324893"
     },
     {
       "name": "CLINICAL WHITE",
@@ -1814,7 +2854,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.329206",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329184"
     },
     {
       "name": "CREATINE TABS",
@@ -1825,7 +2872,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.322280",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.322258"
     },
     {
       "name": "FALAFEL ORIGINAL",
@@ -1836,7 +2890,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.303295",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.303266"
     },
     {
       "name": "FLEKKFJERNER SPRAY",
@@ -1847,7 +2908,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318406",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318378"
     },
     {
       "name": "FRISKIES ADULT",
@@ -1858,7 +2926,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326104",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.326078"
     },
     {
       "name": "PIRUETT RASPBERRY",
@@ -1869,7 +2944,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315221",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315195"
     },
     {
       "name": "PIZZA VENTRICINA",
@@ -1880,7 +2962,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318476",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318454"
     },
     {
       "name": "UTS BLÅBÆR",
@@ -1891,7 +2980,14 @@
       "price": 499049.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.309620",
+          "price": 499049.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.309598"
     },
     {
       "name": "SMOOTHIE M/ACAI",
@@ -1902,7 +2998,14 @@
       "price": 525052.5,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.313355",
+          "price": 525052.5
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.313326"
     },
     {
       "name": "TYTTEBÆR-EPLE 80%",
@@ -1913,7 +3016,14 @@
       "price": 549054.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.304559",
+          "price": 549054.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.304538"
     },
     {
       "name": "VÅTFÔR KYLLING 8PK",
@@ -1924,7 +3034,14 @@
       "price": 549054.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.304027",
+          "price": 549054.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.304005"
     },
     {
       "name": "CHEESE BAGELS",
@@ -1935,7 +3052,14 @@
       "price": 569056.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.329670",
+          "price": 569056.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.329630"
     },
     {
       "name": "CRUESLI PROTEIN",
@@ -1946,7 +3070,14 @@
       "price": 599059.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.316372",
+          "price": 599059.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.316350"
     },
     {
       "name": "MELATONIN",
@@ -1957,7 +3088,14 @@
       "price": 599059.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330404",
+          "price": 599059.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330368"
     },
     {
       "name": "MICELLAR WATER",
@@ -1968,7 +3106,14 @@
       "price": 599059.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320335",
+          "price": 599059.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320312"
     },
     {
       "name": "DREAM SJOKO UTS",
@@ -1979,7 +3124,14 @@
       "price": 649064.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327369",
+          "price": 649064.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327348"
     },
     {
       "name": "JORDBÆR",
@@ -1990,7 +3142,14 @@
       "price": 649064.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323877",
+          "price": 649064.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323855"
     },
     {
       "name": "VANILJESTENGER",
@@ -2001,7 +3160,14 @@
       "price": 649064.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.306876",
+          "price": 649064.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.306831"
     },
     {
       "name": "NO.1 FALKETIND S6",
@@ -2012,7 +3178,14 @@
       "price": 690069.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.313001",
+          "price": 690069.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.312978"
     },
     {
       "name": "BALSAM DENSITY",
@@ -2023,7 +3196,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327635",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327612"
     },
     {
       "name": "CROISSANT GLUT.FRI",
@@ -2034,7 +3214,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.328465",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.328441"
     },
     {
       "name": "DRY SHAMPOO FRESH",
@@ -2045,7 +3232,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327846",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327819"
     },
     {
       "name": "PROTEIN PANNEKAKER",
@@ -2056,7 +3250,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.308396",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.308371"
     },
     {
       "name": "PROTEINBOWL THAI",
@@ -2067,7 +3268,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.326502",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.326481"
     },
     {
       "name": "SALT KARAMELL",
@@ -2078,7 +3286,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315757",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315709"
     },
     {
       "name": "SEIFILET MSC",
@@ -2089,7 +3304,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315012",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.314990"
     },
     {
       "name": "SHAMPOO DENSITY",
@@ -2100,7 +3322,14 @@
       "price": 699069.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327571",
+          "price": 699069.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327550"
     },
     {
       "name": "BURGER CH. CHEESE",
@@ -2111,7 +3340,14 @@
       "price": 749074.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.327063",
+          "price": 749074.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.327035"
     },
     {
       "name": "ROYAL BITER HASSEL",
@@ -2122,7 +3358,14 @@
       "price": 749074.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315931",
+          "price": 749074.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315908"
     },
     {
       "name": "ROYAL BITER KARAM.",
@@ -2133,7 +3376,14 @@
       "price": 749074.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315853",
+          "price": 749074.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315827"
     },
     {
       "name": "ELEKTROLYTTER",
@@ -2144,7 +3394,14 @@
       "price": 799079.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330540",
+          "price": 799079.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330518"
     },
     {
       "name": "HOKI LOINS",
@@ -2155,7 +3412,14 @@
       "price": 799079.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.315083",
+          "price": 799079.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.315057"
     },
     {
       "name": "KREATIN",
@@ -2166,7 +3430,14 @@
       "price": 799079.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330469",
+          "price": 799079.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330447"
     },
     {
       "name": "LINUSPRO CREATINE",
@@ -2177,7 +3448,14 @@
       "price": 799079.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.322416",
+          "price": 799079.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.322390"
     },
     {
       "name": "MAXIM SPORTS TABS",
@@ -2188,7 +3466,14 @@
       "price": 799079.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320699",
+          "price": 799079.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320677"
     },
     {
       "name": "LERØY BURGER ØRRET",
@@ -2199,7 +3484,14 @@
       "price": 849084.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.312915",
+          "price": 849084.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.312870"
     },
     {
       "name": "PANERT RØDSPETTE",
@@ -2210,7 +3502,14 @@
       "price": 889088.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318874",
+          "price": 889088.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318852"
     },
     {
       "name": "AVLØPSÅPNER",
@@ -2221,7 +3520,14 @@
       "price": 899089.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.331549",
+          "price": 899089.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.331525"
     },
     {
       "name": "PROSCIUTTO CRUDO",
@@ -2232,7 +3538,14 @@
       "price": 899089.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.318035",
+          "price": 899089.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318002"
     },
     {
       "name": "TYGGEBEIN OKSEHUD",
@@ -2243,7 +3556,14 @@
       "price": 899089.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.304696",
+          "price": 899089.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.304675"
     },
     {
       "name": "ØRRETFILET I LENKE",
@@ -2254,7 +3574,14 @@
       "price": 899089.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.312186",
+          "price": 899089.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.312164"
     },
     {
       "name": "LAKS SUPREME PORSJ",
@@ -2265,7 +3592,14 @@
       "price": 999099.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.323263",
+          "price": 999099.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.323237"
     },
     {
       "name": "MATCHA VNL POSER",
@@ -2276,7 +3610,14 @@
       "price": 999099.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.321013",
+          "price": 999099.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320992"
     },
     {
       "name": "TRIPPEL OMEGA-3",
@@ -2287,7 +3628,14 @@
       "price": 999099.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.330297",
+          "price": 999099.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.330275"
     },
     {
       "name": "SMOOTHIE",
@@ -2298,18 +3646,18 @@
       "price": 10900109.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "SMOOTHIE",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.313075",
+          "price": 119011.9
+        },
+        {
+          "date": "2026-10-29T20:28:46.313279",
+          "price": 10900109.0
+        }
       ],
-      "price": 10900109.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.313401"
     },
     {
       "name": "ONE SMALL DOG SENI",
@@ -2320,7 +3668,14 @@
       "price": 10990109.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.319014",
+          "price": 10990109.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.318992"
     },
     {
       "name": "CREATINE GUMMIES",
@@ -2331,7 +3686,14 @@
       "price": 12990129.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.322346",
+          "price": 12990129.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.322325"
     },
     {
       "name": "SPORTS DRINK LEMON",
@@ -2342,7 +3704,14 @@
       "price": 14990149.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.320770",
+          "price": 14990149.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.320748"
     },
     {
       "name": "VITAMINBJØRNER",
@@ -2353,7 +3722,14 @@
       "price": 15900159.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.303942",
+          "price": 15900159.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.303898"
     },
     {
       "name": "PROTEINPULVER VAN",
@@ -2364,7 +3740,14 @@
       "price": 17990179.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.322206",
+          "price": 17990179.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.322184"
     },
     {
       "name": "WOOL SINGLET",
@@ -2375,29 +3758,14 @@
       "price": 27900279.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "WOOL SINGLET",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.298486",
+          "price": 27900279.0
+        }
       ],
-      "price": 27900279.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "WOOL SINGLET",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
-      ],
-      "price": 27900279.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.303136"
     },
     {
       "name": "STORFE FLATBIFF",
@@ -2408,7 +3776,14 @@
       "price": 38500385.0,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.306297",
+          "price": 38500385.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.306275"
     },
     {
       "name": "TORSKEFILET",
@@ -2419,18 +3794,14 @@
       "price": 39990399.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
-    },
-    {
-      "name": "TORSKEFILET",
-      "category": "supermarket",
-      "stores": [
-        "Rema 1000"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.305362",
+          "price": 39990399.9
+        }
       ],
-      "price": 39990399.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "rema-norway"
+      "last_seen": "2026-10-29T20:28:46.308251"
     },
     {
       "name": "ØRRET LOIN",
@@ -2441,7 +3812,14 @@
       "price": 55190551.9,
       "currency": "NOK",
       "unit": "per item",
-      "market": "rema-norway"
+      "market": "rema-norway",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.312259",
+          "price": 55190551.9
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.312231"
     }
   ],
   "sweden": [
@@ -2451,76 +3829,41 @@
       "stores": [
         "Nordby"
       ],
-      "price": 145.0,
-      "currency": "SEK",
-      "unit": "per kg",
-      "market": "nordby-sweden"
-    },
-    {
-      "name": "-",
-      "category": "supermarket",
-      "stores": [
-        "Nordby"
-      ],
-      "price": 209.0,
-      "currency": "SEK",
-      "unit": "per kg",
-      "market": "nordby-sweden"
-    },
-    {
-      "name": "-",
-      "category": "supermarket",
-      "stores": [
-        "Nordby"
-      ],
-      "price": 449.0,
-      "currency": "SEK",
-      "unit": "per kg",
-      "market": "nordby-sweden"
-    },
-    {
-      "name": "-",
-      "category": "supermarket",
-      "stores": [
-        "Nordby"
-      ],
-      "price": 650.0,
-      "currency": "SEK",
-      "unit": "per kg",
-      "market": "nordby-sweden"
-    },
-    {
-      "name": "-",
-      "category": "supermarket",
-      "stores": [
-        "Nordby"
-      ],
-      "price": 699.0,
-      "currency": "SEK",
-      "unit": "per kg",
-      "market": "nordby-sweden"
-    },
-    {
-      "name": "-",
-      "category": "supermarket",
-      "stores": [
-        "Nordby"
-      ],
-      "price": 799.0,
-      "currency": "SEK",
-      "unit": "per kg",
-      "market": "nordby-sweden"
-    },
-    {
-      "name": "-",
-      "category": "supermarket",
-      "stores": [
-        "Nordby"
-      ],
       "price": 899.0,
       "currency": "SEK",
       "unit": "per kg",
-      "market": "nordby-sweden"
+      "market": "nordby-sweden",
+      "history": [
+        {
+          "date": "2026-10-29T20:28:46.342791",
+          "price": 799.0
+        },
+        {
+          "date": "2026-10-29T20:28:46.343486",
+          "price": 449.0
+        },
+        {
+          "date": "2026-10-29T20:28:46.344033",
+          "price": 145.0
+        },
+        {
+          "date": "2026-10-29T20:28:46.344102",
+          "price": 650.0
+        },
+        {
+          "date": "2026-10-29T20:28:46.344175",
+          "price": 699.0
+        },
+        {
+          "date": "2026-10-29T20:28:46.344243",
+          "price": 209.0
+        },
+        {
+          "date": "2026-10-29T20:28:46.344308",
+          "price": 899.0
+        }
+      ],
+      "last_seen": "2026-10-29T20:28:46.344286"
     }
   ]
 }
