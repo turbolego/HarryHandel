@@ -1,126 +1,2525 @@
 {
-  "last_updated": "2026-10-29T09:43:04.532831",
+  "last_updated": "2026-10-29T13:09:05.390295",
   "norway": [
     {
-      "name": "Melk fullfedt",
-      "category": "mejeri",
+      "name": "Tynnribbe Fryst, ca. 4 kg",
+      "category": "unknown",
       "stores": [
-        "Rema 1000",
-        "Kiwi"
+        "Kassal"
       ],
-      "price": 15.9,
+      "price": -50.0,
       "currency": "NOK",
-      "unit": "liter",
-      "market": "norwegian-chains"
+      "unit": "per item",
+      "market": "kassal"
     },
     {
-      "name": "Brød, hvit",
-      "category": "brød",
+      "name": "Smågodt-favoritter Maks 2 til nedsatt pris, Mikspose, 600 g",
+      "category": "unknown",
       "stores": [
-        "Rema 1000",
-        "Kiwi",
-        "Meny"
+        "Kassal"
       ],
-      "price": 24.9,
+      "price": -42.0,
       "currency": "NOK",
-      "unit": "stk",
-      "market": "norwegian-chains"
+      "unit": "per item",
+      "market": "kassal"
     },
     {
-      "name": "Egg, 10 stk",
-      "category": "mejeri",
+      "name": "Fylt gresskarbøtte 700 g",
+      "category": "unknown",
       "stores": [
-        "Rema 1000",
-        "Kiwi",
-        "Spar"
+        "Kassal"
       ],
-      "price": 34.9,
+      "price": -39.8,
       "currency": "NOK",
-      "unit": "stk",
-      "market": "norwegian-chains"
+      "unit": "per item",
+      "market": "kassal"
     },
     {
-      "name": "Yoghurt nature",
-      "category": "mejeri",
+      "name": "Rundpinne 80cm 4,0mm Addi",
+      "category": "unknown",
       "stores": [
-        "Rema 1000",
-        "Joker",
-        "Naerbutikken"
+        "Kassal"
       ],
-      "price": 12.5,
+      "price": -35.96,
       "currency": "NOK",
-      "unit": "liter",
-      "market": "norwegian-chains"
+      "unit": "per item",
+      "market": "kassal"
     },
     {
-      "name": "Kjøttdeigsburger",
-      "category": "kjøtt",
+      "name": "Ristorante Pizza Prosciutto 340g Dr. Oetker",
+      "category": "unknown",
       "stores": [
-        "Coop Extra",
-        "Reitan Retail",
+        "Kassal"
+      ],
+      "price": -35.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Grillpølser Kylling/kalkun 600g Prior",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -30.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "GILDE SMÅRETTSKINKE 200 gBunnpris",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -29.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Tynnribbe krydret fersk Rutet svor, ca. 2,25 kg",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -26.2,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Rotmiks 1kg Gartner",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -24.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Cheezy Dip 250g El Taco Truck",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -23.96,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Kålrot Økologisk",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -22.08,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Sportsbokser Navy / sort, str. L, 2 stk, 1 pk",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -20.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Sportsbokser Sort, Str L, 2 stk, 1 pk",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -20.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Biola Syrnet Melk Mango uten 1000g Tine",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -17.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Kålrot pr stk",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -16.2,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "Gulrot Økologisk 750g Vilje",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": -15.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "måneder sidenExtra NedenesVesterveien 778, 4823 Nedenes",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": 4.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "måneder sidenExtra Saga SenterDampsaga Allè 2, 2050 Jessheim",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": 4.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "måneder sidenExtra StovnerveienStovnerveien 54, 0982 Oslo",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": 4.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "måneder sidenExtra ÅmotSporpindveien 1, 3340 Åmot",
+      "category": "unknown",
+      "stores": [
+        "Kassal"
+      ],
+      "price": 4.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal"
+    },
+    {
+      "name": "CORNY 0% PEANUT",
+      "category": "supermarket",
+      "stores": [
         "Rema 1000"
       ],
-      "price": 89.9,
+      "price": 100010.0,
       "currency": "NOK",
-      "unit": "kg",
-      "market": "norwegian-chains"
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SMOOTHIE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 119011.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SMOOTHIE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 119011.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BUBBLEGUM",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHEEKY TOUNGES",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "COLA BOTTLES",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FIZZY STRAWBERRY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "HAPPY FARM",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "KLESRULLE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PEACH PARTY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SALTY SMILES",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SOUR COLA SKULLS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SWEET LOVE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 129012.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GRØT SØTPOT/BLÅBÆR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 149014.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SELSKAPSERTER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 149014.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "POPCORN S&O",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 169016.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BRØDPOSE 6L",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 179017.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "AVFALLSPOSE 15L",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 189018.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "JAPP PEANUT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 189018.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "JAPP PEANUT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 189018.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SKYR AKTIV FERSK&P",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 189018.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "APPELSIN&INGEFÆR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BUBBLE BUBBLIZZ",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GRØT GULROT/BANAN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GRØT PASTI/FERSKEN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "HÅNDSÅPE SENSITIV",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "JORDBÆRFISK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PROTEINBAR NOUGAT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PROTEINBAR PEANØTT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "R TUNFISK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "R VAFFELKJEKS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SJOKO POPP",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SOUR CHEWY CANDY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPAGETTISAUS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPARKLING MANDARIN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SURE PÆRER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 199019.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GROVREV MAKR CHILI",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 209020.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PROTEINBAR DADDEL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 219021.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "RED BULL CHERRY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 219021.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "KARDEMOMMESKILLING",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 229022.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SKYR BLÅBÆR & ACAI",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 229022.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SKYR MANGO&VAN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 229022.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "YT SHAKE JORDB/BA",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 231023.1,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ITALIENSK SALAT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 239023.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SKYR LUFTIG SALT K",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 245024.5,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHERRY CRUSH",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHERRY CRUSH",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "COLG HARRY POTTER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "DANETTE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "DLN SJOKOPEANØTT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FRESH BOWLS AND",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GOURMET REVEL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GRØNNSAKSBASE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "KJØKKEN HÅNDSÅPE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "KRYSSORDPENN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MAKRELL GROVHAKKET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "NIVEA CREME",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SOYASAUS SALTREDUS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 249024.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ALOE VERA DEO",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 251025.1,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "RITZ KJEKS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 254025.4,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BATTERY ZERO APPLE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 259025.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MONSTER VICE GUAVA",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 259025.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SURE SKALLER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 269026.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "OVNSBAKT SØTPOTET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 275027.5,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SNACK MARGHERITA",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 295029.5,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SNACK MEATFEAST",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 295029.5,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BALSAM SENSITIV",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHAMPAGNEGLASS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "DUSJSÅPE SENSITIVE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "EUCAMENTHOL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FLASKEPOSE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FRUKT TYGGIS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GAVEPOSE 3PK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MAXIM GEL DRINK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "POTETCHIPS M/SALT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "RAB/HYLLEBLOMST",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "REKESALAT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SJAMPO SENSITIVE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SJOKOBÆR BJØRNEBÆR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPEARMINT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPRINKLED FOAMIES",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPRINKLED FOAMIES",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "VINGLASS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 299029.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "JORDBÆRSYLTETØY FL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 318031.8,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FRUS MANDARIN MANG",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 319031.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "KVARG",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 319031.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FRANSKE SMØRKJEKS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 329032.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "YOGHURT NATURELL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 329032.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PENNE GLUTENFRI",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 334033.4,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FRANSKE CREPES",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 339033.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "R PROTEINRINGER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 339033.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SULKE HAZY IPA",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 339033.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHOCOLATE CAKE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CINNAMON BUN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GRANA PADANO FLAK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "LEPPEPOMADE ROSY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SALTY CARAMEL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SALTY PEANUT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TABS COLLAGEN V.C",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "UTS JORDBÆR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 349034.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FLØTESAUS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 350035.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MASKINOPPVASK.60PK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 354035.4,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "DR. GREVE ANTIPERS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 359035.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MINIPIZZABUNN 4PK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 369036.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PISTASJKJERNER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 369036.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "WIPE EDDIK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 369036.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "RED BULL WINTER 26",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 374037.4,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHOKO KARMEL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 379037.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "LATZ SOUP FARM SEL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 379037.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MINI PERLER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 379037.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "POTETGULL INTENSE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 379037.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "YOGHURT VANILJE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 379037.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TORTIGLIONI GFR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 381038.1,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PRESTOST",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 389038.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "R SPECULOOS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 389038.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PASTASLEIV 31CM R",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 390039.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BARISTA KOKOS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHOCO CARAMEL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "DLN SWEET & SPICY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "EKTE REVET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "GRESK YOGHURT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "LYS SJOKOLADESAUS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MAGNESIUMSITRAT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MAIS EXTRA CRISPY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MATCHA STRAWBERRY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "NUDLER BIFFSMAK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SOYADRIKK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPORTSVASK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SRIRACHA OST",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SRIRACHA OST",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TØYVASK HVITT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 399039.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BRINGEBÆRSY. FL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 409040.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "EXT.PROT SUPERPLUS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 429042.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "EXTRAPROTECT SUPER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 429042.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PRO KNÄCKE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 439043.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "R PROTEIN GRANOLA",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 445044.5,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PIZZABUNN FERSK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 449044.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPEKESKINKEFLAK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 449044.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "UTS BRINGEBÆR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 449044.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "VANILLA ICE CREAM",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 467046.7,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "LETTMELK VANILJE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 482048.2,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "KORMA",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 484048.4,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BITES ORIGINAL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHOCOLATE NO SUGAR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CLINICAL WHITE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CREATINE TABS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FALAFEL ORIGINAL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FLEKKFJERNER SPRAY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "FRISKIES ADULT",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PIRUETT RASPBERRY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PIZZA VENTRICINA",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "UTS BLÅBÆR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 499049.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SMOOTHIE M/ACAI",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 525052.5,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TYTTEBÆR-EPLE 80%",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 549054.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "VÅTFÔR KYLLING 8PK",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 549054.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CHEESE BAGELS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 569056.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CRUESLI PROTEIN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 599059.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MELATONIN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 599059.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MICELLAR WATER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 599059.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "DREAM SJOKO UTS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 649064.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "JORDBÆR",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 649064.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "VANILJESTENGER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 649064.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "NO.1 FALKETIND S6",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 690069.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BALSAM DENSITY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CROISSANT GLUT.FRI",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "DRY SHAMPOO FRESH",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PROTEIN PANNEKAKER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PROTEINBOWL THAI",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SALT KARAMELL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SEIFILET MSC",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SHAMPOO DENSITY",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 699069.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "BURGER CH. CHEESE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 749074.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ROYAL BITER HASSEL",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 749074.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ROYAL BITER KARAM.",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 749074.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ELEKTROLYTTER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 799079.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "HOKI LOINS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 799079.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "KREATIN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 799079.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "LINUSPRO CREATINE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 799079.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MAXIM SPORTS TABS",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 799079.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "LERØY BURGER ØRRET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 849084.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PANERT RØDSPETTE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 889088.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "AVLØPSÅPNER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 899089.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PROSCIUTTO CRUDO",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 899089.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TYGGEBEIN OKSEHUD",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 899089.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ØRRETFILET I LENKE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 899089.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "LAKS SUPREME PORSJ",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 999099.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "MATCHA VNL POSER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 999099.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TRIPPEL OMEGA-3",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 999099.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SMOOTHIE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 10900109.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SMOOTHIE",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 10900109.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ONE SMALL DOG SENI",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 10990109.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "CREATINE GUMMIES",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 12990129.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "SPORTS DRINK LEMON",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 14990149.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "VITAMINBJØRNER",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 15900159.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "PROTEINPULVER VAN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 17990179.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "WOOL SINGLET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 27900279.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "WOOL SINGLET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 27900279.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "WOOL SINGLET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 27900279.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "STORFE FLATBIFF",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 38500385.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TORSKEFILET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 39990399.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "TORSKEFILET",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 39990399.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
+    },
+    {
+      "name": "ØRRET LOIN",
+      "category": "supermarket",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 55190551.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "rema-norway"
     }
   ],
   "sweden": [
     {
-      "name": "Mjölk hel",
-      "category": "mejeri",
+      "name": "-",
+      "category": "supermarket",
       "stores": [
         "Nordby"
       ],
-      "price": 14.5,
+      "price": 145.0,
       "currency": "SEK",
-      "unit": "liter",
+      "unit": "per kg",
       "market": "nordby-sweden"
     },
     {
-      "name": "Bröd, vit",
-      "category": "bröd",
+      "name": "-",
+      "category": "supermarket",
       "stores": [
         "Nordby"
       ],
-      "price": 22.9,
+      "price": 209.0,
       "currency": "SEK",
-      "unit": "stk",
+      "unit": "per kg",
       "market": "nordby-sweden"
     },
     {
-      "name": "Ägg, 10 stk",
-      "category": "mejeri",
+      "name": "-",
+      "category": "supermarket",
       "stores": [
         "Nordby"
       ],
-      "price": 32.5,
+      "price": 449.0,
       "currency": "SEK",
-      "unit": "stk",
+      "unit": "per kg",
       "market": "nordby-sweden"
     },
     {
-      "name": "Yoghurt nature",
-      "category": "mejeri",
+      "name": "-",
+      "category": "supermarket",
       "stores": [
         "Nordby"
       ],
-      "price": 11.9,
+      "price": 650.0,
       "currency": "SEK",
-      "unit": "liter",
+      "unit": "per kg",
       "market": "nordby-sweden"
     },
     {
-      "name": "Köttfärs",
-      "category": "kött",
+      "name": "-",
+      "category": "supermarket",
       "stores": [
-        "Nordby",
-        "Coop Prix"
+        "Nordby"
       ],
-      "price": 129.0,
+      "price": 699.0,
       "currency": "SEK",
-      "unit": "kg",
+      "unit": "per kg",
+      "market": "nordby-sweden"
+    },
+    {
+      "name": "-",
+      "category": "supermarket",
+      "stores": [
+        "Nordby"
+      ],
+      "price": 799.0,
+      "currency": "SEK",
+      "unit": "per kg",
+      "market": "nordby-sweden"
+    },
+    {
+      "name": "-",
+      "category": "supermarket",
+      "stores": [
+        "Nordby"
+      ],
+      "price": 899.0,
+      "currency": "SEK",
+      "unit": "per kg",
       "market": "nordby-sweden"
     }
   ]

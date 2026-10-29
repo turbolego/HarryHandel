@@ -32,7 +32,8 @@ jobs:
         run: |
           cd src
           python -m scrapers.main
-        # Exit with code 0 always so workflow continues; check product count below
+          # Copy data to repo root for GitHub Pages
+          cp src/data/prices.json data/prices.json
 
       - name: Generate fallback data if no products found
         if: failure() || steps.scraper.outcome == 'skipped'
