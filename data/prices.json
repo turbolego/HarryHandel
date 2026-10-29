@@ -3824,46 +3824,74 @@
   ],
   "sweden": [
     {
-      "name": "-",
-      "category": "supermarket",
-      "stores": [
-        "Nordby"
-      ],
-      "price": 899.0,
+      "name": "Bacon",
+      "category": "unknown",
+      "stores": ["Willys"],
+      "price": 94,
       "currency": "SEK",
       "unit": "per kg",
-      "market": "nordby-sweden",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.342791",
-          "price": 799.0
-        },
-        {
-          "date": "2026-10-29T20:28:46.343486",
-          "price": 449.0
-        },
-        {
-          "date": "2026-10-29T20:28:46.344033",
-          "price": 145.0
-        },
-        {
-          "date": "2026-10-29T20:28:46.344102",
-          "price": 650.0
-        },
-        {
-          "date": "2026-10-29T20:28:46.344175",
-          "price": 699.0
-        },
-        {
-          "date": "2026-10-29T20:28:46.344243",
-          "price": 209.0
-        },
-        {
-          "date": "2026-10-29T20:28:46.344308",
-          "price": 899.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.344286"
+      "market": "willys",
+      "history": []
+    },
+    {
+      "name": "Cola",
+      "category": "unknown",
+      "stores": ["Willys"],
+      "price": 12,
+      "currency": "SEK",
+      "unit": "per liter",
+      "market": "willys",
+      "history": []
+    },
+    {
+      "name": "Melkesjokolade",
+      "category": "unknown",
+      "stores": ["Willys"],
+      "price": 155,
+      "currency": "SEK",
+      "unit": "per kg",
+      "market": "willys",
+      "history": []
+    },
+    {
+      "name": "Smågodt",
+      "category": "unknown",
+      "stores": ["Willys"],
+      "price": 71,
+      "currency": "SEK",
+      "unit": "per kg",
+      "market": "willys",
+      "history": []
+    },
+    {
+      "name": "Snus",
+      "category": "unknown",
+      "stores": ["Willys"],
+      "price": 36,
+      "currency": "SEK",
+      "unit": "per box",
+      "market": "willys",
+      "history": []
+    },
+    {
+      "name": "Energidrikk",
+      "category": "unknown",
+      "stores": ["Willys"],
+      "price": 12,
+      "currency": "SEK",
+      "unit": "per box",
+      "market": "willys",
+      "history": []
+    },
+    {
+      "name": "Chips",
+      "category": "unknown",
+      "stores": ["Willys"],
+      "price": 88,
+      "currency": "SEK",
+      "unit": "per kg",
+      "market": "willys",
+      "history": []
     }
   ]
 }
