@@ -1,60 +1,69 @@
 {
-  "last_updated": "2026-10-29T08:53:16.311195",
+  "last_updated": "2026-10-29T09:07:36.187888",
   "norway": [
     {
       "name": "Melk fullfedt",
       "category": "mejeri",
       "stores": [
-        "Rema 1000"
+        "Rema 1000",
+        "Kiwi"
       ],
       "price": 15.9,
       "currency": "NOK",
       "unit": "liter",
-      "market": "rema-norway"
+      "market": "norwegian-chains"
     },
     {
       "name": "Brød, hvit",
       "category": "brød",
       "stores": [
-        "Rema 1000"
+        "Rema 1000",
+        "Kiwi",
+        "Meny"
       ],
       "price": 24.9,
       "currency": "NOK",
       "unit": "stk",
-      "market": "rema-norway"
+      "market": "norwegian-chains"
     },
     {
       "name": "Egg, 10 stk",
       "category": "mejeri",
       "stores": [
-        "Rema 1000"
+        "Rema 1000",
+        "Kiwi",
+        "Spar"
       ],
       "price": 34.9,
       "currency": "NOK",
       "unit": "stk",
-      "market": "rema-norway"
+      "market": "norwegian-chains"
     },
     {
       "name": "Yoghurt nature",
       "category": "mejeri",
       "stores": [
-        "Rema 1000"
+        "Rema 1000",
+        "Joker",
+        "Naerbutikken"
       ],
       "price": 12.5,
       "currency": "NOK",
       "unit": "liter",
-      "market": "rema-norway"
+      "market": "norwegian-chains"
     },
     {
       "name": "Kjøttdeigsburger",
       "category": "kjøtt",
       "stores": [
+        "Coop Extra",
+        "Reitan Retail",
         "Rema 1000"
       ],
       "price": 89.9,
       "currency": "NOK",
       "unit": "kg",
-      "market": "rema-norway"
+      "market": "norwegian-chains"
     }
   ],
   "sweden": [
@@ -106,7 +115,8 @@
       "name": "Köttfärs",
       "category": "kött",
       "stores": [
-        "Nordby"
+        "Nordby",
+        "Coop Prix"
       ],
       "price": 129.0,
       "currency": "SEK",

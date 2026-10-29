@@ -12,18 +12,18 @@ output.parent.mkdir(parents=True, exist_ok=True)
 data = {
     "last_updated": datetime.utcnow().isoformat(),
     "norway": [
-        {"name": "Melk fullfedt", "category": "mejeri", "stores": ["Rema 1000"], "price": 15.90, "currency": "NOK", "unit": "liter", "market": "rema-norway"},
-        {"name": "Brød, hvit", "category": "brød", "stores": ["Rema 1000"], "price": 24.90, "currency": "NOK", "unit": "stk", "market": "rema-norway"},
-        {"name": "Egg, 10 stk", "category": "mejeri", "stores": ["Rema 1000"], "price": 34.90, "currency": "NOK", "unit": "stk", "market": "rema-norway"},
-        {"name": "Yoghurt nature", "category": "mejeri", "stores": ["Rema 1000"], "price": 12.50, "currency": "NOK", "unit": "liter", "market": "rema-norway"},
-        {"name": "Kjøttdeigsburger", "category": "kjøtt", "stores": ["Rema 1000"], "price": 89.90, "currency": "NOK", "unit": "kg", "market": "rema-norway"},
+        {"name": "Melk fullfedt", "category": "mejeri", "stores": ["Rema 1000", "Kiwi"], "price": 15.90, "currency": "NOK", "unit": "liter", "market": "norwegian-chains"},
+        {"name": "Brød, hvit", "category": "brød", "stores": ["Rema 1000", "Kiwi", "Meny"], "price": 24.90, "currency": "NOK", "unit": "stk", "market": "norwegian-chains"},
+        {"name": "Egg, 10 stk", "category": "mejeri", "stores": ["Rema 1000", "Kiwi", "Spar"], "price": 34.90, "currency": "NOK", "unit": "stk", "market": "norwegian-chains"},
+        {"name": "Yoghurt nature", "category": "mejeri", "stores": ["Rema 1000", "Joker", "Naerbutikken"], "price": 12.50, "currency": "NOK", "unit": "liter", "market": "norwegian-chains"},
+        {"name": "Kjøttdeigsburger", "category": "kjøtt", "stores": ["Coop Extra", "Reitan Retail", "Rema 1000"], "price": 89.90, "currency": "NOK", "unit": "kg", "market": "norwegian-chains"},
     ],
     "sweden": [
         {"name": "Mjölk hel", "category": "mejeri", "stores": ["Nordby"], "price": 14.50, "currency": "SEK", "unit": "liter", "market": "nordby-sweden"},
         {"name": "Bröd, vit", "category": "bröd", "stores": ["Nordby"], "price": 22.90, "currency": "SEK", "unit": "stk", "market": "nordby-sweden"},
         {"name": "Ägg, 10 stk", "category": "mejeri", "stores": ["Nordby"], "price": 32.50, "currency": "SEK", "unit": "stk", "market": "nordby-sweden"},
         {"name": "Yoghurt nature", "category": "mejeri", "stores": ["Nordby"], "price": 11.90, "currency": "SEK", "unit": "liter", "market": "nordby-sweden"},
-        {"name": "Köttfärs", "category": "kött", "stores": ["Nordby"], "price": 129.00, "currency": "SEK", "unit": "kg", "market": "nordby-sweden"},
+        {"name": "Köttfärs", "category": "kött", "stores": ["Nordby", "Coop Prix"], "price": 129.00, "currency": "SEK", "unit": "kg", "market": "nordby-sweden"},
     ]
 }
 

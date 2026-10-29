@@ -2,6 +2,22 @@
 
 ## Overview
 
+HarryHandel is a GitHub Pages dashboard that compares food prices in Norway vs Sweden. The project scrapes price data from:
+
+- **kassal.app** - Norwegian grocery price comparison
+- **rema.no** - Norwegian grocery store (Rema 1000)
+- **nordby.se** - Swedish grocery store
+
+### Norwegian price sources
+
+The dashboard tracks prices from the following Norwegian grocery chains:
+
+- **NorgesGruppen**: KIWI, MENY, SPAR, Joker, Nærbutikken
+- **Coop Norge**: Coop Extra, Coop Prix, Coop Mega, Obs, Matkroken
+- **Reitan Retail**: Rema 1000
+
+The fallback demo data includes products from these chains, with store names listed per product.
+
 ## Data Structure
 
 The scraped data is saved as JSON at `data/prices.json` with the following structure:
