@@ -1,13 +1,6 @@
 # HarryHandel
-[https://turbolego.github.io/PlogeKart/](https://turbolego.github.io/PlogeKart/)
 
 ## Overview
-
-HarryHandel is a GitHub Pages dashboard that compares food prices in Norway vs Sweden. The project scrapes price data from:
-
-- **kassal.app** - Norwegian grocery price comparison
-- **rema.no** - Norwegian grocery store (Rema 1000)
-- **nordby.se** - Swedish grocery store
 
 ## Data Structure
 
