@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarryHandel - Food Prices Norway vs Sweden</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HarryHandel</h1>
+            <p class="subtitle">Food Price Comparison: Norway vs Sweden</p>
+            <p class="last-updated" id="last-updated">Loading...</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="currency">Currency:</label>
+                <select id="currency" onchange="updateCurrency()">
+                    <option value="NOK">Norwegian Krone (NOK)</option>
+                    <option value="SEK" selected>Swedish Krone (SEK)</option>
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="category">Category:</label>
+                <select id="category" onchange="filterByCategory()">
+                    <option value="all">All Products</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="search">Search:</label>
+                <input type="text" id="search" placeholder="Search products..." oninput="filterByCategory()">
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Price Comparison Chart</h2>
+            <canvas id="comparisonChart"></canvas>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Norway</h3>
+                <p id="norway-avg">Average: -</p>
+                <p id="norway-count">Products: 0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Sweden</h3>
+                <p id="sweden-avg">Average: -</p>
+                <p id="sweden-count">Products: 0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Price Gap</h3>
+                <p id="price-gap">Norway is -% more expensive</p>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h2>All Products</h2>
+            <table id="price-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Store</th>
+                        <th>Norway (NOK)</th>
+                        <th>Sweden (SEK)</th>
+                        <th>Difference</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Data scraped from kassal.app, rema.no, and nordby.se | Updated: <span id="footer-date">-</span></p>
+            <p><a href="https://github.com/turbolego/HarryHandel">View on GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

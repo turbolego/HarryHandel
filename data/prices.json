@@ -1,0 +1,117 @@
+{
+  "last_updated": "2026-10-29T08:53:16.311195",
+  "norway": [
+    {
+      "name": "Melk fullfedt",
+      "category": "mejeri",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 15.9,
+      "currency": "NOK",
+      "unit": "liter",
+      "market": "rema-norway"
+    },
+    {
+      "name": "Brød, hvit",
+      "category": "brød",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 24.9,
+      "currency": "NOK",
+      "unit": "stk",
+      "market": "rema-norway"
+    },
+    {
+      "name": "Egg, 10 stk",
+      "category": "mejeri",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 34.9,
+      "currency": "NOK",
+      "unit": "stk",
+      "market": "rema-norway"
+    },
+    {
+      "name": "Yoghurt nature",
+      "category": "mejeri",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 12.5,
+      "currency": "NOK",
+      "unit": "liter",
+      "market": "rema-norway"
+    },
+    {
+      "name": "Kjøttdeigsburger",
+      "category": "kjøtt",
+      "stores": [
+        "Rema 1000"
+      ],
+      "price": 89.9,
+      "currency": "NOK",
+      "unit": "kg",
+      "market": "rema-norway"
+    }
+  ],
+  "sweden": [
+    {
+      "name": "Mjölk hel",
+      "category": "mejeri",
+      "stores": [
+        "Nordby"
+      ],
+      "price": 14.5,
+      "currency": "SEK",
+      "unit": "liter",
+      "market": "nordby-sweden"
+    },
+    {
+      "name": "Bröd, vit",
+      "category": "bröd",
+      "stores": [
+        "Nordby"
+      ],
+      "price": 22.9,
+      "currency": "SEK",
+      "unit": "stk",
+      "market": "nordby-sweden"
+    },
+    {
+      "name": "Ägg, 10 stk",
+      "category": "mejeri",
+      "stores": [
+        "Nordby"
+      ],
+      "price": 32.5,
+      "currency": "SEK",
+      "unit": "stk",
+      "market": "nordby-sweden"
+    },
+    {
+      "name": "Yoghurt nature",
+      "category": "mejeri",
+      "stores": [
+        "Nordby"
+      ],
+      "price": 11.9,
+      "currency": "SEK",
+      "unit": "liter",
+      "market": "nordby-sweden"
+    },
+    {
+      "name": "Köttfärs",
+      "category": "kött",
+      "stores": [
+        "Nordby"
+      ],
+      "price": 129.0,
+      "currency": "SEK",
+      "unit": "kg",
+      "market": "nordby-sweden"
+    }
+  ]
+}
