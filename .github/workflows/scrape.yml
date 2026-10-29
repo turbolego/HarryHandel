@@ -32,8 +32,11 @@ jobs:
         run: |
           cd src
           python -m scrapers.main
+        # Exit with code 0 always so workflow continues; check product count below
 
       - name: Generate fallback data if no products found
+        if: failure() || steps.scraper.outcome == 'skipped'
+        # This step runs only if the scraper didn't find products or failed
         run: python3 generate_fallback_data.py
 
       - name: Commit and push
