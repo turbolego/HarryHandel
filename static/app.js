@@ -35,6 +35,13 @@ async function loadPrices() {
     try {
         const response = await fetch("/HarryHandel/data/prices.json");
         allPrices = await response.json();
+
+        // Sanity guard: drop scraper artifacts (negative, zero or absurd
+        // prices) so one bad feed can never wreck the dashboard.
+        const plausible = (p) => typeof p.price === "number" && p.price > 0 && p.price <= 9999.99;
+        allPrices.norway = (allPrices.norway || []).filter(plausible);
+        allPrices.sweden = (allPrices.sweden || []).filter(plausible);
+
         updateDisplay();
         initCategories();
         setupChartControls();
@@ -270,7 +277,7 @@ function updateChart() {
     };
 
     try {
-        chart = new Chart(ctx, { data: chartData, options: chartOptions });
+        chart = new Chart(ctx, { type: "bar", data: chartData, options: chartOptions });
     } catch (e) {
         console.error("Chart creation failed:", e);
     }
@@ -375,6 +382,11 @@ function setupMobileNav() {
     // Close on ESC key
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape" && nav.classList.contains("is-mobile-open")) closeNav();
+    });
+
+    // Close when resizing to desktop width so the nav never sticks open
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 769 && nav.classList.contains("is-mobile-open")) closeNav();
     });
 }
 

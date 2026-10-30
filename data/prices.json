@@ -2,379 +2,19 @@
   "last_updated": "2026-10-29T20:28:46.347663",
   "norway": [
     {
-      "name": "Tynnribbe Fryst, ca. 4 kg",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -50.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.332783",
-          "price": -50.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.332741"
-    },
-    {
-      "name": "Smågodt-favoritter Maks 2 til nedsatt pris, Mikspose, 600 g",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -42.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.334914",
-          "price": -42.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.334862"
-    },
-    {
-      "name": "Fylt gresskarbøtte 700 g",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -39.8,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.335521",
-          "price": -39.8
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.335477"
-    },
-    {
-      "name": "Rundpinne 80cm 4,0mm Addi",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -35.96,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.336664",
-          "price": -35.96
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.336618"
-    },
-    {
-      "name": "Ristorante Pizza Prosciutto 340g Dr. Oetker",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -35.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.337167",
-          "price": -35.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.337123"
-    },
-    {
-      "name": "Grillpølser Kylling/kalkun 600g Prior",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -30.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.337648",
-          "price": -30.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.337604"
-    },
-    {
-      "name": "GILDE SMÅRETTSKINKE 200 gBunnpris",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -29.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.337792",
-          "price": -29.9
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.337756"
-    },
-    {
-      "name": "Tynnribbe krydret fersk Rutet svor, ca. 2,25 kg",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -26.2,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.338455",
-          "price": -26.2
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.338414"
-    },
-    {
-      "name": "Rotmiks 1kg Gartner",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -24.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.338567",
-          "price": -24.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.338535"
-    },
-    {
-      "name": "Cheezy Dip 250g El Taco Truck",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -23.96,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.339215",
-          "price": -23.96
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.339174"
-    },
-    {
-      "name": "Kålrot Økologisk",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -22.08,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.339764",
-          "price": -22.08
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.339721"
-    },
-    {
-      "name": "Sportsbokser Navy / sort, str. L, 2 stk, 1 pk",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -20.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.340862",
-          "price": -20.9
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.340822"
-    },
-    {
-      "name": "Sportsbokser Sort, Str L, 2 stk, 1 pk",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -20.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.340353",
-          "price": -20.9
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.340286"
-    },
-    {
-      "name": "Biola Syrnet Melk Mango uten 1000g Tine",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -17.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.340946",
-          "price": -17.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.340924"
-    },
-    {
-      "name": "Kålrot pr stk",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -16.2,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.341491",
-          "price": -16.2
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.341441"
-    },
-    {
-      "name": "Gulrot Økologisk 750g Vilje",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": -15.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.341611",
-          "price": -15.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.341582"
-    },
-    {
-      "name": "måneder sidenExtra NedenesVesterveien 778, 4823 Nedenes",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": 4.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.342001",
-          "price": 4.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.341980"
-    },
-    {
-      "name": "måneder sidenExtra Saga SenterDampsaga Allè 2, 2050 Jessheim",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": 4.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.341932",
-          "price": 4.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.341910"
-    },
-    {
-      "name": "måneder sidenExtra StovnerveienStovnerveien 54, 0982 Oslo",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": 4.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.341847",
-          "price": 4.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.341817"
-    },
-    {
-      "name": "måneder sidenExtra ÅmotSporpindveien 1, 3340 Åmot",
-      "category": "unknown",
-      "stores": [
-        "Kassal"
-      ],
-      "price": 4.0,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal",
-      "history": [
-        {
-          "date": "2026-10-29T20:28:46.341689",
-          "price": 4.0
-        }
-      ],
-      "last_seen": "2026-10-29T20:28:46.341667"
-    },
-    {
       "name": "CORNY 0% PEANUT",
       "category": "supermarket",
       "stores": [
         "Rema 1000"
       ],
-      "price": 100010.0,
+      "price": 10.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.328531",
-          "price": 100010.0
+          "price": 10.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.328509"
@@ -385,14 +25,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330016",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329995"
@@ -403,14 +43,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.329811",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329784"
@@ -421,14 +61,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.329140",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329111"
@@ -439,14 +79,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326944",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.326904"
@@ -457,14 +97,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.325050",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325028"
@@ -475,14 +115,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323465",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323444"
@@ -493,14 +133,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318742",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318720"
@@ -511,14 +151,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315286",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315265"
@@ -529,14 +169,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.311342",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.311321"
@@ -547,14 +187,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 129012.9,
+      "price": 12.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.308641",
-          "price": 129012.9
+          "price": 12.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.308581"
@@ -565,14 +205,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 149014.9,
+      "price": 14.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.332263",
-          "price": 149014.9
+          "price": 14.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.332241"
@@ -583,14 +223,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 149014.9,
+      "price": 14.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.319773",
-          "price": 149014.9
+          "price": 14.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.319751"
@@ -601,14 +241,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 169016.9,
+      "price": 16.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318306",
-          "price": 169016.9
+          "price": 16.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318285"
@@ -619,14 +259,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 179017.9,
+      "price": 17.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330092",
-          "price": 179017.9
+          "price": 17.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330065"
@@ -637,14 +277,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 189018.9,
+      "price": 18.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.332081",
-          "price": 189018.9
+          "price": 18.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.332037"
@@ -655,14 +295,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 189018.9,
+      "price": 18.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.324013",
-          "price": 189018.9
+          "price": 18.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.324609"
@@ -673,14 +313,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 189018.9,
+      "price": 18.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.314715",
-          "price": 189018.9
+          "price": 18.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.314673"
@@ -691,14 +331,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327774",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327752"
@@ -709,14 +349,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.322113",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.322091"
@@ -727,14 +367,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.325188",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325166"
@@ -745,14 +385,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.325116",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325095"
@@ -763,14 +403,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.324844",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.324822"
@@ -781,14 +421,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330232",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330206"
@@ -799,14 +439,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.317276",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.317224"
@@ -817,14 +457,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.317171",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.317149"
@@ -835,14 +475,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.307576",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.307532"
@@ -853,14 +493,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.316308",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.316285"
@@ -871,14 +511,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.314875",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.314854"
@@ -889,14 +529,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330603",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330582"
@@ -907,14 +547,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.310610",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.310563"
@@ -925,14 +565,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.310090",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.310068"
@@ -943,14 +583,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 199019.9,
+      "price": 19.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330160",
-          "price": 199019.9
+          "price": 19.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330139"
@@ -961,14 +601,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 209020.9,
+      "price": 20.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.321338",
-          "price": 209020.9
+          "price": 20.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.321315"
@@ -979,14 +619,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 219021.9,
+      "price": 21.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.317933",
-          "price": 219021.9
+          "price": 21.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.317891"
@@ -997,14 +637,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 219021.9,
+      "price": 21.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.316237",
-          "price": 219021.9
+          "price": 21.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.316215"
@@ -1015,14 +655,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 229022.9,
+      "price": 22.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323805",
-          "price": 229022.9
+          "price": 22.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323780"
@@ -1033,14 +673,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 229022.9,
+      "price": 22.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.314040",
-          "price": 229022.9
+          "price": 22.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.313991"
@@ -1051,14 +691,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 229022.9,
+      "price": 22.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.313508",
-          "price": 229022.9
+          "price": 22.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.313487"
@@ -1069,14 +709,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 231023.1,
+      "price": 23.1,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.292926",
-          "price": 231023.1
+          "price": 23.1
         }
       ],
       "last_seen": "2026-10-29T20:28:46.292865"
@@ -1087,14 +727,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 239023.9,
+      "price": 23.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.324770",
-          "price": 239023.9
+          "price": 23.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.324749"
@@ -1105,14 +745,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 245024.5,
+      "price": 24.5,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.313573",
-          "price": 245024.5
+          "price": 24.5
         }
       ],
       "last_seen": "2026-10-29T20:28:46.313552"
@@ -1123,14 +763,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.305474",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309281"
@@ -1141,14 +781,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.329061",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329025"
@@ -1159,14 +799,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.328366",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.328324"
@@ -1177,14 +817,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327708",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327686"
@@ -1195,14 +835,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.329950",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329923"
@@ -1213,14 +853,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.325837",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325791"
@@ -1231,14 +871,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320246",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320204"
@@ -1249,14 +889,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323535",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323513"
@@ -1267,14 +907,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323329",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323308"
@@ -1285,14 +925,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.306370",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.306344"
@@ -1303,14 +943,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320400",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320378"
@@ -1321,14 +961,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 249024.9,
+      "price": 24.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.311121",
-          "price": 249024.9
+          "price": 24.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.311073"
@@ -1339,14 +979,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 251025.1,
+      "price": 25.1,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327505",
-          "price": 251025.1
+          "price": 25.1
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327478"
@@ -1357,14 +997,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 254025.4,
+      "price": 25.4,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.316026",
-          "price": 254025.4
+          "price": 25.4
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315995"
@@ -1375,14 +1015,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 259025.9,
+      "price": 25.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330666",
-          "price": 259025.9
+          "price": 25.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330645"
@@ -1393,14 +1033,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 259025.9,
+      "price": 25.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320562",
-          "price": 259025.9
+          "price": 25.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320540"
@@ -1411,14 +1051,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 269026.9,
+      "price": 26.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309225",
-          "price": 269026.9
+          "price": 26.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309180"
@@ -1429,14 +1069,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 275027.5,
+      "price": 27.5,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318946",
-          "price": 275027.5
+          "price": 27.5
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318918"
@@ -1447,14 +1087,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 295029.5,
+      "price": 29.5,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.311477",
-          "price": 295029.5
+          "price": 29.5
         }
       ],
       "last_seen": "2026-10-29T20:28:46.311454"
@@ -1465,14 +1105,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 295029.5,
+      "price": 29.5,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.311405",
-          "price": 295029.5
+          "price": 29.5
         }
       ],
       "last_seen": "2026-10-29T20:28:46.311384"
@@ -1483,14 +1123,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.331477",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.331456"
@@ -1501,14 +1141,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.329877",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329856"
@@ -1519,14 +1159,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327304",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327281"
@@ -1537,14 +1177,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327199",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327173"
@@ -1555,14 +1195,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326437",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.326412"
@@ -1573,14 +1213,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326011",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325978"
@@ -1591,14 +1231,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.325920",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325898"
@@ -1609,14 +1249,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320942",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320911"
@@ -1627,14 +1267,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318243",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318222"
@@ -1645,14 +1285,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326180",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.326150"
@@ -1663,14 +1303,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.316107",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.316080"
@@ -1681,14 +1321,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.314947",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.314922"
@@ -1699,14 +1339,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.314810",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.314787"
@@ -1717,14 +1357,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.310024",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309997"
@@ -1735,14 +1375,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.321173",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.321218"
@@ -1753,14 +1393,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 299029.9,
+      "price": 29.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.304631",
-          "price": 299029.9
+          "price": 29.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.304609"
@@ -1771,14 +1411,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 318031.8,
+      "price": 31.8,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309687",
-          "price": 318031.8
+          "price": 31.8
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309665"
@@ -1789,14 +1429,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 319031.9,
+      "price": 31.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327131",
-          "price": 319031.9
+          "price": 31.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327109"
@@ -1807,14 +1447,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 319031.9,
+      "price": 31.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.295481",
-          "price": 319031.9
+          "price": 31.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.295434"
@@ -1825,14 +1465,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 329032.9,
+      "price": 32.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.312096",
-          "price": 329032.9
+          "price": 32.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.312050"
@@ -1843,14 +1483,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 329032.9,
+      "price": 32.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.297348",
-          "price": 329032.9
+          "price": 32.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.297307"
@@ -1861,14 +1501,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 334033.4,
+      "price": 33.4,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318678",
-          "price": 334033.4
+          "price": 33.4
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318657"
@@ -1879,14 +1519,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 339033.9,
+      "price": 33.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326262",
-          "price": 339033.9
+          "price": 33.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.326240"
@@ -1897,14 +1537,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 339033.9,
+      "price": 33.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.316443",
-          "price": 339033.9
+          "price": 33.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.316421"
@@ -1915,14 +1555,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 339033.9,
+      "price": 33.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309396",
-          "price": 339033.9
+          "price": 33.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309374"
@@ -1933,14 +1573,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.331408",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.331374"
@@ -1951,14 +1591,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.331295",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.331250"
@@ -1969,14 +1609,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.325322",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325300"
@@ -1987,14 +1627,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.304484",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.304442"
@@ -2005,14 +1645,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330801",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330779"
@@ -2023,14 +1663,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330731",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330708"
@@ -2041,14 +1681,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320470",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320444"
@@ -2059,14 +1699,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 349034.9,
+      "price": 34.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309478",
-          "price": 349034.9
+          "price": 34.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309455"
@@ -2077,14 +1717,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 350035.0,
+      "price": 35.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326332",
-          "price": 350035.0
+          "price": 35.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.326310"
@@ -2095,14 +1735,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 354035.4,
+      "price": 35.4,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.321085",
-          "price": 354035.4
+          "price": 35.4
         }
       ],
       "last_seen": "2026-10-29T20:28:46.321056"
@@ -2113,14 +1753,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 359035.9,
+      "price": 35.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327433",
-          "price": 359035.9
+          "price": 35.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327411"
@@ -2131,14 +1771,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 369036.9,
+      "price": 36.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320635",
-          "price": 369036.9
+          "price": 36.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320613"
@@ -2149,14 +1789,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 369036.9,
+      "price": 36.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318614",
-          "price": 369036.9
+          "price": 36.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318592"
@@ -2167,14 +1807,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 369036.9,
+      "price": 36.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323941",
-          "price": 369036.9
+          "price": 36.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323920"
@@ -2185,14 +1825,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 374037.4,
+      "price": 37.4,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.316173",
-          "price": 374037.4
+          "price": 37.4
         }
       ],
       "last_seen": "2026-10-29T20:28:46.316152"
@@ -2203,14 +1843,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 379037.9,
+      "price": 37.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.319555",
-          "price": 379037.9
+          "price": 37.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.319512"
@@ -2221,14 +1861,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 379037.9,
+      "price": 37.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323191",
-          "price": 379037.9
+          "price": 37.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323167"
@@ -2239,14 +1879,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 379037.9,
+      "price": 37.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.319077",
-          "price": 379037.9
+          "price": 37.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.319056"
@@ -2257,14 +1897,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 379037.9,
+      "price": 37.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318179",
-          "price": 379037.9
+          "price": 37.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318158"
@@ -2275,14 +1915,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 379037.9,
+      "price": 37.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.296286",
-          "price": 379037.9
+          "price": 37.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.296237"
@@ -2293,14 +1933,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 381038.1,
+      "price": 38.1,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.305295",
-          "price": 381038.1
+          "price": 38.1
         }
       ],
       "last_seen": "2026-10-29T20:28:46.305256"
@@ -2311,14 +1951,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 389038.9,
+      "price": 38.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.332183",
-          "price": 389038.9
+          "price": 38.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.332158"
@@ -2329,14 +1969,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 389038.9,
+      "price": 38.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309952",
-          "price": 389038.9
+          "price": 38.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309931"
@@ -2347,14 +1987,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 390039.0,
+      "price": 39.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318806",
-          "price": 390039.0
+          "price": 39.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318784"
@@ -2365,14 +2005,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.311278",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.311257"
@@ -2383,14 +2023,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327911",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327889"
@@ -2401,14 +2041,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.308537",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.308515"
@@ -2419,14 +2059,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.308472",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.308450"
@@ -2437,14 +2077,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.325251",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.325230"
@@ -2455,14 +2095,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.322020",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.321973"
@@ -2473,14 +2113,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320846",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320816"
@@ -2491,14 +2131,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.321407",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.321385"
@@ -2509,14 +2149,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.324979",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.324958"
@@ -2527,14 +2167,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.288278",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.285926"
@@ -2545,14 +2185,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.311214",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.311191"
@@ -2563,14 +2203,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309887",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309865"
@@ -2581,14 +2221,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323606",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323650"
@@ -2599,14 +2239,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 399039.9,
+      "price": 39.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.304762",
-          "price": 399039.9
+          "price": 39.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.304741"
@@ -2617,14 +2257,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 409040.9,
+      "price": 40.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309812",
-          "price": 409040.9
+          "price": 40.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309787"
@@ -2635,14 +2275,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 429042.9,
+      "price": 42.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.319635",
-          "price": 429042.9
+          "price": 42.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.319613"
@@ -2653,14 +2293,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 429042.9,
+      "price": 42.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.319702",
-          "price": 429042.9
+          "price": 42.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.319678"
@@ -2671,14 +2311,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 439043.9,
+      "price": 43.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315149",
-          "price": 439043.9
+          "price": 43.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315128"
@@ -2689,14 +2329,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 445044.5,
+      "price": 44.5,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.317078",
-          "price": 445044.5
+          "price": 44.5
         }
       ],
       "last_seen": "2026-10-29T20:28:46.317034"
@@ -2707,14 +2347,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 449044.9,
+      "price": 44.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318543",
-          "price": 449044.9
+          "price": 44.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318518"
@@ -2725,14 +2365,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 449044.9,
+      "price": 44.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.306228",
-          "price": 449044.9
+          "price": 44.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.306186"
@@ -2743,14 +2383,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 449044.9,
+      "price": 44.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309544",
-          "price": 449044.9
+          "price": 44.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309522"
@@ -2761,14 +2401,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 467046.7,
+      "price": 46.7,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318115",
-          "price": 467046.7
+          "price": 46.7
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318092"
@@ -2779,14 +2419,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 482048.2,
+      "price": 48.2,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323090",
-          "price": 482048.2
+          "price": 48.2
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323046"
@@ -2797,14 +2437,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 484048.4,
+      "price": 48.4,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323395",
-          "price": 484048.4
+          "price": 48.4
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323372"
@@ -2815,14 +2455,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.303367",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.303345"
@@ -2833,14 +2473,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.324915",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.324893"
@@ -2851,14 +2491,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.329206",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329184"
@@ -2869,14 +2509,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.322280",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.322258"
@@ -2887,14 +2527,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.303295",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.303266"
@@ -2905,14 +2545,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318406",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318378"
@@ -2923,14 +2563,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326104",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.326078"
@@ -2941,14 +2581,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315221",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315195"
@@ -2959,14 +2599,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318476",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318454"
@@ -2977,14 +2617,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 499049.9,
+      "price": 49.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.309620",
-          "price": 499049.9
+          "price": 49.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.309598"
@@ -2995,14 +2635,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 525052.5,
+      "price": 52.5,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.313355",
-          "price": 525052.5
+          "price": 52.5
         }
       ],
       "last_seen": "2026-10-29T20:28:46.313326"
@@ -3013,14 +2653,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 549054.9,
+      "price": 54.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.304559",
-          "price": 549054.9
+          "price": 54.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.304538"
@@ -3031,14 +2671,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 549054.9,
+      "price": 54.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.304027",
-          "price": 549054.9
+          "price": 54.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.304005"
@@ -3049,14 +2689,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 569056.9,
+      "price": 56.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.329670",
-          "price": 569056.9
+          "price": 56.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.329630"
@@ -3067,14 +2707,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 599059.9,
+      "price": 59.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.316372",
-          "price": 599059.9
+          "price": 59.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.316350"
@@ -3085,14 +2725,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 599059.9,
+      "price": 59.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330404",
-          "price": 599059.9
+          "price": 59.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330368"
@@ -3103,14 +2743,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 599059.9,
+      "price": 59.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320335",
-          "price": 599059.9
+          "price": 59.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320312"
@@ -3121,14 +2761,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 649064.9,
+      "price": 64.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327369",
-          "price": 649064.9
+          "price": 64.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327348"
@@ -3139,14 +2779,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 649064.9,
+      "price": 64.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323877",
-          "price": 649064.9
+          "price": 64.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323855"
@@ -3157,14 +2797,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 649064.9,
+      "price": 64.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.306876",
-          "price": 649064.9
+          "price": 64.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.306831"
@@ -3175,14 +2815,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 690069.0,
+      "price": 69.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.313001",
-          "price": 690069.0
+          "price": 69.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.312978"
@@ -3193,14 +2833,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327635",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327612"
@@ -3211,14 +2851,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.328465",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.328441"
@@ -3229,14 +2869,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327846",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327819"
@@ -3247,14 +2887,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.308396",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.308371"
@@ -3265,14 +2905,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.326502",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.326481"
@@ -3283,14 +2923,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315757",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315709"
@@ -3301,14 +2941,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315012",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.314990"
@@ -3319,14 +2959,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 699069.9,
+      "price": 69.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327571",
-          "price": 699069.9
+          "price": 69.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327550"
@@ -3337,14 +2977,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 749074.9,
+      "price": 74.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.327063",
-          "price": 749074.9
+          "price": 74.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.327035"
@@ -3355,14 +2995,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 749074.9,
+      "price": 74.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315931",
-          "price": 749074.9
+          "price": 74.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315908"
@@ -3373,14 +3013,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 749074.9,
+      "price": 74.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315853",
-          "price": 749074.9
+          "price": 74.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315827"
@@ -3391,14 +3031,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 799079.9,
+      "price": 79.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330540",
-          "price": 799079.9
+          "price": 79.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330518"
@@ -3409,14 +3049,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 799079.9,
+      "price": 79.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.315083",
-          "price": 799079.9
+          "price": 79.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.315057"
@@ -3427,14 +3067,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 799079.9,
+      "price": 79.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330469",
-          "price": 799079.9
+          "price": 79.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330447"
@@ -3445,14 +3085,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 799079.9,
+      "price": 79.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.322416",
-          "price": 799079.9
+          "price": 79.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.322390"
@@ -3463,14 +3103,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 799079.9,
+      "price": 79.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320699",
-          "price": 799079.9
+          "price": 79.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320677"
@@ -3481,14 +3121,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 849084.9,
+      "price": 84.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.312915",
-          "price": 849084.9
+          "price": 84.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.312870"
@@ -3499,14 +3139,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 889088.9,
+      "price": 88.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318874",
-          "price": 889088.9
+          "price": 88.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318852"
@@ -3517,14 +3157,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 899089.9,
+      "price": 89.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.331549",
-          "price": 899089.9
+          "price": 89.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.331525"
@@ -3535,14 +3175,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 899089.9,
+      "price": 89.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.318035",
-          "price": 899089.9
+          "price": 89.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318002"
@@ -3553,14 +3193,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 899089.9,
+      "price": 89.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.304696",
-          "price": 899089.9
+          "price": 89.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.304675"
@@ -3571,14 +3211,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 899089.9,
+      "price": 89.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.312186",
-          "price": 899089.9
+          "price": 89.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.312164"
@@ -3589,14 +3229,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 999099.9,
+      "price": 99.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.323263",
-          "price": 999099.9
+          "price": 99.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.323237"
@@ -3607,14 +3247,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 999099.9,
+      "price": 99.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.321013",
-          "price": 999099.9
+          "price": 99.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320992"
@@ -3625,14 +3265,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 999099.9,
+      "price": 99.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.330297",
-          "price": 999099.9
+          "price": 99.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.330275"
@@ -3643,18 +3283,18 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 10900109.0,
+      "price": 109.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.313075",
-          "price": 119011.9
+          "price": 11.9
         },
         {
           "date": "2026-10-29T20:28:46.313279",
-          "price": 10900109.0
+          "price": 109.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.313401"
@@ -3665,14 +3305,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 10990109.9,
+      "price": 109.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.319014",
-          "price": 10990109.9
+          "price": 109.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.318992"
@@ -3683,14 +3323,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 12990129.9,
+      "price": 129.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.322346",
-          "price": 12990129.9
+          "price": 129.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.322325"
@@ -3701,14 +3341,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 14990149.9,
+      "price": 149.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.320770",
-          "price": 14990149.9
+          "price": 149.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.320748"
@@ -3719,14 +3359,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 15900159.0,
+      "price": 159.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.303942",
-          "price": 15900159.0
+          "price": 159.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.303898"
@@ -3737,14 +3377,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 17990179.9,
+      "price": 179.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.322206",
-          "price": 17990179.9
+          "price": 179.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.322184"
@@ -3755,14 +3395,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 27900279.0,
+      "price": 279.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.298486",
-          "price": 27900279.0
+          "price": 279.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.303136"
@@ -3773,14 +3413,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 38500385.0,
+      "price": 385.0,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.306297",
-          "price": 38500385.0
+          "price": 385.0
         }
       ],
       "last_seen": "2026-10-29T20:28:46.306275"
@@ -3791,14 +3431,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 39990399.9,
+      "price": 399.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.305362",
-          "price": 39990399.9
+          "price": 399.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.308251"
@@ -3809,14 +3449,14 @@
       "stores": [
         "Rema 1000"
       ],
-      "price": 55190551.9,
+      "price": 551.9,
       "currency": "NOK",
       "unit": "per item",
       "market": "rema-norway",
       "history": [
         {
           "date": "2026-10-29T20:28:46.312259",
-          "price": 55190551.9
+          "price": 551.9
         }
       ],
       "last_seen": "2026-10-29T20:28:46.312231"
@@ -3826,7 +3466,9 @@
     {
       "name": "Bacon",
       "category": "unknown",
-      "stores": ["Willys"],
+      "stores": [
+        "Willys"
+      ],
       "price": 94,
       "currency": "SEK",
       "unit": "per kg",
@@ -3836,7 +3478,9 @@
     {
       "name": "Cola",
       "category": "unknown",
-      "stores": ["Willys"],
+      "stores": [
+        "Willys"
+      ],
       "price": 12,
       "currency": "SEK",
       "unit": "per liter",
@@ -3846,7 +3490,9 @@
     {
       "name": "Melkesjokolade",
       "category": "unknown",
-      "stores": ["Willys"],
+      "stores": [
+        "Willys"
+      ],
       "price": 155,
       "currency": "SEK",
       "unit": "per kg",
@@ -3856,7 +3502,9 @@
     {
       "name": "Smågodt",
       "category": "unknown",
-      "stores": ["Willys"],
+      "stores": [
+        "Willys"
+      ],
       "price": 71,
       "currency": "SEK",
       "unit": "per kg",
@@ -3866,7 +3514,9 @@
     {
       "name": "Snus",
       "category": "unknown",
-      "stores": ["Willys"],
+      "stores": [
+        "Willys"
+      ],
       "price": 36,
       "currency": "SEK",
       "unit": "per box",
@@ -3876,7 +3526,9 @@
     {
       "name": "Energidrikk",
       "category": "unknown",
-      "stores": ["Willys"],
+      "stores": [
+        "Willys"
+      ],
       "price": 12,
       "currency": "SEK",
       "unit": "per box",
@@ -3886,7 +3538,9 @@
     {
       "name": "Chips",
       "category": "unknown",
-      "stores": ["Willys"],
+      "stores": [
+        "Willys"
+      ],
       "price": 88,
       "currency": "SEK",
       "unit": "per kg",

@@ -74,7 +74,9 @@ class RemaScraper(PriceScraper):
                 match = re.search(r'(\d+[\d,]*,\d{2})\s*kr', price_text)
                 if match:
                     price_str = match.group(1).replace(',', '.')
-                    price = float(price_str)
+                    price = recover_price(float(price_str))
+                    if price is None:
+                        continue
                     # Parse product info from the parent context
                     parent = el.parent
                     name = "Unknown"
@@ -217,6 +219,11 @@ class KassalScraper(PriceScraper):
                     continue
 
                 price = float(price_match.group(1))
+                # Plausibility: grocery items cost between 0.50 and 9999.99 NOK.
+                # Rejects negatives (misparsed discounts), concatenated text
+                # like "249024.9" and other scraping artifacts.
+                if not (0.0 < price <= 9999.99):
+                    continue
                 name_raw = li_text[price_match.end():].strip()
                 store_tags = ['Oda', 'SPAR', 'Meny', 'Kiwi', 'Joker', 'Reitan']
                 name = name_raw
@@ -306,11 +313,59 @@ def load_existing_data(output_path: Path) -> Dict[str, Any]:
 
 def normalize_name(name: str) -> str:
     """Normalize product name for matching."""
-    return name.lower().replace('\s+', ' ').strip()
+    return re.sub(r'\s+', ' ', name.lower()).strip()
+
+def _price_is_plausible(price) -> bool:
+    """Reject null, negative, zero and absurd prices from any source."""
+    return isinstance(price, (int, float)) and 0.0 < float(price) <= 9999.99
+
+
+def recover_price(price):
+    """Fix rema.no øre-concatenated prices like 399039.9 (ore + '39,90 kr').
+
+    The composite is str(round(kr*100)) + kr-text, e.g. 39.90 kr renders as
+    "3990" + "39,90" = 399039,90 -> parsed float 399039.9.  The real value is
+    recoverable because the prefix must equal round(real*100).  Returns the
+    recovered float, or None if the value is already fine / un-recoverable.
+    """
+    if _price_is_plausible(price):
+        return float(price)
+    if isinstance(price, bool) or not isinstance(price, (int, float)):
+        return None
+    s = repr(float(price))
+    if '.' not in s:
+        return None
+    # Try every split: suffix = real price text (e.g. '39.9'), prefix = øre part
+    for i in range(1, len(s) - 2 + 1):
+        prefix, suffix = s[:i], s[i:]
+        if not prefix or not suffix[0].isdigit():
+            continue
+        if '.' not in suffix or suffix.startswith('.'):
+            continue
+        try:
+            cand = float(suffix)
+        except ValueError:
+            continue
+        if cand <= 0 or cand > 9999.99:
+            continue
+        if str(int(round(cand * 100))) == prefix:
+            return cand
+    return None
 
 
 def merge_products(existing: List[Dict], new_products: List[Dict], country: str) -> List[Dict]:
     """Merge new products into existing list, preserving history."""
+    kept = []
+    for p in new_products:
+        if _price_is_plausible(p.get('price')):
+            kept.append(p)
+            continue
+        fixed = recover_price(p.get('price'))
+        if fixed is not None:
+            p['price'] = fixed
+            kept.append(p)
+    new_products = kept
+
     # Build lookup by normalized name + market
     existing_map = {}
     for p in existing:
@@ -380,10 +435,9 @@ def main():
     all_products['sweden'].extend(nordby_products)
     print(f"  Found {len(nordby_products)} products from nordby.se")
 
-    print("Scraping kassal.app (Norwegian comparison)...")
-    kassal_products = KassalScraper().scrape_category("https://kassal.app/")
-    all_products['norway'].extend(kassal_products)
-    print(f"  Found {len(kassal_products)} products from kassal.app")
+    # kassal.app's homepage shows price CHANGES (deltas like "-42.00"), not
+    # actual prices, so scraping it pollutes the data.  Disabled on purpose.
+    print("Skipping kassal.app (homepage lists price deltas, not prices)")
 
     print("Scraping ica.se (Swedish grocery)...")
     ica_products = IcaScraper().scrape_category("https://www.ica.se/")
