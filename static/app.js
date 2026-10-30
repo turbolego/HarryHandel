@@ -33,7 +33,7 @@ function generateSparkline(history) {
 // ----- 1. Load prices from the data file -----
 async function loadPrices() {
     try {
-        const response = await fetch("/data/prices.json");
+        const response = await fetch("/HarryHandel/data/prices.json");
         allPrices = await response.json();
         updateDisplay();
         initCategories();
