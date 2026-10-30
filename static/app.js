@@ -41,7 +41,8 @@ async function loadPrices() {
         setupTableControls();
     } catch (error) {
         console.error("Failed to load prices:", error);
-        document.getElementById("last-updated").textContent = "Failed to load data";
+        const lastUpdated = document.getElementById("last-updated");
+        if (lastUpdated) lastUpdated.textContent = "Failed to load data";
     }
 }
 
@@ -49,11 +50,14 @@ async function loadPrices() {
 function updateDisplay() {
     // Update display with proper date formatting
     const dateStr = allPrices.last_updated ? new Date(allPrices.last_updated).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) : "—";
-    document.getElementById("last-updated").textContent = dateStr;
+    const lastUpdatedEl = document.getElementById("last-updated");
+    if (lastUpdatedEl) lastUpdatedEl.textContent = dateStr;
 
     // --- Meta stats ---
-    document.getElementById("norway-count").textContent = allPrices.norway.length;
-    document.getElementById("sweden-count").textContent = allPrices.sweden.length;
+    const norwayCount = document.getElementById("norway-count");
+    const swedenCount = document.getElementById("sweden-count");
+    if (norwayCount) norwayCount.textContent = allPrices.norway.length;
+    if (swedenCount) swedenCount.textContent = allPrices.sweden.length;
 
     // --- Price gap ---
     const nokPrices = allPrices.norway.map((p) => p.price).filter((p) => p != null);
@@ -63,12 +67,17 @@ function updateDisplay() {
     const avgNOK_in_SEK = avgNOK * FX_RATES.SEK;
     const priceGap = avgSEK > 0 ? ((avgNOK_in_SEK - avgSEK) / avgSEK) * 100 : 0;
 
-    document.getElementById("norway-avg").textContent = `Average: ${avgNOK.toFixed(1)} NOK`;
-    document.getElementById("sweden-avg").textContent = `Average: ${avgSEK.toFixed(1)} SEK`;
-    document.getElementById("price-gap").textContent = priceGap >= 0
+    const norwayAvgEl = document.getElementById("norway-avg");
+    const swedenAvgEl = document.getElementById("sweden-avg");
+    const priceGapEl = document.getElementById("price-gap");
+    if (norwayAvgEl) norwayAvgEl.textContent = `Average: ${avgNOK.toFixed(1)} NOK`;
+    if (swedenAvgEl) swedenAvgEl.textContent = `Average: ${avgSEK.toFixed(1)} SEK`;
+    if (priceGapEl) priceGapEl.textContent = priceGap >= 0
         ? `Norway is ${priceGap.toFixed(1)}% more expensive`
         : `Sweden is ${Math.abs(priceGap).toFixed(1)}% more expensive`;
-    document.getElementById("price-gap").parentElement.dataset.gapSigned = String(priceGap >= 0);
+    if (priceGapEl && priceGapEl.parentElement) {
+        priceGapEl.parentElement.dataset.gapSigned = String(priceGap >= 0);
+    }
 
     // --- Populate the matched-products table ---
     const tbody = document.querySelector("#products-table tbody");
