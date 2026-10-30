@@ -430,10 +430,11 @@ def main():
     all_products['norway'].extend(rema_products)
     print(f"  Found {len(rema_products)} products from rema.no")
 
-    print("Scraping nordby.se (Swedish grocery)...")
-    nordby_products = NordbyScraper().scrape_category("https://nordby.se/")
-    all_products['sweden'].extend(nordby_products)
-    print(f"  Found {len(nordby_products)} products from nordby.se")
+    # nordby.se's homepage lists DEALS across all categories (knitwear,
+    # pharmacy, etc.) with promotion text that can't be parsed as prices and
+    # yields junk product names.  Disabled until a real grocery category page
+    # is found; curated Swedish entries in data/prices.json are preserved.
+    print("Skipping nordby.se (homepage is deals, not groceries)")
 
     # kassal.app's homepage shows price CHANGES (deltas like "-42.00"), not
     # actual prices, so scraping it pollutes the data.  Disabled on purpose.
