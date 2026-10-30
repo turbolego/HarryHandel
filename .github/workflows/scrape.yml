@@ -29,11 +29,12 @@ jobs:
           playwright install chromium
 
       - name: Run scraper
+        id: scraper
         run: |
           cd src
           python -m scrapers.main
-          # Copy data to repo root for GitHub Pages
-          cp src/data/prices.json data/prices.json
+          # cwd is src/ here, so copy the scraper output to the repo root
+          cp data/prices.json ../data/prices.json
 
       - name: Generate fallback data if no products found
         if: failure() || steps.scraper.outcome == 'skipped'
