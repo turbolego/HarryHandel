@@ -33,7 +33,7 @@ function generateSparkline(history) {
 // ----- 1. Load prices from the data file -----
 async function loadPrices() {
     try {
-        const response = await fetch("/data/prices.json");
+        const response = await fetch("/HarryHandel/data/prices.json");
         allPrices = await response.json();
         updateDisplay();
         initCategories();
@@ -47,12 +47,9 @@ async function loadPrices() {
 
 // ----- 2. Update the UI display -----
 function updateDisplay() {
-    // --- Last updated ---
-    if (allPrices.last_updated) {
-        const date = new Date(allPrices.last_updated);
-        document.getElementById("last-updated").textContent = `Last updated: ${date.toLocaleDateString()}`;
-        document.getElementById("footer-date").textContent = date.toLocaleDateString();
-    }
+    // Update display with proper date formatting
+    const dateStr = allPrices.last_updated ? new Date(allPrices.last_updated).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) : "—";
+    document.getElementById("last-updated").textContent = dateStr;
 
     // --- Meta stats ---
     document.getElementById("norway-count").textContent = allPrices.norway.length;
@@ -276,22 +273,6 @@ function setupChartControls() {
     document.getElementById("chart-count").addEventListener("change", updateChart);
 }
 
-// ----- 3. Initialize category filter -----
-function initCategories() {
-    const categories = new Set();
-    [...allPrices.norway, ...allPrices.sweden].forEach((p) => {
-        if (p.category && p.category !== "Unknown") categories.add(p.category);
-    });
-    const catSelect = document.getElementById("products-category");
-    catSelect.innerHTML = '<option value="all">All categories</option>';
-    [...categories].sort().forEach((cat) => {
-        const opt = document.createElement("option");
-        opt.value = cat;
-        opt.textContent = cat;
-        catSelect.appendChild(opt);
-    });
-}
-
 // ----- 4. Table controls setup -----
 function setupTableControls() {
     const searchInput = document.getElementById("products-search");
@@ -389,4 +370,7 @@ function setupMobileNav() {
 }
 
 // ----- 5. Run on DOM load -----
-document.addEventListener("DOMContentLoaded", loadPrices);
+document.addEventListener("DOMContentLoaded", () => {
+    loadPrices();
+    setupMobileNav();
+});

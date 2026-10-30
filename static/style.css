@@ -76,16 +76,33 @@ small, .small { font-size: var(--step-small); }
 .brand-mark { width: 40px; height: 40px; }
 .brand-name { font-size: var(--step-head); font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
 
-.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
-.nav-toggle .nav-toggle-box { display: block; width: 30px; height: 24px; position: relative; }
-.nav-toggle .nav-toggle-line, .nav-toggle .nav-toggle-line::before, .nav-toggle .nav-toggle-line::after { position: absolute; left: 0; width: 100%; height: 4px; background-color: var(--ink); border-radius: 4px; transition: background-color 0.2s ease; }
-.nav-toggle .nav-toggle-line { top: 10px; right: 0; }
+.nav-toggle { display: none; cursor: pointer; }
+.nav-toggle .nav-toggle-box { display: block; width: 22px; height: 16px; position: relative; }
+.nav-toggle .nav-toggle-line, .nav-toggle .nav-toggle-line::before, .nav-toggle .nav-toggle-line::after {
+    position: absolute; left: 0; right: 0; height: 2px; background: var(--ink); border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+.nav-toggle .nav-toggle-line { top: 50%; transform: translateY(-50%); }
 .nav-toggle .nav-toggle-line::before { top: -8px; content: ""; }
 .nav-toggle .nav-toggle-line::after { bottom: -8px; content: ""; }
 
+.mobile-nav-overlay {
+    position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5);
+    z-index: calc(var(--z-index-nav) - 10); opacity: 0; visibility: hidden;
+    transition: opacity 0.2s ease;
+}
+.mobile-nav-overlay.is-visible { opacity: 1; visibility: visible; }
+
+.main-nav.is-mobile-open { display: block; }
+.main-nav.is-mobile-open .nav-list { display: block !important; }
+
 .main-nav { display: none; }
 .main-nav[data-mobile="true"] .nav-list { display: block; }
-.main-nav .nav-list { display: flex; gap: 1.5rem; font-size: var(--step-body); margin: 0; padding: 0; list-style: none; }
+@media (min-width: 769px) {
+    .main-nav { display: flex; position: static; z-index: auto; background: transparent; border: none; }
+    .main-nav .nav-list { display: flex; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
+    .main-nav .nav-link { padding: 0; font-size: var(--step-body); }
+}
 .main-nav .nav-link { color: var(--ink); text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
 .main-nav .nav-link:hover, .main-nav .nav-link.is-active { color: var(--accent); }
 
