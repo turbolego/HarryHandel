@@ -47,4 +47,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           git diff --quiet && git diff --staged --quiet || git commit -m "Update food prices $(date +'%Y-%m-%d')"
+          # Another push may land while the scrape runs; rebase onto it so the
+          # data commit is never rejected (which silently loses the scrape).
+          git pull --rebase --autostash origin main
           git push
