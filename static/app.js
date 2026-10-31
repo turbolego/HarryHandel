@@ -106,64 +106,160 @@ function updateDisplay() {
         }
     });
 
-    const matchedKeys = Object.keys(norwayMap).filter((k) => swedenMap[k]);
+    // --- Build the matched list.  Norwegian and Swedish retailers use
+    // different names for the same product ("Bananer pr stk" vs "Bananer",
+    // "Blåbær 400g beger" vs "Blåbär fruktdryck"), so exact-name equality
+    // yields zero matches.  Match on the significant content words instead:
+    // strip the weight/size suffix, drop stopwords, and require at least
+    // one shared word plus a Jaccard similarity above the threshold.
+    const STOPWORDS = new Set([
+        "pr", "stk", "g", "kg", "l", "ml", "dl", "klass", "ekologisk",
+        "original", "klasses", "sverige", "import", "per", "st", "stkk",
+        "100", "200", "400", "500", "600", "750", "180", "250", "330",
+        "390", "473", "150", "130", "65", "80", "85", "42", "72", "78",
+        "1000", "2000", "4000", "500", "1500",
+    ]);
+    const SUFFIX_RE = /\s+\d+(?:[.,]\d+)?\s*(?:g|kg|l|ml|dl|st|stk|pack|bx|boks|cl|liter|litre)\b/i;
+    const WORD_RE = /[a-zà-ÿ]{2,}/g;
 
-    if (matchedKeys.length === 0) {
-        document.getElementById("products-empty").hidden = false;
-        document.getElementById("products-count").textContent = "0 products matched";
-    } else {
-        document.getElementById("products-empty").hidden = true;
-        document.getElementById("products-count").textContent = `${matchedKeys.length} products matched`;
-
-        // Sort matched keys: default by gap magnitude (descending)
-        const comparator = {
-            "gap-desc": (a, b) => {
-                const aGap = (norwayMap[a].price * FX_RATES.SEK) - swedenMap[a].price;
-                const bGap = (norwayMap[b].price * FX_RATES.SEK) - swedenMap[b].price;
-                return Math.abs(bGap) - Math.abs(aGap);
-            },
-            "gap-asc": (a, b) => {
-                const aGap = (norwayMap[a].price * FX_RATES.SEK) - swedenMap[a].price;
-                const bGap = (norwayMap[b].price * FX_RATES.SEK) - swedenMap[b].price;
-                return Math.abs(aGap) - Math.abs(bGap);
-            },
-            "name-asc": (a, b) => a.localeCompare(b),
-            "name-desc": (a, b) => b.localeCompare(a),
-            "norway-price-desc": (a, b) => {
-                const pa = norwayMap[a].price * FX_RATES.SEK;
-                const pb = norwayMap[b].price * FX_RATES.SEK;
-                return pb - pa;
-            },
-            "sweden-price-desc": (a, b) => {
-                const pa = swedenMap[a].price;
-                const pb = swedenMap[b].price;
-                return pb - pa;
-            },
-        };
-        const sortBy = document.getElementById("products-sort").value;
-        matchedKeys.sort(comparator[comparator] || comparator["gap-desc"]);
-
-        matchedKeys.forEach((key) => {
-            const no = norwayMap[key];
-            const se = swedenMap[key];
-            const noInSEK = no.price * FX_RATES.SEK;
-            const diff = noInSEK - se.price;
-            const diffPct = se.price ? ((noInSEK - se.price) / se.price) * 100 : 0;
-
-            const tr = document.createElement("tr");
-            const sparkline = generateSparkline(no.history);
-            tr.innerHTML = `
-        <td>${no.name}</td>
-        <td>${no.category || "-"}</td>
-        <td>${(no.stores || []).join(", ")}</td>
-        <td class="numeric">${no.price.toFixed(1)}</td>
-        <td class="numeric">${se.price.toFixed(1)}</td>
-        <td class="numeric">${diff >= 0 ? "+" : ""}${diff.toFixed(1)}</td>
-        <td class="${diff >= 0 ? "more-expensive" : "cheaper"}">${diffPct >= 0 ? "+" : ""}${diffPct.toFixed(1)}%</td>
-        <td class="sparkline-cell">${sparkline}</td>`;
-            tbody.appendChild(tr);
-        });
+    function sigWords(name) {
+        if (!name) return new Set();
+        let n = name.toLowerCase().replace(/\s+/g, " ").trim();
+        n = n.replace(SUFFIX_RE, "");
+        const words = n.match(WORD_RE) || [];
+        return new Set(words.filter((w) => !STOPWORDS.has(w)));
     }
+
+    function jaccard(a, b) {
+        if (!a.size || !b.size) return 0;
+        let inter = 0;
+        a.forEach((w) => { if (b.has(w)) inter++; });
+        return inter / (a.size + b.size - inter);
+    }
+
+    function fuzzyMatch(norwayKey, swedenKeys) {
+        const nw = sigWords(norwayKey);
+        let best = null, bestScore = 0;
+        for (const sk of swedenKeys) {
+            const score = jaccard(nw, sigWords(sk));
+            if (score > bestScore) {
+                bestScore = score;
+                best = sk;
+            }
+        }
+        return bestScore >= 0.34 ? best : null;
+    }
+
+    const swedenKeys = Object.keys(swedenMap);
+    const matchedKeys = [];
+    const matchedSweden = {};
+    const usedSweden = new Set();
+    for (const nk of Object.keys(norwayMap)) {
+        const sk = fuzzyMatch(nk, swedenKeys);
+        if (sk && !usedSweden.has(sk)) {
+            usedSweden.add(sk);
+            matchedKeys.push(nk);
+            matchedSweden[nk] = sk;
+        }
+    }
+
+    // --- Render the table.  The old design only showed products that had
+    // a name match between Norway and Sweden, but the two countries use
+    // completely different names for the same items (e.g. "Bananer pr stk"
+    // vs "Bananer"), so that produced zero rows and the "No matching
+    // products found." message.  Render every product instead; matched
+    // pairs get the full gap columns, unmatched products show their own
+    // price with the other side blank.
+    document.getElementById("products-body").innerHTML = "";
+
+    if (allPrices.norway.length === 0 && allPrices.sweden.length === 0) {
+        document.getElementById("products-empty").hidden = false;
+        document.getElementById("products-count").textContent = "No products loaded";
+        updateChart();
+        return;
+    }
+
+    // Build the row list: matched pairs first (so they sort naturally to
+    // the top), then unmatched products.
+    const rows = [];
+    for (const nk of Object.keys(norwayMap)) {
+        const sk = fuzzyMatch(nk, swedenKeys);
+        if (sk && !usedSweden.has(sk)) {
+            usedSweden.add(sk);
+            rows.push({ kind: "pair", no: norwayMap[nk], se: swedenMap[sk] });
+        } else {
+            rows.push({ kind: "norway", no: norwayMap[nk] });
+        }
+    }
+    for (const sk of swedenKeys) {
+        if (!usedSweden.has(sk)) {
+            rows.push({ kind: "sweden", se: swedenMap[sk] });
+        }
+    }
+
+    document.getElementById("products-empty").hidden = true;
+    document.getElementById("products-count").textContent =
+        `${rows.length} products (${matchedKeys.length} matched pairs)`;
+
+    // Sort: matched pairs first, then by the selected comparator where
+    // applicable; unmatched rows sort by their own price.
+    const sortBy = document.getElementById("products-sort").value;
+    const pairFirst = (a, b) => {
+        const aPair = a.kind === "pair" ? 0 : 1;
+        const bPair = b.kind === "pair" ? 0 : 1;
+        return aPair - bPair;
+    };
+    const priceSort = (a, b) => {
+        const pa = (a.no || a.se).price;
+        const pb = (b.no || b.se).price;
+        return sortBy.includes("desc") ? pb - pa : pa - pb;
+    };
+    const nameSort = (a, b) => {
+        const na = (a.no || a.se).name;
+        const nb = (b.no || b.se).name;
+        return sortBy.includes("desc") ? nb.localeCompare(na) : na.localeCompare(nb);
+    };
+    const gapSort = (a, b) => {
+        const ga = a.kind === "pair" ? Math.abs((a.no.price * FX_RATES.SEK) - a.se.price) : 0;
+        const gb = b.kind === "pair" ? Math.abs((b.no.price * FX_RATES.SEK) - b.se.price) : 0;
+        return sortBy.includes("asc") ? ga - gb : gb - ga;
+    };
+    const sortFns = { "gap-desc": gapSort, "gap-asc": gapSort,
+                      "name-asc": nameSort, "name-desc": nameSort,
+                      "norway-price-desc": priceSort, "sweden-price-desc": priceSort };
+    rows.sort((a, b) => pairFirst(a, b) || (sortFns[sortBy] || gapSort)(a, b));
+
+    rows.forEach((row) => {
+        const tr = document.createElement("tr");
+        const no = row.no;
+        const se = row.se;
+        const noInSEK = no ? no.price * FX_RATES.SEK : null;
+        const diff = noInSEK !== null && se ? noInSEK - se.price : null;
+        const diffPct = diff !== null && se.price ? (diff / se.price) * 100 : null;
+        const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
+
+        const noCell = no ? `<td class="numeric">${no.price.toFixed(1)}</td>` :
+                       '<td class="numeric">—</td>';
+        const seCell = se ? `<td class="numeric">${se.price.toFixed(1)}</td>` :
+                       '<td class="numeric">—</td>';
+        const gapCell = diff !== null
+            ? `<td class="numeric">${diff >= 0 ? "+" : ""}${diff.toFixed(1)}</td>`
+            : '<td class="numeric">—</td>';
+        const gapPctCell = diffPct !== null
+            ? `<td class="${diff >= 0 ? "more-expensive" : "cheaper"}">${diffPct >= 0 ? "+" : ""}${diffPct.toFixed(1)}%</td>`
+            : '<td class="numeric">—</td>';
+
+        tr.innerHTML = `
+        <td>${no ? no.name : (se ? se.name : "—")}</td>
+        <td>${(no || se).category || "-"}</td>
+        <td>${((no ? no.stores : null) || (se ? se.stores : null) || []).join(", ")}</td>
+        ${noCell}
+        ${seCell}
+        ${gapCell}
+        ${gapPctCell}
+        <td class="sparkline-cell">${sparkline}</td>`;
+        document.getElementById("products-body").appendChild(tr);
+    });
 
     // --- Update the bar chart ---
     updateChart();
