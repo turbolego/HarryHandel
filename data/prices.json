@@ -1,6 +1,82 @@
 {
-  "last_updated": "2026-10-31T20:41:05.823172",
+  "last_updated": "2026-10-31T20:51:55.014528",
   "norway": [
+    {
+      "name": "Bananer pr stk",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 4.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013645",
+          "price": 4.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013646",
+      "last_seen": "2026-10-31T20:51:55.013753"
+    },
+    {
+      "name": "Berlinerbolle m/bringebær",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013814",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013815",
+      "last_seen": "2026-10-31T20:51:55.013816"
+    },
+    {
+      "name": "Berlinerbolle m/vanilje",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013681",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013682",
+      "last_seen": "2026-10-31T20:51:55.013770"
+    },
+    {
+      "name": "Brun Saus Original Toro",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013566",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013567",
+      "last_seen": "2026-10-31T20:51:55.013567"
+    },
     {
       "name": "CORNY 0% PEANUT",
       "category": "supermarket",
@@ -22,7 +98,178 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669508",
-      "last_seen": "2026-10-31T20:41:05.822455"
+      "last_seen": "2026-10-31T20:51:55.013371"
+    },
+    {
+      "name": "Donut Bringebærsmak 78g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013892",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013892",
+      "last_seen": "2026-10-31T20:51:55.013893"
+    },
+    {
+      "name": "Donut Sjokolade/kokos 72g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013687",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013688",
+      "last_seen": "2026-10-31T20:51:55.013688"
+    },
+    {
+      "name": "Gulrot 400g Gartner",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013572",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013573",
+      "last_seen": "2026-10-31T20:51:55.013765"
+    },
+    {
+      "name": "Ostebaguette 130g Bakehuset",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013669",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013670",
+      "last_seen": "2026-10-31T20:51:55.013818"
+    },
+    {
+      "name": "Rundstykke Fint 3stk 180g Bakehuset",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013918",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013918",
+      "last_seen": "2026-10-31T20:51:55.013919"
+    },
+    {
+      "name": "Rundstykke Kneipp 3stk 180g Bakehuset",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013911",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013912",
+      "last_seen": "2026-10-31T20:51:55.013912"
+    },
+    {
+      "name": "Stratos Bar 42g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 10.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013929",
+          "price": 10.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013930",
+      "last_seen": "2026-10-31T20:51:55.013931"
+    },
+    {
+      "name": "Kiwi Gul stykk",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 11.9,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013609",
+          "price": 11.9
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013610",
+      "last_seen": "2026-10-31T20:51:55.013850"
+    },
+    {
+      "name": "Kiwi stykk",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 11.9,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013761",
+          "price": 11.9
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013762",
+      "last_seen": "2026-10-31T20:51:55.013762"
     },
     {
       "name": "BUBBLEGUM",
@@ -45,7 +292,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669555",
-      "last_seen": "2026-10-31T20:41:05.822507"
+      "last_seen": "2026-10-31T20:51:55.013419"
     },
     {
       "name": "CHEEKY TOUNGES",
@@ -68,7 +315,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669537",
-      "last_seen": "2026-10-31T20:41:05.822488"
+      "last_seen": "2026-10-31T20:51:55.013402"
     },
     {
       "name": "COLA BOTTLES",
@@ -91,7 +338,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669520",
-      "last_seen": "2026-10-31T20:41:05.822469"
+      "last_seen": "2026-10-31T20:51:55.013384"
     },
     {
       "name": "FIZZY STRAWBERRY",
@@ -114,7 +361,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669409",
-      "last_seen": "2026-10-31T20:41:05.822352"
+      "last_seen": "2026-10-31T20:51:55.013275"
     },
     {
       "name": "HAPPY FARM",
@@ -137,7 +384,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669298",
-      "last_seen": "2026-10-31T20:41:05.822264"
+      "last_seen": "2026-10-31T20:51:55.013191"
     },
     {
       "name": "KLESRULLE",
@@ -160,7 +407,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669224",
-      "last_seen": "2026-10-31T20:41:05.822182"
+      "last_seen": "2026-10-31T20:51:55.013113"
     },
     {
       "name": "PEACH PARTY",
@@ -183,7 +430,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668961",
-      "last_seen": "2026-10-31T20:41:05.821944"
+      "last_seen": "2026-10-31T20:51:55.012890"
     },
     {
       "name": "SALTY SMILES",
@@ -206,7 +453,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668819",
-      "last_seen": "2026-10-31T20:41:05.821783"
+      "last_seen": "2026-10-31T20:51:55.012737"
     },
     {
       "name": "SOUR COLA SKULLS",
@@ -229,7 +476,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668673",
-      "last_seen": "2026-10-31T20:41:05.821606"
+      "last_seen": "2026-10-31T20:51:55.012587"
     },
     {
       "name": "SWEET LOVE",
@@ -252,7 +499,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668576",
-      "last_seen": "2026-10-31T20:41:05.821498"
+      "last_seen": "2026-10-31T20:51:55.012442"
     },
     {
       "name": "GRØT SØTPOT/BLÅBÆR",
@@ -275,7 +522,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669657",
-      "last_seen": "2026-10-31T20:41:05.822620"
+      "last_seen": "2026-10-31T20:51:55.013541"
     },
     {
       "name": "SELSKAPSERTER",
@@ -298,7 +545,121 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669013",
-      "last_seen": "2026-10-31T20:41:05.822001"
+      "last_seen": "2026-10-31T20:51:55.012943"
+    },
+    {
+      "name": "Hverdagsgrovt 750g Bakehuset",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 15.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013578",
+          "price": 15.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013579",
+      "last_seen": "2026-10-31T20:51:55.013580"
+    },
+    {
+      "name": "Peanøtter 275g Eldorado",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 15.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013924",
+          "price": 15.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013925",
+      "last_seen": "2026-10-31T20:51:55.013925"
+    },
+    {
+      "name": "Powerade Sport Mountain Blast 0,5l flaske",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 15.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013834",
+          "price": 15.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013835",
+      "last_seen": "2026-10-31T20:51:55.013836"
+    },
+    {
+      "name": "Ruccula 65g Grønn&frisk",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 15.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013627",
+          "price": 15.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013628",
+      "last_seen": "2026-10-31T20:51:55.013960"
+    },
+    {
+      "name": "Sjokolademelk 0,5l Q",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 15.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013897",
+          "price": 15.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013898",
+      "last_seen": "2026-10-31T20:51:55.013899"
+    },
+    {
+      "name": "Smoothie Mango&pasjon 250ml Bendit",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 15.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013597",
+          "price": 15.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013598",
+      "last_seen": "2026-10-31T20:51:55.013599"
     },
     {
       "name": "POPCORN S&O",
@@ -321,7 +682,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668926",
-      "last_seen": "2026-10-31T20:41:05.821906"
+      "last_seen": "2026-10-31T20:51:55.012855"
     },
     {
       "name": "BRØDPOSE 6L",
@@ -344,7 +705,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669561",
-      "last_seen": "2026-10-31T20:41:05.822514"
+      "last_seen": "2026-10-31T20:51:55.013426"
     },
     {
       "name": "AVFALLSPOSE 15L",
@@ -367,7 +728,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669645",
-      "last_seen": "2026-10-31T20:41:05.822608"
+      "last_seen": "2026-10-31T20:51:55.013529"
     },
     {
       "name": "JAPP PEANUT",
@@ -390,7 +751,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669264",
-      "last_seen": "2026-10-31T20:41:05.822232"
+      "last_seen": "2026-10-31T20:51:55.013160"
     },
     {
       "name": "SKYR AKTIV FERSK&P",
@@ -413,7 +774,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668772",
-      "last_seen": "2026-10-31T20:41:05.821710"
+      "last_seen": "2026-10-31T20:51:55.012687"
     },
     {
       "name": "APPELSIN&INGEFÆR",
@@ -436,7 +797,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669480",
-      "last_seen": "2026-10-31T20:41:05.822424"
+      "last_seen": "2026-10-31T20:51:55.013341"
     },
     {
       "name": "BUBBLE BUBBLIZZ",
@@ -459,7 +820,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669115",
-      "last_seen": "2026-10-31T20:41:05.822118"
+      "last_seen": "2026-10-31T20:51:55.013052"
     },
     {
       "name": "GRØT GULROT/BANAN",
@@ -482,7 +843,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669310",
-      "last_seen": "2026-10-31T20:41:05.822278"
+      "last_seen": "2026-10-31T20:51:55.013205"
     },
     {
       "name": "GRØT PASTI/FERSKEN",
@@ -505,7 +866,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669304",
-      "last_seen": "2026-10-31T20:41:05.822271"
+      "last_seen": "2026-10-31T20:51:55.013198"
     },
     {
       "name": "HÅNDSÅPE SENSITIV",
@@ -528,7 +889,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669281",
-      "last_seen": "2026-10-31T20:41:05.822245"
+      "last_seen": "2026-10-31T20:51:55.013172"
     },
     {
       "name": "JORDBÆRFISK",
@@ -551,7 +912,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669573",
-      "last_seen": "2026-10-31T20:41:05.822527"
+      "last_seen": "2026-10-31T20:51:55.013438"
     },
     {
       "name": "PROTEINBAR NOUGAT",
@@ -574,7 +935,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668893",
-      "last_seen": "2026-10-31T20:41:05.821868"
+      "last_seen": "2026-10-31T20:51:55.012819"
     },
     {
       "name": "PROTEINBAR PEANØTT",
@@ -597,7 +958,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668887",
-      "last_seen": "2026-10-31T20:41:05.821861"
+      "last_seen": "2026-10-31T20:51:55.012812"
     },
     {
       "name": "R TUNFISK",
@@ -620,7 +981,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668546",
-      "last_seen": "2026-10-31T20:41:05.821466"
+      "last_seen": "2026-10-31T20:51:55.012410"
     },
     {
       "name": "R VAFFELKJEKS",
@@ -643,7 +1004,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668865",
-      "last_seen": "2026-10-31T20:41:05.821835"
+      "last_seen": "2026-10-31T20:51:55.012788"
     },
     {
       "name": "SJOKO POPP",
@@ -666,7 +1027,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668785",
-      "last_seen": "2026-10-31T20:41:05.821723"
+      "last_seen": "2026-10-31T20:51:55.012700"
     },
     {
       "name": "SOUR CHEWY CANDY",
@@ -689,7 +1050,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669601",
-      "last_seen": "2026-10-31T20:41:05.822557"
+      "last_seen": "2026-10-31T20:51:55.013481"
     },
     {
       "name": "SPAGETTISAUS",
@@ -712,7 +1073,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668651",
-      "last_seen": "2026-10-31T20:41:05.821581"
+      "last_seen": "2026-10-31T20:51:55.012562"
     },
     {
       "name": "SPARKLING MANDARIN",
@@ -735,7 +1096,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668645",
-      "last_seen": "2026-10-31T20:41:05.821574"
+      "last_seen": "2026-10-31T20:51:55.012556"
     },
     {
       "name": "SURE PÆRER",
@@ -758,7 +1119,311 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669567",
-      "last_seen": "2026-10-31T20:41:05.822520"
+      "last_seen": "2026-10-31T20:51:55.013432"
+    },
+    {
+      "name": "Ananas 200g Cevita",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013651",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013652",
+      "last_seen": "2026-10-31T20:51:55.013653"
+    },
+    {
+      "name": "Crispi Salat 150g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013633",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013634",
+      "last_seen": "2026-10-31T20:51:55.013800"
+    },
+    {
+      "name": "Fiberstykker Funkygine 3stk 225g Bakehuset",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013936",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013936",
+      "last_seen": "2026-10-31T20:51:55.013937"
+    },
+    {
+      "name": "Grana Padano Revet 80g Eldorado",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013904",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013905",
+      "last_seen": "2026-10-31T20:51:55.013906"
+    },
+    {
+      "name": "Hjertesalat 2pk Gartner",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013879",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013880",
+      "last_seen": "2026-10-31T20:51:55.013881"
+    },
+    {
+      "name": "Jarlsberg 27% skivet 120g Tine",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013797",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013797",
+      "last_seen": "2026-10-31T20:51:55.013798"
+    },
+    {
+      "name": "Kefir Økologisk 1000g Tine",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013858",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013859",
+      "last_seen": "2026-10-31T20:51:55.013860"
+    },
+    {
+      "name": "Lettrømme 17% 300g Q",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013864",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013867",
+      "last_seen": "2026-10-31T20:51:55.013868"
+    },
+    {
+      "name": "Mozzarella Norsk 225g Tine",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013948",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013948",
+      "last_seen": "2026-10-31T20:51:55.013949"
+    },
+    {
+      "name": "Norvegia 26% skivet 150g Tine",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013591",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013592",
+      "last_seen": "2026-10-31T20:51:55.013783"
+    },
+    {
+      "name": "Potetskruer Salt 85g Maarud",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013974",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013975",
+      "last_seen": "2026-10-31T20:51:55.013976"
+    },
+    {
+      "name": "Red Bull Energidrikk 473ml boks",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013942",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013943",
+      "last_seen": "2026-10-31T20:51:55.013943"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 473ml boks",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013968",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013969",
+      "last_seen": "2026-10-31T20:51:55.013970"
+    },
+    {
+      "name": "Tomat Søt 175g Gartner",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013639",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013640",
+      "last_seen": "2026-10-31T20:51:55.013641"
+    },
+    {
+      "name": "Tomat Søt 175g Shaker Season",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013778",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013779",
+      "last_seen": "2026-10-31T20:51:55.013780"
+    },
+    {
+      "name": "Østavind skivet 150g Tine",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 20.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013873",
+          "price": 20.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013874",
+      "last_seen": "2026-10-31T20:51:55.013875"
     },
     {
       "name": "GROVREV MAKR CHILI",
@@ -781,7 +1446,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669098",
-      "last_seen": "2026-10-31T20:41:05.822098"
+      "last_seen": "2026-10-31T20:51:55.013033"
+    },
+    {
+      "name": "Coca-cola Zero 0,33l boks",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013603",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013604",
+      "last_seen": "2026-10-31T20:51:55.013605"
     },
     {
       "name": "PROTEINBAR DADDEL",
@@ -804,7 +1488,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668898",
-      "last_seen": "2026-10-31T20:41:05.821874"
+      "last_seen": "2026-10-31T20:51:55.012825"
     },
     {
       "name": "RED BULL CHERRY",
@@ -827,7 +1511,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668859",
-      "last_seen": "2026-10-31T20:41:05.821829"
+      "last_seen": "2026-10-31T20:51:55.012782"
     },
     {
       "name": "KARDEMOMMESKILLING",
@@ -850,7 +1534,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669248",
-      "last_seen": "2026-10-31T20:41:05.822208"
+      "last_seen": "2026-10-31T20:51:55.013137"
     },
     {
       "name": "SKYR BLÅBÆR & ACAI",
@@ -873,7 +1557,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668766",
-      "last_seen": "2026-10-31T20:41:05.821703"
+      "last_seen": "2026-10-31T20:51:55.012680"
     },
     {
       "name": "SKYR MANGO&VAN",
@@ -896,7 +1580,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668753",
-      "last_seen": "2026-10-31T20:41:05.821689"
+      "last_seen": "2026-10-31T20:51:55.012666"
     },
     {
       "name": "YT SHAKE JORDB/BA",
@@ -919,7 +1603,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668366",
-      "last_seen": "2026-10-31T20:41:05.821308"
+      "last_seen": "2026-10-31T20:51:55.012256"
     },
     {
       "name": "ITALIENSK SALAT",
@@ -942,7 +1626,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669275",
-      "last_seen": "2026-10-31T20:41:05.822238"
+      "last_seen": "2026-10-31T20:51:55.013166"
     },
     {
       "name": "SKYR LUFTIG SALT K",
@@ -965,7 +1649,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668759",
-      "last_seen": "2026-10-31T20:41:05.821696"
+      "last_seen": "2026-10-31T20:51:55.012673"
     },
     {
       "name": "CHERRY CRUSH",
@@ -988,7 +1672,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668517",
-      "last_seen": "2026-10-31T20:41:05.821511"
+      "last_seen": "2026-10-31T20:51:55.012454"
     },
     {
       "name": "COLG HARRY POTTER",
@@ -1011,7 +1695,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669514",
-      "last_seen": "2026-10-31T20:41:05.822463"
+      "last_seen": "2026-10-31T20:51:55.013378"
     },
     {
       "name": "DANETTE",
@@ -1034,7 +1718,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669497",
-      "last_seen": "2026-10-31T20:41:05.822443"
+      "last_seen": "2026-10-31T20:51:55.013359"
     },
     {
       "name": "DLN SJOKOPEANØTT",
@@ -1057,7 +1741,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669474",
-      "last_seen": "2026-10-31T20:41:05.822417"
+      "last_seen": "2026-10-31T20:51:55.013335"
     },
     {
       "name": "FRESH BOWLS AND",
@@ -1080,7 +1764,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669550",
-      "last_seen": "2026-10-31T20:41:05.822501"
+      "last_seen": "2026-10-31T20:51:55.013414"
     },
     {
       "name": "GOURMET REVEL",
@@ -1103,7 +1787,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669327",
-      "last_seen": "2026-10-31T20:41:05.822297"
+      "last_seen": "2026-10-31T20:51:55.013223"
     },
     {
       "name": "GRØNNSAKSBASE",
@@ -1126,7 +1810,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669018",
-      "last_seen": "2026-10-31T20:41:05.822008"
+      "last_seen": "2026-10-31T20:51:55.012949"
     },
     {
       "name": "KJØKKEN HÅNDSÅPE",
@@ -1149,7 +1833,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669230",
-      "last_seen": "2026-10-31T20:41:05.822190"
+      "last_seen": "2026-10-31T20:51:55.013120"
     },
     {
       "name": "KRYSSORDPENN",
@@ -1172,7 +1856,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669160",
-      "last_seen": "2026-10-31T20:41:05.822170"
+      "last_seen": "2026-10-31T20:51:55.013101"
     },
     {
       "name": "MAKRELL GROVHAKKET",
@@ -1195,7 +1879,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668534",
-      "last_seen": "2026-10-31T20:41:05.821453"
+      "last_seen": "2026-10-31T20:51:55.012398"
     },
     {
       "name": "NIVEA CREME",
@@ -1218,7 +1902,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669029",
-      "last_seen": "2026-10-31T20:41:05.822021"
+      "last_seen": "2026-10-31T20:51:55.012961"
     },
     {
       "name": "SOYASAUS SALTREDUS",
@@ -1241,7 +1925,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668656",
-      "last_seen": "2026-10-31T20:41:05.821588"
+      "last_seen": "2026-10-31T20:51:55.012569"
+    },
+    {
+      "name": "Kims Potetgull Salt Crunch 200g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 25.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013954",
+          "price": 25.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013954",
+      "last_seen": "2026-10-31T20:51:55.013955"
+    },
+    {
+      "name": "Kyllinglår Grillet Kald pr stykk",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 25.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013694",
+          "price": 25.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013695",
+      "last_seen": "2026-10-31T20:51:55.013695"
     },
     {
       "name": "ALOE VERA DEO",
@@ -1264,7 +1986,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669457",
-      "last_seen": "2026-10-31T20:41:05.822398"
+      "last_seen": "2026-10-31T20:51:55.013317"
     },
     {
       "name": "RITZ KJEKS",
@@ -1287,7 +2009,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668842",
-      "last_seen": "2026-10-31T20:41:05.821809"
+      "last_seen": "2026-10-31T20:51:55.012763"
     },
     {
       "name": "BATTERY ZERO APPLE",
@@ -1310,7 +2032,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669606",
-      "last_seen": "2026-10-31T20:41:05.822563"
+      "last_seen": "2026-10-31T20:51:55.013487"
     },
     {
       "name": "MONSTER VICE GUAVA",
@@ -1333,7 +2055,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669041",
-      "last_seen": "2026-10-31T20:41:05.822034"
+      "last_seen": "2026-10-31T20:51:55.012973"
     },
     {
       "name": "SURE SKALLER",
@@ -1356,7 +2078,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668582",
-      "last_seen": "2026-10-31T20:41:05.821505"
+      "last_seen": "2026-10-31T20:51:55.012448"
     },
     {
       "name": "OVNSBAKT SØTPOTET",
@@ -1379,7 +2101,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668979",
-      "last_seen": "2026-10-31T20:41:05.821963"
+      "last_seen": "2026-10-31T20:51:55.012909"
     },
     {
       "name": "SNACK MARGHERITA",
@@ -1402,7 +2124,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668684",
-      "last_seen": "2026-10-31T20:41:05.821620"
+      "last_seen": "2026-10-31T20:51:55.012600"
     },
     {
       "name": "SNACK MEATFEAST",
@@ -1425,7 +2147,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668679",
-      "last_seen": "2026-10-31T20:41:05.821613"
+      "last_seen": "2026-10-31T20:51:55.012593"
     },
     {
       "name": "BALSAM SENSITIV",
@@ -1448,7 +2170,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669634",
-      "last_seen": "2026-10-31T20:41:05.822595"
+      "last_seen": "2026-10-31T20:51:55.013518"
     },
     {
       "name": "CHAMPAGNEGLASS",
@@ -1471,7 +2193,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669544",
-      "last_seen": "2026-10-31T20:41:05.822494"
+      "last_seen": "2026-10-31T20:51:55.013408"
     },
     {
       "name": "DUSJSÅPE SENSITIVE",
@@ -1494,7 +2216,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669439",
-      "last_seen": "2026-10-31T20:41:05.822379"
+      "last_seen": "2026-10-31T20:51:55.013299"
     },
     {
       "name": "EUCAMENTHOL",
@@ -1517,7 +2239,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669432",
-      "last_seen": "2026-10-31T20:41:05.822371"
+      "last_seen": "2026-10-31T20:51:55.013293"
     },
     {
       "name": "FLASKEPOSE",
@@ -1540,7 +2262,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669366",
-      "last_seen": "2026-10-31T20:41:05.822339"
+      "last_seen": "2026-10-31T20:51:55.013264"
     },
     {
       "name": "FRUKT TYGGIS",
@@ -1563,7 +2285,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669339",
-      "last_seen": "2026-10-31T20:41:05.822309"
+      "last_seen": "2026-10-31T20:51:55.013235"
     },
     {
       "name": "GAVEPOSE 3PK",
@@ -1586,7 +2308,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669333",
-      "last_seen": "2026-10-31T20:41:05.822303"
+      "last_seen": "2026-10-31T20:51:55.013229"
     },
     {
       "name": "MAXIM GEL DRINK",
@@ -1609,7 +2331,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669069",
-      "last_seen": "2026-10-31T20:41:05.822065"
+      "last_seen": "2026-10-31T20:51:55.013003"
     },
     {
       "name": "POTETCHIPS M/SALT",
@@ -1632,7 +2354,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668920",
-      "last_seen": "2026-10-31T20:41:05.821900"
+      "last_seen": "2026-10-31T20:51:55.012849"
     },
     {
       "name": "RAB/HYLLEBLOMST",
@@ -1655,7 +2377,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669349",
-      "last_seen": "2026-10-31T20:41:05.822322"
+      "last_seen": "2026-10-31T20:51:55.013247"
     },
     {
       "name": "REKESALAT",
@@ -1678,7 +2400,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668848",
-      "last_seen": "2026-10-31T20:41:05.821816"
+      "last_seen": "2026-10-31T20:51:55.012769"
     },
     {
       "name": "SJAMPO SENSITIVE",
@@ -1701,7 +2423,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668791",
-      "last_seen": "2026-10-31T20:41:05.821748"
+      "last_seen": "2026-10-31T20:51:55.012706"
     },
     {
       "name": "SJOKOBÆR BJØRNEBÆR",
@@ -1724,7 +2446,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668779",
-      "last_seen": "2026-10-31T20:41:05.821717"
+      "last_seen": "2026-10-31T20:51:55.012694"
     },
     {
       "name": "SPEARMINT",
@@ -1747,7 +2469,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668640",
-      "last_seen": "2026-10-31T20:41:05.821568"
+      "last_seen": "2026-10-31T20:51:55.012550"
     },
     {
       "name": "SPRINKLED FOAMIES",
@@ -1770,7 +2492,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669086",
-      "last_seen": "2026-10-31T20:41:05.822092"
+      "last_seen": "2026-10-31T20:51:55.013027"
     },
     {
       "name": "VINGLASS",
@@ -1793,7 +2515,64 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668488",
-      "last_seen": "2026-10-31T20:41:05.821402"
+      "last_seen": "2026-10-31T20:51:55.012347"
+    },
+    {
+      "name": "Kjøttpølse Skinnfri 450g Gilde",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 30.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013551",
+          "price": 30.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013552",
+      "last_seen": "2026-10-31T20:51:55.013553"
+    },
+    {
+      "name": "Kokt Skinke Ekte 110g Gilde",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 30.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013885",
+          "price": 30.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013886",
+      "last_seen": "2026-10-31T20:51:55.013887"
+    },
+    {
+      "name": "Pistasj Nøtter Salte m/skall 150g Eldorado",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 30.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013827",
+          "price": 30.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013828",
+      "last_seen": "2026-10-31T20:51:55.013829"
     },
     {
       "name": "JORDBÆRSYLTETØY FL",
@@ -1816,7 +2595,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668618",
-      "last_seen": "2026-10-31T20:41:05.821543"
+      "last_seen": "2026-10-31T20:51:55.012525"
     },
     {
       "name": "FRUS MANDARIN MANG",
@@ -1839,7 +2618,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669426",
-      "last_seen": "2026-10-31T20:41:05.822365"
+      "last_seen": "2026-10-31T20:51:55.013288"
     },
     {
       "name": "KVARG",
@@ -1862,7 +2641,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668396",
-      "last_seen": "2026-10-31T20:41:05.821317"
+      "last_seen": "2026-10-31T20:51:55.012265"
     },
     {
       "name": "FRANSKE SMØRKJEKS",
@@ -1885,7 +2664,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668690",
-      "last_seen": "2026-10-31T20:41:05.821627"
+      "last_seen": "2026-10-31T20:51:55.012606"
     },
     {
       "name": "YOGHURT NATURELL",
@@ -1908,7 +2687,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668417",
-      "last_seen": "2026-10-31T20:41:05.821335"
+      "last_seen": "2026-10-31T20:51:55.012282"
     },
     {
       "name": "PENNE GLUTENFRI",
@@ -1931,7 +2710,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668955",
-      "last_seen": "2026-10-31T20:41:05.821938"
+      "last_seen": "2026-10-31T20:51:55.012884"
     },
     {
       "name": "FRANSKE CREPES",
@@ -1954,7 +2733,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669355",
-      "last_seen": "2026-10-31T20:41:05.822327"
+      "last_seen": "2026-10-31T20:51:55.013252"
     },
     {
       "name": "R PROTEINRINGER",
@@ -1977,7 +2756,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668876",
-      "last_seen": "2026-10-31T20:41:05.821848"
+      "last_seen": "2026-10-31T20:51:55.012800"
     },
     {
       "name": "SULKE HAZY IPA",
@@ -2000,7 +2779,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668593",
-      "last_seen": "2026-10-31T20:41:05.821517"
+      "last_seen": "2026-10-31T20:51:55.012460"
     },
     {
       "name": "CHOCOLATE CAKE",
@@ -2023,7 +2802,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669629",
-      "last_seen": "2026-10-31T20:41:05.822589"
+      "last_seen": "2026-10-31T20:51:55.013511"
     },
     {
       "name": "CINNAMON BUN",
@@ -2046,7 +2825,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669623",
-      "last_seen": "2026-10-31T20:41:05.822582"
+      "last_seen": "2026-10-31T20:51:55.013505"
     },
     {
       "name": "GRANA PADANO FLAK",
@@ -2069,7 +2848,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669322",
-      "last_seen": "2026-10-31T20:41:05.822290"
+      "last_seen": "2026-10-31T20:51:55.013217"
     },
     {
       "name": "LEPPEPOMADE ROSY",
@@ -2092,7 +2871,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668476",
-      "last_seen": "2026-10-31T20:41:05.821388"
+      "last_seen": "2026-10-31T20:51:55.012335"
     },
     {
       "name": "SALTY CARAMEL",
@@ -2115,7 +2894,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669617",
-      "last_seen": "2026-10-31T20:41:05.822576"
+      "last_seen": "2026-10-31T20:51:55.013499"
     },
     {
       "name": "SALTY PEANUT",
@@ -2138,7 +2917,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669612",
-      "last_seen": "2026-10-31T20:41:05.822569"
+      "last_seen": "2026-10-31T20:51:55.013493"
     },
     {
       "name": "TABS COLLAGEN V.C",
@@ -2161,7 +2940,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669035",
-      "last_seen": "2026-10-31T20:41:05.822027"
+      "last_seen": "2026-10-31T20:51:55.012967"
     },
     {
       "name": "UTS JORDBÆR",
@@ -2184,7 +2963,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668599",
-      "last_seen": "2026-10-31T20:41:05.821524"
+      "last_seen": "2026-10-31T20:51:55.012503"
     },
     {
       "name": "FLØTESAUS",
@@ -2207,7 +2986,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669361",
-      "last_seen": "2026-10-31T20:41:05.822333"
+      "last_seen": "2026-10-31T20:51:55.013258"
+    },
+    {
+      "name": "Grovt Bondebrød 660g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 35.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013664",
+          "price": 35.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013665",
+      "last_seen": "2026-10-31T20:51:55.013838"
     },
     {
       "name": "MASKINOPPVASK.60PK",
@@ -2230,7 +3028,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669081",
-      "last_seen": "2026-10-31T20:41:05.822079"
+      "last_seen": "2026-10-31T20:51:55.013015"
     },
     {
       "name": "DR. GREVE ANTIPERS",
@@ -2253,7 +3051,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669451",
-      "last_seen": "2026-10-31T20:41:05.822392"
+      "last_seen": "2026-10-31T20:51:55.013312"
     },
     {
       "name": "MINIPIZZABUNN 4PK",
@@ -2276,7 +3074,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669047",
-      "last_seen": "2026-10-31T20:41:05.822040"
+      "last_seen": "2026-10-31T20:51:55.012979"
     },
     {
       "name": "PISTASJKJERNER",
@@ -2299,7 +3097,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668950",
-      "last_seen": "2026-10-31T20:41:05.821931"
+      "last_seen": "2026-10-31T20:51:55.012878"
     },
     {
       "name": "WIPE EDDIK",
@@ -2322,7 +3120,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669259",
-      "last_seen": "2026-10-31T20:41:05.822220"
+      "last_seen": "2026-10-31T20:51:55.013148"
     },
     {
       "name": "RED BULL WINTER 26",
@@ -2345,7 +3143,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668854",
-      "last_seen": "2026-10-31T20:41:05.821823"
+      "last_seen": "2026-10-31T20:51:55.012776"
     },
     {
       "name": "CHOKO KARMEL",
@@ -2368,7 +3166,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668996",
-      "last_seen": "2026-10-31T20:41:05.821983"
+      "last_seen": "2026-10-31T20:51:55.012926"
     },
     {
       "name": "LATZ SOUP FARM SEL",
@@ -2391,7 +3189,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669149",
-      "last_seen": "2026-10-31T20:41:05.822158"
+      "last_seen": "2026-10-31T20:51:55.013089"
     },
     {
       "name": "MINI PERLER",
@@ -2414,7 +3212,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668990",
-      "last_seen": "2026-10-31T20:41:05.821976"
+      "last_seen": "2026-10-31T20:51:55.012920"
     },
     {
       "name": "POTETGULL INTENSE",
@@ -2437,7 +3235,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668915",
-      "last_seen": "2026-10-31T20:41:05.821893"
+      "last_seen": "2026-10-31T20:51:55.012843"
     },
     {
       "name": "YOGHURT VANILJE",
@@ -2460,7 +3258,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668410",
-      "last_seen": "2026-10-31T20:41:05.821326"
+      "last_seen": "2026-10-31T20:51:55.012275"
     },
     {
       "name": "TORTIGLIONI GFR",
@@ -2483,7 +3281,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668506",
-      "last_seen": "2026-10-31T20:41:05.821422"
+      "last_seen": "2026-10-31T20:51:55.012367"
     },
     {
       "name": "PRESTOST",
@@ -2506,7 +3304,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669651",
-      "last_seen": "2026-10-31T20:41:05.822614"
+      "last_seen": "2026-10-31T20:51:55.013535"
     },
     {
       "name": "R SPECULOOS",
@@ -2529,7 +3327,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668635",
-      "last_seen": "2026-10-31T20:41:05.821562"
+      "last_seen": "2026-10-31T20:51:55.012544"
     },
     {
       "name": "PASTASLEIV 31CM R",
@@ -2552,7 +3350,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668967",
-      "last_seen": "2026-10-31T20:41:05.821950"
+      "last_seen": "2026-10-31T20:51:55.012896"
     },
     {
       "name": "BARISTA KOKOS",
@@ -2575,7 +3373,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668667",
-      "last_seen": "2026-10-31T20:41:05.821600"
+      "last_seen": "2026-10-31T20:51:55.012580"
     },
     {
       "name": "CHOCO CARAMEL",
@@ -2598,7 +3396,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669491",
-      "last_seen": "2026-10-31T20:41:05.822437"
+      "last_seen": "2026-10-31T20:51:55.013353"
     },
     {
       "name": "DLN SWEET & SPICY",
@@ -2621,7 +3419,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668570",
-      "last_seen": "2026-10-31T20:41:05.821492"
+      "last_seen": "2026-10-31T20:51:55.012436"
     },
     {
       "name": "EKTE REVET",
@@ -2644,7 +3442,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668564",
-      "last_seen": "2026-10-31T20:41:05.821484"
+      "last_seen": "2026-10-31T20:51:55.012429"
     },
     {
       "name": "GRESK YOGHURT",
@@ -2667,7 +3465,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669316",
-      "last_seen": "2026-10-31T20:41:05.822284"
+      "last_seen": "2026-10-31T20:51:55.013211"
     },
     {
       "name": "LYS SJOKOLADESAUS",
@@ -2690,7 +3488,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669109",
-      "last_seen": "2026-10-31T20:41:05.822111"
+      "last_seen": "2026-10-31T20:51:55.013046"
     },
     {
       "name": "MAGNESIUMSITRAT",
@@ -2713,7 +3511,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669063",
-      "last_seen": "2026-10-31T20:41:05.822059"
+      "last_seen": "2026-10-31T20:51:55.012997"
     },
     {
       "name": "MAIS EXTRA CRISPY",
@@ -2736,7 +3534,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669104",
-      "last_seen": "2026-10-31T20:41:05.822105"
+      "last_seen": "2026-10-31T20:51:55.013039"
     },
     {
       "name": "MATCHA STRAWBERRY",
@@ -2759,7 +3557,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669293",
-      "last_seen": "2026-10-31T20:41:05.822258"
+      "last_seen": "2026-10-31T20:51:55.013185"
     },
     {
       "name": "NUDLER BIFFSMAK",
@@ -2782,7 +3580,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668357",
-      "last_seen": "2026-10-31T20:41:05.821287"
+      "last_seen": "2026-10-31T20:51:55.012232"
     },
     {
       "name": "SOYADRIKK",
@@ -2805,7 +3603,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668661",
-      "last_seen": "2026-10-31T20:41:05.821594"
+      "last_seen": "2026-10-31T20:51:55.012575"
     },
     {
       "name": "SPORTSVASK",
@@ -2828,7 +3626,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668629",
-      "last_seen": "2026-10-31T20:41:05.821556"
+      "last_seen": "2026-10-31T20:51:55.012537"
     },
     {
       "name": "SRIRACHA OST",
@@ -2851,7 +3649,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669236",
-      "last_seen": "2026-10-31T20:41:05.822202"
+      "last_seen": "2026-10-31T20:51:55.013131"
     },
     {
       "name": "TØYVASK HVITT",
@@ -2874,7 +3672,64 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668500",
-      "last_seen": "2026-10-31T20:41:05.821415"
+      "last_seen": "2026-10-31T20:51:55.012360"
+    },
+    {
+      "name": "Grana Padano 200g Eldorado",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 40.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013846",
+          "price": 40.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013847",
+      "last_seen": "2026-10-31T20:51:55.013848"
+    },
+    {
+      "name": "Plommer Røde Cevita 750g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 40.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013657",
+          "price": 40.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013658",
+      "last_seen": "2026-10-31T20:51:55.013806"
+    },
+    {
+      "name": "Smøremyk 390g Tine",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 40.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013584",
+          "price": 40.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013585",
+      "last_seen": "2026-10-31T20:51:55.013586"
     },
     {
       "name": "BRINGEBÆRSY. FL",
@@ -2897,7 +3752,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668623",
-      "last_seen": "2026-10-31T20:41:05.821550"
+      "last_seen": "2026-10-31T20:51:55.012532"
     },
     {
       "name": "EXT.PROT SUPERPLUS",
@@ -2920,7 +3775,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669002",
-      "last_seen": "2026-10-31T20:41:05.821989"
+      "last_seen": "2026-10-31T20:51:55.012932"
     },
     {
       "name": "EXTRAPROTECT SUPER",
@@ -2943,7 +3798,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669007",
-      "last_seen": "2026-10-31T20:41:05.821995"
+      "last_seen": "2026-10-31T20:51:55.012938"
     },
     {
       "name": "PRO KNÄCKE",
@@ -2966,7 +3821,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668808",
-      "last_seen": "2026-10-31T20:41:05.821769"
+      "last_seen": "2026-10-31T20:51:55.012725"
     },
     {
       "name": "R PROTEIN GRANOLA",
@@ -2989,7 +3844,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668881",
-      "last_seen": "2026-10-31T20:41:05.821855"
+      "last_seen": "2026-10-31T20:51:55.012806"
     },
     {
       "name": "PIZZABUNN FERSK",
@@ -3012,7 +3867,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668943",
-      "last_seen": "2026-10-31T20:41:05.821925"
+      "last_seen": "2026-10-31T20:51:55.012873"
     },
     {
       "name": "SPEKESKINKEFLAK",
@@ -3035,7 +3890,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668522",
-      "last_seen": "2026-10-31T20:41:05.821441"
+      "last_seen": "2026-10-31T20:51:55.012385"
     },
     {
       "name": "UTS BRINGEBÆR",
@@ -3058,7 +3913,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668605",
-      "last_seen": "2026-10-31T20:41:05.821531"
+      "last_seen": "2026-10-31T20:51:55.012512"
+    },
+    {
+      "name": "Brie De Paris .",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 45.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013711",
+          "price": 45.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013714",
+      "last_seen": "2026-10-31T20:51:55.013715"
+    },
+    {
+      "name": "Gorgonzola Dolce .",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 45.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013705",
+          "price": 45.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013706",
+      "last_seen": "2026-10-31T20:51:55.013707"
     },
     {
       "name": "VANILLA ICE CREAM",
@@ -3081,7 +3974,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668910",
-      "last_seen": "2026-10-31T20:41:05.821887"
+      "last_seen": "2026-10-31T20:51:55.012837"
+    },
+    {
+      "name": "Laksefilet m/skinn Naturell 125g Oppdr pr stykk",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 46.9,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013736",
+          "price": 46.9
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013736",
+      "last_seen": "2026-10-31T20:51:55.013737"
     },
     {
       "name": "LETTMELK VANILJE",
@@ -3104,7 +4016,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669143",
-      "last_seen": "2026-10-31T20:41:05.822151"
+      "last_seen": "2026-10-31T20:51:55.013083"
     },
     {
       "name": "KORMA",
@@ -3127,7 +4039,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669218",
-      "last_seen": "2026-10-31T20:41:05.822176"
+      "last_seen": "2026-10-31T20:51:55.013107"
     },
     {
       "name": "BITES ORIGINAL",
@@ -3150,7 +4062,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668456",
-      "last_seen": "2026-10-31T20:41:05.821366"
+      "last_seen": "2026-10-31T20:51:55.012314"
     },
     {
       "name": "CHOCOLATE NO SUGAR",
@@ -3173,7 +4085,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669287",
-      "last_seen": "2026-10-31T20:41:05.822252"
+      "last_seen": "2026-10-31T20:51:55.013179"
     },
     {
       "name": "CLINICAL WHITE",
@@ -3196,7 +4108,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669525",
-      "last_seen": "2026-10-31T20:41:05.822476"
+      "last_seen": "2026-10-31T20:51:55.013390"
     },
     {
       "name": "CREATINE TABS",
@@ -3219,7 +4131,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669126",
-      "last_seen": "2026-10-31T20:41:05.822131"
+      "last_seen": "2026-10-31T20:51:55.013065"
     },
     {
       "name": "FALAFEL ORIGINAL",
@@ -3242,7 +4154,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668450",
-      "last_seen": "2026-10-31T20:41:05.821360"
+      "last_seen": "2026-10-31T20:51:55.012307"
     },
     {
       "name": "FLEKKFJERNER SPRAY",
@@ -3265,7 +4177,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668932",
-      "last_seen": "2026-10-31T20:41:05.821913"
+      "last_seen": "2026-10-31T20:51:55.012861"
     },
     {
       "name": "FRISKIES ADULT",
@@ -3288,7 +4200,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669344",
-      "last_seen": "2026-10-31T20:41:05.822316"
+      "last_seen": "2026-10-31T20:51:55.013241"
     },
     {
       "name": "PIRUETT RASPBERRY",
@@ -3311,7 +4223,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668813",
-      "last_seen": "2026-10-31T20:41:05.821776"
+      "last_seen": "2026-10-31T20:51:55.012731"
     },
     {
       "name": "PIZZA VENTRICINA",
@@ -3334,7 +4246,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668937",
-      "last_seen": "2026-10-31T20:41:05.821920"
+      "last_seen": "2026-10-31T20:51:55.012867"
     },
     {
       "name": "UTS BLÅBÆR",
@@ -3357,7 +4269,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668611",
-      "last_seen": "2026-10-31T20:41:05.821537"
+      "last_seen": "2026-10-31T20:51:55.012518"
+    },
+    {
+      "name": "Blåbær 400g Beger",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 50.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013790",
+          "price": 50.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013791",
+      "last_seen": "2026-10-31T20:51:55.013792"
+    },
+    {
+      "name": "Fiskekaker 80% 500g Fiskemannen",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 50.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013559",
+          "price": 50.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013560",
+      "last_seen": "2026-10-31T20:51:55.013561"
     },
     {
       "name": "SMOOTHIE M/ACAI",
@@ -3380,7 +4330,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668741",
-      "last_seen": "2026-10-31T20:41:05.821677"
+      "last_seen": "2026-10-31T20:51:55.012655"
     },
     {
       "name": "TYTTEBÆR-EPLE 80%",
@@ -3403,7 +4353,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668482",
-      "last_seen": "2026-10-31T20:41:05.821395"
+      "last_seen": "2026-10-31T20:51:55.012341"
     },
     {
       "name": "VÅTFÔR KYLLING 8PK",
@@ -3426,7 +4376,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668470",
-      "last_seen": "2026-10-31T20:41:05.821381"
+      "last_seen": "2026-10-31T20:51:55.012328"
     },
     {
       "name": "CHEESE BAGELS",
@@ -3449,7 +4399,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669531",
-      "last_seen": "2026-10-31T20:41:05.822482"
+      "last_seen": "2026-10-31T20:51:55.013396"
     },
     {
       "name": "CRUESLI PROTEIN",
@@ -3472,7 +4422,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668870",
-      "last_seen": "2026-10-31T20:41:05.821842"
+      "last_seen": "2026-10-31T20:51:55.012794"
     },
     {
       "name": "MELATONIN",
@@ -3495,7 +4445,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669584",
-      "last_seen": "2026-10-31T20:41:05.822538"
+      "last_seen": "2026-10-31T20:51:55.013449"
     },
     {
       "name": "MICELLAR WATER",
@@ -3518,7 +4468,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669024",
-      "last_seen": "2026-10-31T20:41:05.822015"
+      "last_seen": "2026-10-31T20:51:55.012955"
+    },
+    {
+      "name": "Cambozola Classic",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 60.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013720",
+          "price": 60.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013721",
+      "last_seen": "2026-10-31T20:51:55.013722"
     },
     {
       "name": "DREAM SJOKO UTS",
@@ -3541,7 +4510,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669445",
-      "last_seen": "2026-10-31T20:41:05.822385"
+      "last_seen": "2026-10-31T20:51:55.013306"
+    },
+    {
+      "name": "Gulrotkake 2pk 220g Bakehuset",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 64.9,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013675",
+          "price": 64.9
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013676",
+      "last_seen": "2026-10-31T20:51:55.013677"
     },
     {
       "name": "JORDBÆR",
@@ -3564,7 +4552,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669253",
-      "last_seen": "2026-10-31T20:41:05.822213"
+      "last_seen": "2026-10-31T20:51:55.013142"
     },
     {
       "name": "VANILJESTENGER",
@@ -3587,7 +4575,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668539",
-      "last_seen": "2026-10-31T20:41:05.821459"
+      "last_seen": "2026-10-31T20:51:55.012404"
     },
     {
       "name": "NO.1 FALKETIND S6",
@@ -3610,7 +4598,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668715",
-      "last_seen": "2026-10-31T20:41:05.821654"
+      "last_seen": "2026-10-31T20:51:55.012632"
     },
     {
       "name": "BALSAM DENSITY",
@@ -3633,7 +4621,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669468",
-      "last_seen": "2026-10-31T20:41:05.822411"
+      "last_seen": "2026-10-31T20:51:55.013329"
     },
     {
       "name": "CROISSANT GLUT.FRI",
@@ -3656,7 +4644,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669502",
-      "last_seen": "2026-10-31T20:41:05.822449"
+      "last_seen": "2026-10-31T20:51:55.013365"
     },
     {
       "name": "DRY SHAMPOO FRESH",
@@ -3679,7 +4667,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669486",
-      "last_seen": "2026-10-31T20:41:05.822430"
+      "last_seen": "2026-10-31T20:51:55.013347"
     },
     {
       "name": "PROTEIN PANNEKAKER",
@@ -3702,7 +4690,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668559",
-      "last_seen": "2026-10-31T20:41:05.821478"
+      "last_seen": "2026-10-31T20:51:55.012422"
     },
     {
       "name": "PROTEINBOWL THAI",
@@ -3725,7 +4713,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669395",
-      "last_seen": "2026-10-31T20:41:05.822346"
+      "last_seen": "2026-10-31T20:51:55.013270"
     },
     {
       "name": "SALT KARAMELL",
@@ -3748,7 +4736,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668825",
-      "last_seen": "2026-10-31T20:41:05.821790"
+      "last_seen": "2026-10-31T20:51:55.012744"
     },
     {
       "name": "SEIFILET MSC",
@@ -3771,7 +4759,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668796",
-      "last_seen": "2026-10-31T20:41:05.821756"
+      "last_seen": "2026-10-31T20:51:55.012712"
     },
     {
       "name": "SHAMPOO DENSITY",
@@ -3794,7 +4782,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669463",
-      "last_seen": "2026-10-31T20:41:05.822404"
+      "last_seen": "2026-10-31T20:51:55.013323"
     },
     {
       "name": "BURGER CH. CHEESE",
@@ -3817,7 +4805,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669420",
-      "last_seen": "2026-10-31T20:41:05.822359"
+      "last_seen": "2026-10-31T20:51:55.013281"
     },
     {
       "name": "ROYAL BITER HASSEL",
@@ -3840,7 +4828,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668837",
-      "last_seen": "2026-10-31T20:41:05.821803"
+      "last_seen": "2026-10-31T20:51:55.012757"
     },
     {
       "name": "ROYAL BITER KARAM.",
@@ -3863,7 +4851,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668831",
-      "last_seen": "2026-10-31T20:41:05.821796"
+      "last_seen": "2026-10-31T20:51:55.012750"
+    },
+    {
+      "name": "Maasdam 3 Mnd Landana",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 75.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013700",
+          "price": 75.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013700",
+      "last_seen": "2026-10-31T20:51:55.013701"
     },
     {
       "name": "ELEKTROLYTTER",
@@ -3886,7 +4893,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669595",
-      "last_seen": "2026-10-31T20:41:05.822550"
+      "last_seen": "2026-10-31T20:51:55.013460"
     },
     {
       "name": "HOKI LOINS",
@@ -3909,7 +4916,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668802",
-      "last_seen": "2026-10-31T20:41:05.821762"
+      "last_seen": "2026-10-31T20:51:55.012718"
     },
     {
       "name": "KREATIN",
@@ -3932,7 +4939,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669590",
-      "last_seen": "2026-10-31T20:41:05.822544"
+      "last_seen": "2026-10-31T20:51:55.013454"
     },
     {
       "name": "LINUSPRO CREATINE",
@@ -3955,7 +4962,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669137",
-      "last_seen": "2026-10-31T20:41:05.822145"
+      "last_seen": "2026-10-31T20:51:55.013077"
     },
     {
       "name": "MAXIM SPORTS TABS",
@@ -3978,7 +4985,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669052",
-      "last_seen": "2026-10-31T20:41:05.822047"
+      "last_seen": "2026-10-31T20:51:55.012985"
     },
     {
       "name": "LERØY BURGER ØRRET",
@@ -4001,7 +5008,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668709",
-      "last_seen": "2026-10-31T20:41:05.821647"
+      "last_seen": "2026-10-31T20:51:55.012625"
     },
     {
       "name": "PANERT RØDSPETTE",
@@ -4024,7 +5031,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668973",
-      "last_seen": "2026-10-31T20:41:05.821957"
+      "last_seen": "2026-10-31T20:51:55.012902"
     },
     {
       "name": "AVLØPSÅPNER",
@@ -4047,7 +5054,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669640",
-      "last_seen": "2026-10-31T20:41:05.822601"
+      "last_seen": "2026-10-31T20:51:55.013524"
     },
     {
       "name": "PROSCIUTTO CRUDO",
@@ -4070,7 +5077,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668904",
-      "last_seen": "2026-10-31T20:41:05.821880"
+      "last_seen": "2026-10-31T20:51:55.012831"
     },
     {
       "name": "TYGGEBEIN OKSEHUD",
@@ -4093,7 +5100,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668494",
-      "last_seen": "2026-10-31T20:41:05.821408"
+      "last_seen": "2026-10-31T20:51:55.012354"
     },
     {
       "name": "ØRRETFILET I LENKE",
@@ -4116,7 +5123,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668697",
-      "last_seen": "2026-10-31T20:41:05.821634"
+      "last_seen": "2026-10-31T20:51:55.012612"
     },
     {
       "name": "LAKS SUPREME PORSJ",
@@ -4139,7 +5146,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669154",
-      "last_seen": "2026-10-31T20:41:05.822164"
+      "last_seen": "2026-10-31T20:51:55.013096"
     },
     {
       "name": "MATCHA VNL POSER",
@@ -4162,7 +5169,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669075",
-      "last_seen": "2026-10-31T20:41:05.822073"
+      "last_seen": "2026-10-31T20:51:55.013009"
     },
     {
       "name": "TRIPPEL OMEGA-3",
@@ -4185,7 +5192,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669579",
-      "last_seen": "2026-10-31T20:41:05.822533"
+      "last_seen": "2026-10-31T20:51:55.013444"
     },
     {
       "name": "SMOOTHIE",
@@ -4216,7 +5223,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668722",
-      "last_seen": "2026-10-31T20:41:05.821683"
+      "last_seen": "2026-10-31T20:51:55.012660"
     },
     {
       "name": "ONE SMALL DOG SENI",
@@ -4239,7 +5246,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668985",
-      "last_seen": "2026-10-31T20:41:05.821970"
+      "last_seen": "2026-10-31T20:51:55.012915"
     },
     {
       "name": "CREATINE GUMMIES",
@@ -4262,7 +5269,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669131",
-      "last_seen": "2026-10-31T20:41:05.822139"
+      "last_seen": "2026-10-31T20:51:55.013071"
     },
     {
       "name": "SPORTS DRINK LEMON",
@@ -4285,7 +5292,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669058",
-      "last_seen": "2026-10-31T20:41:05.822053"
+      "last_seen": "2026-10-31T20:51:55.012991"
     },
     {
       "name": "VITAMINBJØRNER",
@@ -4308,7 +5315,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668463",
-      "last_seen": "2026-10-31T20:41:05.821373"
+      "last_seen": "2026-10-31T20:51:55.012321"
     },
     {
       "name": "PROTEINPULVER VAN",
@@ -4331,7 +5338,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669120",
-      "last_seen": "2026-10-31T20:41:05.822125"
+      "last_seen": "2026-10-31T20:51:55.013059"
+    },
+    {
+      "name": "Fiskewok m/fersk fisk pr. kg.",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 279.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013726",
+          "price": 279.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013727",
+      "last_seen": "2026-10-31T20:51:55.013728"
     },
     {
       "name": "WOOL SINGLET",
@@ -4354,7 +5380,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668423",
-      "last_seen": "2026-10-31T20:41:05.821354"
+      "last_seen": "2026-10-31T20:51:55.012301"
     },
     {
       "name": "STORFE FLATBIFF",
@@ -4377,7 +5403,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668528",
-      "last_seen": "2026-10-31T20:41:05.821447"
+      "last_seen": "2026-10-31T20:51:55.012392"
     },
     {
       "name": "TORSKEFILET",
@@ -4400,7 +5426,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668511",
-      "last_seen": "2026-10-31T20:41:05.821472"
+      "last_seen": "2026-10-31T20:51:55.012416"
+    },
+    {
+      "name": "Regnbueørret filet oppdrett m/skinn u/ben. Pr kg",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 419.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013749",
+          "price": 419.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013750",
+      "last_seen": "2026-10-31T20:51:55.013751"
     },
     {
       "name": "ØRRET LOIN",
@@ -4423,7 +5468,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668703",
-      "last_seen": "2026-10-31T20:41:05.821640"
+      "last_seen": "2026-10-31T20:51:55.012619"
+    },
+    {
+      "name": "Tunfisk Filet pr Kg",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 599.0,
+      "currency": "NOK",
+      "unit": "per st",
+      "market": "meny-norway",
+      "history": [
+        {
+          "date": "2026-10-31T20:51:55.013742",
+          "price": 599.0
+        }
+      ],
+      "first_seen": "2026-10-31T20:51:55.013742",
+      "last_seen": "2026-10-31T20:51:55.013743"
     }
   ],
   "sweden": [
@@ -4444,7 +5508,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990465",
-      "last_seen": "2026-10-31T20:41:05.823029"
+      "last_seen": "2026-10-31T20:51:55.014357"
     },
     {
       "name": "Mellanmjölk Laktosfri 1,5%",
@@ -4463,7 +5527,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990531",
-      "last_seen": "2026-10-31T20:41:05.823086"
+      "last_seen": "2026-10-31T20:51:55.014412"
     },
     {
       "name": "Godishink 18x15cm Orange",
@@ -4482,7 +5546,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990380",
-      "last_seen": "2026-10-31T20:41:05.822951"
+      "last_seen": "2026-10-31T20:51:55.014282"
     },
     {
       "name": "Sötpotatis Klass 1",
@@ -4501,7 +5565,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990471",
-      "last_seen": "2026-10-31T20:41:05.823034"
+      "last_seen": "2026-10-31T20:51:55.014362"
     },
     {
       "name": "Apelsin Klass 1",
@@ -4520,7 +5584,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990445",
-      "last_seen": "2026-10-31T20:41:05.823012"
+      "last_seen": "2026-10-31T20:51:55.014341"
     },
     {
       "name": "Blåbär Fruktdryck",
@@ -4539,7 +5603,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990537",
-      "last_seen": "2026-10-31T20:41:05.823092"
+      "last_seen": "2026-10-31T20:51:55.014417"
     },
     {
       "name": "Morötter Eko Klass 1",
@@ -4558,7 +5622,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990575",
-      "last_seen": "2026-10-31T20:41:05.823125"
+      "last_seen": "2026-10-31T20:51:55.014450"
     },
     {
       "name": "Pumpa Halloween",
@@ -4577,7 +5641,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990374",
-      "last_seen": "2026-10-31T20:41:05.823114"
+      "last_seen": "2026-10-31T20:51:55.014439"
     },
     {
       "name": "Satsumas Klass 1",
@@ -4596,7 +5660,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990314",
-      "last_seen": "2026-10-31T20:41:05.823006"
+      "last_seen": "2026-10-31T20:51:55.014335"
     },
     {
       "name": "Vetekaka 24-pack",
@@ -4615,7 +5679,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990301",
-      "last_seen": "2026-10-31T20:41:05.823045"
+      "last_seen": "2026-10-31T20:51:55.014373"
     },
     {
       "name": "Lime Klass 1",
@@ -4634,7 +5698,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990426",
-      "last_seen": "2026-10-31T20:41:05.822996"
+      "last_seen": "2026-10-31T20:51:55.014325"
     },
     {
       "name": "Choklad Proteinshake Laktosfri",
@@ -4653,7 +5717,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990511",
-      "last_seen": "2026-10-31T20:41:05.823068"
+      "last_seen": "2026-10-31T20:51:55.014394"
     },
     {
       "name": "Sallad Isberg Klass 1",
@@ -4672,7 +5736,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990568",
-      "last_seen": "2026-10-31T20:41:05.823119"
+      "last_seen": "2026-10-31T20:51:55.014444"
     },
     {
       "name": "Aubergine Klass 1",
@@ -4691,7 +5755,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990477",
-      "last_seen": "2026-10-31T20:41:05.823040"
+      "last_seen": "2026-10-31T20:51:55.014367"
     },
     {
       "name": "Kebabrullebröd Large 6-pack",
@@ -4710,7 +5774,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990326",
-      "last_seen": "2026-10-31T20:41:05.822899"
+      "last_seen": "2026-10-31T20:51:55.014232"
     },
     {
       "name": "Champinjoner Klass 1",
@@ -4729,7 +5793,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990451",
-      "last_seen": "2026-10-31T20:41:05.823017"
+      "last_seen": "2026-10-31T20:51:55.014346"
     },
     {
       "name": "Basilico Pastasås",
@@ -4748,7 +5812,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990293",
-      "last_seen": "2026-10-31T20:41:05.822865"
+      "last_seen": "2026-10-31T20:51:55.014199"
     },
     {
       "name": "Kvisttomat Import Klass 1",
@@ -4767,7 +5831,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990332",
-      "last_seen": "2026-10-31T20:41:05.822905"
+      "last_seen": "2026-10-31T20:51:55.014238"
     },
     {
       "name": "Banan Mango Passionfrukt Smoothie",
@@ -4786,7 +5850,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990544",
-      "last_seen": "2026-10-31T20:41:05.823098"
+      "last_seen": "2026-10-31T20:51:55.014423"
     },
     {
       "name": "Gurka Import Klass 1",
@@ -4805,7 +5869,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990338",
-      "last_seen": "2026-10-31T20:41:05.823063"
+      "last_seen": "2026-10-31T20:51:55.014389"
     },
     {
       "name": "Avokado Klass 1",
@@ -4824,7 +5888,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990457",
-      "last_seen": "2026-10-31T20:41:05.823023"
+      "last_seen": "2026-10-31T20:51:55.014351"
     },
     {
       "name": "Broccoli Klass 1",
@@ -4843,7 +5907,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990550",
-      "last_seen": "2026-10-31T20:41:05.823103"
+      "last_seen": "2026-10-31T20:51:55.014428"
     },
     {
       "name": "Skeletties Crazy",
@@ -4862,7 +5926,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990391",
-      "last_seen": "2026-10-31T20:41:05.822962"
+      "last_seen": "2026-10-31T20:51:55.014292"
     },
     {
       "name": "Citron Eko Klass 1",
@@ -4881,7 +5945,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990556",
-      "last_seen": "2026-10-31T20:41:05.823108"
+      "last_seen": "2026-10-31T20:51:55.014433"
     },
     {
       "name": "Kebabsås Het Light",
@@ -4900,7 +5964,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990363",
-      "last_seen": "2026-10-31T20:41:05.822934"
+      "last_seen": "2026-10-31T20:51:55.014266"
     },
     {
       "name": "Mild Kebabsås",
@@ -4919,7 +5983,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990356",
-      "last_seen": "2026-10-31T20:41:05.822928"
+      "last_seen": "2026-10-31T20:51:55.014260"
     },
     {
       "name": "Salladsost 21%",
@@ -4938,7 +6002,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990344",
-      "last_seen": "2026-10-31T20:41:05.822916"
+      "last_seen": "2026-10-31T20:51:55.014249"
     },
     {
       "name": "Kummel Sprödbakad Stilla Havet",
@@ -4957,7 +6021,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990308",
-      "last_seen": "2026-10-31T20:41:05.822881"
+      "last_seen": "2026-10-31T20:51:55.014214"
     },
     {
       "name": "Raspberry Salty Licorice Skalle",
@@ -4976,7 +6040,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990414",
-      "last_seen": "2026-10-31T20:41:05.822985"
+      "last_seen": "2026-10-31T20:51:55.014315"
     },
     {
       "name": "Vampyrer",
@@ -4995,7 +6059,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990385",
-      "last_seen": "2026-10-31T20:41:05.822957"
+      "last_seen": "2026-10-31T20:51:55.014287"
     },
     {
       "name": "Picklad Rödlök",
@@ -5014,7 +6078,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990350",
-      "last_seen": "2026-10-31T20:41:05.822922"
+      "last_seen": "2026-10-31T20:51:55.014255"
     },
     {
       "name": "Klassisk Kebab",
@@ -5033,7 +6097,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990319",
-      "last_seen": "2026-10-31T20:41:05.822893"
+      "last_seen": "2026-10-31T20:51:55.014225"
     },
     {
       "name": "Kycklingkebab Asien",
@@ -5052,7 +6116,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990368",
-      "last_seen": "2026-10-31T20:41:05.822940"
+      "last_seen": "2026-10-31T20:51:55.014272"
     },
     {
       "name": "Sweet&sour Halloween Mixx",
@@ -5071,7 +6135,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990397",
-      "last_seen": "2026-10-31T20:41:05.822968"
+      "last_seen": "2026-10-31T20:51:55.014298"
     },
     {
       "name": "Jordgubbar Klass 1",
@@ -5090,7 +6154,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990432",
-      "last_seen": "2026-10-31T20:41:05.823001"
+      "last_seen": "2026-10-31T20:51:55.014330"
     },
     {
       "name": "Party Mix",
@@ -5109,7 +6173,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990420",
-      "last_seen": "2026-10-31T20:41:05.822990"
+      "last_seen": "2026-10-31T20:51:55.014320"
     },
     {
       "name": "Skinka Basturökt Deliskivor",
@@ -5128,7 +6192,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990490",
-      "last_seen": "2026-10-31T20:41:05.823051"
+      "last_seen": "2026-10-31T20:51:55.014378"
     },
     {
       "name": "Grevé 12 Månader 28%",
@@ -5147,7 +6211,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990498",
-      "last_seen": "2026-10-31T20:41:05.823057"
+      "last_seen": "2026-10-31T20:51:55.014384"
     },
     {
       "name": "Eco Mellanmörk Bryggkaffe",
@@ -5166,7 +6230,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990524",
-      "last_seen": "2026-10-31T20:41:05.823081"
+      "last_seen": "2026-10-31T20:51:55.014406"
     },
     {
       "name": "Medium Roast Hela Bönor",
@@ -5185,7 +6249,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990518",
-      "last_seen": "2026-10-31T20:41:05.823075"
+      "last_seen": "2026-10-31T20:51:55.014401"
     },
     {
       "name": "Salta Häxor",
@@ -5204,7 +6268,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990408",
-      "last_seen": "2026-10-31T20:41:05.822979"
+      "last_seen": "2026-10-31T20:51:55.014309"
     },
     {
       "name": "Skalle Halloween",
@@ -5223,7 +6287,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990402",
-      "last_seen": "2026-10-31T20:41:05.822973"
+      "last_seen": "2026-10-31T20:51:55.014303"
     }
   ]
 }
