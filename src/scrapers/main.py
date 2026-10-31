@@ -356,25 +356,38 @@ class WillyScraper(PriceScraper):
         return products
 
     def _get_willys_name(self, el) -> str:
-        """Extract the closest product name from the Willy's DOM tree."""
+        """Extract the product name from the closest /produkt/ link ancestor.
+
+        Willy's renders products as card containers that each contain an
+        <a href="/produkt/XXX_ST"> link.  We walk up the DOM from the price
+        element to find that link and read its text.
+        """
+        # Walk up to find a product link with /produkt/
         parent = el.parent
-        for _ in range(8):
+        for _ in range(10):
             if not parent or not parent.name:
                 break
-            nc = parent.select_one(
-                'h2, h3, [class*="title"], [class*="product-name"]'
-            )
-            if nc:
-                t = self.clean_text(nc.get_text(strip=True))
-                if t and 2 < len(t) < 120:
-                    return t
+            link = parent.select_one('a[href*="/produkt/"]')
+            if link:
+                text = self.clean_text(link.get_text(strip=True))
+                if text and len(text) > 2 and len(text) < 120:
+                    return text
             parent = parent.parent
 
-        for sibling in el.find_all_previous()[:8]:
+        # Fallback: look backward for the nearest preceding heading that
+        # is NOT one of the section-level headings (avoid "Populära varor"
+        # etc.).  A real product name is typically followed by a variant
+        # or weight text on the next line.
+        for sibling in el.find_all_previous()[:10]:
             if sibling.name in ('h2', 'h3'):
                 t = self.clean_text(sibling.get_text(strip=True))
-                if t and 2 < len(t) < 120:
-                    return t
+                if t and len(t) > 2 and len(t) < 120:
+                    # Only accept if it's not a generic section heading
+                    if not any(s in t.lower() for s in
+                               ['populära', 'veckans', 'se våra', 'blir det',
+                                'börja firande', 'bus eller', 'köp fler',
+                                'läskigt', 'massor av']):
+                        return t
 
         return "Unknown"
 
