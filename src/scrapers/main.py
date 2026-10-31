@@ -518,10 +518,13 @@ def main():
     # actual prices, so scraping it pollutes the data.  Disabled on purpose.
     print("Skipping kassal.app (homepage lists price deltas, not prices)")
 
-    print("Scraping ica.se (Swedish grocery)...")
-    ica_products = IcaScraper().scrape_category("https://www.ica.se/")
-    all_products['sweden'].extend(ica_products)
-    print(f"  Found {len(ica_products)} products from ica.se")
+    # ICA Sweden's homepage has no grocery product cards — their price
+    # display is entirely JS-rendered with no server-side price HTML.
+    # Use Willy's instead, which shows Jmf-pris (comparison price per unit).
+    print("Scraping willys.se (Swedish grocery)...")
+    willy_products = WillyScraper().scrape_category("https://willys.se/")
+    all_products['sweden'].extend(willy_products)
+    print(f"  Found {len(willy_products)} products from willys.se")
 
     # Merge with existing data preserving history
     all_products['norway'] = merge_products(existing_norway, all_products['norway'], 'norway')
