@@ -299,15 +299,12 @@ class IcaScraper(PriceScraper):
 
         return products
 
-
-
 class WillyScraper(PriceScraper):
     """Scrape prices from willys.se using Playwright.
 
-    Willy's homepage displays current deals.  Each product card shows a
-    "Jmf-pris" (comparison price per unit), "Ordinarie pris" (ordinary
-    price per unit), and "Lägsta ...pris" (last 30-day low).  We use
-    Jmf-pris as the best unit price.
+    Each product card has data-testid="product" + itemscope.  The product
+    name is in itemprop="name" and the per-unit comparison price is inline as
+    "Jmf-pris XX,XX kr/unit" (e.g. "Jmf-pris 43,75 kr/kg").
     """
 
     BASE_URL = "https://willys.se"
@@ -318,28 +315,30 @@ class WillyScraper(PriceScraper):
             return []
 
         products = []
+        prod_cards = soup.select('[data-testid="product"][itemscope]')
+        print(f"  {len(prod_cards)} product cards found on willys.se")
 
-        # Find all "Jmf-pris" price elements
-        price_elements = soup.select('[class*="Price"]')
-
-        for el in price_elements:
+        for card in prod_cards:
             try:
-                price_text = el.get_text(strip=True)
-
-                # Extract price and unit from patterns like "Jmf-pris 43,75 kr/kg"
-                price_match = re.search(
-                    r'(\d+[,\d]*)\s*kr/([a-z]+)', price_text, re.I
-                )
-                if not price_match:
+                # Product name
+                name_el = card.select_one('[itemprop="name"]')
+                name = self.clean_text(name_el.get_text(strip=True)) if name_el else "Unknown"
+                if not name or len(name) < 2 or len(name) > 120:
                     continue
 
-                price = float(price_match.group(1).replace(',', '.'))
-                unit = price_match.group(2).lower().strip()
+                # Jmf-pris: "Jmf-pris 43,75 kr/kg"
+                jmf_text = card.get_text()
+                jmf_match = re.search(
+                    r'Jmf-pris\s+(\d+[\d,]*)\s*kr/?\s*([a-z]+)', jmf_text
+                )
+                if not jmf_match:
+                    continue
+
+                price = float(jmf_match.group(1).replace(',', '.'))
+                unit = jmf_match.group(2).strip() or 'per item'
 
                 if not _price_is_plausible(price):
                     continue
-
-                name = self._get_willys_name(el)
 
                 products.append({
                     'name': name,
@@ -351,210 +350,6 @@ class WillyScraper(PriceScraper):
                     'market': 'willys-sweden'
                 })
             except Exception as e:
-                print(f"Warning: Failed to parse Willy's product: {e}")
+                print(f"  Warning: Failed to parse Willy's product: {e}")
 
         return products
-
-    def _get_willys_name(self, el) -> str:
-        """Extract the product name from the closest /produkt/ link ancestor.
-
-        Willy's renders products as card containers that each contain an
-        <a href="/produkt/XXX_ST"> link.  We walk up the DOM from the price
-        element to find that link and read its text.
-        """
-        # Walk up to find a product link with /produkt/
-        parent = el.parent
-        for _ in range(10):
-            if not parent or not parent.name:
-                break
-            link = parent.select_one('a[href*="/produkt/"]')
-            if link:
-                text = self.clean_text(link.get_text(strip=True))
-                if text and len(text) > 2 and len(text) < 120:
-                    return text
-            parent = parent.parent
-
-        # Fallback: look backward for the nearest preceding heading that
-        # is NOT one of the section-level headings (avoid "Populära varor"
-        # etc.).  A real product name is typically followed by a variant
-        # or weight text on the next line.
-        for sibling in el.find_all_previous()[:10]:
-            if sibling.name in ('h2', 'h3'):
-                t = self.clean_text(sibling.get_text(strip=True))
-                if t and len(t) > 2 and len(t) < 120:
-                    # Only accept if it's not a generic section heading
-                    if not any(s in t.lower() for s in
-                               ['populära', 'veckans', 'se våra', 'blir det',
-                                'börja firande', 'bus eller', 'köp fler',
-                                'läskigt', 'massor av']):
-                        return t
-
-        return "Unknown"
-
-def load_existing_data(output_path: Path) -> Dict[str, Any]:
-    """Load existing price data from file."""
-    if output_path.exists():
-        try:
-            with open(output_path, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except Exception as e:
-            print(f"Warning: Could not load existing data: {e}")
-    return {'norway': [], 'sweden': []}
-
-
-def normalize_name(name: str) -> str:
-    """Normalize product name for matching."""
-    return re.sub(r'\s+', ' ', name.lower()).strip()
-
-def _price_is_plausible(price) -> bool:
-    """Reject null, negative, zero and absurd prices from any source."""
-    return isinstance(price, (int, float)) and 0.0 < float(price) <= 9999.99
-
-
-def recover_price(price):
-    """Fix rema.no øre-concatenated prices like 399039.9 (ore + '39,90 kr').
-
-    The composite is str(round(kr*100)) + kr-text, e.g. 39.90 kr renders as
-    "3990" + "39,90" = 399039,90 -> parsed float 399039.9.  The real value is
-    recoverable because the prefix must equal round(real*100).  Returns the
-    recovered float, or None if the value is already fine / un-recoverable.
-    """
-    if _price_is_plausible(price):
-        return float(price)
-    if isinstance(price, bool) or not isinstance(price, (int, float)):
-        return None
-    s = repr(float(price))
-    if '.' not in s:
-        return None
-    # Try every split: suffix = real price text (e.g. '39.9'), prefix = øre part
-    for i in range(1, len(s) - 2 + 1):
-        prefix, suffix = s[:i], s[i:]
-        if not prefix or not suffix[0].isdigit():
-            continue
-        if '.' not in suffix or suffix.startswith('.'):
-            continue
-        try:
-            cand = float(suffix)
-        except ValueError:
-            continue
-        if cand <= 0 or cand > 9999.99:
-            continue
-        if str(int(round(cand * 100))) == prefix:
-            return cand
-    return None
-
-
-def merge_products(existing: List[Dict], new_products: List[Dict], country: str) -> List[Dict]:
-    """Merge new products into existing list, preserving history."""
-    kept = []
-    for p in new_products:
-        if _price_is_plausible(p.get('price')):
-            kept.append(p)
-            continue
-        fixed = recover_price(p.get('price'))
-        if fixed is not None:
-            p['price'] = fixed
-            kept.append(p)
-    new_products = kept
-
-    # Build lookup by normalized name + market
-    existing_map = {}
-    for p in existing:
-        key = (normalize_name(p['name']), p.get('market', ''))
-        existing_map[key] = p
-
-    for new_p in new_products:
-        key = (normalize_name(new_p['name']), new_p.get('market', ''))
-        now = datetime.utcnow().isoformat()
-        price_point = {'date': datetime.utcnow().isoformat(), 'price': new_p['price']}
-
-        if key in existing_map:
-            # Update existing product
-            existing_p = existing_map[key]
-            # Update current price and other fields
-            existing_p['price'] = new_p['price']
-            existing_p['currency'] = new_p['currency']
-            existing_p['unit'] = new_p.get('unit', existing_p.get('unit', 'per item'))
-            existing_p['stores'] = new_p.get('stores', existing_p.get('stores', []))
-            existing_p['category'] = new_p.get('category', existing_p.get('category', 'supermarket'))
-            # Append to history
-            history = existing_p.get('history', [])
-            # Avoid duplicate price on same day
-            if not any(h['price'] == new_p['price'] and h['date'].startswith(datetime.utcnow().date().isoformat()) for h in history):
-                history.append(price_point)
-            existing_p['history'] = history
-            existing_p['last_seen'] = now
-        else:
-            # New product
-            new_p['history'] = [{'date': datetime.utcnow().isoformat(), 'price': new_p['price']}]
-            new_p['first_seen'] = datetime.utcnow().isoformat()
-            new_p['last_seen'] = datetime.utcnow().isoformat()
-            existing_map[key] = new_p
-
-    return list(existing_map.values())
-
-
-def main():
-    parser = argparse.ArgumentParser(description='Scrape food prices and save to JSON')
-    parser.add_argument('--output', default='data/prices.json', help='Output JSON file path')
-    args = parser.parse_args()
-
-    output_path = Path(args.output)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    # Load existing data
-    existing_data = load_existing_data(output_path)
-    existing_norway = existing_data.get('norway', [])
-    existing_sweden = existing_data.get('sweden', [])
-
-    scraper = PriceScraper(headless=True)
-
-    all_products = {
-        'last_updated': datetime.utcnow().isoformat(),
-        'norway': [],
-        'sweden': []
-    }
-
-    # Scrape from all sources
-    print("Scraping rema.no (Norwegian grocery)...")
-    rema_products = RemaScraper().scrape_category("https://www.rema.no/inspirasjon/sesong-og-matlyst/nyhetsvindu/")
-    all_products['norway'].extend(rema_products)
-    print(f"  Found {len(rema_products)} products from rema.no")
-
-    # nordby.se's homepage lists DEALS across all categories (knitwear,
-    # pharmacy, etc.) with promotion text that can't be parsed as prices and
-    # yields junk product names.  Disabled until a real grocery category page
-    # is found; curated Swedish entries in data/prices.json are preserved.
-    print("Skipping nordby.se (homepage is deals, not groceries)")
-
-    # kassal.app's homepage shows price CHANGES (deltas like "-42.00"), not
-    # actual prices, so scraping it pollutes the data.  Disabled on purpose.
-    print("Skipping kassal.app (homepage lists price deltas, not prices)")
-
-    # ICA Sweden's homepage has no grocery product cards — their price
-    # display is entirely JS-rendered with no server-side price HTML.
-    # Use Willy's instead, which shows Jmf-pris (comparison price per unit).
-    print("Scraping willys.se (Swedish grocery)...")
-    willy_products = WillyScraper().scrape_category("https://willys.se/")
-    all_products['sweden'].extend(willy_products)
-    print(f"  Found {len(willy_products)} products from willys.se")
-
-    # Merge with existing data preserving history
-    all_products['norway'] = merge_products(existing_norway, all_products['norway'], 'norway')
-    all_products['sweden'] = merge_products(existing_sweden, all_products['sweden'], 'sweden')
-
-    # Sort by price (lowest first)
-    for country in ['norway', 'sweden']:
-        all_products[country].sort(key=lambda x: (x.get('price') or float('inf'), x['name']))
-
-    # Write output
-    all_products['last_updated'] = datetime.utcnow().isoformat()
-    print(f"Saving {len(all_products['norway'])} Norway products, {len(all_products['sweden'])} Sweden products...")
-    with open(args.output, 'w', encoding='utf-8') as f:
-        json.dump(all_products, f, indent=2, ensure_ascii=False)
-
-    print(f"Saved to {args.output}")
-
-
-if __name__ == '__main__':
-    main()
