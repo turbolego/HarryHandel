@@ -359,7 +359,14 @@ def load_existing_data(output_path: Path) -> Dict[str, Any]:
     if output_path.exists():
         try:
             with open(output_path, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                data = json.load(f)
+            # Strip junk entries left by earlier scrapes (e.g. "%", "kr",
+            # "för -" promotion fragments that got saved as product names).
+            for country in ('norway', 'sweden'):
+                kept = [p for p in data.get(country, [])
+                        if _name_is_plausible(p.get('name'))]
+                data[country] = kept
+            return data
         except Exception as e:
             print(f"Warning: Could not load existing data: {e}")
     return {'norway': [], 'sweden': []}
