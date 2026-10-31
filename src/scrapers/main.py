@@ -354,6 +354,72 @@ class WillyScraper(PriceScraper):
         return products
 
 
+class MenyScraper(PriceScraper):
+    """Scrape prices from meny.no (Norwegian grocery).
+
+    Product cards are <div class="ws-product-vertical" itemscope
+    itemtype="http://schema.org/Product">.  The name lives in an h3 with
+    itemprop="name" plus an optional p.subtitle; the price is an
+    aria-label of the form "Tilbud, nå 10,00 kroner." on
+    .ws-price__main (with "Før 15,90 kroner" as the compare price).
+    """
+
+    BASE_URL = "https://www.meny.no"
+
+    def scrape_category(self, category_url: str) -> List[Dict[str, Any]]:
+        soup = self.fetch_page(category_url)
+        if not soup:
+            return []
+
+        products = []
+        cards = soup.select('.ws-product-vertical')
+        print(f"  {len(cards)} product cards found on {category_url.split('/')[-2] if len(category_url.split('/')) > 2 else 'meny.no'}")
+
+        for card in cards:
+            try:
+                title_el = card.select_one('h3.ws-product-vertical__title')
+                sub_el = card.select_one('p.ws-product-vertical__subtitle')
+                title = self.clean_text(title_el.get_text(strip=True)) if title_el else ""
+                sub = self.clean_text(sub_el.get_text(strip=True)) if sub_el else ""
+                name = (title + " " + sub).strip()
+                if not _name_is_plausible(name):
+                    continue
+
+                price = None
+                unit = 'per st'
+
+                # Preferred: aria-label "Tilbud, nå 10,00 kroner."
+                main_el = card.select_one('strong[class*="ws-price__main"]')
+                if main_el is not None:
+                    aria = main_el.get('aria-label') or ''
+                    m = re.search(r'nå\s+([\d,.]+)\s+kroner', aria)
+                    if m:
+                        price = float(m.group(1).replace('.', '').replace(',', '.'))
+                    else:
+                        # Fall back to the rendered text: "10,00 kr"
+                        text = main_el.get_text(strip=True).replace('kr', '').replace('\xa0', ' ').strip()
+                        m2 = re.search(r'([\d,.]+)', text)
+                        if m2:
+                            price = float(m2.group(1).replace('.', '').replace(',', '.'))
+
+                if price is None or not _price_is_plausible(price):
+                    continue
+
+                products.append({
+                    'name': name,
+                    'category': 'supermarket',
+                    'stores': ['Meny'],
+                    'price': price,
+                    'currency': 'NOK',
+                    'unit': unit,
+                    'market': 'meny-norway'
+                })
+            except Exception as e:
+                print(f"  Warning: Failed to parse Meny product: {e}")
+
+        return products
+
+
 def load_existing_data(output_path: Path) -> Dict[str, Any]:
     """Load existing price data from file."""
     if output_path.exists():
@@ -520,6 +586,11 @@ def main():
     rema_products = RemaScraper().scrape_category("https://www.rema.no/inspirasjon/sesong-og-matlyst/nyhetsvindu/")
     all_products['norway'].extend(rema_products)
     print(f"  Found {len(rema_products)} products from rema.no")
+
+    print("Scraping meny.no (Norwegian grocery promotions)...")
+    meny_products = MenyScraper().scrape_category("https://www.meny.no/kampanjer/")
+    all_products['norway'].extend(meny_products)
+    print(f"  Found {len(meny_products)} products from meny.no")
 
     # nordby.se's homepage lists DEALS across all categories (knitwear,
     # pharmacy, etc.) with promotion text that can't be parsed as prices and
