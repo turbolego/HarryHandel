@@ -300,6 +300,84 @@ class IcaScraper(PriceScraper):
         return products
 
 
+
+class WillyScraper(PriceScraper):
+    """Scrape prices from willys.se using Playwright.
+
+    Willy's homepage displays current deals.  Each product card shows a
+    "Jmf-pris" (comparison price per unit), "Ordinarie pris" (ordinary
+    price per unit), and "Lägsta ...pris" (last 30-day low).  We use
+    Jmf-pris as the best unit price.
+    """
+
+    BASE_URL = "https://willys.se"
+
+    def scrape_category(self, category_url: str) -> List[Dict[str, Any]]:
+        soup = self.fetch_page(category_url)
+        if not soup:
+            return []
+
+        products = []
+
+        # Find all "Jmf-pris" price elements
+        price_elements = soup.select('[class*="Price"]')
+
+        for el in price_elements:
+            try:
+                price_text = el.get_text(strip=True)
+
+                # Extract price and unit from patterns like "Jmf-pris 43,75 kr/kg"
+                price_match = re.search(
+                    r'(\d+[,\d]*)\s*kr/([a-z]+)', price_text, re.I
+                )
+                if not price_match:
+                    continue
+
+                price = float(price_match.group(1).replace(',', '.'))
+                unit = price_match.group(2).lower().strip()
+
+                if not _price_is_plausible(price):
+                    continue
+
+                name = self._get_willys_name(el)
+
+                products.append({
+                    'name': name,
+                    'category': 'supermarket',
+                    'stores': ['Willys'],
+                    'price': price,
+                    'currency': 'SEK',
+                    'unit': unit,
+                    'market': 'willys-sweden'
+                })
+            except Exception as e:
+                print(f"Warning: Failed to parse Willy's product: {e}")
+
+        return products
+
+    def _get_willys_name(self, el) -> str:
+        """Extract the closest product name from the Willy's DOM tree."""
+        parent = el.parent
+        for _ in range(8):
+            if not parent or not parent.name:
+                break
+            nc = parent.select_one(
+                'h2, h3, [class*="title"], [class*="product-name"]'
+            )
+            if nc:
+                t = self.clean_text(nc.get_text(strip=True))
+                if t and 2 < len(t) < 120:
+                    return t
+            parent = parent.parent
+
+        for sibling in el.find_all_previous()[:8]:
+            if sibling.name in ('h2', 'h3'):
+                t = self.clean_text(sibling.get_text(strip=True))
+                if t and 2 < len(t) < 120:
+                    return t
+
+        return "Unknown"
+
 def load_existing_data(output_path: Path) -> Dict[str, Any]:
     """Load existing price data from file."""
     if output_path.exists():
