@@ -207,12 +207,13 @@ function updateDisplay() {
     }
 
     // Build the row list: matched pairs first (so they sort naturally to
-    // the top), then unmatched products.
+    // the top), then unmatched products.  Use matchedSweden from the pass
+    // above — appending to usedSweden here would turn every pair into an
+    // unmatched row (the Sweden key is already marked as used).
     const rows = [];
     for (const nk of Object.keys(norwayMap)) {
-        const sk = fuzzyMatch(nk, swedenKeys);
-        if (sk && !usedSweden.has(sk)) {
-            usedSweden.add(sk);
+        const sk = matchedSweden[nk];
+        if (sk) {
             rows.push({ kind: "pair", no: norwayMap[nk], se: swedenMap[sk] });
         } else {
             rows.push({ kind: "norway", no: norwayMap[nk] });
