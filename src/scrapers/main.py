@@ -618,6 +618,11 @@ def main():
 
     scraper = PriceScraper(headless=True)
 
+    # Fetch Kassal product list for name matching (like svenskegrensen.no)
+    print("Fetching Kassal product list for name matching...")
+    kassal_fetcher = KassalProductFetcher()
+    kassalProductNames = kassal_fetcher.fetch_product_names()
+
     all_products = {
         'last_updated': datetime.utcnow().isoformat(),
         'norway': [],
