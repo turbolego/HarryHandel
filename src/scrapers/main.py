@@ -251,6 +251,49 @@ class KassalScraper(PriceScraper):
         return products
 
 
+
+class KassalProductFetcher(PriceScraper):
+    """Fetch the common product list from kassal.app/varer.
+    
+    Kassal maintains a unified product database for Norway.  The page at
+    /varer lists every product with its name, supplier, and links to
+    price comparisons.  We extract the name so that Norway and Sweden
+    products can be matched by exact equality (like svenskegrensen.no does).
+    """
+
+    BASE_URL = "https://kassal.app"
+
+    def fetch_product_names(self) -> List[str]:
+        """Fetch all product names from the Kassal product list."""
+        soup = self.fetch_page("https://kassal.app/varer")
+        if not soup:
+            return []
+
+        product_names = []
+        for link in soup.select('a[href*="/vare/"]'):
+            href = link.get('href', '')
+            if href.startswith('https://'):
+                path = href.split('/vare/')[-1]
+            else:
+                path = href
+            m = re.match(r'(\d+)-(.+)$', path)
+            if m:
+                name = m.group(2).replace('-', ' ').strip()
+                if name and len(name) > 3 and len(name) < 80:
+                    name = name[0].upper() + name[1:]
+                    product_names.append(name)
+
+        seen = set()
+        unique = []
+        for n in product_names:
+            if n not in seen:
+                seen.add(n)
+                unique.append(n)
+
+        print(f"  {len(unique)} products fetched from Kassal product list")
+        return unique
+
+
 class IcaScraper(PriceScraper):
     """Scrape prices from ica.se using Playwright."""
 
