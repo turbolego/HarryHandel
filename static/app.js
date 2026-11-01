@@ -115,19 +115,46 @@ function updateDisplay() {
     const STOPWORDS = new Set([
         "pr", "stk", "g", "kg", "l", "ml", "dl", "klass", "ekologisk",
         "original", "klasses", "sverige", "import", "per", "st", "stkk",
+        "cm", "pk", "bx", "pack",
         "100", "200", "400", "500", "600", "750", "180", "250", "330",
         "390", "473", "150", "130", "65", "80", "85", "42", "72", "78",
         "1000", "2000", "4000", "500", "1500",
     ]);
-    const SUFFIX_RE = /\s+\d+(?:[.,]\d+)?\s*(?:g|kg|l|ml|dl|st|stk|pack|bx|boks|cl|liter|litre)\b/i;
+    // Swedish -> Norwegian word translations so "Morötter" can match "Gulrot".
+    // svenskegrensen.no solves the naming problem by using one common product
+    // catalog for both countries; we approximate it with a translation map.
+    const SE_TO_NO = {
+        "vitkål": "hodekål", "huvudkål": "hodekål",
+        "sötpotatis": "søtpotatis", "apelsin": "appelsin",
+        "blåbär": "blåbær", "morötter": "gulrot",
+        "citron": "sitron", "gurka": "agurk",
+        "sallad": "salat", "isberg": "salat", "sallads": "salat",
+        "broccoli": "brokoli", "champinjoner": "champignon",
+        "picklad": "sylta", "rödlök": "rødløk", "lök": "løk",
+        "jordgubbar": "jordbær", "päron": "pære", "pär": "pære",
+        "kebabsås": "kebabsaus",
+    };
+    const SUFFIX_RE = /\s+\d+(?:[.,]\d+)?\s*(?:g|kg|l|ml|dl|st|stk|pack|bx|boks|cl|liter|litre|cm)\b/i;
     const WORD_RE = /[a-zà-ÿ]{2,}/g;
 
     function sigWords(name) {
         if (!name) return new Set();
         let n = name.toLowerCase().replace(/\s+/g, " ").trim();
         n = n.replace(SUFFIX_RE, "");
-        const words = n.match(WORD_RE) || [];
-        return new Set(words.filter((w) => !STOPWORDS.has(w)));
+        const words = (n.match(WORD_RE) || [])
+            .filter((w) => !STOPWORDS.has(w))
+            .map((w) => SE_TO_NO[w] || w);
+        return new Set(words);
+    }
+
+    // Pair counts only when overlap is clear: score >= 0.3 AND either
+    // 2+ shared words or one long distinctive shared word (>= 5 chars).
+    function isGoodMatch(a, b, score) {
+        if (score < 0.3) return false;
+        const shared = [];
+        a.forEach((w) => { if (b.has(w)) shared.push(w); });
+        if (shared.length >= 2) return true;
+        return shared.some((w) => w.length >= 5);
     }
 
     function jaccard(a, b) {
@@ -147,7 +174,7 @@ function updateDisplay() {
                 best = sk;
             }
         }
-        return bestScore >= 0.25 ? best : null;
+        return best && isGoodMatch(nw, sigWords(best), bestScore) ? best : null;
     }
 
     const swedenKeys = Object.keys(swedenMap);
