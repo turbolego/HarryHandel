@@ -147,7 +147,7 @@ function updateDisplay() {
                 best = sk;
             }
         }
-        return bestScore >= 0.34 ? best : null;
+        return bestScore >= 0.25 ? best : null;
     }
 
     const swedenKeys = Object.keys(swedenMap);
