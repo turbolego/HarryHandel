@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-02T02:58:14.544918",
+  "last_updated": "2026-11-02T03:04:27.564720",
   "norway": [
     {
       "name": "Bananer pr stk",
@@ -106,7 +106,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669508",
-      "last_seen": "2026-11-02T02:58:14.543481"
+      "last_seen": "2026-11-02T03:04:27.562074"
     },
     {
       "name": "Donut Bringebærsmak 78g",
@@ -280,6 +280,44 @@
       "last_seen": "2026-10-31T20:59:01.744355"
     },
     {
+      "name": "Powerking Zero Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 11.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563068",
+          "price": 11.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563069",
+      "last_seen": "2026-11-02T03:04:27.563070"
+    },
+    {
+      "name": "Powerking Zero Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 12.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563074",
+          "price": 12.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563075",
+      "last_seen": "2026-11-02T03:04:27.563076"
+    },
+    {
       "name": "BUBBLEGUM",
       "category": "supermarket",
       "stores": [
@@ -308,7 +346,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669555",
-      "last_seen": "2026-11-02T02:58:14.543541"
+      "last_seen": "2026-11-02T03:04:27.562135"
     },
     {
       "name": "CHEEKY TOUNGES",
@@ -339,7 +377,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669537",
-      "last_seen": "2026-11-02T02:58:14.543520"
+      "last_seen": "2026-11-02T03:04:27.562112"
     },
     {
       "name": "COLA BOTTLES",
@@ -370,7 +408,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669520",
-      "last_seen": "2026-11-02T02:58:14.543497"
+      "last_seen": "2026-11-02T03:04:27.562090"
     },
     {
       "name": "FIZZY STRAWBERRY",
@@ -401,7 +439,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669409",
-      "last_seen": "2026-11-02T02:58:14.543358"
+      "last_seen": "2026-11-02T03:04:27.561955"
     },
     {
       "name": "HAPPY FARM",
@@ -432,7 +470,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669298",
-      "last_seen": "2026-11-02T02:58:14.543235"
+      "last_seen": "2026-11-02T03:04:27.561851"
     },
     {
       "name": "KLESRULLE",
@@ -463,7 +501,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669224",
-      "last_seen": "2026-11-02T02:58:14.543136"
+      "last_seen": "2026-11-02T03:04:27.561756"
     },
     {
       "name": "PEACH PARTY",
@@ -494,7 +532,83 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668961",
-      "last_seen": "2026-11-02T02:58:14.542852"
+      "last_seen": "2026-11-02T03:04:27.561478"
+    },
+    {
+      "name": "Powerking Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 12.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562974",
+          "price": 12.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562975",
+      "last_seen": "2026-11-02T03:04:27.562976"
+    },
+    {
+      "name": "Powerking Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 12.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562980",
+          "price": 12.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562981",
+      "last_seen": "2026-11-02T03:04:27.562982"
+    },
+    {
+      "name": "Powerking Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 12.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562986",
+          "price": 12.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562987",
+      "last_seen": "2026-11-02T03:04:27.562987"
+    },
+    {
+      "name": "Powerking Zero Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 12.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563062",
+          "price": 12.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563063",
+      "last_seen": "2026-11-02T03:04:27.563064"
     },
     {
       "name": "SALTY SMILES",
@@ -525,7 +639,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668819",
-      "last_seen": "2026-11-02T02:58:14.542658"
+      "last_seen": "2026-11-02T03:04:27.561253"
     },
     {
       "name": "SOUR COLA SKULLS",
@@ -556,7 +670,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668673",
-      "last_seen": "2026-11-02T02:58:14.542467"
+      "last_seen": "2026-11-02T03:04:27.561070"
     },
     {
       "name": "SWEET LOVE",
@@ -587,7 +701,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668576",
-      "last_seen": "2026-11-02T02:58:14.542334"
+      "last_seen": "2026-11-02T03:04:27.560941"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 13.74,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563054",
+          "price": 13.74
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563057",
+      "last_seen": "2026-11-02T03:04:27.563058"
     },
     {
       "name": "Maiskorn 380g Eldorado",
@@ -637,7 +770,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669657",
-      "last_seen": "2026-11-02T02:58:14.543677"
+      "last_seen": "2026-11-02T03:04:27.562266"
     },
     {
       "name": "SELSKAPSERTER",
@@ -668,7 +801,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669013",
-      "last_seen": "2026-11-02T02:58:14.542920"
+      "last_seen": "2026-11-02T03:04:27.561545"
+    },
+    {
+      "name": "Red Bull Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 14.94,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562968",
+          "price": 14.94
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562969",
+      "last_seen": "2026-11-02T03:04:27.562970"
+    },
+    {
+      "name": "Red Bull Energidrikk Yellow Edition 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 14.94,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563115",
+          "price": 14.94
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563116",
+      "last_seen": "2026-11-02T03:04:27.563117"
     },
     {
       "name": "Hverdagsgrovt 750g Bakehuset",
@@ -790,7 +961,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007085",
-      "last_seen": "2026-11-02T02:58:14.543806"
+      "last_seen": "2026-11-02T03:04:27.562390"
     },
     {
       "name": "Rislunsj Jordbær 150g Tine",
@@ -810,6 +981,25 @@
       ],
       "first_seen": "2026-10-31T23:52:44.007209",
       "last_seen": "2026-10-31T23:52:44.007210"
+    },
+    {
+      "name": "Appelsinjuice Original 250ml Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 16.6,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563895",
+          "price": 16.6
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563896",
+      "last_seen": "2026-11-02T03:04:27.563897"
     },
     {
       "name": "POPCORN S&O",
@@ -840,7 +1030,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668926",
-      "last_seen": "2026-11-02T02:58:14.542807"
+      "last_seen": "2026-11-02T03:04:27.561401"
+    },
+    {
+      "name": "Iskaffe Cappuccino 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 17.43,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563455",
+          "price": 17.43
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563456",
+      "last_seen": "2026-11-02T03:04:27.563456"
+    },
+    {
+      "name": "Iskaffe Mocca 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 17.43,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563337",
+          "price": 17.43
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563338",
+      "last_seen": "2026-11-02T03:04:27.563338"
     },
     {
       "name": "BRØDPOSE 6L",
@@ -871,7 +1099,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669561",
-      "last_seen": "2026-11-02T02:58:14.543549"
+      "last_seen": "2026-11-02T03:04:27.562143"
     },
     {
       "name": "Monster Ultra Peachy Keen 0,5l boks",
@@ -898,7 +1126,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007404",
-      "last_seen": "2026-11-02T02:58:14.543959"
+      "last_seen": "2026-11-02T03:04:27.562549"
     },
     {
       "name": "Monster Ultra Strawberry 0,5l boks",
@@ -925,7 +1153,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007398",
-      "last_seen": "2026-11-02T02:58:14.543951"
+      "last_seen": "2026-11-02T03:04:27.562541"
     },
     {
       "name": "Monster Ultra Vice Guava 0,5l boks",
@@ -952,7 +1180,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007412",
-      "last_seen": "2026-11-02T02:58:14.543966"
+      "last_seen": "2026-11-02T03:04:27.562556"
     },
     {
       "name": "Monster Ultra White 0,5l boks",
@@ -979,7 +1207,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007392",
-      "last_seen": "2026-11-02T02:58:14.543944"
+      "last_seen": "2026-11-02T03:04:27.562533"
     },
     {
       "name": "Servelat 110g Gilde",
@@ -1021,7 +1249,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085722",
-      "last_seen": "2026-11-02T02:58:14.544116"
+      "last_seen": "2026-11-02T03:04:27.562694"
     },
     {
       "name": "AVFALLSPOSE 15L",
@@ -1052,7 +1280,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669645",
-      "last_seen": "2026-11-02T02:58:14.543662"
+      "last_seen": "2026-11-02T03:04:27.562252"
     },
     {
       "name": "Burn Original 0,5l boks",
@@ -1079,7 +1307,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007344",
-      "last_seen": "2026-11-02T02:58:14.543901"
+      "last_seen": "2026-11-02T03:04:27.562500"
     },
     {
       "name": "JAPP PEANUT",
@@ -1110,7 +1338,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669264",
-      "last_seen": "2026-11-02T02:58:14.543197"
+      "last_seen": "2026-11-02T03:04:27.561815"
     },
     {
       "name": "Monster Aussie Lemonade 0,5l boks",
@@ -1133,7 +1361,7 @@
         }
       ],
       "first_seen": "2026-11-01T19:51:08.158151",
-      "last_seen": "2026-11-02T02:58:14.543916"
+      "last_seen": "2026-11-02T03:04:27.562507"
     },
     {
       "name": "Monster Juiced Monarch 0,5l boks",
@@ -1156,7 +1384,7 @@
         }
       ],
       "first_seen": "2026-11-01T19:51:08.158226",
-      "last_seen": "2026-11-02T02:58:14.543937"
+      "last_seen": "2026-11-02T03:04:27.562527"
     },
     {
       "name": "Monster Juiced Rio Punch 0,5l boks",
@@ -1183,7 +1411,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007358",
-      "last_seen": "2026-11-02T02:58:14.543908"
+      "last_seen": "2026-11-02T03:04:27.562493"
     },
     {
       "name": "Monster Mango Loco 0,5l boks",
@@ -1210,7 +1438,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007381",
-      "last_seen": "2026-11-02T02:58:14.543923"
+      "last_seen": "2026-11-02T03:04:27.562521"
     },
     {
       "name": "Monster Pipeline Punch 0,5l boks",
@@ -1237,7 +1465,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007370",
-      "last_seen": "2026-11-02T02:58:14.543930"
+      "last_seen": "2026-11-02T03:04:27.562513"
     },
     {
       "name": "SKYR AKTIV FERSK&P",
@@ -1268,7 +1496,64 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668772",
-      "last_seen": "2026-11-02T02:58:14.542594"
+      "last_seen": "2026-11-02T03:04:27.561191"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 19.3,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563641",
+          "price": 19.3
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563642",
+      "last_seen": "2026-11-02T03:04:27.563643"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 19.4,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563630",
+          "price": 19.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563630",
+      "last_seen": "2026-11-02T03:04:27.563631"
+    },
+    {
+      "name": "Lettmelk 1,0% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 19.4,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563601",
+          "price": 19.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563602",
+      "last_seen": "2026-11-02T03:04:27.563602"
     },
     {
       "name": "APPELSIN&INGEFÆR",
@@ -1299,7 +1584,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669480",
-      "last_seen": "2026-11-02T02:58:14.543443"
+      "last_seen": "2026-11-02T03:04:27.562037"
     },
     {
       "name": "BUBBLE BUBBLIZZ",
@@ -1330,7 +1615,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669115",
-      "last_seen": "2026-11-02T02:58:14.543060"
+      "last_seen": "2026-11-02T03:04:27.561683"
     },
     {
       "name": "Brokkoli 1 stk à 400g",
@@ -1357,7 +1642,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007033",
-      "last_seen": "2026-11-02T02:58:14.543888"
+      "last_seen": "2026-11-02T03:04:27.562480"
     },
     {
       "name": "GRØT GULROT/BANAN",
@@ -1388,7 +1673,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669310",
-      "last_seen": "2026-11-02T02:58:14.543251"
+      "last_seen": "2026-11-02T03:04:27.561868"
     },
     {
       "name": "GRØT PASTI/FERSKEN",
@@ -1419,7 +1704,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669304",
-      "last_seen": "2026-11-02T02:58:14.543243"
+      "last_seen": "2026-11-02T03:04:27.561860"
     },
     {
       "name": "HÅNDSÅPE SENSITIV",
@@ -1450,7 +1735,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669281",
-      "last_seen": "2026-11-02T02:58:14.543212"
+      "last_seen": "2026-11-02T03:04:27.561829"
+    },
+    {
+      "name": "Iskaffe Cappuccino uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 19.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563394",
+          "price": 19.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563395",
+      "last_seen": "2026-11-02T03:04:27.563396"
     },
     {
       "name": "JORDBÆRFISK",
@@ -1481,7 +1785,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669573",
-      "last_seen": "2026-11-02T02:58:14.543564"
+      "last_seen": "2026-11-02T03:04:27.562158"
     },
     {
       "name": "PROTEINBAR NOUGAT",
@@ -1512,7 +1816,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668893",
-      "last_seen": "2026-11-02T02:58:14.542761"
+      "last_seen": "2026-11-02T03:04:27.561354"
     },
     {
       "name": "PROTEINBAR PEANØTT",
@@ -1543,7 +1847,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668887",
-      "last_seen": "2026-11-02T02:58:14.542753"
+      "last_seen": "2026-11-02T03:04:27.561347"
     },
     {
       "name": "R TUNFISK",
@@ -1574,7 +1878,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668546",
-      "last_seen": "2026-11-02T02:58:14.542295"
+      "last_seen": "2026-11-02T03:04:27.560902"
     },
     {
       "name": "R VAFFELKJEKS",
@@ -1605,7 +1909,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668865",
-      "last_seen": "2026-11-02T02:58:14.542722"
+      "last_seen": "2026-11-02T03:04:27.561317"
     },
     {
       "name": "SJOKO POPP",
@@ -1636,7 +1940,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668785",
-      "last_seen": "2026-11-02T02:58:14.542611"
+      "last_seen": "2026-11-02T03:04:27.561207"
     },
     {
       "name": "SOUR CHEWY CANDY",
@@ -1667,7 +1971,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669601",
-      "last_seen": "2026-11-02T02:58:14.543600"
+      "last_seen": "2026-11-02T03:04:27.562192"
     },
     {
       "name": "SPAGETTISAUS",
@@ -1698,7 +2002,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668651",
-      "last_seen": "2026-11-02T02:58:14.542436"
+      "last_seen": "2026-11-02T03:04:27.561040"
     },
     {
       "name": "SPARKLING MANDARIN",
@@ -1729,7 +2033,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668645",
-      "last_seen": "2026-11-02T02:58:14.542429"
+      "last_seen": "2026-11-02T03:04:27.561033"
     },
     {
       "name": "SURE PÆRER",
@@ -1760,7 +2064,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669567",
-      "last_seen": "2026-11-02T02:58:14.543557"
+      "last_seen": "2026-11-02T03:04:27.562150"
     },
     {
       "name": "Ananas 200g Cevita",
@@ -1972,6 +2276,82 @@
       "last_seen": "2026-10-31T20:59:01.744462"
     },
     {
+      "name": "Iskaffe Cappuccino 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 20.2,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563478",
+          "price": 20.2
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563479",
+      "last_seen": "2026-11-02T03:04:27.563487"
+    },
+    {
+      "name": "Iskaffe Caramel Salty uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 20.2,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563367",
+          "price": 20.2
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563367",
+      "last_seen": "2026-11-02T03:04:27.563368"
+    },
+    {
+      "name": "Iskaffe Latte uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 20.2,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563431",
+          "price": 20.2
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563432",
+      "last_seen": "2026-11-02T03:04:27.563433"
+    },
+    {
+      "name": "Iskaffe Mocca 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 20.2,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563360",
+          "price": 20.2
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563361",
+      "last_seen": "2026-11-02T03:04:27.563362"
+    },
+    {
       "name": "GROVREV MAKR CHILI",
       "category": "supermarket",
       "stores": [
@@ -2000,7 +2380,64 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669098",
-      "last_seen": "2026-11-02T02:58:14.543037"
+      "last_seen": "2026-11-02T03:04:27.561660"
+    },
+    {
+      "name": "Lettmelk 1% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 21.4,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563672",
+          "price": 21.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563673",
+      "last_seen": "2026-11-02T03:04:27.563673"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 21.6,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563647",
+          "price": 21.6
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563648",
+      "last_seen": "2026-11-02T03:04:27.563649"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 21.7,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563612",
+          "price": 21.7
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563613",
+      "last_seen": "2026-11-02T03:04:27.563614"
     },
     {
       "name": "Coca-cola Zero 0,33l boks",
@@ -2022,6 +2459,101 @@
       "last_seen": "2026-10-31T20:59:01.744211"
     },
     {
+      "name": "Iskaffe Cappuccino 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563467",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563467",
+      "last_seen": "2026-11-02T03:04:27.563468"
+    },
+    {
+      "name": "Iskaffe Cappuccino uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563412",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563425",
+      "last_seen": "2026-11-02T03:04:27.563426"
+    },
+    {
+      "name": "Iskaffe Caramel Salty uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563388",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563389",
+      "last_seen": "2026-11-02T03:04:27.563389"
+    },
+    {
+      "name": "Iskaffe Latte uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563449",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563450",
+      "last_seen": "2026-11-02T03:04:27.563451"
+    },
+    {
+      "name": "Iskaffe Mocca 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563348",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563349",
+      "last_seen": "2026-11-02T03:04:27.563350"
+    },
+    {
       "name": "Iste Fersken 0,5l flaske Sunniva",
       "category": "supermarket",
       "stores": [
@@ -2039,6 +2571,63 @@
       ],
       "first_seen": "2026-10-31T23:52:44.007279",
       "last_seen": "2026-10-31T23:52:44.007281"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563607",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563607",
+      "last_seen": "2026-11-02T03:04:27.563608"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563618",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563619",
+      "last_seen": "2026-11-02T03:04:27.563620"
+    },
+    {
+      "name": "Lettmelk 1,0% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563575",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563576",
+      "last_seen": "2026-11-02T03:04:27.563577"
     },
     {
       "name": "PROTEINBAR DADDEL",
@@ -2069,7 +2658,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668898",
-      "last_seen": "2026-11-02T02:58:14.542769"
+      "last_seen": "2026-11-02T03:04:27.561363"
     },
     {
       "name": "RED BULL CHERRY",
@@ -2100,7 +2689,102 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668859",
-      "last_seen": "2026-11-02T02:58:14.542714"
+      "last_seen": "2026-11-02T03:04:27.561310"
+    },
+    {
+      "name": "Tørst Energidrikk 0,5l boks",
+      "category": "energidrikk",
+      "stores": [
+        "EUROPRIS_NO"
+      ],
+      "price": 21.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-europris_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563023",
+          "price": 21.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563024",
+      "last_seen": "2026-11-02T03:04:27.563025"
+    },
+    {
+      "name": "Nice Flerkornchips Jalapeño 80 g",
+      "category": "chips",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 22.4,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562908",
+          "price": 22.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562909",
+      "last_seen": "2026-11-02T03:04:27.562910"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 22.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563653",
+          "price": 22.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563653",
+      "last_seen": "2026-11-02T03:04:27.563654"
+    },
+    {
+      "name": "Appelsinjuice 2l First Price",
+      "category": "appelsinjuice",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563876",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563877",
+      "last_seen": "2026-11-02T03:04:27.563878"
+    },
+    {
+      "name": "Appelsinjuice 2l First Price",
+      "category": "appelsinjuice",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563888",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563888",
+      "last_seen": "2026-11-02T03:04:27.563889"
     },
     {
       "name": "Burn Original 0,25l boks",
@@ -2120,6 +2804,101 @@
       ],
       "first_seen": "2026-10-31T23:52:44.007223",
       "last_seen": "2026-10-31T23:52:44.007223"
+    },
+    {
+      "name": "Iskaffe Cappuccino 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563461",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563462",
+      "last_seen": "2026-11-02T03:04:27.563462"
+    },
+    {
+      "name": "Iskaffe Cappuccino uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563400",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563401",
+      "last_seen": "2026-11-02T03:04:27.563402"
+    },
+    {
+      "name": "Iskaffe Caramel Salty uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563373",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563374",
+      "last_seen": "2026-11-02T03:04:27.563375"
+    },
+    {
+      "name": "Iskaffe Latte uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563437",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563438",
+      "last_seen": "2026-11-02T03:04:27.563439"
+    },
+    {
+      "name": "Iskaffe Mocca 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563343",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563343",
+      "last_seen": "2026-11-02T03:04:27.563344"
     },
     {
       "name": "KARDEMOMMESKILLING",
@@ -2150,7 +2929,102 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669248",
-      "last_seen": "2026-11-02T02:58:14.543166"
+      "last_seen": "2026-11-02T03:04:27.561785"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563658",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563659",
+      "last_seen": "2026-11-02T03:04:27.563660"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563624",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563625",
+      "last_seen": "2026-11-02T03:04:27.563626"
+    },
+    {
+      "name": "Red Bull Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "EUROPRIS_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-europris_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562947",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562948",
+      "last_seen": "2026-11-02T03:04:27.562949"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "EUROPRIS_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-europris_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563036",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563037",
+      "last_seen": "2026-11-02T03:04:27.563037"
+    },
+    {
+      "name": "Red Bull Energidrikk Yellow Edition 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "EUROPRIS_NO"
+      ],
+      "price": 22.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-europris_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563100",
+          "price": 22.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563101",
+      "last_seen": "2026-11-02T03:04:27.563102"
     },
     {
       "name": "SKYR BLÅBÆR & ACAI",
@@ -2181,7 +3055,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668766",
-      "last_seen": "2026-11-02T02:58:14.542586"
+      "last_seen": "2026-11-02T03:04:27.561184"
     },
     {
       "name": "SKYR MANGO&VAN",
@@ -2212,7 +3086,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668753",
-      "last_seen": "2026-11-02T02:58:14.542570"
+      "last_seen": "2026-11-02T03:04:27.561168"
     },
     {
       "name": "YT SHAKE JORDB/BA",
@@ -2243,7 +3117,64 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668366",
-      "last_seen": "2026-11-02T02:58:14.542086"
+      "last_seen": "2026-11-02T03:04:27.560716"
+    },
+    {
+      "name": "Lettmelk 1% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 23.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563677",
+          "price": 23.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563678",
+      "last_seen": "2026-11-02T03:04:27.563679"
+    },
+    {
+      "name": "Lettmelk 1,0% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 23.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563587",
+          "price": 23.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563588",
+      "last_seen": "2026-11-02T03:04:27.563589"
+    },
+    {
+      "name": "Appelsinjuice 2l First Price",
+      "category": "appelsinjuice",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 23.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563870",
+          "price": 23.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563871",
+      "last_seen": "2026-11-02T03:04:27.563872"
     },
     {
       "name": "ITALIENSK SALAT",
@@ -2274,7 +3205,159 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669275",
-      "last_seen": "2026-11-02T02:58:14.543204"
+      "last_seen": "2026-11-02T03:04:27.561822"
+    },
+    {
+      "name": "Lettmelk 1% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 23.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563664",
+          "price": 23.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563665",
+      "last_seen": "2026-11-02T03:04:27.563666"
+    },
+    {
+      "name": "Lettmelk 1% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 23.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563683",
+          "price": 23.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563684",
+      "last_seen": "2026-11-02T03:04:27.563685"
+    },
+    {
+      "name": "Lettmelk 1,0% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 23.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563570",
+          "price": 23.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563571",
+      "last_seen": "2026-11-02T03:04:27.563571"
+    },
+    {
+      "name": "Lettmelk 1,0% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 23.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563595",
+          "price": 23.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563596",
+      "last_seen": "2026-11-02T03:04:27.563597"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 23.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563042",
+          "price": 23.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563043",
+      "last_seen": "2026-11-02T03:04:27.563043"
+    },
+    {
+      "name": "Red Bull Energidrikk Yellow Edition 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "FUDI"
+      ],
+      "price": 23.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-fudi",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563081",
+          "price": 23.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563082",
+      "last_seen": "2026-11-02T03:04:27.563083"
+    },
+    {
+      "name": "Red Bull Energidrikk 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 23.94,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562935",
+          "price": 23.94
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562936",
+      "last_seen": "2026-11-02T03:04:27.562937"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 23.94,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563005",
+          "price": 23.94
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563006",
+      "last_seen": "2026-11-02T03:04:27.563006"
     },
     {
       "name": "Grønnkål 150g Grønn&frisk",
@@ -2301,7 +3384,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007063",
-      "last_seen": "2026-11-02T02:58:14.544033"
+      "last_seen": "2026-11-02T03:04:27.562614"
     },
     {
       "name": "SKYR LUFTIG SALT K",
@@ -2332,7 +3415,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668759",
-      "last_seen": "2026-11-02T02:58:14.542577"
+      "last_seen": "2026-11-02T03:04:27.561176"
     },
     {
       "name": "Avocado stykk",
@@ -2359,7 +3442,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007039",
-      "last_seen": "2026-11-02T02:58:14.543894"
+      "last_seen": "2026-11-02T03:04:27.562485"
     },
     {
       "name": "CHERRY CRUSH",
@@ -2390,7 +3473,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668517",
-      "last_seen": "2026-11-02T02:58:14.542350"
+      "last_seen": "2026-11-02T03:04:27.560957"
     },
     {
       "name": "COLG HARRY POTTER",
@@ -2421,7 +3504,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669514",
-      "last_seen": "2026-11-02T02:58:14.543490"
+      "last_seen": "2026-11-02T03:04:27.562082"
     },
     {
       "name": "Coconut Cream 250ml St.maria",
@@ -2444,7 +3527,7 @@
         }
       ],
       "first_seen": "2026-11-01T19:51:08.158484",
-      "last_seen": "2026-11-02T02:58:14.544026"
+      "last_seen": "2026-11-02T03:04:27.562608"
     },
     {
       "name": "DANETTE",
@@ -2475,7 +3558,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669497",
-      "last_seen": "2026-11-02T02:58:14.543466"
+      "last_seen": "2026-11-02T03:04:27.562059"
     },
     {
       "name": "DLN SJOKOPEANØTT",
@@ -2506,7 +3589,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669474",
-      "last_seen": "2026-11-02T02:58:14.543436"
+      "last_seen": "2026-11-02T03:04:27.562029"
     },
     {
       "name": "FRESH BOWLS AND",
@@ -2537,7 +3620,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669550",
-      "last_seen": "2026-11-02T02:58:14.543534"
+      "last_seen": "2026-11-02T03:04:27.562128"
     },
     {
       "name": "GOURMET REVEL",
@@ -2568,7 +3651,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669327",
-      "last_seen": "2026-11-02T02:58:14.543289"
+      "last_seen": "2026-11-02T03:04:27.561890"
     },
     {
       "name": "GRØNNSAKSBASE",
@@ -2599,7 +3682,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669018",
-      "last_seen": "2026-11-02T02:58:14.542928"
+      "last_seen": "2026-11-02T03:04:27.561553"
     },
     {
       "name": "KJØKKEN HÅNDSÅPE",
@@ -2630,7 +3713,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669230",
-      "last_seen": "2026-11-02T02:58:14.543144"
+      "last_seen": "2026-11-02T03:04:27.561764"
     },
     {
       "name": "KRYSSORDPENN",
@@ -2661,7 +3744,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669160",
-      "last_seen": "2026-11-02T02:58:14.543121"
+      "last_seen": "2026-11-02T03:04:27.561742"
     },
     {
       "name": "Knatter Frukt 100g Brynild",
@@ -2703,7 +3786,26 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085741",
-      "last_seen": "2026-11-02T02:58:14.544136"
+      "last_seen": "2026-11-02T03:04:27.562714"
+    },
+    {
+      "name": "Lettmelk 0,5% 1l Q",
+      "category": "lettmelk",
+      "stores": [
+        "FUDI"
+      ],
+      "price": 24.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-fudi",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563635",
+          "price": 24.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563636",
+      "last_seen": "2026-11-02T03:04:27.563637"
     },
     {
       "name": "MAKRELL GROVHAKKET",
@@ -2734,7 +3836,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668534",
-      "last_seen": "2026-11-02T02:58:14.542280"
+      "last_seen": "2026-11-02T03:04:27.560887"
     },
     {
       "name": "NIVEA CREME",
@@ -2765,7 +3867,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669029",
-      "last_seen": "2026-11-02T02:58:14.542943"
+      "last_seen": "2026-11-02T03:04:27.561569"
+    },
+    {
+      "name": "Red Bull Energidrikk Yellow Edition 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 24.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563109",
+          "price": 24.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563109",
+      "last_seen": "2026-11-02T03:04:27.563110"
     },
     {
       "name": "Red Curry Paste 110g St.maria",
@@ -2788,7 +3909,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085601",
-      "last_seen": "2026-11-02T02:58:14.543992"
+      "last_seen": "2026-11-02T03:04:27.562577"
     },
     {
       "name": "Ruccula 65g Grønn&frisk",
@@ -2842,7 +3963,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668656",
-      "last_seen": "2026-11-02T02:58:14.542445"
+      "last_seen": "2026-11-02T03:04:27.561048"
     },
     {
       "name": "Kyllinglår Grillet Kald pr stykk",
@@ -2892,7 +4013,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668842",
-      "last_seen": "2026-11-02T02:58:14.542689"
+      "last_seen": "2026-11-02T03:04:27.561286"
     },
     {
       "name": "Grønnkål Mix 300g Grønn&frisk",
@@ -2915,7 +4036,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085709",
-      "last_seen": "2026-11-02T02:58:14.544096"
+      "last_seen": "2026-11-02T03:04:27.562675"
     },
     {
       "name": "Spinat 200g Grønn&frisk",
@@ -2942,7 +4063,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007056",
-      "last_seen": "2026-11-02T02:58:14.544075"
+      "last_seen": "2026-11-02T03:04:27.562655"
     },
     {
       "name": "BATTERY ZERO APPLE",
@@ -2973,7 +4094,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669606",
-      "last_seen": "2026-11-02T02:58:14.543608"
+      "last_seen": "2026-11-02T03:04:27.562200"
     },
     {
       "name": "Lettrømme 17% 300g Q",
@@ -3027,7 +4148,102 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669041",
-      "last_seen": "2026-11-02T02:58:14.542959"
+      "last_seen": "2026-11-02T03:04:27.561584"
+    },
+    {
+      "name": "Red Bull Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 25.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562941",
+          "price": 25.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562942",
+      "last_seen": "2026-11-02T03:04:27.562943"
+    },
+    {
+      "name": "Red Bull Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 25.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562953",
+          "price": 25.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562956",
+      "last_seen": "2026-11-02T03:04:27.562957"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 25.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563030",
+          "price": 25.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563031",
+      "last_seen": "2026-11-02T03:04:27.563031"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 25.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563048",
+          "price": 25.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563049",
+      "last_seen": "2026-11-02T03:04:27.563050"
+    },
+    {
+      "name": "Red Bull Energidrikk Yellow Edition 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 25.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563087",
+          "price": 25.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563088",
+      "last_seen": "2026-11-02T03:04:27.563089"
     },
     {
       "name": "Smoothie Blåbær&eple 250ml Bendit",
@@ -3068,6 +4284,158 @@
       "last_seen": "2026-10-31T23:52:44.007256"
     },
     {
+      "name": "Appelsinjuice Original 250ml Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 26.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563902",
+          "price": 26.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563902",
+      "last_seen": "2026-11-02T03:04:27.563903"
+    },
+    {
+      "name": "Iskaffe Cappuccino 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563472",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563473",
+      "last_seen": "2026-11-02T03:04:27.563474"
+    },
+    {
+      "name": "Iskaffe Cappuccino uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563406",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563407",
+      "last_seen": "2026-11-02T03:04:27.563408"
+    },
+    {
+      "name": "Iskaffe Caramel Salty uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563379",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563380",
+      "last_seen": "2026-11-02T03:04:27.563381"
+    },
+    {
+      "name": "Iskaffe Latte uten 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563443",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563444",
+      "last_seen": "2026-11-02T03:04:27.563445"
+    },
+    {
+      "name": "Iskaffe Mocca 330ml Tine",
+      "category": "kaffe",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563354",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563355",
+      "last_seen": "2026-11-02T03:04:27.563356"
+    },
+    {
+      "name": "Red Bull Energidrikk 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562962",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562963",
+      "last_seen": "2026-11-02T03:04:27.562964"
+    },
+    {
+      "name": "Red Bull Energidrikk Yellow Edition 250ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563094",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563094",
+      "last_seen": "2026-11-02T03:04:27.563095"
+    },
+    {
       "name": "SURE SKALLER",
       "category": "supermarket",
       "stores": [
@@ -3096,7 +4464,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668582",
-      "last_seen": "2026-11-02T02:58:14.542342"
+      "last_seen": "2026-11-02T03:04:27.560949"
     },
     {
       "name": "Sandefjordsmør Original 29g Toro",
@@ -3116,6 +4484,82 @@
       ],
       "first_seen": "2026-10-31T23:52:44.007422",
       "last_seen": "2026-10-31T23:52:44.007423"
+    },
+    {
+      "name": "Toro Sandefjordsmør Original 29g",
+      "category": "smør",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563223",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563224",
+      "last_seen": "2026-11-02T03:04:27.563224"
+    },
+    {
+      "name": "Toro Sandefjordsmør Original 29g",
+      "category": "smør",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563229",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563230",
+      "last_seen": "2026-11-02T03:04:27.563231"
+    },
+    {
+      "name": "Toro Sandefjordsmør Original 29g",
+      "category": "smør",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 26.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563235",
+          "price": 26.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563236",
+      "last_seen": "2026-11-02T03:04:27.563237"
+    },
+    {
+      "name": "Lettmelk 0,5% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 27.4,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563725",
+          "price": 27.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563726",
+      "last_seen": "2026-11-02T03:04:27.563727"
     },
     {
       "name": "OVNSBAKT SØTPOTET",
@@ -3146,7 +4590,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668979",
-      "last_seen": "2026-11-02T02:58:14.542875"
+      "last_seen": "2026-11-02T03:04:27.561501"
+    },
+    {
+      "name": "Toro Sandefjordsmør Original 29g",
+      "category": "smør",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 27.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563241",
+          "price": 27.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563242",
+      "last_seen": "2026-11-02T03:04:27.563243"
     },
     {
       "name": "Wok Mix 300g Grønn&frisk",
@@ -3173,7 +4636,26 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007069",
-      "last_seen": "2026-11-02T02:58:14.543790"
+      "last_seen": "2026-11-02T03:04:27.562375"
+    },
+    {
+      "name": "Propud Chocolate 200g",
+      "category": "cola",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 28.5,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562819",
+          "price": 28.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562820",
+      "last_seen": "2026-11-02T03:04:27.562821"
     },
     {
       "name": "Castello Whipped Cream Cheese Garlic 125g",
@@ -3193,6 +4675,25 @@
       ],
       "first_seen": "2026-10-31T23:52:44.007229",
       "last_seen": "2026-10-31T23:52:44.007230"
+    },
+    {
+      "name": "Propud Chocolate 200g",
+      "category": "cola",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 28.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562813",
+          "price": 28.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562814",
+      "last_seen": "2026-11-02T03:04:27.562815"
     },
     {
       "name": "SNACK MARGHERITA",
@@ -3223,7 +4724,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668684",
-      "last_seen": "2026-11-02T02:58:14.542483"
+      "last_seen": "2026-11-02T03:04:27.561085"
     },
     {
       "name": "SNACK MEATFEAST",
@@ -3254,7 +4755,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668679",
-      "last_seen": "2026-11-02T02:58:14.542475"
+      "last_seen": "2026-11-02T03:04:27.561078"
+    },
+    {
+      "name": "Lettmelk 1,0% 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "ENGROSSNETT_NO"
+      ],
+      "price": 29.89,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-engrossnett_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563581",
+          "price": 29.89
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563582",
+      "last_seen": "2026-11-02T03:04:27.563583"
+    },
+    {
+      "name": "Appelsinjuice 2l First Price",
+      "category": "appelsinjuice",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 29.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563882",
+          "price": 29.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563883",
+      "last_seen": "2026-11-02T03:04:27.563883"
     },
     {
       "name": "BALSAM SENSITIV",
@@ -3285,7 +4824,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669634",
-      "last_seen": "2026-11-02T02:58:14.543647"
+      "last_seen": "2026-11-02T03:04:27.562237"
     },
     {
       "name": "CHAMPAGNEGLASS",
@@ -3316,7 +4855,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669544",
-      "last_seen": "2026-11-02T02:58:14.543527"
+      "last_seen": "2026-11-02T03:04:27.562120"
     },
     {
       "name": "Cashewnøtter Saltet 150g Eldorado",
@@ -3366,7 +4905,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669439",
-      "last_seen": "2026-11-02T02:58:14.543390"
+      "last_seen": "2026-11-02T03:04:27.561985"
     },
     {
       "name": "EUCAMENTHOL",
@@ -3397,7 +4936,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669432",
-      "last_seen": "2026-11-02T02:58:14.543382"
+      "last_seen": "2026-11-02T03:04:27.561978"
     },
     {
       "name": "FLASKEPOSE",
@@ -3428,7 +4967,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669366",
-      "last_seen": "2026-11-02T02:58:14.543342"
+      "last_seen": "2026-11-02T03:04:27.561940"
     },
     {
       "name": "FRUKT TYGGIS",
@@ -3459,7 +4998,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669339",
-      "last_seen": "2026-11-02T02:58:14.543305"
+      "last_seen": "2026-11-02T03:04:27.561904"
     },
     {
       "name": "GAVEPOSE 3PK",
@@ -3490,7 +5029,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669333",
-      "last_seen": "2026-11-02T02:58:14.543297"
+      "last_seen": "2026-11-02T03:04:27.561897"
     },
     {
       "name": "Gifflar Kanel 300g Pågen",
@@ -3513,7 +5052,26 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085659",
-      "last_seen": "2026-11-02T02:58:14.544054"
+      "last_seen": "2026-11-02T03:04:27.562634"
+    },
+    {
+      "name": "Lettmelk 1% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 29.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563719",
+          "price": 29.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563720",
+      "last_seen": "2026-11-02T03:04:27.563721"
     },
     {
       "name": "MAXIM GEL DRINK",
@@ -3544,7 +5102,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669069",
-      "last_seen": "2026-11-02T02:58:14.542999"
+      "last_seen": "2026-11-02T03:04:27.561622"
+    },
+    {
+      "name": "Mors Grovbrød 750g Bakehuset",
+      "category": "grovbrød",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 29.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563267",
+          "price": 29.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563268",
+      "last_seen": "2026-11-02T03:04:27.563269"
     },
     {
       "name": "POTETCHIPS M/SALT",
@@ -3575,7 +5152,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668920",
-      "last_seen": "2026-11-02T02:58:14.542799"
+      "last_seen": "2026-11-02T03:04:27.561393"
     },
     {
       "name": "RAB/HYLLEBLOMST",
@@ -3606,7 +5183,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669349",
-      "last_seen": "2026-11-02T02:58:14.543320"
+      "last_seen": "2026-11-02T03:04:27.561919"
     },
     {
       "name": "REKESALAT",
@@ -3637,7 +5214,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668848",
-      "last_seen": "2026-11-02T02:58:14.542698"
+      "last_seen": "2026-11-02T03:04:27.561293"
     },
     {
       "name": "Rømme 35% 300g Q",
@@ -3687,7 +5264,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668791",
-      "last_seen": "2026-11-02T02:58:14.542618"
+      "last_seen": "2026-11-02T03:04:27.561215"
     },
     {
       "name": "SJOKOBÆR BJØRNEBÆR",
@@ -3718,7 +5295,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668779",
-      "last_seen": "2026-11-02T02:58:14.542603"
+      "last_seen": "2026-11-02T03:04:27.561200"
     },
     {
       "name": "SPEARMINT",
@@ -3749,7 +5326,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668640",
-      "last_seen": "2026-11-02T02:58:14.542421"
+      "last_seen": "2026-11-02T03:04:27.561025"
     },
     {
       "name": "SPRINKLED FOAMIES",
@@ -3780,7 +5357,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669086",
-      "last_seen": "2026-11-02T02:58:14.543030"
+      "last_seen": "2026-11-02T03:04:27.561652"
+    },
+    {
+      "name": "Toro Sandefjordsmør Original 29g",
+      "category": "smør",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 29.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563216",
+          "price": 29.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563217",
+      "last_seen": "2026-11-02T03:04:27.563218"
     },
     {
       "name": "VINGLASS",
@@ -3811,7 +5407,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668488",
-      "last_seen": "2026-11-02T02:58:14.542200"
+      "last_seen": "2026-11-02T03:04:27.560826"
     },
     {
       "name": "Kjøttpølse Skinnfri 450g Gilde",
@@ -3852,6 +5448,25 @@
       "last_seen": "2026-10-31T20:59:01.744474"
     },
     {
+      "name": "Leverpostei Ovnsbakt Bacon 180g Gilde",
+      "category": "bacon",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 30.4,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562754",
+          "price": 30.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562755",
+      "last_seen": "2026-11-02T03:04:27.562756"
+    },
+    {
       "name": "Rotgrønnsaker 600g Grønn&frisk",
       "category": "supermarket",
       "stores": [
@@ -3876,7 +5491,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007049",
-      "last_seen": "2026-11-02T02:58:14.543767"
+      "last_seen": "2026-11-02T03:04:27.562353"
     },
     {
       "name": "JORDBÆRSYLTETØY FL",
@@ -3907,7 +5522,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668618",
-      "last_seen": "2026-11-02T02:58:14.542391"
+      "last_seen": "2026-11-02T03:04:27.560996"
     },
     {
       "name": "FRUS MANDARIN MANG",
@@ -3938,7 +5553,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669426",
-      "last_seen": "2026-11-02T02:58:14.543374"
+      "last_seen": "2026-11-02T03:04:27.561970"
     },
     {
       "name": "KVARG",
@@ -3969,7 +5584,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668396",
-      "last_seen": "2026-11-02T02:58:14.542099"
+      "last_seen": "2026-11-02T03:04:27.560728"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 90ml Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 32.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562885",
+          "price": 32.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562886",
+      "last_seen": "2026-11-02T03:04:27.562887"
     },
     {
       "name": "FRANSKE SMØRKJEKS",
@@ -4000,7 +5634,64 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668690",
-      "last_seen": "2026-11-02T02:58:14.542492"
+      "last_seen": "2026-11-02T03:04:27.561093"
+    },
+    {
+      "name": "Lettmelk 0,5% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 32.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563731",
+          "price": 32.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563732",
+      "last_seen": "2026-11-02T03:04:27.563733"
+    },
+    {
+      "name": "Lettmelk 0,5% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 32.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563737",
+          "price": 32.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563738",
+      "last_seen": "2026-11-02T03:04:27.563739"
+    },
+    {
+      "name": "Lettmelk 0,5% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 32.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563743",
+          "price": 32.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563744",
+      "last_seen": "2026-11-02T03:04:27.563745"
     },
     {
       "name": "Nøtter Søt&salt 160g Eldorado",
@@ -4050,7 +5741,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668417",
-      "last_seen": "2026-11-02T02:58:14.542117"
+      "last_seen": "2026-11-02T03:04:27.560746"
     },
     {
       "name": "PENNE GLUTENFRI",
@@ -4081,7 +5772,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668955",
-      "last_seen": "2026-11-02T02:58:14.542844"
+      "last_seen": "2026-11-02T03:04:27.561471"
     },
     {
       "name": "Creme Fraiche 35% 300g Q",
@@ -4131,7 +5822,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669355",
-      "last_seen": "2026-11-02T02:58:14.543327"
+      "last_seen": "2026-11-02T03:04:27.561926"
+    },
+    {
+      "name": "Leverpostei Ovnsbakt Bacon 180g Gilde",
+      "category": "bacon",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 33.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562737",
+          "price": 33.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562738",
+      "last_seen": "2026-11-02T03:04:27.562739"
     },
     {
       "name": "Mozzarella Norsk 225g Tine",
@@ -4185,7 +5895,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668876",
-      "last_seen": "2026-11-02T02:58:14.542737"
+      "last_seen": "2026-11-02T03:04:27.561331"
     },
     {
       "name": "SULKE HAZY IPA",
@@ -4216,7 +5926,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668593",
-      "last_seen": "2026-11-02T02:58:14.542357"
+      "last_seen": "2026-11-02T03:04:27.560964"
+    },
+    {
+      "name": "Lettmelk 1% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 34.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563703",
+          "price": 34.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563704",
+      "last_seen": "2026-11-02T03:04:27.563705"
     },
     {
       "name": "CHOCOLATE CAKE",
@@ -4247,7 +5976,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669629",
-      "last_seen": "2026-11-02T02:58:14.543639"
+      "last_seen": "2026-11-02T03:04:27.562230"
     },
     {
       "name": "CINNAMON BUN",
@@ -4278,7 +6007,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669623",
-      "last_seen": "2026-11-02T02:58:14.543632"
+      "last_seen": "2026-11-02T03:04:27.562223"
     },
     {
       "name": "GRANA PADANO FLAK",
@@ -4309,7 +6038,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669322",
-      "last_seen": "2026-11-02T02:58:14.543281"
+      "last_seen": "2026-11-02T03:04:27.561882"
     },
     {
       "name": "LEPPEPOMADE ROSY",
@@ -4340,7 +6069,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668476",
-      "last_seen": "2026-11-02T02:58:14.542185"
+      "last_seen": "2026-11-02T03:04:27.560810"
+    },
+    {
+      "name": "Lettmelk 1% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 34.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563691",
+          "price": 34.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563692",
+      "last_seen": "2026-11-02T03:04:27.563693"
     },
     {
       "name": "Mango/eple Juice Premium 1l Sunniva",
@@ -4363,7 +6111,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085675",
-      "last_seen": "2026-11-02T02:58:14.544068"
+      "last_seen": "2026-11-02T03:04:27.562648"
     },
     {
       "name": "SALTY CARAMEL",
@@ -4394,7 +6142,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669617",
-      "last_seen": "2026-11-02T02:58:14.543624"
+      "last_seen": "2026-11-02T03:04:27.562215"
     },
     {
       "name": "SALTY PEANUT",
@@ -4425,7 +6173,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669612",
-      "last_seen": "2026-11-02T02:58:14.543617"
+      "last_seen": "2026-11-02T03:04:27.562207"
     },
     {
       "name": "Soft Shake Sjokolade 210ml Hennig-olsen",
@@ -4475,7 +6223,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669035",
-      "last_seen": "2026-11-02T02:58:14.542951"
+      "last_seen": "2026-11-02T03:04:27.561576"
     },
     {
       "name": "UTS JORDBÆR",
@@ -4506,7 +6254,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668599",
-      "last_seen": "2026-11-02T02:58:14.542366"
+      "last_seen": "2026-11-02T03:04:27.560972"
     },
     {
       "name": "Yoghurt Kokos 4x150g Tine",
@@ -4556,7 +6304,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669361",
-      "last_seen": "2026-11-02T02:58:14.543335"
+      "last_seen": "2026-11-02T03:04:27.561933"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 90ml Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 35.0,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562895",
+          "price": 35.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562896",
+      "last_seen": "2026-11-02T03:04:27.562897"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 90ml Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 35.0,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562901",
+          "price": 35.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562902",
+      "last_seen": "2026-11-02T03:04:27.562903"
     },
     {
       "name": "Grovt Bondebrød 660g",
@@ -4602,7 +6388,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007006",
-      "last_seen": "2026-11-02T02:58:14.543798"
+      "last_seen": "2026-11-02T03:04:27.562382"
     },
     {
       "name": "MASKINOPPVASK.60PK",
@@ -4633,7 +6419,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669081",
-      "last_seen": "2026-11-02T02:58:14.543015"
+      "last_seen": "2026-11-02T03:04:27.561637"
     },
     {
       "name": "ALOE VERA DEO",
@@ -4664,7 +6450,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669457",
-      "last_seen": "2026-11-02T02:58:14.543415"
+      "last_seen": "2026-11-02T03:04:27.562009"
     },
     {
       "name": "DR. GREVE ANTIPERS",
@@ -4695,7 +6481,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669451",
-      "last_seen": "2026-11-02T02:58:14.543407"
+      "last_seen": "2026-11-02T03:04:27.562001"
     },
     {
       "name": "Kefir Økologisk 1000g Tine",
@@ -4719,6 +6505,63 @@
       ],
       "first_seen": "2026-10-31T20:51:55.013859",
       "last_seen": "2026-10-31T23:52:44.007166"
+    },
+    {
+      "name": "Lettmelk 1% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 35.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563709",
+          "price": 35.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563710",
+      "last_seen": "2026-11-02T03:04:27.563711"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 90ml Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 36.0,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562879",
+          "price": 36.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562880",
+      "last_seen": "2026-11-02T03:04:27.562880"
+    },
+    {
+      "name": "Leverpostei Ovnsbakt Bacon 180g Gilde",
+      "category": "bacon",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 36.5,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562730",
+          "price": 36.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562731",
+      "last_seen": "2026-11-02T03:04:27.562732"
     },
     {
       "name": "Appelsinjuice Premium 1l Sunniva",
@@ -4745,7 +6588,64 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007020",
-      "last_seen": "2026-11-02T02:58:14.544129"
+      "last_seen": "2026-11-02T03:04:27.562707"
+    },
+    {
+      "name": "Appelsinjuice Premium 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 36.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563844",
+          "price": 36.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563845",
+      "last_seen": "2026-11-02T03:04:27.563846"
+    },
+    {
+      "name": "Appelsinjuice m/Fruktkjøtt 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 36.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563819",
+          "price": 36.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563820",
+      "last_seen": "2026-11-02T03:04:27.563821"
+    },
+    {
+      "name": "Appelsinjuice m/Fruktkjøtt 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 36.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563832",
+          "price": 36.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563833",
+      "last_seen": "2026-11-02T03:04:27.563833"
     },
     {
       "name": "Eple/bringeb.juice Presset 1l Sunniva",
@@ -4768,7 +6668,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085645",
-      "last_seen": "2026-11-02T02:58:14.544040"
+      "last_seen": "2026-11-02T03:04:27.562621"
     },
     {
       "name": "Eplejuice Presset Cloudy 1l Sunniva",
@@ -4791,7 +6691,64 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085621",
-      "last_seen": "2026-11-02T02:58:14.544012"
+      "last_seen": "2026-11-02T03:04:27.562595"
+    },
+    {
+      "name": "Lettmelk 1% Laktosefri 1l Tine",
+      "category": "lettmelk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 36.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563697",
+          "price": 36.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563698",
+      "last_seen": "2026-11-02T03:04:27.563699"
+    },
+    {
+      "name": "Leverpostei Ovnsbakt Bacon 180g Gilde",
+      "category": "bacon",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 36.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562722",
+          "price": 36.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562724",
+      "last_seen": "2026-11-02T03:04:27.562725"
+    },
+    {
+      "name": "Leverpostei Ovnsbakt Bacon 180g Gilde",
+      "category": "bacon",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 36.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562744",
+          "price": 36.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562748",
+      "last_seen": "2026-11-02T03:04:27.562749"
     },
     {
       "name": "MINIPIZZABUNN 4PK",
@@ -4822,7 +6779,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669047",
-      "last_seen": "2026-11-02T02:58:14.542967"
+      "last_seen": "2026-11-02T03:04:27.561591"
     },
     {
       "name": "PISTASJKJERNER",
@@ -4853,7 +6810,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668950",
-      "last_seen": "2026-11-02T02:58:14.542836"
+      "last_seen": "2026-11-02T03:04:27.561463"
     },
     {
       "name": "Tomat Søt 175g Shaker Season",
@@ -4907,7 +6864,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669259",
-      "last_seen": "2026-11-02T02:58:14.543181"
+      "last_seen": "2026-11-02T03:04:27.561800"
     },
     {
       "name": "RED BULL WINTER 26",
@@ -4938,7 +6895,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668854",
-      "last_seen": "2026-11-02T02:58:14.542706"
+      "last_seen": "2026-11-02T03:04:27.561302"
+    },
+    {
+      "name": "Appelsinjuice 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 37.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563781",
+          "price": 37.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563782",
+      "last_seen": "2026-11-02T03:04:27.563783"
     },
     {
       "name": "CHOKO KARMEL",
@@ -4969,7 +6945,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668996",
-      "last_seen": "2026-11-02T02:58:14.542898"
+      "last_seen": "2026-11-02T03:04:27.561524"
     },
     {
       "name": "LATZ SOUP FARM SEL",
@@ -5000,7 +6976,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669149",
-      "last_seen": "2026-11-02T02:58:14.543107"
+      "last_seen": "2026-11-02T03:04:27.561728"
     },
     {
       "name": "MINI PERLER",
@@ -5031,7 +7007,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668990",
-      "last_seen": "2026-11-02T02:58:14.542890"
+      "last_seen": "2026-11-02T03:04:27.561516"
     },
     {
       "name": "POTETGULL INTENSE",
@@ -5062,7 +7038,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668915",
-      "last_seen": "2026-11-02T02:58:14.542792"
+      "last_seen": "2026-11-02T03:04:27.561385"
     },
     {
       "name": "YOGHURT VANILJE",
@@ -5093,7 +7069,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668410",
-      "last_seen": "2026-11-02T02:58:14.542108"
+      "last_seen": "2026-11-02T03:04:27.560737"
     },
     {
       "name": "TORTIGLIONI GFR",
@@ -5124,7 +7100,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668506",
-      "last_seen": "2026-11-02T02:58:14.542225"
+      "last_seen": "2026-11-02T03:04:27.560851"
     },
     {
       "name": "PRESTOST",
@@ -5155,7 +7131,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669651",
-      "last_seen": "2026-11-02T02:58:14.543670"
+      "last_seen": "2026-11-02T03:04:27.562259"
     },
     {
       "name": "R SPECULOOS",
@@ -5186,7 +7162,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668635",
-      "last_seen": "2026-11-02T02:58:14.542414"
+      "last_seen": "2026-11-02T03:04:27.561018"
     },
     {
       "name": "PASTASLEIV 31CM R",
@@ -5217,7 +7193,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668967",
-      "last_seen": "2026-11-02T02:58:14.542860"
+      "last_seen": "2026-11-02T03:04:27.561486"
+    },
+    {
+      "name": "Appelsinjuice m/Fruktkjøtt 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563813",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563814",
+      "last_seen": "2026-11-02T03:04:27.563815"
+    },
+    {
+      "name": "Appelsinjuice m/Fruktkjøtt 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563826",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563826",
+      "last_seen": "2026-11-02T03:04:27.563827"
     },
     {
       "name": "BARISTA KOKOS",
@@ -5248,7 +7262,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668667",
-      "last_seen": "2026-11-02T02:58:14.542459"
+      "last_seen": "2026-11-02T03:04:27.561063"
     },
     {
       "name": "Bakepotet 4stk",
@@ -5271,7 +7285,7 @@
         }
       ],
       "first_seen": "2026-11-01T19:51:08.157672",
-      "last_seen": "2026-11-02T02:58:14.543761"
+      "last_seen": "2026-11-02T03:04:27.562346"
     },
     {
       "name": "CHOCO CARAMEL",
@@ -5302,7 +7316,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669491",
-      "last_seen": "2026-11-02T02:58:14.543458"
+      "last_seen": "2026-11-02T03:04:27.562052"
     },
     {
       "name": "DLN SWEET & SPICY",
@@ -5333,7 +7347,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668570",
-      "last_seen": "2026-11-02T02:58:14.542326"
+      "last_seen": "2026-11-02T03:04:27.560933"
     },
     {
       "name": "EKTE REVET",
@@ -5364,7 +7378,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668564",
-      "last_seen": "2026-11-02T02:58:14.542318"
+      "last_seen": "2026-11-02T03:04:27.560925"
     },
     {
       "name": "Fitness Frokost 375g Nestle",
@@ -5391,7 +7405,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007026",
-      "last_seen": "2026-11-02T02:58:14.543733"
+      "last_seen": "2026-11-02T03:04:27.562319"
     },
     {
       "name": "GRESK YOGHURT",
@@ -5422,7 +7436,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669316",
-      "last_seen": "2026-11-02T02:58:14.543272"
+      "last_seen": "2026-11-02T03:04:27.561875"
+    },
+    {
+      "name": "Grovbrød Mix m/Havre Gl.Fri 424g Møllerens",
+      "category": "grovbrød",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563303",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563304",
+      "last_seen": "2026-11-02T03:04:27.563305"
+    },
+    {
+      "name": "Grovbrød Mix m/Havre Gl.Fri 424g Møllerens",
+      "category": "grovbrød",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563310",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563311",
+      "last_seen": "2026-11-02T03:04:27.563312"
     },
     {
       "name": "Kims Potetgull Mexican Fiesta 200g",
@@ -5472,7 +7524,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669109",
-      "last_seen": "2026-11-02T02:58:14.543053"
+      "last_seen": "2026-11-02T03:04:27.561676"
     },
     {
       "name": "MAGNESIUMSITRAT",
@@ -5503,7 +7555,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669063",
-      "last_seen": "2026-11-02T02:58:14.542991"
+      "last_seen": "2026-11-02T03:04:27.561614"
     },
     {
       "name": "MAIS EXTRA CRISPY",
@@ -5534,7 +7586,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669104",
-      "last_seen": "2026-11-02T02:58:14.543045"
+      "last_seen": "2026-11-02T03:04:27.561668"
     },
     {
       "name": "MATCHA STRAWBERRY",
@@ -5565,7 +7617,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669293",
-      "last_seen": "2026-11-02T02:58:14.543227"
+      "last_seen": "2026-11-02T03:04:27.561845"
     },
     {
       "name": "NUDLER BIFFSMAK",
@@ -5596,7 +7648,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668357",
-      "last_seen": "2026-11-02T02:58:14.542060"
+      "last_seen": "2026-11-02T03:04:27.560693"
     },
     {
       "name": "Nidar Favoritter Troika 200g",
@@ -5619,7 +7671,26 @@
         }
       ],
       "first_seen": "2026-11-01T19:51:08.158747",
-      "last_seen": "2026-11-02T02:58:14.544109"
+      "last_seen": "2026-11-02T03:04:27.562687"
+    },
+    {
+      "name": "Red Bull Energidrikk 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562915",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562916",
+      "last_seen": "2026-11-02T03:04:27.562917"
     },
     {
       "name": "Red Bull Energidrikk Sukkerfri 473ml boks",
@@ -5643,6 +7714,63 @@
       ],
       "first_seen": "2026-10-31T20:51:55.013969",
       "last_seen": "2026-10-31T23:52:44.007195"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562998",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562999",
+      "last_seen": "2026-11-02T03:04:27.563000"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563011",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563012",
+      "last_seen": "2026-11-02T03:04:27.563012"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563017",
+          "price": 39.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563018",
+      "last_seen": "2026-11-02T03:04:27.563019"
     },
     {
       "name": "SOYADRIKK",
@@ -5673,7 +7801,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668661",
-      "last_seen": "2026-11-02T02:58:14.542452"
+      "last_seen": "2026-11-02T03:04:27.561055"
     },
     {
       "name": "SPORTSVASK",
@@ -5704,7 +7832,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668629",
-      "last_seen": "2026-11-02T02:58:14.542406"
+      "last_seen": "2026-11-02T03:04:27.561011"
     },
     {
       "name": "SRIRACHA OST",
@@ -5735,7 +7863,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669236",
-      "last_seen": "2026-11-02T02:58:14.543159"
+      "last_seen": "2026-11-02T03:04:27.561779"
     },
     {
       "name": "Sjokolade Mørk 150g Minde",
@@ -5758,7 +7886,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085652",
-      "last_seen": "2026-11-02T02:58:14.544047"
+      "last_seen": "2026-11-02T03:04:27.562628"
     },
     {
       "name": "TØYVASK HVITT",
@@ -5789,7 +7917,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668500",
-      "last_seen": "2026-11-02T02:58:14.542217"
+      "last_seen": "2026-11-02T03:04:27.560843"
     },
     {
       "name": "Grana Padano 200g Eldorado",
@@ -5858,7 +7986,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668623",
-      "last_seen": "2026-11-02T02:58:14.542398"
+      "last_seen": "2026-11-02T03:04:27.561003"
+    },
+    {
+      "name": "Red Bull Energidrikk 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 40.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562929",
+          "price": 40.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562930",
+      "last_seen": "2026-11-02T03:04:27.562931"
     },
     {
       "name": "Kims Potetgull Salt Crunch 200g",
@@ -5882,6 +8029,82 @@
       ],
       "first_seen": "2026-10-31T20:51:55.013954",
       "last_seen": "2026-10-31T23:52:44.007185"
+    },
+    {
+      "name": "Appelsinjuice 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 41.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563755",
+          "price": 41.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563756",
+      "last_seen": "2026-11-02T03:04:27.563757"
+    },
+    {
+      "name": "Red Bull Energidrikk 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 41.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562923",
+          "price": 41.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562924",
+      "last_seen": "2026-11-02T03:04:27.562925"
+    },
+    {
+      "name": "Appelsinjuice 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 42.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563749",
+          "price": 42.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563750",
+      "last_seen": "2026-11-02T03:04:27.563751"
+    },
+    {
+      "name": "Appelsinjuice 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 42.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563769",
+          "price": 42.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563770",
+      "last_seen": "2026-11-02T03:04:27.563770"
     },
     {
       "name": "EXT.PROT SUPERPLUS",
@@ -5912,7 +8135,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669002",
-      "last_seen": "2026-11-02T02:58:14.542905"
+      "last_seen": "2026-11-02T03:04:27.561531"
     },
     {
       "name": "EXTRAPROTECT SUPER",
@@ -5943,7 +8166,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669007",
-      "last_seen": "2026-11-02T02:58:14.542913"
+      "last_seen": "2026-11-02T03:04:27.561539"
     },
     {
       "name": "Eclairs m/ Sjokolade 2pk",
@@ -5970,7 +8193,26 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007444",
-      "last_seen": "2026-11-02T02:58:14.543973"
+      "last_seen": "2026-11-02T03:04:27.562562"
+    },
+    {
+      "name": "Kyllingbacon skivet 140g Prior",
+      "category": "bacon",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 42.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562800",
+          "price": 42.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562801",
+      "last_seen": "2026-11-02T03:04:27.562802"
     },
     {
       "name": "Mozzarella 220g Granarolo",
@@ -5993,7 +8235,26 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085627",
-      "last_seen": "2026-11-02T02:58:14.544019"
+      "last_seen": "2026-11-02T03:04:27.562601"
+    },
+    {
+      "name": "Appelsinjuice Premium 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 43.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563864",
+          "price": 43.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563865",
+      "last_seen": "2026-11-02T03:04:27.563866"
     },
     {
       "name": "PRO KNÄCKE",
@@ -6024,7 +8285,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668808",
-      "last_seen": "2026-11-02T02:58:14.542642"
+      "last_seen": "2026-11-02T03:04:27.561238"
     },
     {
       "name": "R PROTEIN GRANOLA",
@@ -6055,7 +8316,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668881",
-      "last_seen": "2026-11-02T02:58:14.542745"
+      "last_seen": "2026-11-02T03:04:27.561339"
+    },
+    {
+      "name": "Grovbrød 750g Våre Groveste",
+      "category": "grovbrød",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 44.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563260",
+          "price": 44.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563261",
+      "last_seen": "2026-11-02T03:04:27.563262"
     },
     {
       "name": "PIZZABUNN FERSK",
@@ -6086,7 +8366,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668943",
-      "last_seen": "2026-11-02T02:58:14.542829"
+      "last_seen": "2026-11-02T03:04:27.561455"
     },
     {
       "name": "SPEKESKINKEFLAK",
@@ -6117,7 +8397,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668522",
-      "last_seen": "2026-11-02T02:58:14.542248"
+      "last_seen": "2026-11-02T03:04:27.560873"
     },
     {
       "name": "UTS BRINGEBÆR",
@@ -6148,7 +8428,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668605",
-      "last_seen": "2026-11-02T02:58:14.542375"
+      "last_seen": "2026-11-02T03:04:27.560980"
     },
     {
       "name": "Brie De Paris .",
@@ -6217,7 +8497,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668910",
-      "last_seen": "2026-11-02T02:58:14.542784"
+      "last_seen": "2026-11-02T03:04:27.561377"
+    },
+    {
+      "name": "Appelsinjuice 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 46.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563775",
+          "price": 46.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563776",
+      "last_seen": "2026-11-02T03:04:27.563777"
+    },
+    {
+      "name": "Grovbrød 750g Våre Groveste",
+      "category": "grovbrød",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 46.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563248",
+          "price": 46.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563249",
+      "last_seen": "2026-11-02T03:04:27.563250"
     },
     {
       "name": "Laksefilet m/skinn Naturell 125g Oppdr pr stykk",
@@ -6244,7 +8562,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:51:55.013736",
-      "last_seen": "2026-11-02T02:58:14.543854"
+      "last_seen": "2026-11-02T03:04:27.562450"
     },
     {
       "name": "LETTMELK VANILJE",
@@ -6275,7 +8593,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669143",
-      "last_seen": "2026-11-02T02:58:14.543099"
+      "last_seen": "2026-11-02T03:04:27.561720"
     },
     {
       "name": "KORMA",
@@ -6306,7 +8624,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669218",
-      "last_seen": "2026-11-02T02:58:14.543129"
+      "last_seen": "2026-11-02T03:04:27.561749"
     },
     {
       "name": "Sitronterte med Marengs 97g Fryst",
@@ -6326,6 +8644,44 @@
       ],
       "first_seen": "2026-11-01T08:38:55.085696",
       "last_seen": "2026-11-01T08:38:55.085696"
+    },
+    {
+      "name": "Appelsinjuice Premium 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 49.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563838",
+          "price": 49.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563839",
+      "last_seen": "2026-11-02T03:04:27.563839"
+    },
+    {
+      "name": "Appelsinjuice Premium 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 49.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563856",
+          "price": 49.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563859",
+      "last_seen": "2026-11-02T03:04:27.563860"
     },
     {
       "name": "BITES ORIGINAL",
@@ -6356,7 +8712,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668456",
-      "last_seen": "2026-11-02T02:58:14.542158"
+      "last_seen": "2026-11-02T03:04:27.560785"
+    },
+    {
+      "name": "Baconpølse 275g Rekedal",
+      "category": "bacon",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 49.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562794",
+          "price": 49.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562795",
+      "last_seen": "2026-11-02T03:04:27.562796"
     },
     {
       "name": "CHOCOLATE NO SUGAR",
@@ -6387,7 +8762,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669287",
-      "last_seen": "2026-11-02T02:58:14.543220"
+      "last_seen": "2026-11-02T03:04:27.561837"
     },
     {
       "name": "CLINICAL WHITE",
@@ -6418,7 +8793,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669525",
-      "last_seen": "2026-11-02T02:58:14.543505"
+      "last_seen": "2026-11-02T03:04:27.562098"
     },
     {
       "name": "CREATINE TABS",
@@ -6449,7 +8824,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669126",
-      "last_seen": "2026-11-02T02:58:14.543076"
+      "last_seen": "2026-11-02T03:04:27.561698"
     },
     {
       "name": "FALAFEL ORIGINAL",
@@ -6480,7 +8855,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668450",
-      "last_seen": "2026-11-02T02:58:14.542150"
+      "last_seen": "2026-11-02T03:04:27.560777"
     },
     {
       "name": "FLEKKFJERNER SPRAY",
@@ -6511,7 +8886,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668932",
-      "last_seen": "2026-11-02T02:58:14.542815"
+      "last_seen": "2026-11-02T03:04:27.561409"
     },
     {
       "name": "FRISKIES ADULT",
@@ -6542,7 +8917,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669344",
-      "last_seen": "2026-11-02T02:58:14.543313"
+      "last_seen": "2026-11-02T03:04:27.561912"
+    },
+    {
+      "name": "Grovbrød 750g Våre Groveste",
+      "category": "grovbrød",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 49.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563254",
+          "price": 49.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563255",
+      "last_seen": "2026-11-02T03:04:27.563256"
     },
     {
       "name": "PIRUETT RASPBERRY",
@@ -6573,7 +8967,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668813",
-      "last_seen": "2026-11-02T02:58:14.542650"
+      "last_seen": "2026-11-02T03:04:27.561245"
     },
     {
       "name": "PIZZA VENTRICINA",
@@ -6604,7 +8998,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668937",
-      "last_seen": "2026-11-02T02:58:14.542822"
+      "last_seen": "2026-11-02T03:04:27.561441"
     },
     {
       "name": "Sørlandsis Ekte Vanilje 1l Hennig-olsen Is",
@@ -6627,7 +9021,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085668",
-      "last_seen": "2026-11-02T02:58:14.544061"
+      "last_seen": "2026-11-02T03:04:27.562642"
     },
     {
       "name": "UTS BLÅBÆR",
@@ -6658,7 +9052,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668611",
-      "last_seen": "2026-11-02T02:58:14.542382"
+      "last_seen": "2026-11-02T03:04:27.560988"
     },
     {
       "name": "Blåbær 400g Beger",
@@ -6719,7 +9113,45 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085594",
-      "last_seen": "2026-11-02T02:58:14.543981"
+      "last_seen": "2026-11-02T03:04:27.562570"
+    },
+    {
+      "name": "Appelsinjuice Premium 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 51.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563850",
+          "price": 51.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563851",
+      "last_seen": "2026-11-02T03:04:27.563852"
+    },
+    {
+      "name": "Appelsinjuice m/fruktkjøtt 1l Cevita",
+      "category": "appelsinjuice",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 51.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563794",
+          "price": 51.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563795",
+      "last_seen": "2026-11-02T03:04:27.563796"
     },
     {
       "name": "SMOOTHIE M/ACAI",
@@ -6750,7 +9182,83 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668741",
-      "last_seen": "2026-11-02T02:58:14.542554"
+      "last_seen": "2026-11-02T03:04:27.561153"
+    },
+    {
+      "name": "Appelsinjuice m/fruktkjøtt 1l Cevita",
+      "category": "appelsinjuice",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 53.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563807",
+          "price": 53.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563808",
+      "last_seen": "2026-11-02T03:04:27.563808"
+    },
+    {
+      "name": "Appelsinjuice m/fruktkjøtt 1l Cevita",
+      "category": "appelsinjuice",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 54.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563788",
+          "price": 54.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563789",
+      "last_seen": "2026-11-02T03:04:27.563789"
+    },
+    {
+      "name": "Appelsinjuice m/fruktkjøtt 1l Cevita",
+      "category": "appelsinjuice",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 54.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563801",
+          "price": 54.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563801",
+      "last_seen": "2026-11-02T03:04:27.563802"
+    },
+    {
+      "name": "Mors Grovbrød 750g Bakehuset",
+      "category": "grovbrød",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 54.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563273",
+          "price": 54.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563274",
+      "last_seen": "2026-11-02T03:04:27.563275"
     },
     {
       "name": "Plommer Røde Cevita 750g",
@@ -6804,7 +9312,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668482",
-      "last_seen": "2026-11-02T02:58:14.542193"
+      "last_seen": "2026-11-02T03:04:27.560819"
     },
     {
       "name": "VÅTFÔR KYLLING 8PK",
@@ -6835,7 +9343,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668470",
-      "last_seen": "2026-11-02T02:58:14.542176"
+      "last_seen": "2026-11-02T03:04:27.560802"
     },
     {
       "name": "Grandiosa Pizza Pepperoni 500g",
@@ -6862,7 +9370,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.006999",
-      "last_seen": "2026-11-02T02:58:14.544122"
+      "last_seen": "2026-11-02T03:04:27.562700"
     },
     {
       "name": "Svinekoteletter 4pk Ca700g Meny",
@@ -6889,7 +9397,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.006983",
-      "last_seen": "2026-11-02T02:58:14.544088"
+      "last_seen": "2026-11-02T03:04:27.562668"
     },
     {
       "name": "CHEESE BAGELS",
@@ -6920,7 +9428,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669531",
-      "last_seen": "2026-11-02T02:58:14.543512"
+      "last_seen": "2026-11-02T03:04:27.562105"
     },
     {
       "name": "Pistasj Nøtter Salte m/skall 150g Eldorado",
@@ -6944,6 +9452,63 @@
       ],
       "first_seen": "2026-10-31T20:51:55.013828",
       "last_seen": "2026-10-31T23:52:44.007160"
+    },
+    {
+      "name": "Peanøttsmør Creamy 340g Skippy",
+      "category": "smør",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 58.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563203",
+          "price": 58.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563204",
+      "last_seen": "2026-11-02T03:04:27.563205"
+    },
+    {
+      "name": "Peanøttsmør Creamy 340g Skippy",
+      "category": "smør",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 58.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563210",
+          "price": 58.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563210",
+      "last_seen": "2026-11-02T03:04:27.563211"
+    },
+    {
+      "name": "Peanøttsmør Creamy 340g Skippy",
+      "category": "smør",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 59.4,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563197",
+          "price": 59.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563198",
+      "last_seen": "2026-11-02T03:04:27.563199"
     },
     {
       "name": "CRUESLI PROTEIN",
@@ -6974,7 +9539,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668870",
-      "last_seen": "2026-11-02T02:58:14.542729"
+      "last_seen": "2026-11-02T03:04:27.561324"
     },
     {
       "name": "MELATONIN",
@@ -7005,7 +9570,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669584",
-      "last_seen": "2026-11-02T02:58:14.543579"
+      "last_seen": "2026-11-02T03:04:27.562172"
     },
     {
       "name": "MICELLAR WATER",
@@ -7036,7 +9601,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669024",
-      "last_seen": "2026-11-02T02:58:14.542936"
+      "last_seen": "2026-11-02T03:04:27.561561"
     },
     {
       "name": "Parmaskinke 70g Tanzi",
@@ -7059,7 +9624,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085715",
-      "last_seen": "2026-11-02T02:58:14.544102"
+      "last_seen": "2026-11-02T03:04:27.562681"
     },
     {
       "name": "Cambozola Classic",
@@ -7079,6 +9644,82 @@
       ],
       "first_seen": "2026-10-31T20:51:55.013721",
       "last_seen": "2026-10-31T20:59:01.744319"
+    },
+    {
+      "name": "Appelsinjuice 1l Sunniva",
+      "category": "appelsinjuice",
+      "stores": [
+        "ENGROSSNETT_NO"
+      ],
+      "price": 61.1,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-engrossnett_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563763",
+          "price": 61.1
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563764",
+      "last_seen": "2026-11-02T03:04:27.563765"
+    },
+    {
+      "name": "Bacon m/svor skivet 400g First Price",
+      "category": "bacon",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 61.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562768",
+          "price": 61.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562769",
+      "last_seen": "2026-11-02T03:04:27.562770"
+    },
+    {
+      "name": "Bacon m/svor skivet 400g First Price",
+      "category": "bacon",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 61.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562781",
+          "price": 61.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562782",
+      "last_seen": "2026-11-02T03:04:27.562783"
+    },
+    {
+      "name": "Bacon m/svor skivet 400g First Price",
+      "category": "bacon",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 62.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562761",
+          "price": 62.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562763",
+      "last_seen": "2026-11-02T03:04:27.562764"
     },
     {
       "name": "DREAM SJOKO UTS",
@@ -7109,7 +9750,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669445",
-      "last_seen": "2026-11-02T02:58:14.543398"
+      "last_seen": "2026-11-02T03:04:27.561993"
     },
     {
       "name": "Gulrotkake 2pk 220g Bakehuset",
@@ -7159,7 +9800,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669253",
-      "last_seen": "2026-11-02T02:58:14.543173"
+      "last_seen": "2026-11-02T03:04:27.561792"
     },
     {
       "name": "Napoleonskake 2pk 350g Bakehuset",
@@ -7186,7 +9827,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007091",
-      "last_seen": "2026-11-02T02:58:14.543814"
+      "last_seen": "2026-11-02T03:04:27.562397"
     },
     {
       "name": "VANILJESTENGER",
@@ -7217,7 +9858,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668539",
-      "last_seen": "2026-11-02T02:58:14.542287"
+      "last_seen": "2026-11-02T03:04:27.560895"
+    },
+    {
+      "name": "Peanøttsmør Crunchy 340g Green Choice",
+      "category": "smør",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 66.7,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563178",
+          "price": 66.7
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563179",
+      "last_seen": "2026-11-02T03:04:27.563179"
     },
     {
       "name": "Burrata 125g Granarolo",
@@ -7240,7 +9900,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085608",
-      "last_seen": "2026-11-02T02:58:14.543999"
+      "last_seen": "2026-11-02T03:04:27.562583"
     },
     {
       "name": "NO.1 FALKETIND S6",
@@ -7271,7 +9931,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668715",
-      "last_seen": "2026-11-02T02:58:14.542525"
+      "last_seen": "2026-11-02T03:04:27.561124"
     },
     {
       "name": "Lakseskiver Oppdrett",
@@ -7294,7 +9954,7 @@
         }
       ],
       "first_seen": "2026-11-01T19:51:08.158033",
-      "last_seen": "2026-11-02T02:58:14.543881"
+      "last_seen": "2026-11-02T03:04:27.562472"
     },
     {
       "name": "BALSAM DENSITY",
@@ -7325,7 +9985,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669468",
-      "last_seen": "2026-11-02T02:58:14.543428"
+      "last_seen": "2026-11-02T03:04:27.562021"
+    },
+    {
+      "name": "Bacon m/svor skivet 400g First Price",
+      "category": "bacon",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 69.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562775",
+          "price": 69.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562776",
+      "last_seen": "2026-11-02T03:04:27.562776"
     },
     {
       "name": "CROISSANT GLUT.FRI",
@@ -7356,7 +10035,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669502",
-      "last_seen": "2026-11-02T02:58:14.543474"
+      "last_seen": "2026-11-02T03:04:27.562067"
     },
     {
       "name": "DRY SHAMPOO FRESH",
@@ -7387,7 +10066,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669486",
-      "last_seen": "2026-11-02T02:58:14.543451"
+      "last_seen": "2026-11-02T03:04:27.562044"
+    },
+    {
+      "name": "Green World Kaffe Økologisk Filtermalt 250g",
+      "category": "kaffe",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 69.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563493",
+          "price": 69.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563494",
+      "last_seen": "2026-11-02T03:04:27.563495"
     },
     {
       "name": "PROTEIN PANNEKAKER",
@@ -7418,7 +10116,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668559",
-      "last_seen": "2026-11-02T02:58:14.542310"
+      "last_seen": "2026-11-02T03:04:27.560917"
     },
     {
       "name": "PROTEINBOWL THAI",
@@ -7449,7 +10147,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669395",
-      "last_seen": "2026-11-02T02:58:14.543350"
+      "last_seen": "2026-11-02T03:04:27.561948"
     },
     {
       "name": "SALT KARAMELL",
@@ -7480,7 +10178,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668825",
-      "last_seen": "2026-11-02T02:58:14.542666"
+      "last_seen": "2026-11-02T03:04:27.561262"
     },
     {
       "name": "SEIFILET MSC",
@@ -7511,7 +10209,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668796",
-      "last_seen": "2026-11-02T02:58:14.542626"
+      "last_seen": "2026-11-02T03:04:27.561222"
     },
     {
       "name": "SHAMPOO DENSITY",
@@ -7542,7 +10240,102 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669463",
-      "last_seen": "2026-11-02T02:58:14.543420"
+      "last_seen": "2026-11-02T03:04:27.562014"
+    },
+    {
+      "name": "Peanøttsmør Crunchy 340g Green Choice",
+      "category": "smør",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 71.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563169",
+          "price": 71.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563172",
+      "last_seen": "2026-11-02T03:04:27.563173"
+    },
+    {
+      "name": "Green World Kaffe Økologisk Filtermalt 250g",
+      "category": "kaffe",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 72.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563501",
+          "price": 72.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563501",
+      "last_seen": "2026-11-02T03:04:27.563502"
+    },
+    {
+      "name": "Peanøttsmør Crunchy 340g Green Choice",
+      "category": "smør",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 72.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563184",
+          "price": 72.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563185",
+      "last_seen": "2026-11-02T03:04:27.563186"
+    },
+    {
+      "name": "Peanøttsmør Crunchy 340g Green Choice",
+      "category": "smør",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 72.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563191",
+          "price": 72.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563192",
+      "last_seen": "2026-11-02T03:04:27.563193"
+    },
+    {
+      "name": "Grovbrød Skåret glutenfri 500g Fria",
+      "category": "grovbrød",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 73.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563282",
+          "price": 73.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563284",
+      "last_seen": "2026-11-02T03:04:27.563285"
     },
     {
       "name": "BURGER CH. CHEESE",
@@ -7573,7 +10366,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669420",
-      "last_seen": "2026-11-02T02:58:14.543366"
+      "last_seen": "2026-11-02T03:04:27.561963"
+    },
+    {
+      "name": "Green World Kaffe Økologisk Filtermalt 250g",
+      "category": "kaffe",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 74.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563507",
+          "price": 74.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563508",
+      "last_seen": "2026-11-02T03:04:27.563509"
     },
     {
       "name": "ROYAL BITER HASSEL",
@@ -7604,7 +10416,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668837",
-      "last_seen": "2026-11-02T02:58:14.542682"
+      "last_seen": "2026-11-02T03:04:27.561278"
     },
     {
       "name": "ROYAL BITER KARAM.",
@@ -7635,7 +10447,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668831",
-      "last_seen": "2026-11-02T02:58:14.542674"
+      "last_seen": "2026-11-02T03:04:27.561270"
     },
     {
       "name": "Maasdam 3 Mnd Landana",
@@ -7655,6 +10467,82 @@
       ],
       "first_seen": "2026-10-31T20:51:55.013700",
       "last_seen": "2026-10-31T20:59:01.744302"
+    },
+    {
+      "name": "Honning Ekte Smørmyk 400g",
+      "category": "smør",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 76.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563162",
+          "price": 76.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563163",
+      "last_seen": "2026-11-02T03:04:27.563164"
+    },
+    {
+      "name": "Honning Ekte Smørmyk 400g",
+      "category": "smør",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 77.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563144",
+          "price": 77.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563145",
+      "last_seen": "2026-11-02T03:04:27.563146"
+    },
+    {
+      "name": "Honning Ekte Smørmyk 400g",
+      "category": "smør",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 77.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563150",
+          "price": 77.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563151",
+      "last_seen": "2026-11-02T03:04:27.563152"
+    },
+    {
+      "name": "Ben&jerry's Chocolate Fudge Brownie 465ml",
+      "category": "cola",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 79.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562838",
+          "price": 79.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562839",
+      "last_seen": "2026-11-02T03:04:27.562840"
     },
     {
       "name": "ELEKTROLYTTER",
@@ -7685,7 +10573,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669595",
-      "last_seen": "2026-11-02T02:58:14.543593"
+      "last_seen": "2026-11-02T03:04:27.562185"
     },
     {
       "name": "HOKI LOINS",
@@ -7716,7 +10604,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668802",
-      "last_seen": "2026-11-02T02:58:14.542634"
+      "last_seen": "2026-11-02T03:04:27.561229"
+    },
+    {
+      "name": "Honning Ekte Smørmyk 400g",
+      "category": "smør",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 79.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563156",
+          "price": 79.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563157",
+      "last_seen": "2026-11-02T03:04:27.563158"
     },
     {
       "name": "KREATIN",
@@ -7747,7 +10654,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669590",
-      "last_seen": "2026-11-02T02:58:14.543586"
+      "last_seen": "2026-11-02T03:04:27.562178"
     },
     {
       "name": "LINUSPRO CREATINE",
@@ -7778,7 +10685,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669137",
-      "last_seen": "2026-11-02T02:58:14.543091"
+      "last_seen": "2026-11-02T03:04:27.561713"
     },
     {
       "name": "MAXIM SPORTS TABS",
@@ -7809,7 +10716,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669052",
-      "last_seen": "2026-11-02T02:58:14.542975"
+      "last_seen": "2026-11-02T03:04:27.561599"
+    },
+    {
+      "name": "Kulinaris Iskrem Kaffe Mocca 0,5l",
+      "category": "kaffe",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 82.5,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563331",
+          "price": 82.5
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563332",
+      "last_seen": "2026-11-02T03:04:27.563332"
     },
     {
       "name": "LERØY BURGER ØRRET",
@@ -7840,7 +10766,140 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668709",
-      "last_seen": "2026-11-02T02:58:14.542517"
+      "last_seen": "2026-11-02T03:04:27.561117"
+    },
+    {
+      "name": "Baconpølse 275g Rekedal",
+      "category": "bacon",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 85.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562788",
+          "price": 85.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562789",
+      "last_seen": "2026-11-02T03:04:27.562789"
+    },
+    {
+      "name": "Grovbrød Skåret glutenfri 500g Fria",
+      "category": "grovbrød",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 85.0,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563296",
+          "price": 85.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563297",
+      "last_seen": "2026-11-02T03:04:27.563298"
+    },
+    {
+      "name": "Grovbrød Skåret glutenfri 500g Fria",
+      "category": "grovbrød",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 85.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563290",
+          "price": 85.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563291",
+      "last_seen": "2026-11-02T03:04:27.563292"
+    },
+    {
+      "name": "Kjøttdeig u/salt&vann 400g Gilde",
+      "category": "kjøttdeig",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 86.0,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563564",
+          "price": 86.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563565",
+      "last_seen": "2026-11-02T03:04:27.563565"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 6stk Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 87.9,
+      "currency": "NOK",
+      "unit": "per piece",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562872",
+          "price": 87.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562873",
+      "last_seen": "2026-11-02T03:04:27.562874"
+    },
+    {
+      "name": "Kjøttdeig Storfe 14% u/salt&vann 400g Folkets",
+      "category": "kjøttdeig",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 87.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563551",
+          "price": 87.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563552",
+      "last_seen": "2026-11-02T03:04:27.563552"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 6stk Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 88.0,
+      "currency": "NOK",
+      "unit": "per piece",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562860",
+          "price": 88.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562860",
+      "last_seen": "2026-11-02T03:04:27.562861"
     },
     {
       "name": "PANERT RØDSPETTE",
@@ -7871,7 +10930,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668973",
-      "last_seen": "2026-11-02T02:58:14.542867"
+      "last_seen": "2026-11-02T03:04:27.561494"
     },
     {
       "name": "Ørret Porsjon m/skinn 4x100g Lerøy",
@@ -7898,7 +10957,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.006992",
-      "last_seen": "2026-11-02T02:58:14.543694"
+      "last_seen": "2026-11-02T03:04:27.562283"
     },
     {
       "name": "AVLØPSÅPNER",
@@ -7929,7 +10988,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669640",
-      "last_seen": "2026-11-02T02:58:14.543654"
+      "last_seen": "2026-11-02T03:04:27.562244"
     },
     {
       "name": "PROSCIUTTO CRUDO",
@@ -7960,7 +11019,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668904",
-      "last_seen": "2026-11-02T02:58:14.542776"
+      "last_seen": "2026-11-02T03:04:27.561370"
     },
     {
       "name": "TYGGEBEIN OKSEHUD",
@@ -7991,7 +11050,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668494",
-      "last_seen": "2026-11-02T02:58:14.542209"
+      "last_seen": "2026-11-02T03:04:27.560834"
     },
     {
       "name": "ØRRETFILET I LENKE",
@@ -8022,7 +11081,178 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668697",
-      "last_seen": "2026-11-02T02:58:14.542500"
+      "last_seen": "2026-11-02T03:04:27.561101"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 6stk Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 91.9,
+      "currency": "NOK",
+      "unit": "per piece",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562851",
+          "price": 91.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562854",
+      "last_seen": "2026-11-02T03:04:27.562855"
+    },
+    {
+      "name": "Kjøttdeig u/salt&vann 400g Gilde",
+      "category": "kjøttdeig",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 92.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563557",
+          "price": 92.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563558",
+      "last_seen": "2026-11-02T03:04:27.563559"
+    },
+    {
+      "name": "Freia Melkesjokolade Sjokoladeis 6stk Hennig-olsen",
+      "category": "melkesjokolade",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 93.9,
+      "currency": "NOK",
+      "unit": "per piece",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562866",
+          "price": 93.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562867",
+      "last_seen": "2026-11-02T03:04:27.562868"
+    },
+    {
+      "name": "Kulinaris Iskrem Kaffe Mocca 0,5l",
+      "category": "kaffe",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 94.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563316",
+          "price": 94.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563317",
+      "last_seen": "2026-11-02T03:04:27.563318"
+    },
+    {
+      "name": "Bacon Spekepølse hel 220g Grilstad",
+      "category": "bacon",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 99.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562807",
+          "price": 99.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562808",
+      "last_seen": "2026-11-02T03:04:27.562809"
+    },
+    {
+      "name": "Grandiosa Pizza Hj.laget m/kjøttdeig 1kg",
+      "category": "kjøttdeig",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 99.0,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563530",
+          "price": 99.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563531",
+      "last_seen": "2026-11-02T03:04:27.563532"
+    },
+    {
+      "name": "Kulinaris Iskrem Kaffe Mocca 0,5l",
+      "category": "kaffe",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 99.0,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563323",
+          "price": 99.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563323",
+      "last_seen": "2026-11-02T03:04:27.563324"
+    },
+    {
+      "name": "Ben&jerry's Chocolate Fudge Brownie 465ml",
+      "category": "cola",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 99.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562832",
+          "price": 99.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562833",
+      "last_seen": "2026-11-02T03:04:27.562834"
+    },
+    {
+      "name": "Ben&jerry's Chocolate Fudge Brownie 465ml",
+      "category": "cola",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 99.9,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562844",
+          "price": 99.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562845",
+      "last_seen": "2026-11-02T03:04:27.562846"
     },
     {
       "name": "LAKS SUPREME PORSJ",
@@ -8053,7 +11283,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669154",
-      "last_seen": "2026-11-02T02:58:14.543114"
+      "last_seen": "2026-11-02T03:04:27.561735"
     },
     {
       "name": "MATCHA VNL POSER",
@@ -8084,7 +11314,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669075",
-      "last_seen": "2026-11-02T02:58:14.543007"
+      "last_seen": "2026-11-02T03:04:27.561630"
     },
     {
       "name": "TRIPPEL OMEGA-3",
@@ -8115,7 +11345,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669579",
-      "last_seen": "2026-11-02T02:58:14.543572"
+      "last_seen": "2026-11-02T03:04:27.562165"
+    },
+    {
+      "name": "Ben&jerry's Chocolate Fudge Brownie 465ml",
+      "category": "cola",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 109.0,
+      "currency": "NOK",
+      "unit": "per ml",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562825",
+          "price": 109.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562826",
+      "last_seen": "2026-11-02T03:04:27.562827"
     },
     {
       "name": "SMOOTHIE",
@@ -8162,7 +11411,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668722",
-      "last_seen": "2026-11-02T02:58:14.542562"
+      "last_seen": "2026-11-02T03:04:27.561161"
     },
     {
       "name": "ONE SMALL DOG SENI",
@@ -8193,7 +11442,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668985",
-      "last_seen": "2026-11-02T02:58:14.542883"
+      "last_seen": "2026-11-02T03:04:27.561509"
+    },
+    {
+      "name": "Grandiosa Pizza Hj.laget m/kjøttdeig 1kg",
+      "category": "kjøttdeig",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 118.3,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563523",
+          "price": 118.3
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563524",
+      "last_seen": "2026-11-02T03:04:27.563525"
     },
     {
       "name": "Pepsi Max 1,5lx8 flaske",
@@ -8216,7 +11484,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085384",
-      "last_seen": "2026-11-02T02:58:14.543741"
+      "last_seen": "2026-11-02T03:04:27.562326"
     },
     {
       "name": "Norvegia Smaksrik 830g Tine",
@@ -8239,7 +11507,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085689",
-      "last_seen": "2026-11-02T02:58:14.544082"
+      "last_seen": "2026-11-02T03:04:27.562662"
     },
     {
       "name": "CREATINE GUMMIES",
@@ -8270,7 +11538,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669131",
-      "last_seen": "2026-11-02T02:58:14.543084"
+      "last_seen": "2026-11-02T03:04:27.561706"
+    },
+    {
+      "name": "Helios Lyst Mandelsmør Økologisk 250g",
+      "category": "smør",
+      "stores": [
+        "MENY_NO"
+      ],
+      "price": 135.1,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-meny_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563131",
+          "price": 135.1
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563132",
+      "last_seen": "2026-11-02T03:04:27.563132"
     },
     {
       "name": "Norvegia 26% Skorpefri Ca1,25kg Tine",
@@ -8297,7 +11584,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007013",
-      "last_seen": "2026-11-02T02:58:14.543718"
+      "last_seen": "2026-11-02T03:04:27.562305"
     },
     {
       "name": "SPORTS DRINK LEMON",
@@ -8328,7 +11615,26 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669058",
-      "last_seen": "2026-11-02T02:58:14.542983"
+      "last_seen": "2026-11-02T03:04:27.561607"
+    },
+    {
+      "name": "Grandiosa Pizza Hj.laget m/kjøttdeig 1kg",
+      "category": "kjøttdeig",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 150.4,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563543",
+          "price": 150.4
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563544",
+      "last_seen": "2026-11-02T03:04:27.563545"
     },
     {
       "name": "VITAMINBJØRNER",
@@ -8359,7 +11665,45 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668463",
-      "last_seen": "2026-11-02T02:58:14.542167"
+      "last_seen": "2026-11-02T03:04:27.560793"
+    },
+    {
+      "name": "Grandiosa Pizza Hj.laget m/kjøttdeig 1kg",
+      "category": "kjøttdeig",
+      "stores": [
+        "BUNNPRIS"
+      ],
+      "price": 169.0,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-bunnpris",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563514",
+          "price": 169.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563515",
+      "last_seen": "2026-11-02T03:04:27.563516"
+    },
+    {
+      "name": "Grandiosa Pizza Hj.laget m/kjøttdeig 1kg",
+      "category": "kjøttdeig",
+      "stores": [
+        "JOKER_NO"
+      ],
+      "price": 169.9,
+      "currency": "NOK",
+      "unit": "per g",
+      "market": "kassal-joker_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563537",
+          "price": 169.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563538",
+      "last_seen": "2026-11-02T03:04:27.563539"
     },
     {
       "name": "Syndin m/brennesle 350g Valdres Ost",
@@ -8386,7 +11730,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007110",
-      "last_seen": "2026-11-02T02:58:14.543837"
+      "last_seen": "2026-11-02T03:04:27.562434"
     },
     {
       "name": "Lasagne Klar til å varmes",
@@ -8413,7 +11757,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007117",
-      "last_seen": "2026-11-02T02:58:14.543846"
+      "last_seen": "2026-11-02T03:04:27.562442"
     },
     {
       "name": "PROTEINPULVER VAN",
@@ -8444,7 +11788,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.669120",
-      "last_seen": "2026-11-02T02:58:14.543068"
+      "last_seen": "2026-11-02T03:04:27.561691"
     },
     {
       "name": "Bufar 320g Valdres Ost",
@@ -8471,7 +11815,45 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007104",
-      "last_seen": "2026-11-02T02:58:14.543829"
+      "last_seen": "2026-11-02T03:04:27.562412"
+    },
+    {
+      "name": "Helios Lyst Mandelsmør Økologisk 250g",
+      "category": "smør",
+      "stores": [
+        "SPAR_NO"
+      ],
+      "price": 189.0,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-spar_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563122",
+          "price": 189.0
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563123",
+      "last_seen": "2026-11-02T03:04:27.563124"
+    },
+    {
+      "name": "Helios Lyst Mandelsmør Økologisk 250g",
+      "category": "smør",
+      "stores": [
+        "ODA_NO"
+      ],
+      "price": 192.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-oda_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.563138",
+          "price": 192.9
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.563138",
+      "last_seen": "2026-11-02T03:04:27.563139"
     },
     {
       "name": "Fiskewok m/fersk fisk pr. kg.",
@@ -8521,7 +11903,7 @@
         }
       ],
       "first_seen": "2026-10-31T23:52:44.007098",
-      "last_seen": "2026-11-02T02:58:14.543822"
+      "last_seen": "2026-11-02T03:04:27.562405"
     },
     {
       "name": "Vacherin Mont D`or 400g",
@@ -8544,7 +11926,7 @@
         }
       ],
       "first_seen": "2026-11-01T08:38:55.085614",
-      "last_seen": "2026-11-02T02:58:14.544005"
+      "last_seen": "2026-11-02T03:04:27.562589"
     },
     {
       "name": "WOOL SINGLET",
@@ -8575,7 +11957,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668423",
-      "last_seen": "2026-11-02T02:58:14.542142"
+      "last_seen": "2026-11-02T03:04:27.560770"
     },
     {
       "name": "STORFE FLATBIFF",
@@ -8606,7 +11988,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668528",
-      "last_seen": "2026-11-02T02:58:14.542271"
+      "last_seen": "2026-11-02T03:04:27.560881"
     },
     {
       "name": "TORSKEFILET",
@@ -8637,7 +12019,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668511",
-      "last_seen": "2026-11-02T02:58:14.542303"
+      "last_seen": "2026-11-02T03:04:27.560910"
     },
     {
       "name": "Regnbueørret filet oppdrett m/skinn u/ben. Pr kg",
@@ -8664,7 +12046,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:51:55.013750",
-      "last_seen": "2026-11-02T02:58:14.543874"
+      "last_seen": "2026-11-02T03:04:27.562465"
     },
     {
       "name": "ØRRET LOIN",
@@ -8695,7 +12077,7 @@
         }
       ],
       "first_seen": "2026-10-30T06:19:31.668703",
-      "last_seen": "2026-11-02T02:58:14.542508"
+      "last_seen": "2026-11-02T03:04:27.561108"
     },
     {
       "name": "Tunfisk Filet pr Kg",
@@ -8722,7 +12104,26 @@
         }
       ],
       "first_seen": "2026-10-31T20:51:55.013742",
-      "last_seen": "2026-11-02T02:58:14.543861"
+      "last_seen": "2026-11-02T03:04:27.562457"
+    },
+    {
+      "name": "Red Bull Energidrikk Sukkerfri 473ml boks",
+      "category": "energidrikk",
+      "stores": [
+        "ENGROSSNETT_NO"
+      ],
+      "price": 926.04,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-engrossnett_no",
+      "history": [
+        {
+          "date": "2026-11-02T03:04:27.562992",
+          "price": 926.04
+        }
+      ],
+      "first_seen": "2026-11-02T03:04:27.562993",
+      "last_seen": "2026-11-02T03:04:27.562994"
     }
   ],
   "sweden": [
@@ -8762,7 +12163,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843669",
-      "last_seen": "2026-11-02T02:58:14.544697"
+      "last_seen": "2026-11-02T03:04:27.564447"
     },
     {
       "name": "Vetemjöl",
@@ -8781,7 +12182,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844511",
-      "last_seen": "2026-11-02T02:58:14.544717"
+      "last_seen": "2026-11-02T03:04:27.564467"
     },
     {
       "name": "Vitkål Sverige Klass 1",
@@ -8846,7 +12247,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844853",
-      "last_seen": "2026-11-02T02:58:14.544779"
+      "last_seen": "2026-11-02T03:04:27.564526"
     },
     {
       "name": "Potatis Fast Klass 1",
@@ -8869,7 +12270,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843225",
-      "last_seen": "2026-11-02T02:58:14.544751"
+      "last_seen": "2026-11-02T03:04:27.564499"
     },
     {
       "name": "Morot Klass 1",
@@ -8888,7 +12289,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844729",
-      "last_seen": "2026-11-02T02:58:14.544756"
+      "last_seen": "2026-11-02T03:04:27.564504"
     },
     {
       "name": "Godishink 18x15cm Orange",
@@ -8949,7 +12350,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842986",
-      "last_seen": "2026-11-02T02:58:14.544558"
+      "last_seen": "2026-11-02T03:04:27.564295"
     },
     {
       "name": "Strösocker",
@@ -8968,7 +12369,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844415",
-      "last_seen": "2026-11-02T02:58:14.544702"
+      "last_seen": "2026-11-02T03:04:27.564452"
     },
     {
       "name": "Sötpotatis Klass 1",
@@ -9010,7 +12411,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843255",
-      "last_seen": "2026-11-02T02:58:14.544616"
+      "last_seen": "2026-11-02T03:04:27.564352"
     },
     {
       "name": "Apelsin Klass 1",
@@ -9083,7 +12484,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990575",
-      "last_seen": "2026-11-02T02:58:14.544821"
+      "last_seen": "2026-11-02T03:04:27.564567"
     },
     {
       "name": "Pumpa Halloween",
@@ -9144,7 +12545,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843164",
-      "last_seen": "2026-11-02T02:58:14.544599"
+      "last_seen": "2026-11-02T03:04:27.564335"
     },
     {
       "name": "Äpple Ingrid Marie Klass 1",
@@ -9163,7 +12564,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842765",
-      "last_seen": "2026-11-02T02:58:14.544582"
+      "last_seen": "2026-11-02T03:04:27.564318"
     },
     {
       "name": "Vetekaka 24-pack",
@@ -9205,7 +12606,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842730",
-      "last_seen": "2026-11-02T02:58:14.544505"
+      "last_seen": "2026-11-02T03:04:27.564242"
     },
     {
       "name": "Vanilj Gräddglass",
@@ -9224,7 +12625,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844607",
-      "last_seen": "2026-11-02T02:58:14.544734"
+      "last_seen": "2026-11-02T03:04:27.564483"
     },
     {
       "name": "Lime Klass 1",
@@ -9266,7 +12667,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843405",
-      "last_seen": "2026-11-02T02:58:14.544645"
+      "last_seen": "2026-11-02T03:04:27.564380"
     },
     {
       "name": "Zucchini Klass 1",
@@ -9285,7 +12686,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843195",
-      "last_seen": "2026-11-02T02:58:14.544605"
+      "last_seen": "2026-11-02T03:04:27.564341"
     },
     {
       "name": "Spindelnät med Spindlar",
@@ -9323,7 +12724,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844540",
-      "last_seen": "2026-11-02T02:58:14.544722"
+      "last_seen": "2026-11-02T03:04:27.564472"
     },
     {
       "name": "Choklad Proteinshake Laktosfri",
@@ -9392,7 +12793,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990568",
-      "last_seen": "2026-11-02T02:58:14.544814"
+      "last_seen": "2026-11-02T03:04:27.564560"
     },
     {
       "name": "Tortilla 8-pack",
@@ -9411,7 +12812,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844943",
-      "last_seen": "2026-11-02T02:58:14.544795"
+      "last_seen": "2026-11-02T03:04:27.564542"
     },
     {
       "name": "Aubergine Klass 1",
@@ -9461,7 +12862,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990338",
-      "last_seen": "2026-11-02T02:58:14.544587"
+      "last_seen": "2026-11-02T03:04:27.564323"
     },
     {
       "name": "Kebabrullebröd Large 6-pack",
@@ -9511,7 +12912,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990550",
-      "last_seen": "2026-11-02T02:58:14.544801"
+      "last_seen": "2026-11-02T03:04:27.564547"
     },
     {
       "name": "Champinjoner Klass 1",
@@ -9595,7 +12996,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844817",
-      "last_seen": "2026-11-02T02:58:14.544773"
+      "last_seen": "2026-11-02T03:04:27.564521"
     },
     {
       "name": "Ströbröd Ekologiskt",
@@ -9614,7 +13015,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843637",
-      "last_seen": "2026-11-02T02:58:14.544691"
+      "last_seen": "2026-11-02T03:04:27.564440"
     },
     {
       "name": "Paprika Mix Klass 1",
@@ -9633,7 +13034,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843285",
-      "last_seen": "2026-11-02T02:58:14.544622"
+      "last_seen": "2026-11-02T03:04:27.564357"
     },
     {
       "name": "Kvisttomat Import Klass 1",
@@ -9698,7 +13099,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844571",
-      "last_seen": "2026-11-02T02:58:14.544728"
+      "last_seen": "2026-11-02T03:04:27.564477"
     },
     {
       "name": "Krögarpytt Vegetarisk",
@@ -9717,7 +13118,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844883",
-      "last_seen": "2026-11-02T02:58:14.544785"
+      "last_seen": "2026-11-02T03:04:27.564532"
     },
     {
       "name": "Avokado Klass 1",
@@ -9759,7 +13160,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843607",
-      "last_seen": "2026-11-02T02:58:14.544685"
+      "last_seen": "2026-11-02T03:04:27.564434"
     },
     {
       "name": "Rödbetor Skivade",
@@ -9778,7 +13179,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844914",
-      "last_seen": "2026-11-02T02:58:14.544790"
+      "last_seen": "2026-11-02T03:04:27.564537"
     },
     {
       "name": "Bearnaise Lätt Crème Fraiche 10%",
@@ -9797,7 +13198,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843497",
-      "last_seen": "2026-11-02T02:58:14.544663"
+      "last_seen": "2026-11-02T03:04:27.564398"
     },
     {
       "name": "Vanillinsocker",
@@ -9816,7 +13217,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844481",
-      "last_seen": "2026-11-02T02:58:14.544712"
+      "last_seen": "2026-11-02T03:04:27.564462"
     },
     {
       "name": "Fläskfärs 20% Sverige",
@@ -9835,7 +13236,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844785",
-      "last_seen": "2026-11-02T02:58:14.544767"
+      "last_seen": "2026-11-02T03:04:27.564515"
     },
     {
       "name": "Fläskytterfilé Sverige",
@@ -9854,7 +13255,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844669",
-      "last_seen": "2026-11-02T02:58:14.544745"
+      "last_seen": "2026-11-02T03:04:27.564493"
     },
     {
       "name": "Skeletties Crazy",
@@ -9900,7 +13301,7 @@
         }
       ],
       "first_seen": "2026-10-31T20:36:31.990556",
-      "last_seen": "2026-11-02T02:58:14.544806"
+      "last_seen": "2026-11-02T03:04:27.564553"
     },
     {
       "name": "Kebabsås Het Light",
@@ -9965,7 +13366,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.845061",
-      "last_seen": "2026-11-02T02:58:14.544829"
+      "last_seen": "2026-11-02T03:04:27.564575"
     },
     {
       "name": "Salladsost 21%",
@@ -10007,7 +13408,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842857",
-      "last_seen": "2026-11-02T02:58:14.544534"
+      "last_seen": "2026-11-02T03:04:27.564271"
     },
     {
       "name": "Kummel Sprödbakad Stilla Havet",
@@ -10091,7 +13492,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842796",
-      "last_seen": "2026-11-02T02:58:14.544680"
+      "last_seen": "2026-11-02T03:04:27.564428"
     },
     {
       "name": "Salladslök Knippe",
@@ -10110,7 +13511,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843315",
-      "last_seen": "2026-11-02T02:58:14.544628"
+      "last_seen": "2026-11-02T03:04:27.564363"
     },
     {
       "name": "Picklad Rödlök",
@@ -10152,7 +13553,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843558",
-      "last_seen": "2026-11-02T02:58:14.544674"
+      "last_seen": "2026-11-02T03:04:27.564409"
     },
     {
       "name": "Mjölkchoklad Chokladkaka",
@@ -10171,7 +13572,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843527",
-      "last_seen": "2026-11-02T02:58:14.544669"
+      "last_seen": "2026-11-02T03:04:27.564403"
     },
     {
       "name": "Mandeltårta Daim Glutenfri Fryst",
@@ -10190,7 +13591,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843346",
-      "last_seen": "2026-11-02T02:58:14.544634"
+      "last_seen": "2026-11-02T03:04:27.564369"
     },
     {
       "name": "Rödvinssås Varm",
@@ -10209,7 +13610,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843466",
-      "last_seen": "2026-11-02T02:58:14.544657"
+      "last_seen": "2026-11-02T03:04:27.564391"
     },
     {
       "name": "Klassisk Kebab",
@@ -10431,7 +13832,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843436",
-      "last_seen": "2026-11-02T02:58:14.544651"
+      "last_seen": "2026-11-02T03:04:27.564386"
     },
     {
       "name": "Salta Häxor",
@@ -10473,7 +13874,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844451",
-      "last_seen": "2026-11-02T02:58:14.544707"
+      "last_seen": "2026-11-02T03:04:27.564457"
     },
     {
       "name": "Skalle Halloween",
@@ -10511,7 +13912,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842895",
-      "last_seen": "2026-11-02T02:58:14.544541"
+      "last_seen": "2026-11-02T03:04:27.564278"
     },
     {
       "name": "Jamon Serrano 11mån Skivad",
@@ -10530,7 +13931,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842827",
-      "last_seen": "2026-11-02T02:58:14.544528"
+      "last_seen": "2026-11-02T03:04:27.564265"
     },
     {
       "name": "Hallon Klass 1",
@@ -10549,7 +13950,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.844639",
-      "last_seen": "2026-11-02T02:58:14.544739"
+      "last_seen": "2026-11-02T03:04:27.564488"
     },
     {
       "name": "Tapas De Espana Tapas Favoriter",
@@ -10568,7 +13969,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843047",
-      "last_seen": "2026-11-02T02:58:14.544570"
+      "last_seen": "2026-11-02T03:04:27.564306"
     },
     {
       "name": "Choklad Guldask",
@@ -10587,7 +13988,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843375",
-      "last_seen": "2026-11-02T02:58:14.544640"
+      "last_seen": "2026-11-02T03:04:27.564375"
     },
     {
       "name": "Ostbricka 4-sorter",
@@ -10606,7 +14007,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842956",
-      "last_seen": "2026-11-02T02:58:14.544552"
+      "last_seen": "2026-11-02T03:04:27.564289"
     },
     {
       "name": "Kaltbach 34%",
@@ -10625,7 +14026,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843016",
-      "last_seen": "2026-11-02T02:58:14.544564"
+      "last_seen": "2026-11-02T03:04:27.564300"
     },
     {
       "name": "Cheese Snack Tryffel",
@@ -10644,7 +14045,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.842926",
-      "last_seen": "2026-11-02T02:58:14.544547"
+      "last_seen": "2026-11-02T03:04:27.564283"
     },
     {
       "name": "Tryffelsalami Skivad",
@@ -10663,7 +14064,7 @@
         }
       ],
       "first_seen": "2026-11-02T02:49:49.843077",
-      "last_seen": "2026-11-02T02:58:14.544575"
+      "last_seen": "2026-11-02T03:04:27.564312"
     }
   ]
 }
