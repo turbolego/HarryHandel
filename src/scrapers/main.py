@@ -15,7 +15,12 @@ Run via: cd src && python -m scrapers.main
 
 import json
 import argparse
+import os
 import re
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any
@@ -463,6 +468,150 @@ class MenyScraper(PriceScraper):
         return products
 
 
+class KassalApiScraper:
+    """Fetch Norwegian prices from the Kassalapp REST API.
+
+    Uses the KASSALAPP_TOKEN GitHub secret (Authorization: Bearer).  The API
+    gives the shared product catalog every chain lists under one EAN, so one
+    search + one bulk call yields the same product priced in every Norwegian
+    chain (Kiwi, Meny, Rema, Oda, ...) — exactly the shared-catalogue method
+    svenskegrensen.no uses to compare Norway vs Sweden.
+
+    Hobby plan: 60 requests/minute.  We pace requests at >= 1.1s and retry
+    429s with backoff.  The token is never printed or written anywhere.
+    """
+
+    BASE = "https://kassal.app/api/v1"
+    MAX_EANS = 100          # prices-bulk limit
+    PAUSE = 1.1             # seconds between requests
+    # Basket terms covering the comparable items (bacon, cola, chocolate...)
+    BASKET = [
+        'bacon', 'cola', 'melkesjokolade', 'chips', 'energidrikk',
+        'smågodt', 'egg', 'smør', 'gullmelk', 'grovbrød', 'kaffe',
+        'kjøttdeig', 'lettmelk', 'appelsinjuice', 'salami', 'kjeks',
+    ]
+
+    def __init__(self, token: str | None = None):
+        # Read from env; the workflow injects the GitHub secret as env.
+        self.token = token if token is not None else os.environ.get('KASSALAPP_TOKEN', '')
+
+    def _request(self, method: str, path: str, payload=None, timeout=30):
+        """One authenticated request.  Returns parsed JSON or None."""
+        url = f"{self.BASE}/{path}"
+        data = json.dumps(payload).encode('utf-8') if payload is not None else None
+        req = urllib.request.Request(url, data=data, method=method)
+        req.add_header('Authorization', f'Bearer {self.token}')
+        req.add_header('Accept', 'application/json')
+        if data is not None:
+            req.add_header('Content-Type', 'application/json')
+
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as resp:
+                    body = resp.read().decode('utf-8', errors='replace')
+                    return json.loads(body) if body else {}
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    wait = 15 * (attempt + 1)
+                    print(f"  Rate limited (429), sleeping {wait}s...")
+                    time.sleep(wait)
+                    continue
+                print(f"  Kassal API {method} {path} -> HTTP {e.code} (skipping)")
+                return None
+            except Exception as e:
+                print(f"  Kassal API {method} {path} failed: {type(e).__name__}")
+                if attempt < 2:
+                    time.sleep(5)
+                    continue
+                return None
+        return None
+
+    def _collect_eans(self) -> List[Dict[str, Any]]:
+        """Run basket searches and collect unique EAN'd products."""
+        picks = []
+        seen = set()
+        for term in self.BASKET:
+            if len(picks) >= self.MAX_EANS:
+                break
+            qs = urllib.parse.urlencode({
+                'search': term, 'size': 10, 'sort': 'date_desc',
+                'exclude_without_ean': 'true', 'unique': 'true',
+            })
+            resp = self._request('GET', f'products?{qs}')
+            time.sleep(self.PAUSE)
+            if not resp:
+                continue
+            for item in (resp.get('data') or []):
+                ean = item.get('ean')
+                price = item.get('current_price')
+                if not ean or ean in seen:
+                    continue
+                if not _price_is_plausible(price):
+                    continue
+                seen.add(ean)
+                picks.append({
+                    'ean': ean,
+                    'name': item.get('name'),
+                    'weight': item.get('weight'),
+                    'weight_unit': item.get('weight_unit'),
+                    'term': term,
+                })
+                if len(picks) >= self.MAX_EANS:
+                    break
+        print(f"  {len(picks)} EANs collected from {len(self.BASKET)} searches")
+        return picks
+
+    def _fetch(self) -> List[Dict[str, Any]]:
+        picks = self._collect_eans()
+        if not picks:
+            return []
+
+        # One bulk call gives current prices for every chain stocking them.
+        resp = self._request(
+            'POST', 'products/prices-bulk',
+            payload={'eans': [p['ean'] for p in picks], 'days': 7},
+            timeout=60,
+        )
+        time.sleep(self.PAUSE)
+        if not resp:
+            print("  Kassal bulk price call failed - no Kassal API products")
+            return []
+
+        ean_info = {p['ean']: p for p in picks}
+        products = []
+        items = resp.get('data', resp if isinstance(resp, list) else [])
+        for item in items:
+            info = ean_info.get(item.get('ean'), {})
+            name = (info.get('name') or item.get('name') or '').strip()
+            if not _name_is_plausible(name):
+                continue
+            wu = item.get('weight_unit') or info.get('weight_unit')
+            unit = f"per {wu}" if wu else 'per item'
+            for store in (item.get('stores') or []):
+                price = store.get('current_price')
+                if not _price_is_plausible(price):
+                    continue
+                store_name = (store.get('name') or store.get('store') or '').strip()
+                code = (store.get('store') or 'unknown').lower()
+                products.append({
+                    'name': name,
+                    'category': info.get('term', 'supermarket'),
+                    'stores': [store_name] if store_name else ['Kassal'],
+                    'price': float(price),
+                    'currency': 'NOK',
+                    'unit': unit,
+                    'market': f'kassal-{code}',
+                })
+        print(f"  {len(products)} chain prices from Kassal API ({len(items)} EANs compared)")
+        return products
+
+    def scrape(self) -> List[Dict[str, Any]]:
+        """Returns [] quietly when the token is absent (local runs)."""
+        if not self.token:
+            print("KASSALAPP_TOKEN not set - skipping Kassal API")
+            return []
+        return self._fetch()
+
 def load_existing_data(output_path: Path) -> Dict[str, Any]:
     """Load existing price data from file."""
     if output_path.exists():
@@ -644,6 +793,13 @@ def main():
     # pharmacy, etc.) with promotion text that can't be parsed as prices and
     # yields junk product names.  Disabled until a real grocery category page
     # is found; curated Swedish entries in data/prices.json are preserved.
+    # Kassal API chain prices: one shared catalog across Norwegian chains
+    # (set KASSALAPP_TOKEN in repo secrets to enable).
+    print("Scraping Kassal API (chain prices)...")
+    kassal_products = KassalApiScraper().scrape()
+    all_products['norway'].extend(kassal_products)
+    print(f"  Found {len(kassal_products)} products from Kassal API")
+
     print("Skipping nordby.se (homepage is deals, not groceries)")
 
     # kassal.app's homepage shows price CHANGES (deltas like "-42.00"), not

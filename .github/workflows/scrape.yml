@@ -30,6 +30,9 @@ jobs:
 
       - name: Run scraper
         id: scraper
+        env:
+          # Injected but never printed: the runner masks secret values in logs.
+          KASSALAPP_TOKEN: ${{ secrets.KASSALAPP_TOKEN }}
         run: |
           cd src
           python -m scrapers.main
