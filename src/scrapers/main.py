@@ -594,12 +594,29 @@ class KassalApiScraper:
                 continue
             wu = item.get('weight_unit') or info.get('weight_unit')
             unit = f"per {wu}" if wu else 'per item'
+            rows = []
             for store in (item.get('stores') or []):
-                price = store.get('current_price')
-                if not _price_is_plausible(price):
-                    continue
-                store_name = (store.get('name') or store.get('store') or '').strip()
-                code = (store.get('store') or 'unknown').lower()
+                if _price_is_plausible(store.get('current_price')):
+                    rows.append((store.get('store'), store.get('name'),
+                                 float(store['current_price'])))
+
+            if not rows:
+                # Most bulk responses carry chain prices only in price_history
+                # entries {price, date, store}: keep the newest observation
+                # per chain code.
+                latest_by_store = {}
+                for point in (item.get('price_history') or []):
+                    code = point.get('store')
+                    if not code or not _price_is_plausible(point.get('price')):
+                        continue
+                    prev = latest_by_store.get(code)
+                    if prev is None or (point.get('date') or '') >= prev[1]:
+                        latest_by_store[code] = (float(point['price']), point.get('date') or '')
+                rows = [(code, None, price) for code, (price, _) in latest_by_store.items()]
+
+            for code, store_name, price in rows:
+                store_name = (store_name or code or '').strip()
+                code = (code or 'unknown').lower()
                 products.append({
                     'name': name,
                     'category': info.get('term', 'supermarket'),
@@ -613,9 +630,11 @@ class KassalApiScraper:
             # Diagnostic (product data only, never headers/token):
             sample = items[0] if items else {}
             st = (sample.get('stores') or [])
-            print(f"  debug: item keys={sorted(sample.keys())} "
-                  f"stores={len(st)} first_store={st[0] if st else None} "
-                  f"sample_name={sample.get('name')}")
+            ph = (sample.get('price_history') or [])
+            with_stores = sum(1 for it in items if it.get('stores'))
+            print(f"  debug: items={len(items)} with_stores={with_stores} "
+                  f"item_keys={sorted(sample.keys())} stores={len(st)} "
+                  f"history_sample={ph[:2]} sample_name={sample.get('name')}")
         print(f"  {len(products)} chain prices from Kassal API ({len(items)} EANs compared)")
         return products
 
