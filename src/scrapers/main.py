@@ -592,8 +592,10 @@ class KassalApiScraper:
             name = (info.get('name') or item.get('name') or '').strip()
             if not _name_is_plausible(name):
                 continue
-            wu = item.get('weight_unit') or info.get('weight_unit')
-            unit = f"per {wu}" if wu else 'per item'
+            # current_price is the package price (kilopris arrives separately
+            # as current_unit_price in the API), so label rows "per item" —
+            # the package size is already part of the product name.
+            unit = 'per item'
             rows = []
             for store in (item.get('stores') or []):
                 if _price_is_plausible(store.get('current_price')):
