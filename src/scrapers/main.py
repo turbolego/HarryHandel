@@ -609,6 +609,13 @@ class KassalApiScraper:
                     'unit': unit,
                     'market': f'kassal-{code}',
                 })
+        if not products:
+            # Diagnostic (product data only, never headers/token):
+            sample = items[0] if items else {}
+            st = (sample.get('stores') or [])
+            print(f"  debug: item keys={sorted(sample.keys())} "
+                  f"stores={len(st)} first_store={st[0] if st else None} "
+                  f"sample_name={sample.get('name')}")
         print(f"  {len(products)} chain prices from Kassal API ({len(items)} EANs compared)")
         return products
 
