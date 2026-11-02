@@ -516,7 +516,15 @@ class KassalApiScraper:
                     print(f"  Rate limited (429), sleeping {wait}s...")
                     time.sleep(wait)
                     continue
-                print(f"  Kassal API {method} {path} -> HTTP {e.code} (skipping)")
+                detail = ''
+                if 400 <= e.code < 500:
+                    try:
+                        body = e.read().decode('utf-8', errors='replace')
+                        # Validation message only; never headers or the token.
+                        detail = ' ' + body[:300].replace('\n', ' ')
+                    except Exception:
+                        pass
+                print(f"  Kassal API {method} {path} -> HTTP {e.code} (skipping){detail}")
                 return None
             except Exception as e:
                 print(f"  Kassal API {method} {path} failed: {type(e).__name__}")
@@ -533,10 +541,9 @@ class KassalApiScraper:
         for term in self.BASKET:
             if len(picks) >= self.MAX_EANS:
                 break
-            qs = urllib.parse.urlencode({
-                'search': term, 'size': 10, 'sort': 'date_desc',
-                'exclude_without_ean': 'true', 'unique': 'true',
-            })
+            # Documented plain params only: optional boolean flags (422 risk)
+            # are handled client-side instead.
+            qs = urllib.parse.urlencode({'search': term, 'size': 10})
             resp = self._request('GET', f'products?{qs}')
             time.sleep(self.PAUSE)
             if not resp:
