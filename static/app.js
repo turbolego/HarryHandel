@@ -166,6 +166,13 @@ function updateDisplay() {
         "picklad": "sylta", "rödlök": "rødløk", "lök": "løk",
         "jordgubbar": "jordbær", "päron": "pære", "pär": "pære",
         "kebabsås": "kebabsaus",
+        // Butter / dairy
+        "smör": "smør", "margarin": "margarin", "grädd": "grädde",
+        "grädde": "fløyte", "mjölk": "melk", "färskost": "ferskost",
+        "skinka": "skinke", "korv": "pølse", "bröd": "brød",
+        "grön": "grønn", "frosen": "frys", "frost": "frys",
+        "färs": "färs", "skinka": "skinke", "sallads": "salat",
+        "meierismør": "meierismør",
     };
     const SUFFIX_RE = /\s+\d+(?:[.,]\d+)?\s*(?:g|kg|l|ml|dl|st|stk|pack|bx|boks|cl|liter|litre|cm)\b/i;
     const WORD_RE = /[a-zà-ÿ]{2,}/g;
@@ -180,34 +187,96 @@ function updateDisplay() {
         return new Set(words);
     }
 
-    // Pair counts only when overlap is clear: score >= 0.3 AND either
-    // 2+ shared words or one long distinctive shared word (>= 5 chars).
-    function isGoodMatch(a, b, score) {
-        if (score < 0.3) return false;
-        const shared = [];
-        a.forEach((w) => { if (b.has(w)) shared.push(w); });
-        if (shared.length >= 2) return true;
-        return shared.some((w) => w.length >= 5);
+    // Does the shorter term occur inside the longer one (compound/substring
+    // match), treating only terms of >= 4 letters as significant so a match
+    // like "smör" inside "meierismör" counts while 3-letter noise does not.
+    function isCompound(a, b) {
+        const s = a.length <= b.length ? a : b;
+        const l = a.length <= b.length ? b : a;
+        return s.length >= 4 && l.length > s.length && l.includes(s);
     }
 
-    function jaccard(a, b) {
+    // Significant terms shared between two name sets: exact matches plus
+    // compound (substring) matches.
+    function sharedTerms(a, b) {
+        const shared = [];
+        a.forEach((w) => {
+            if (b.has(w)) { shared.push(w); return; }
+            b.forEach((v) => { if (w !== v && isCompound(w, v)) shared.push(w); });
+        });
+        return shared;
+    }
+
+    // Combined score: exact overlap (Jaccard) plus a compound bonus, so a
+    // Norwegian compound like "Meierismør" can match the Swedish "smör".
+    function combinedScore(a, b) {
         if (!a.size || !b.size) return 0;
         let inter = 0;
-        a.forEach((w) => { if (b.has(w)) inter++; });
-        return inter / (a.size + b.size - inter);
+        a.forEach((w) => {
+            if (b.has(w)) { inter++; return; }
+            b.forEach((v) => { if (w !== v && isCompound(w, v)) inter++; });
+        });
+        const union = a.size + b.size - inter;
+        return union ? inter / union : 0;
+    }
+
+    // Pair counts only when overlap is clear: enough shared terms, or a
+    // single distinctive shared word (>= 5 chars), or a shared compound
+    // term (>= 4 chars) with a decent score.
+    function isGoodMatch(a, b, score) {
+        if (score < 0.25) return false;
+        const shared = sharedTerms(a, b);
+        if (shared.length >= 2) return true;
+        if (shared.some((w) => w.length >= 5)) return true;
+        if (shared.length === 1 && shared[0].length >= 4 && score >= 0.34) return true;
+        return false;
+    }
+
+    // Size-aware fuzzy match: pick the best Swedish product by combined
+    // score, and among near-ties prefer one whose weight/volume is closest
+    // to the Norwegian product's (so 500 g butter matches 500 g butter).
+    function sizeOf(key) {
+        const m = key.toLowerCase().match(/(\d+(?:[.,]\d+)?)\s*(kg|g|l|ml|dl|cl)\b/);
+        if (!m) return null;
+        let v = parseFloat(m[1].replace(",", "."));
+        const u = m[2];
+        if (u === "kg") v *= 1000;
+        else if (u === "l") v *= 1000;
+        else if (u === "cl") v *= 10;
+        else if (u === "dl") v *= 100;
+        return v; // normalised to grams / ml
     }
 
     function fuzzyMatch(norwayKey, swedenKeys) {
         const nw = sigWords(norwayKey);
+        const noSize = sizeOf(norwayKey);
         let best = null, bestScore = 0;
         for (const sk of swedenKeys) {
-            const score = jaccard(nw, sigWords(sk));
-            if (score > bestScore) {
-                bestScore = score;
-                best = sk;
+            let score = combinedScore(nw, sigWords(sk));
+            if (score > bestScore + 0.0001 || (score === bestScore && best === null)) {
+                bestScore = score; best = sk;
             }
         }
-        return best && isGoodMatch(nw, sigWords(best), bestScore) ? best : null;
+        if (!best) return null;
+        // Tie-break on size when the Norwegian product has a size.
+        if (noSize != null) {
+            const noSizeExact = noSize;
+            let sizeBest = null, sizeBestDelta = Infinity;
+            // Consider candidates within 15% of the top score for a size tie-break.
+            const candidates = [];
+            for (const sk of swedenKeys) {
+                const s = combinedScore(nw, sigWords(sk));
+                if (s >= bestScore * 0.85) candidates.push({ sk, s });
+            }
+            for (const c of candidates) {
+                const seSize = sizeOf(c.sk);
+                if (seSize == null) continue;
+                const delta = Math.abs(Math.log(seSize / noSizeExact)); // ~0 means same size
+                if (delta < sizeBestDelta) { sizeBestDelta = delta; sizeBest = c.sk; }
+            }
+            if (sizeBest != null && sizeBestDelta <= 0.35) return sizeBest; // <=0.35 ≈ 1.4x size
+        }
+        return isGoodMatch(nw, sigWords(best), bestScore) ? best : null;
     }
 
     const swedenKeys = Object.keys(swedenMap);
@@ -342,6 +411,13 @@ function updateDisplay() {
         const noStores = no ? storeLinks(no.stores, no.market) : "—";
         const seStores = se ? storeLinks(se.stores, se.market) : "—";
 
+        // Direct links to the specific product page (per country), when the
+        // scraper captured a URL.  Shown as small NO / SE chips under the name.
+        const prodLinks = [
+            no && no.url ? `<a class="prod-link prod-link--no" href="${no.url}" target="_blank" rel="noopener noreferrer" title="${no.name} @ ${no.stores[0] || 'Norway'}">NO</a>` : "",
+            se && se.url ? `<a class="prod-link prod-link--se" href="${se.url}" target="_blank" rel="noopener noreferrer" title="${se.name} @ ${se.stores[0] || 'Sweden'}">SE</a>` : "",
+        ].filter(Boolean).join("");
+
         const noCell = no ? `<td class="numeric">${no.price.toFixed(2)}<br>${_priceSubLabel(no)}</td>` :
                        '<td class="numeric">—</td>';
         const seCell = se ? `<td class="numeric">${se.price.toFixed(2)}<br>${_priceSubLabel(se)}</td>` :
@@ -353,8 +429,9 @@ function updateDisplay() {
             ? `<td class="${diff >= 0 ? "more-expensive" : "cheaper"}">${diffPct >= 0 ? "+" : ""}${diffPct.toFixed(1)}%</td>`
             : '<td class="numeric">—</td>';
 
+        const nameText = no ? no.name : (se ? se.name : "—");
         tr.innerHTML = `
-        <td>${no ? no.name : (se ? se.name : "—")}</td>
+        <td class="prod-cell"><span class="prod-name">${nameText}</span>${prodLinks ? `<span class="prod-links">${prodLinks}</span>` : ""}</td>
         <td>${(no || se).category || "-"}</td>
         <td>${noStores}</td>
         <td>${seStores}</td>

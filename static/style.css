@@ -149,6 +149,18 @@ small, .small { font-size: var(--step-small); }
 .data-table td.numeric { font-variant-numeric: tabular-nums; text-align: right; }
 .data-table td.numeric:first-child { text-align: left; }
 .price-sub { font-size: 0.72rem; color: var(--ink-soft); font-weight: 400; white-space: nowrap; }
+.prod-cell { line-height: 1.2; }
+.prod-name { display: inline; font-weight: 600; }
+.prod-links { margin-top: 3px; display: inline-flex; gap: 4px; }
+.prod-link {
+    display: inline-block; padding: 1px 6px; border-radius: 10px;
+    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.03em;
+    text-decoration: none; line-height: 1.5;
+    border: 1px solid var(--border);
+}
+.prod-link--no { color: #b3261e; border-color: rgba(179,38,30,.35); background: rgba(179,38,30,.06); }
+.prod-link--se { color: #1a4ea0; border-color: rgba(26,78,160,.35); background: rgba(26,78,160,.06); }
+.prod-link:hover { text-decoration: underline; }
 .data-table tbody tr { transition: background 0.15s ease; }
 .data-table tbody tr:hover { background: var(--row-hover); }
 .data-table td:first-child { max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

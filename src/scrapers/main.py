@@ -218,6 +218,12 @@ class CoopDealsScraper(PriceScraper):
                 }
                 if parsed.get("size"):
                     entry["size"] = parsed["size"]
+                # Direct product link (e.g. /handla/varor/skafferi/tex-mex/...)
+                href = str(link.get("href") or "")
+                if href.startswith("/"):
+                    entry["url"] = "https://www.coop.se" + href
+                elif href.startswith("http"):
+                    entry["url"] = href
                 products.append(entry)
 
             except Exception as e:
@@ -334,7 +340,17 @@ class HemkopScraper(PriceScraper):
             if not _name_is_plausible(name) or not _price_is_plausible(price):
                 continue
 
-            products.append({
+            # Full product URL, e.g.
+            # https://www.hemkop.se/produkt/Smor-Normalsaltat-82procent-101017249_ST
+            href = str(href)
+            if href.startswith("/"):
+                url = "https://www.hemkop.se" + href
+            elif href.startswith("http"):
+                url = href
+            else:
+                url = None
+
+            entry: Dict[str, Any] = {
                 "name": name,
                 "category": "supermarket",
                 "stores": [self.STORE_NAME],
@@ -342,7 +358,10 @@ class HemkopScraper(PriceScraper):
                 "currency": "SEK",
                 "unit": unit,
                 "market": self.MARKET,
-            })
+            }
+            if url:
+                entry["url"] = url
+            products.append(entry)
 
         return products
 
@@ -722,6 +741,13 @@ class WillyScraper(PriceScraper):
                 if not _name_is_plausible(name):
                     continue
 
+                # Direct product link (e.g. /produkt/Falukorv-101190071_ST)
+                link = card.select_one('a[href]')
+                url = None
+                if link:
+                    href = str(link.get('href') or '')
+                    url = self.BASE_URL + href if href.startswith('/') else href
+
                 jmf_match = re.search(
                     r'Jmf-pris\s+(\d+[\d,]*)\s*kr/?\s*([a-z]+)', card.get_text()
                 )
@@ -734,7 +760,7 @@ class WillyScraper(PriceScraper):
                 if not _price_is_plausible(price):
                     continue
 
-                products.append({
+                prod: Dict[str, Any] = {
                     'name': name,
                     'category': 'supermarket',
                     'stores': ['Willys'],
@@ -742,7 +768,10 @@ class WillyScraper(PriceScraper):
                     'currency': 'SEK',
                     'unit': unit,
                     'market': 'willys-sweden'
-                })
+                }
+                if url:
+                    prod['url'] = url
+                products.append(prod)
             except Exception as e:
                 print(f"  Warning: Failed to parse Willy's product: {e}")
 
@@ -1204,6 +1233,10 @@ def merge_products(existing: List[Dict], new_products: List[Dict], country: str)
             existing_p['unit'] = new_p.get('unit', existing_p.get('unit', 'per item'))
             existing_p['stores'] = new_p.get('stores', existing_p.get('stores', []))
             existing_p['category'] = new_p.get('category', existing_p.get('category', 'supermarket'))
+            if new_p.get('url'):
+                existing_p['url'] = new_p['url']
+            if new_p.get('size'):
+                existing_p['size'] = new_p['size']
             # Append to history
             history = existing_p.get('history', [])
             # Avoid duplicate price on same day
