@@ -244,16 +244,37 @@ function updateDisplay() {
     // above — appending to usedSweden here would turn every pair into an
     // unmatched row (the Sweden key is already marked as used).
 
-    // Source URLs for each market (linked from store names in the table)
+    // Source URLs for each market (linked from store names in the table).
+    // Keys must match the `market` field in data/prices.json.
     const SOURCE_URLS = {
-        "rema-no":     "https://rema.no/",
-        "meny-no":     "https://www.meny.no/",
-        "kassal":      "https://kassal.app/",
-        "nordby-sweden": "https://www.nordbysupermarket.se/",
-        "coop-sweden": "https://www.coop.se/",
-        "willys-sweden": "https://www.willys.se/",
-        "hemkop-sweden": "https://www.hemkop.se/",
+        // Norway
+        "rema-norway":         "https://www.rema.no/",
+        "meny-norway":         "https://www.meny.no/",
+        "kassal-spar_no":      "https://www.spar.no/",
+        "kassal-meny_no":      "https://www.meny.no/",
+        "kassal-bunnpris":     "https://www.bunnpris.no/",
+        "kassal-europris_no":  "https://www.europris.se/",
+        "kassal-oda_no":       "https://www.oda.no/",
+        "kassal-joker_no":     "https://www.joker.no/",
+        "kassal-fudi":         "https://fudi.no/",
+        "kassal-engrossnett_no": "https://kassal.app/",  // wholesaler, no public price page
+        // Sweden
+        "nordby-sweden":       "https://www.nordbysupermarket.se/",
+        "coop-sweden":         "https://www.coop.se/",
+        "willys-sweden":       "https://www.willys.se/",
+        "hemkop-sweden":       "https://www.hemkop.se/",
     };
+
+    // Render store names as links to their source; fall back to plain text
+    // (never a broken "#") when a market has no known URL. Also strips the
+    // "_NO"/"_SE" chain-code suffix from display names.
+    function storeLinks(stores, market) {
+        if (!stores || !stores.length) return "—";
+        const clean = (s) => s.replace(/_NO\b/i, "").replace(/_SE\b/i, "").trim();
+        const url = SOURCE_URLS[market];
+        if (!url) return stores.map(clean).join(", ");
+        return stores.map(s => `<a href="${url}" target="_blank" rel="noopener noreferrer">${clean(s)}</a>`).join(", ");
+    }
 
     const rows = [];
     for (const nk of Object.keys(norwayMap)) {
@@ -318,8 +339,8 @@ function updateDisplay() {
         const diffPct = diff !== null && seCp ? (diff / seCp) * 100 : null;
         const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
 
-        const noStores = no ? no.stores.map(store => `<a href="${SOURCE_URLS[no.market] || '#'}" target="_blank" rel="noopener noreferrer">${store}</a>`).join(", ") : "—";
-        const seStores = se ? se.stores.map(store => `<a href="${SOURCE_URLS[se.market] || '#'}" target="_blank" rel="noopener noreferrer">${store}</a>`).join(", ") : "—";
+        const noStores = no ? storeLinks(no.stores, no.market) : "—";
+        const seStores = se ? storeLinks(se.stores, se.market) : "—";
 
         const noCell = no ? `<td class="numeric">${no.price.toFixed(2)}<br>${_priceSubLabel(no)}</td>` :
                        '<td class="numeric">—</td>';
