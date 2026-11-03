@@ -306,8 +306,8 @@ function updateDisplay() {
         const diffPct = diff !== null && seCp ? (diff / seCp) * 100 : null;
         const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
 
-        const noStores = no ? no.stores.join(", ") : "—";
-        const seStores = se ? se.stores.join(", ") : "—";
+        const noStores = no ? no.stores.map(store => `<a href="${SOURCE_URLS[no.market] || '#'}" target="_blank" rel="noopener noreferrer">${store}</a>`).join(", ") : "—";
+        const seStores = se ? se.stores.map(store => `<a href="${SOURCE_URLS[se.market] || '#'}" target="_blank" rel="noopener noreferrer">${store}</a>`).join(", ") : "—";
 
         const noCell = no ? `<td class="numeric">${no.price.toFixed(2)}<br>${_priceSubLabel(no)}</td>` :
                        '<td class="numeric">—</td>';
