@@ -243,6 +243,18 @@ function updateDisplay() {
     // the top), then unmatched products.  Use matchedSweden from the pass
     // above — appending to usedSweden here would turn every pair into an
     // unmatched row (the Sweden key is already marked as used).
+
+    // Source URLs for each market (linked from store names in the table)
+    const SOURCE_URLS = {
+        "rema-no":     "https://rema.no/",
+        "meny-no":     "https://www.meny.no/",
+        "kassal":      "https://kassal.app/",
+        "nordby-sweden": "https://www.nordbysupermarket.se/",
+        "coop-sweden": "https://www.coop.se/",
+        "willys-sweden": "https://www.willys.se/",
+        "hemkop-sweden": "https://www.hemkop.se/",
+    };
+
     const rows = [];
     for (const nk of Object.keys(norwayMap)) {
         const sk = matchedSweden[nk];
