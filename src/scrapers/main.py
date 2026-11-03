@@ -451,18 +451,24 @@ class RemaScraper(PriceScraper):
                     # Parse product info from the parent context
                     parent = el.parent
                     name = "Unknown"
+                    url = None
                     if parent:
                         for _ in range(3):
                             if parent.name:
                                 name_candidate = parent.select_one('a, [class*="product-name"], h3')
                                 if name_candidate and name_candidate.get_text(strip=True):
                                     name = self.clean_text(name_candidate.get_text(strip=True))
+                                    if not url:
+                                        link = parent.select_one('a[href]')
+                                        if link is not None:
+                                            href = str(link.get('href') or '')
+                                            url = self.BASE_URL + href if href.startswith('/') else (href if href.startswith('http') else None)
                                     break
                                 parent = parent.parent
                             else:
                                 break
 
-                    products.append({
+                    prod: Dict[str, Any] = {
                         'name': name,
                         'category': 'supermarket',
                         'stores': ['Rema 1000'],
@@ -470,7 +476,10 @@ class RemaScraper(PriceScraper):
                         'currency': 'NOK',
                         'unit': 'per item',
                         'market': 'rema-norway'
-                    })
+                    }
+                    if url:
+                        prod['url'] = url
+                    products.append(prod)
             except Exception as e:
                 print(f"Warning: Failed to parse rema price element: {e}")
 
@@ -829,7 +838,14 @@ class MenyScraper(PriceScraper):
                 if price is None or not _price_is_plausible(price):
                     continue
 
-                products.append({
+                # Direct product page (e.g. /varer/kjott/.../svinekoteletter-<EAN>)
+                link_el = card.select_one('h3 a[href]') or card.select_one('a[href*="/varer/"]')
+                url = None
+                if link_el is not None:
+                    href = str(link_el.get('href') or '')
+                    url = self.BASE_URL + href if href.startswith('/') else href
+
+                entry = {
                     'name': name,
                     'category': 'supermarket',
                     'stores': ['Meny'],
@@ -837,7 +853,10 @@ class MenyScraper(PriceScraper):
                     'currency': 'NOK',
                     'unit': unit,
                     'market': 'meny-norway'
-                })
+                }
+                if url:
+                    entry['url'] = url
+                products.append(entry)
             except Exception as e:
                 print(f"  Warning: Failed to parse Meny product: {e}")
 

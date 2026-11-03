@@ -1,5 +1,8 @@
 let allPrices = { norway: [], sweden: [] };
 let chart = null;
+// Fuzzy-matched NO/SE pairs (per-unit SEK prices) computed by updateDisplay();
+// consumed by updateChart() so the chart always mirrors the table's matches.
+let CHART_PAIRS = [];
 
 // Exchange rates (approximate, updated in workflow)
 const FX_RATES = {
@@ -123,21 +126,39 @@ function updateDisplay() {
     const tbody = document.querySelector("#products-table tbody");
     tbody.innerHTML = "";
 
-    // Build lookup maps: name (normalized) → product
-    const norwayMap = {};
-    allPrices.norway.forEach((p) => {
-        if (p.price) {
-            const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
-            if (!norwayMap[key] || p.price < norwayMap[key].price) norwayMap[key] = p;
-        }
-    });
-    const swedenMap = {};
-    allPrices.sweden.forEach((p) => {
-        if (p.price) {
-            const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
-            if (!swedenMap[key] || p.price < swedenMap[key].price) swedenMap[key] = p;
-        }
-    });
+    // Build lookup maps: name (normalized) → product. For each unique name
+    // we keep the cheapest entry (for price/gap math) but also attach
+    // `allStores` — every store that carries the product — so the store
+    // columns can link to ALL of them, not just the cheapest.
+    function buildByCountry(prices) {
+        const byName = {};
+        prices.forEach((p) => {
+            if (p.price) {
+                const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
+                (byName[key] = byName[key] || []).push(p);
+            }
+        });
+        const map = {};
+        Object.entries(byName).forEach(([key, list]) => {
+            list.sort((a, b) => a.price - b.price);
+            const cheapest = list[0];
+            cheapest.avgPrice = list.reduce((s, p) => s + p.price, 0) / list.length;
+            const seen = new Set();
+            cheapest.allStores = [];
+            list.forEach((p) => {
+                (p.stores && p.stores.length ? p.stores : [p.market]).forEach((s) => {
+                    const id = `${s}|${p.market}`;
+                    if (seen.has(id)) return;
+                    seen.add(id);
+                    cheapest.allStores.push({ store: s, market: p.market, url: p.url || null, name: p.name });
+                });
+            });
+            map[key] = cheapest;
+        });
+        return map;
+    }
+    const norwayMap = buildByCountry(allPrices.norway);
+    const swedenMap = buildByCountry(allPrices.sweden);
 
     // --- Build the matched list.  Norwegian and Swedish retailers use
     // different names for the same product ("Bananer pr stk" vs "Bananer",
@@ -334,15 +355,48 @@ function updateDisplay() {
         "hemkop-sweden":       "https://www.hemkop.se/",
     };
 
+    // Per-store product-search URL templates. When a store has no scraped
+    // direct product page, we fall back to a search that lands on the product.
+    // Verified to resolve (200) for the stores below.
+    const STORE_SEARCH = {
+        // Norway (Kassal chain codes + scraper store names)
+        "ODA_NO":          "https://www.oda.no/sok/?q={q}",
+        "MENY_NO":         "https://www.meny.no/sok?q={q}",
+        "Meny":            "https://www.meny.no/sok?q={q}",
+        "SPAR_NO":         "https://www.spar.no/sok?q={q}",
+        "JOKER_NO":        "https://www.joker.no/sok?q={q}",
+        "BUNNPRIS":        "https://www.bunnpris.no/sok?q={q}",
+        "EUROPRIS_NO":     "https://www.europris.no/sok?q={q}",
+        "FUDI":            "https://www.fudi.no/search?q={q}",
+        "Rema 1000":       "https://www.rema.no/search?q={q}",
+        "Kassal":          "https://kassal.app/?q={q}",
+        // Sweden
+        "Willys":          "https://www.willys.se/sok?q={q}",
+        "Hemköp":          "https://www.hemkop.se/sok?q={q}",
+        "Hemkop":          "https://www.hemkop.se/sok?q={q}",
+    };
+
     // Render store names as links to their source; fall back to plain text
     // (never a broken "#") when a market has no known URL. Also strips the
     // "_NO"/"_SE" chain-code suffix from display names.
-    function storeLinks(stores, market) {
-        if (!stores || !stores.length) return "—";
-        const clean = (s) => s.replace(/_NO\b/i, "").replace(/_SE\b/i, "").trim();
-        const url = SOURCE_URLS[market];
-        if (!url) return stores.map(clean).join(", ");
-        return stores.map(s => `<a href="${url}" target="_blank" rel="noopener noreferrer">${clean(s)}</a>`).join(", ");
+    //
+    // Each store links to the SPECIFIC product:
+    //   1. the scraped direct product page (product.url) when available,
+    //   2. that store's product search (lands on the product) otherwise,
+    //   3. the chain homepage as a last resort.
+    function storeLinks(allStores) {
+        if (!allStores || !allStores.length) return "—";
+        const clean = (s) => String(s).replace(/_NO\b/i, "").replace(/_SE\b/i, "").trim();
+        return allStores.map((e) => {
+            let href = e.url || null;
+            if (!href && STORE_SEARCH[e.store]) {
+                href = STORE_SEARCH[e.store].replace("{q}", encodeURIComponent(e.name || ""));
+            }
+            if (!href) href = SOURCE_URLS[e.market] || "";
+            const label = clean(e.store);
+            if (!href) return `<span class="store-plain">${label}</span>`;
+            return `<a class="store-link" href="${href}" target="_blank" rel="noopener noreferrer" title="${label}">${label}</a>`;
+        }).join(" · ");
     }
 
     const rows = [];
@@ -396,6 +450,27 @@ function updateDisplay() {
                       "norway-price-desc": priceSort, "sweden-price-desc": priceSort };
     rows.sort((a, b) => pairFirst(a, b) || (sortFns[sortBy] || gapSort)(a, b));
 
+    // All fuzzy-matched pairs, sorted by price gap (descending).  CHART_PAIRS
+    // is built from these and updateChart() renders the comparison chart (it
+    // applies the chart-count / sort controls there).
+    const gapSorted = [...rows]
+        .filter(r => r.kind === "pair")
+        .sort((a, b) => {
+            const ga = Math.abs(comparablePrice(a.no).value * FX_RATES.SEK - comparablePrice(a.se).value);
+            const gb = Math.abs(comparablePrice(b.no).value * FX_RATES.SEK - comparablePrice(b.se).value);
+            return gb - ga;
+        });
+
+    // Store the matched pairs (with per-unit SEK prices) so updateChart()
+    // renders the comparison chart from the SAME fuzzy-matched data as the
+    // table.  updateChart() runs right after this and respects the chart
+    // sort / count controls.
+    CHART_PAIRS = gapSorted.map((row) => ({
+        label: (row.no || row.se).name,
+        no: comparablePrice(row.no).value * FX_RATES.SEK,  // Norway, in SEK
+        se: comparablePrice(row.se).value,                  // Sweden, in SEK
+    }));
+
     rows.forEach((row) => {
         const tr = document.createElement("tr");
         const no = row.no;
@@ -408,8 +483,8 @@ function updateDisplay() {
         const diffPct = diff !== null && seCp ? (diff / seCp) * 100 : null;
         const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
 
-        const noStores = no ? storeLinks(no.stores, no.market) : "—";
-        const seStores = se ? storeLinks(se.stores, se.market) : "—";
+        const noStores = no ? storeLinks(no.allStores) : "—";
+        const seStores = se ? storeLinks(se.allStores) : "—";
 
         // Direct links to the specific product page (per country), when the
         // scraper captured a URL.  Shown as small NO / SE chips under the name.
@@ -468,47 +543,28 @@ function updateChart() {
     const ctx = document.getElementById("comparisonChart");
     if (chart) chart.destroy();
 
-    // Build comparison data: top N by normalized price (descending)
-    const norwayMap = {};
-    allPrices.norway.forEach((p) => {
-        if (p.price) {
-            const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
-            if (!norwayMap[key] || p.price < norwayMap[key].price) norwayMap[key] = p;
-        }
-    });
-    const swedenMap = {};
-    allPrices.sweden.forEach((p) => {
-        if (p.price) {
-            const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
-            if (!swedenMap[key] || p.price < swedenMap[key].price) swedenMap[key] = p;
-        }
-    });
-
-    const matchedKeys = Object.keys(norwayMap).filter((k) => swedenMap[k]);
-    const chartCount = parseInt(document.getElementById("chart-count").value, 10);
-    const limit = Math.min(chartCount, matchedKeys.length);
-
-    // Build data objects and sort by Norway price descending (or other sort chosen in UI)
+    // Use the fuzzy-matched pairs (same matches as the table), normalised to
+    // SEK.  CHART_PAIRS is populated by updateDisplay() on every render.
     const sortBy = document.getElementById("chart-sort").value;
-    let sortedData = matchedKeys
-        .map((k) => ({
-            label: norwayMap[k].name,
-            no: norwayMap[k].price * FX_RATES.SEK, // normalize to SEK
-            se: swedenMap[k].price,
-        }));
+    const countSel = document.getElementById("chart-count").value;
+    let sortedData = [...CHART_PAIRS];
 
-    if (sortBy === "gap-desc") {
-        sortedData.sort((a, b) => Math.abs(b.no - b.se) - Math.abs(a.no - a.se));
-    } else if (sortBy === "gap-asc") {
+    if (sortBy === "gap-asc") {
         sortedData.sort((a, b) => Math.abs(a.no - a.se) - Math.abs(b.no - b.se));
     } else if (sortBy === "price-asc") {
         sortedData.sort((a, b) => a.no - b.no);
     } else if (sortBy === "name-asc") {
         sortedData.sort((a, b) => a.label.localeCompare(b.label));
+    } else if (sortBy === "price-desc") {
+        sortedData.sort((a, b) => b.no - a.no);
     } else {
-        sortedData.sort((a, b) => b.no - a.no); // price-desc default
+        // default "gap-desc"
+        sortedData.sort((a, b) => Math.abs(b.no - b.se) - Math.abs(a.no - a.se));
     }
 
+    const limit = countSel === "all"
+        ? sortedData.length
+        : Math.min(parseInt(countSel, 10) || 15, sortedData.length);
     const dataItems = sortedData.slice(0, limit);
 
     const chartLabels = dataItems.map((x) => x.label);

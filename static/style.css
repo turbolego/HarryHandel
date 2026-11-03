@@ -164,6 +164,15 @@ small, .small { font-size: var(--step-small); }
 .data-table tbody tr { transition: background 0.15s ease; }
 .data-table tbody tr:hover { background: var(--row-hover); }
 .data-table td:first-child { max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.store-link {
+    display: inline-block;
+    color: var(--accent, #d03e2d);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(208,62,45,.4);
+    padding: 0 1px;
+}
+.store-link:hover { text-decoration: underline; }
+.store-plain { color: var(--muted, #6b6b6b); }
 
 /* Gap cells */
 .more-expensive { color: var(--accent); font-weight: 600; }
