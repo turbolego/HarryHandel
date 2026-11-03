@@ -6,6 +6,7 @@ from .main import (
     NordbyScraper,
     NordbyDealsScraper,
     CoopDealsScraper,
+    HemkopScraper,
     WillyScraper,
     MenyScraper,
     IcaScraper,

@@ -292,6 +292,116 @@ class CoopDealsScraper(PriceScraper):
         }
 
 
+class HemkopScraper(PriceScraper):
+    """Scrape stable-price products from hemkop.se "Alltid bra pris" section.
+
+    ~331 products at stable national prices (Axfood chain, same group as Willys).
+    Uses URL slug for reliable product names; parses prices from link text.
+    """
+
+    LIST_URL = "https://www.hemkop.se/artikel/alltid-bra-pris"
+    STORE_NAME = "Hemköp"
+    MARKET = "hemkop-sweden"
+
+    # Brand words that signal the end of a product name
+    _BRAND_STOP = re.compile(
+        r'\b(Garant|GARANT|Konsument|ICA|Fresca|Felix|Zoegas|Pauluns|Kungsörnen|Loka)'
+    )
+
+    def scrape_deals(self) -> List[Dict[str, Any]]:
+        soup = self.fetch_page(self.LIST_URL)
+        if not soup:
+            return []
+
+        products: List[Dict[str, Any]] = []
+        seen_hrefs: set = set()
+
+        links = soup.select('a[href*="/produkt/"]')
+        print(f"  {len(links)} product links found on hemkop.se")
+
+        for link in links:
+            href = link.get("href", "") or ""
+            if href in seen_hrefs:
+                continue
+            seen_hrefs.add(href)
+
+            text = self.clean_text(link.get_text())
+            result = self._parse_listing_link(href, text)
+            if result is None:
+                continue
+
+            name, price, unit = result
+            if not _name_is_plausible(name) or not _price_is_plausible(price):
+                continue
+
+            products.append({
+                "name": name,
+                "category": "supermarket",
+                "stores": [self.STORE_NAME],
+                "price": price,
+                "currency": "SEK",
+                "unit": unit,
+                "market": self.MARKET,
+            })
+
+        return products
+
+    def _parse_listing_link(self, href: str, text: str):
+        """Extract (name, price, unit) from a Hemköp listing link.
+
+        Uses URL slug for the product name (reliable), link text for price.
+        """
+        # Extract name from URL slug: /produkt/Tomater-Krossade-101285406_ST
+        # → "Tomater Krossade"
+        m = re.search(r'/produkt/([A-Za-zÅÄÖäöå\-]+)\d+_?\w*$', href)
+        if not m:
+            # Try to get name from text after "Alltid bra pris!" marker
+            m2 = re.search(r"Alltid bra pris!([A-ZÅÄÖ\w][\w\s]+?)(?=\d+\s*(?:g|ml|dl)\b|Garant|GARANT|Konsument|,)", text)
+            if not m2:
+                return None
+            name = m2.group(1).strip()
+        else:
+            name = m.group(1).replace("-", " ")
+
+        # Parse price from first part of text
+        # Bundle: "3 för 31,00" → 31.00/3 = 10.33 per piece
+        m_bundle = re.match(r"^(\d+)\s*för\s*(\d+[,.]\d+)", text)
+        if m_bundle:
+            count = int(m_bundle.group(1))
+            total = float(m_bundle.group(2).replace(",", "."))
+            if count > 0 and _price_is_plausible(total):
+                return name, round(total / count, 2), "per piece"
+
+        # Single: "8,00 /st" or "125,00 /kg"
+        m_single = re.match(r"^(\d+[,.]\d+)\s*/(\w+)", text)
+        if m_single:
+            price = float(m_single.group(1).replace(",", "."))
+            unit_code = m_single.group(2)
+            unit_map = {"st": "per piece", "kg": "per kg",
+                       "l": "per liter", "100g": "per 100 g",
+                       "liter": "per liter", "gram": "per gram"}
+            if _price_is_plausible(price):
+                return name, price, unit_map.get(unit_code, "per item")
+
+        return None
+
+    @staticmethod
+    def _parse_hemkop_price(price_line: str) -> tuple:
+        """Legacy helper — kept for reference."""
+        m_bundle = re.match(r"(\d+)\s*för\s*(\d+[,.]\d*)\s*(?:/(\w+))?", price_line)
+        if m_bundle:
+            count = int(m_bundle.group(1))
+            total = float(m_bundle.group(2).replace(",", "."))
+            if count > 0 and _price_is_plausible(total):
+                return round(total / count, 2), "per piece"
+        m_single = re.match(r"(\d+[,.]\d*)\s*/(\w+)", price_line)
+        if m_single:
+            price = float(m_single.group(1).replace(",", "."))
+            if _price_is_plausible(price):
+                return price, "per item"
+        return None, "per item"
+
+
 class RemaScraper(PriceScraper):
     """Scrape prices from rema.no using Playwright."""
 
@@ -1086,6 +1196,11 @@ def main():
     willy_products = WillyScraper().scrape_category("https://willys.se/")
     all_products['sweden'].extend(willy_products)
     print(f"  Found {len(willy_products)} products from willys.se")
+
+    print("Scraping hemkop.se (Hemköp 'Alltid bra pris', Sweden)...")
+    hemkop_products = HemkopScraper().scrape_deals()
+    all_products['sweden'].extend(hemkop_products)
+    print(f"  Found {len(hemkop_products)} products from hemkop.se")
 
     # Merge with existing data preserving history
     all_products['norway'] = merge_products(existing_norway, all_products['norway'], 'norway')
