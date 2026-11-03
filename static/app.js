@@ -9,6 +9,39 @@ const FX_RATES = {
     EUR: 0.085
 };
 
+// Get the most comparable price for a product (per-unit normalized).
+// Returns { value, unit } where unit is "per 100ml", "per kg", "per piece", or "".
+function comparablePrice(p) {
+    if (p.price_per_100ml) return { value: p.price_per_100ml, unit: "per 100ml" };
+    if (p.price_per_kg)    return { value: p.price_per_kg,    unit: "per kg" };
+    if (p.price_per_piece) return { value: p.price_per_piece,  unit: "per piece" };
+    return { value: p.price, unit: "" };
+}
+
+// Display price cell: raw price + normalized sub-label if available
+function priceCell(p) {
+    if (!p) return '<td class="numeric">—</td>';
+    const cp = comparablePrice(p);
+    const sub = cp.unit
+        ? `<span class="price-sub">${cp.value.toFixed(2)} ${cp.unit.replace("per ", "")}</span>`
+        : '';
+    return `<td class="numeric">${p.price.toFixed(2)}<br>${sub}</td>`;
+}
+
+// Sub-label for a price cell: shows pack qty + per-unit price when available
+function _priceSubLabel(p) {
+    if (!p) return '';
+    let parts = [];
+    if (p.quantity && p.quantity > 1) {
+        parts.push(`${p.quantity}×`);
+    }
+    const cp = comparablePrice(p);
+    if (cp.unit) {
+        parts.push(`${cp.value.toFixed(2)}/${cp.unit.replace("per ", "")}`);
+    }
+    return parts.length ? `<span class="price-sub">${parts.join(' ')}</span>` : '';
+}
+
 // Generate a tiny sparkline SVG from history array [{date, price}]
 function generateSparkline(history) {
     if (!history || history.length < 2) return '';
@@ -238,8 +271,8 @@ function updateDisplay() {
         return aPair - bPair;
     };
     const priceSort = (a, b) => {
-        const pa = (a.no || a.se).price;
-        const pb = (b.no || b.se).price;
+        const pa = comparablePrice(a.no || a.se).value;
+        const pb = comparablePrice(b.no || b.se).value;
         return sortBy.includes("desc") ? pb - pa : pa - pb;
     };
     const nameSort = (a, b) => {
@@ -248,8 +281,12 @@ function updateDisplay() {
         return sortBy.includes("desc") ? nb.localeCompare(na) : na.localeCompare(nb);
     };
     const gapSort = (a, b) => {
-        const ga = a.kind === "pair" ? Math.abs((a.no.price * FX_RATES.SEK) - a.se.price) : 0;
-        const gb = b.kind === "pair" ? Math.abs((b.no.price * FX_RATES.SEK) - b.se.price) : 0;
+        const ga = a.kind === "pair"
+            ? Math.abs(comparablePrice(a.no).value * FX_RATES.SEK - comparablePrice(a.se).value)
+            : 0;
+        const gb = b.kind === "pair"
+            ? Math.abs(comparablePrice(b.no).value * FX_RATES.SEK - comparablePrice(b.se).value)
+            : 0;
         return sortBy.includes("asc") ? ga - gb : gb - ga;
     };
     const sortFns = { "gap-desc": gapSort, "gap-asc": gapSort,
@@ -261,17 +298,20 @@ function updateDisplay() {
         const tr = document.createElement("tr");
         const no = row.no;
         const se = row.se;
-        const noInSEK = no ? no.price * FX_RATES.SEK : null;
-        const diff = noInSEK !== null && se ? noInSEK - se.price : null;
-        const diffPct = diff !== null && se.price ? (diff / se.price) * 100 : null;
+        // Use comparable (per-unit normalized) prices for gap calculation
+        const noCp  = no ? comparablePrice(no).value : null;
+        const seCp  = se ? comparablePrice(se).value : null;
+        const noInSEK = noCp !== null ? noCp * FX_RATES.SEK : null;
+        const diff = noInSEK !== null && seCp !== null ? noInSEK - seCp : null;
+        const diffPct = diff !== null && seCp ? (diff / seCp) * 100 : null;
         const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
 
-        const noCell = no ? `<td class="numeric">${no.price.toFixed(1)}</td>` :
+        const noCell = no ? `<td class="numeric">${no.price.toFixed(2)}<br>${_priceSubLabel(no)}</td>` :
                        '<td class="numeric">—</td>';
-        const seCell = se ? `<td class="numeric">${se.price.toFixed(1)}</td>` :
+        const seCell = se ? `<td class="numeric">${se.price.toFixed(2)}<br>${_priceSubLabel(se)}</td>` :
                        '<td class="numeric">—</td>';
         const gapCell = diff !== null
-            ? `<td class="numeric">${diff >= 0 ? "+" : ""}${diff.toFixed(1)}</td>`
+            ? `<td class="numeric">${diff >= 0 ? "+" : ""}${diff.toFixed(2)}</td>`
             : '<td class="numeric">—</td>';
         const gapPctCell = diffPct !== null
             ? `<td class="${diff >= 0 ? "more-expensive" : "cheaper"}">${diffPct >= 0 ? "+" : ""}${diffPct.toFixed(1)}%</td>`

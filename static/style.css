@@ -148,6 +148,7 @@ small, .small { font-size: var(--step-small); }
 .data-table td { vertical-align: top; }
 .data-table td.numeric { font-variant-numeric: tabular-nums; text-align: right; }
 .data-table td.numeric:first-child { text-align: left; }
+.price-sub { font-size: 0.72rem; color: var(--ink-soft); font-weight: 400; white-space: nowrap; }
 .data-table tbody tr { transition: background 0.15s ease; }
 .data-table tbody tr:hover { background: var(--row-hover); }
 .data-table td:first-child { max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

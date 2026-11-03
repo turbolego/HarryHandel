@@ -1082,6 +1082,93 @@ def recover_price(price):
     return None
 
 
+def _extract_quantity(name: str) -> int:
+    """Extract pack quantity from a product name.
+
+    Patterns: '3stk', '4-pack', '12p', '6p', '20stk', '4 p'
+    Default: 1
+    """
+    # "Nstk" / "N stk" / "N st"
+    m = re.search(r'(\d+)\s*(?:stk|st)\b', name, re.I)
+    if m:
+        q = int(m.group(1))
+        if q > 1:
+            return q
+    # "Np" / "N-pack" / "N p"  (packs, eggs)
+    m = re.search(r'(\d+)\s*(?:pack|-p)\b', name, re.I)
+    if m:
+        q = int(m.group(1))
+        if q > 1:
+            return q
+    # "N p" as in "4 p", "12p"  (Swedish style)
+    m = re.search(r'\b(\d+)\s*p\b', name, re.I)
+    if m:
+        q = int(m.group(1))
+        if q > 1 and q <= 50:
+            return q
+    return 1
+
+
+def _extract_size_ml_or_g(name: str):
+    """Extract unit size from a product name.
+
+    Returns (size, unit) where unit is 'ml', 'g', or None.
+    Handles Norwegian decimal comma: "0,5l" → 500 ml, "1,5kg" → 1500 g
+    """
+    # Liquid: ml, l, cl  ("0,5l" = 500 ml, "1l" = 1000 ml, "250ml" = 250 ml)
+    m = re.search(r'(\d+(?:[.,]\d+)?)\s*(ml|l|cl)\b', name, re.I)
+    if m:
+        val = float(m.group(1).replace(',', '.'))
+        unit = m.group(2).lower()
+        if unit == 'cl':
+            return val * 10, 'ml'
+        elif unit == 'l':
+            return val * 1000, 'ml'
+        return val, 'ml'
+    # Solid: g, kg  ("800g" = 800 g, "1,5kg" = 1500 g)
+    m = re.search(r'(\d+(?:[.,]\d+)?)\s*(g|kg)\b', name, re.I)
+    if m:
+        val = float(m.group(1).replace(',', '.'))
+        unit = m.group(2).lower()
+        return val * 1000 if unit == 'kg' else val, 'g'
+    return None, None
+
+
+def normalize_product(product: Dict[str, Any]) -> Dict[str, Any]:
+    """Add quantity, unit_size, and normalized per-unit price to a product.
+
+    Adds:
+      quantity         – number of items in the pack (default 1)
+      unit_size        – size of one item (in ml or g)
+      price_per_100ml  – for liquids: (price / quantity / total_ml) * 100
+      price_per_kg     – for solids:   (price / quantity / total_g) * 1000
+      price_per_piece  – for count:    price / quantity
+    """
+    name  = product.get('name', '')
+    price = product.get('price')
+    if not price:
+        return product
+
+    qty = _extract_quantity(name)
+    size, size_unit = _extract_size_ml_or_g(name)
+
+    product['quantity'] = qty
+    if size and size_unit:
+        product['unit_size'] = size
+        product['size_unit'] = size_unit
+
+    total_val = (size or 1) * qty
+    if size_unit == 'ml' and total_val > 0:
+        product['price_per_100ml'] = round((price / total_val) * 100, 2)
+    elif size_unit == 'g' and total_val > 0:
+        product['price_per_kg'] = round((price / total_val) * 1000, 2)
+
+    if qty > 1:
+        product['price_per_piece'] = round(price / qty, 2)
+
+    return product
+
+
 def merge_products(existing: List[Dict], new_products: List[Dict], country: str) -> List[Dict]:
     """Merge new products into existing list, preserving history."""
     kept = []
@@ -1205,6 +1292,11 @@ def main():
     # Merge with existing data preserving history
     all_products['norway'] = merge_products(existing_norway, all_products['norway'], 'norway')
     all_products['sweden'] = merge_products(existing_sweden, all_products['sweden'], 'sweden')
+
+    # Normalize all products: add quantity, unit_size, price_per_100ml/kg
+    for country in ['norway', 'sweden']:
+        for p in all_products[country]:
+            normalize_product(p)
 
     # Sort by price (lowest first)
     for country in ['norway', 'sweden']:
