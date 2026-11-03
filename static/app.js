@@ -306,6 +306,9 @@ function updateDisplay() {
         const diffPct = diff !== null && seCp ? (diff / seCp) * 100 : null;
         const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
 
+        const noStores = no ? no.stores.join(", ") : "—";
+        const seStores = se ? se.stores.join(", ") : "—";
+
         const noCell = no ? `<td class="numeric">${no.price.toFixed(2)}<br>${_priceSubLabel(no)}</td>` :
                        '<td class="numeric">—</td>';
         const seCell = se ? `<td class="numeric">${se.price.toFixed(2)}<br>${_priceSubLabel(se)}</td>` :
@@ -320,7 +323,8 @@ function updateDisplay() {
         tr.innerHTML = `
         <td>${no ? no.name : (se ? se.name : "—")}</td>
         <td>${(no || se).category || "-"}</td>
-        <td>${((no ? no.stores : null) || (se ? se.stores : null) || []).join(", ")}</td>
+        <td>${noStores}</td>
+        <td>${seStores}</td>
         ${noCell}
         ${seCell}
         ${gapCell}
