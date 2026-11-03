@@ -55,6 +55,243 @@ class PriceScraper:
         return text.strip().replace('\n', ' ').replace('\t', '').strip()
 
 
+class NordbyDealsScraper(PriceScraper):
+    """Scrape weekly deals from nordbysupermarket.se (Nordby/Grensemat, Strömstad).
+
+    The deals page at /ukens-tilbud shows article-based deal cards with two
+    price formats:
+      1. <p class="text-red-700">2 for 50</p>  → bundle: 2 items for 50 SEK
+      2. <div class="text-red-700">             → split: <span>139</span><span>95</span>
+           …                                        = 139.95 SEK + unit
+    """
+
+    DEALS_URL = "https://www.nordbysupermarket.se/ukens-tilbud"
+    STORE_NAME = "Nordby Supermarket"
+    MARKET = "nordby-sweden"
+
+    def scrape_deals(self) -> List[Dict[str, Any]]:
+        soup = self.fetch_page(self.DEALS_URL)
+        if not soup:
+            return []
+
+        products: List[Dict[str, Any]] = []
+        articles = soup.find_all("article")
+        print(f"  {len(articles)} deal articles found on nordbysupermarket.se")
+
+        for article in articles:
+            try:
+                name_el = article.select_one("h3")
+                name = self.clean_text(name_el.get_text(strip=True)) if name_el else ""
+                if not _name_is_plausible(name):
+                    continue
+
+                desc_el = article.select_one("div.px-4 p:not(.text-red-700)")
+                desc = self.clean_text(desc_el.get_text(strip=True)) if desc_el else ""
+
+                price_el = article.select_one(".text-red-700")
+                if not price_el:
+                    continue
+
+                price, unit = self._parse_price(price_el)
+                if price is None or not _price_is_plausible(price):
+                    continue
+
+                entry: Dict[str, Any] = {
+                    "name": name,
+                    "category": "supermarket",
+                    "stores": [self.STORE_NAME, "Grensemat"],
+                    "price": price,
+                    "currency": "SEK",
+                    "unit": unit,
+                    "market": self.MARKET,
+                }
+                if desc:
+                    entry["description"] = desc
+                products.append(entry)
+
+            except Exception as e:
+                print(f"Warning: Failed to parse Nordby deal article: {e}")
+
+        return products
+
+    @staticmethod
+    def _parse_price(price_el) -> tuple:
+        """Return (price, unit) from a .text-red-700 element.
+
+        Format 1 – <p>2 for 50</p>        → per-piece price = 25.00, unit "per piece"
+        Format 2 – <div><span>139</span><span>95</span>…</div>
+                                              → price = 139.95, unit from last span
+        """
+        # Format 1: bundle deal rendered in a <p>
+        if price_el.name == "p":
+            m = re.search(r"(\d+)\s*(?:for|för)\s*(\d+(?:\.\d+)?)", price_el.get_text())
+            if m:
+                count, total = int(m.group(1)), float(m.group(2))
+                if count > 0 and _price_is_plausible(total):
+                    return round(total / count, 2), "per piece"
+            return None, "per item"
+
+        # Format 2: split price in a <div> with spans
+        spans = price_el.find_all("span")
+        if len(spans) < 2:
+            return None, "per item"
+        try:
+            int_part = int(spans[0].get_text(strip=True))
+            dec_part = int(spans[1].get_text(strip=True))
+        except (ValueError, IndexError):
+            return None, "per item"
+        price = int_part + dec_part / 100.0
+        if not _price_is_plausible(price):
+            return None, "per item"
+
+        unit = "per item"
+        for s in spans[2:]:
+            text = s.get_text(strip=True).upper()
+            if "KG" in text or "PR KG" in text:
+                unit = "per kg"
+            elif "LIT" in text or "LIT." in text:
+                unit = "per liter"
+            elif "HG" in text or "PR HG" in text:
+                unit = "per 100 g"
+            elif "STK" in text:
+                unit = "per piece"
+            elif "PANT" in text:
+                unit = "per item (+deposit)"
+            elif "P " in text or "STK" in text:
+                unit = "per pack"
+            if unit != "per item":
+                break
+        return price, unit
+
+
+class CoopDealsScraper(PriceScraper):
+    """Scrape active deals from coop.se/handla/ (Coop, Sweden).
+
+    Product cards use data-testid="product-card".  All price/brand info is
+    in the aria-label of the product <a> tag, e.g.:
+      "Kryddmix Taco Mild 3-pack, Santa Maria, 3 p,
+       Erbjudande 20 kronor styck,
+       Erbjudande jämförpris 238 kronor och 09 öre per kilo"
+    """
+
+    DEALS_URL = "https://www.coop.se/handla/"
+    STORE_NAME = "Coop"
+    MARKET = "coop-sweden"
+
+    # Matches "XX kronor YY öre" (YY optional) or "XX kronor YY"
+    _PRICE_RE = re.compile(
+        r"(\d+)\s+kronor(?:\s+och\s+(\d+)\s+öre)?\s*(kronor|kr|öre|per\s+\w+)*"
+    )
+
+    def scrape_deals(self) -> List[Dict[str, Any]]:
+        soup = self.fetch_page(self.DEALS_URL)
+        if not soup:
+            return []
+
+        products: List[Dict[str, Any]] = []
+        cards = soup.select('div[data-testid="product-card"]')
+        print(f"  {len(cards)} product cards found on coop.se")
+
+        for card in cards:
+            try:
+                link = card.select_one("a[aria-label]")
+                if not link:
+                    continue
+                aria = link.get("aria-label", "")
+                parsed = self._parse_aria(aria)
+                if not parsed:
+                    continue
+
+                price = parsed.get("price")
+                unit = parsed.get("unit", "per item")
+                if price is None or not _price_is_plausible(price):
+                    continue
+
+                entry: Dict[str, Any] = {
+                    "name": parsed["name"],
+                    "category": "supermarket",
+                    "stores": [self.STORE_NAME],
+                    "price": price,
+                    "currency": "SEK",
+                    "unit": unit,
+                    "market": self.MARKET,
+                }
+                if parsed.get("size"):
+                    entry["size"] = parsed["size"]
+                products.append(entry)
+
+            except Exception as e:
+                print(f"Warning: Failed to parse Coop card: {e}")
+
+        return products
+
+    def _parse_aria(self, aria: str) -> Dict[str, Any] | None:
+        """Parse a Coop product-card aria-label string.
+
+        Example:
+          "Kryddmix Taco Mild 3-pack, Santa Maria, 3 p,
+           Erbjudande 20 kronor styck,
+           Erbjudande jämförpris 238 kronor och 09 öre per kilo"
+
+        Segments after name/brand/size are price descriptors.  We want the
+        deal price (first "Erbjudande XX kronor …" or "Medlemspris XX kronor …").
+        """
+        if not aria:
+            return None
+        parts = [p.strip() for p in aria.split(",")]
+        if len(parts) < 3:
+            return None
+
+        name = parts[0]
+        if not _name_is_plausible(name):
+            return None
+        size = parts[2] if len(parts) > 2 else ""
+        brand = parts[1] if len(parts) > 1 else ""
+
+        price = None
+        unit = "per item"
+
+        # Look for the deal price: "Erbjudande/Medlemspris/Ord. pris XX kronor [YY öre] [unit]"
+        # Use re.search within each segment (segments start with a prefix word).
+        for seg in parts[3:]:
+            m = re.search(
+                r"(\d+)\s+kronor(?:\s+och\s+(\d+)\s+öre)?"
+                r"(?:\s+(?:per\s+kilo|per\s+liter|per\s+100g|per\s+gram|per\s+styck|styck|/kg|/l|/st|/100g))?",
+                seg,
+                re.IGNORECASE,
+            )
+            if not m:
+                continue
+            int_p = int(m.group(1))
+            dec_p = int(m.group(2)) if m.group(2) else 0
+            price = round(int_p + dec_p / 100.0, 2)
+
+            # Extract unit
+            tail = m.group(0)
+            if "per kilo" in tail or "/kg" in tail:
+                unit = "per kg"
+            elif "per liter" in tail or "/l" in tail:
+                unit = "per liter"
+            elif "per 100g" in tail or "/100g" in tail:
+                unit = "per 100 g"
+            elif "per gram" in tail:
+                unit = "per gram"
+            elif "styck" in tail or "/st" in tail:
+                unit = "per piece"
+            break  # first matching segment wins
+
+        if price is None or not _price_is_plausible(price):
+            return None
+
+        return {
+            "name": name,
+            "brand": brand,
+            "size": size,
+            "price": price,
+            "unit": unit,
+        }
+
+
 class RemaScraper(PriceScraper):
     """Scrape prices from rema.no using Playwright."""
 
@@ -835,16 +1072,17 @@ def main():
     all_products['norway'].extend(kassal_products)
     print(f"  Found {len(kassal_products)} products from Kassal API")
 
-    print("Skipping nordby.se (homepage is deals, not groceries)")
+    print("Scraping nordbysupermarket.se (Nordby/Grensemat, Strömstad, Sweden)...")
+    nordby_deals = NordbyDealsScraper().scrape_deals()
+    all_products['sweden'].extend(nordby_deals)
+    print(f"  Found {len(nordby_deals)} products from nordbysupermarket.se")
 
-    # kassal.app's homepage shows price CHANGES (deltas like "-42.00"), not
-    # actual prices, so scraping it pollutes the data.  Disabled on purpose.
-    print("Skipping kassal.app (homepage lists price deltas, not prices)")
+    print("Scraping coop.se (Coop active deals, Sweden)...")
+    coop_deals = CoopDealsScraper().scrape_deals()
+    all_products['sweden'].extend(coop_deals)
+    print(f"  Found {len(coop_deals)} products from coop.se")
 
-    # ICA Sweden's homepage has no grocery product cards — their price
-    # display is entirely JS-rendered with no server-side price HTML.
-    # Use Willy's instead, which shows Jmf-pris (comparison price per unit).
-    print("Scraping willys.se (Swedish grocery)...")
+    print("Scraping willys.se (Willys Swedish grocery)...")
     willy_products = WillyScraper().scrape_category("https://willys.se/")
     all_products['sweden'].extend(willy_products)
     print(f"  Found {len(willy_products)} products from willys.se")

@@ -6,7 +6,10 @@ HarryHandel is a GitHub Pages dashboard that compares food prices in Norway vs S
 
 - **kassal.app** - Norwegian grocery price comparison
 - **rema.no** - Norwegian grocery store (Rema 1000)
-- **nordby.se** - Swedish grocery store
+- **meny.no** - Norwegian grocery store (Meny, weekly deals)
+- **nordbysupermarket.se** - Swedish grocery store near the Norway/Sweden border (Nordby/Grensemat, Strömstad)
+- **coop.se** - Swedish grocery chain active deals
+- **willys.se** - Swedish grocery store
 
 ### Norwegian price sources
 
