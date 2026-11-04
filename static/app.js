@@ -97,6 +97,191 @@ function getProductGroup(product) {
     return null;
 }
 
+// Compute average price per kg for each product group
+// Returns { groupName: { noAvg: SEK/kg, seAvg: SEK/kg } }
+function computeGroupAverages() {
+    const avgs = {};
+    for (const g of PRODUCT_GROUPS) {
+        const noPrices = [];
+        const sePrices = [];
+        
+        // Get all products in this group
+        for (const p of allPrices.norway) {
+            if (getProductGroup(p) === g.name) {
+                const cp = comparablePrice(p);
+                if (cp.unit === "per kg" && cp.value != null) {
+                    noPrices.push(cp.value * FX_RATES.SEK); // Convert to SEK
+                }
+            }
+        }
+        for (const p of allPrices.sweden) {
+            if (getProductGroup(p) === g.name) {
+                const cp = comparablePrice(p);
+                if (cp.unit === "per kg" && cp.value != null) {
+                    sePrices.push(cp.value);
+                }
+            }
+        }
+        
+        if (noPrices.length > 0 || sePrices.length > 0) {
+            avgs[g.name] = {
+                noAvg: noPrices.length > 0 ? noPrices.reduce((a,b)=>a+b,0)/noPrices.length : null,
+                seAvg: sePrices.length > 0 ? sePrices.reduce((a,b)=>a+b,0)/sePrices.length : null
+            };
+        }
+    }
+    return avgs;
+}
+
+// Build historical butter price series for the modal chart
+function buildButterHistory() {
+    const noByDate = {};  // date -> avg SEK/kg for NO butter
+    const seByDate = {};  // date -> avg SEK/kg for SE butter
+    
+    // Collect butter products with history
+    const butterNo = allPrices.norway.filter(p => 
+        getProductGroup(p) === "Butter" && p.history && p.history.length > 0
+    );
+    const butterSe = allPrices.sweden.filter(p => 
+        getProductGroup(p) === "Butter" && p.history && p.history.length > 0
+    );
+    
+    // Aggregate by date
+    for (const p of butterNo) {
+        for (const h of p.history) {
+            const date = h.date.split('T')[0];
+            const pricePerKg = (h.price / p.unit_size * 1000) * FX_RATES.SEK; // SEK/kg
+            if (!noByDate[date]) noByDate[date] = [];
+            noByDate[date].push(pricePerKg);
+        }
+    }
+    for (const p of butterSe) {
+        for (const h of p.history) {
+            const date = h.date.split('T')[0];
+            const pricePerKg = h.price / p.unit_size * 1000; // SEK/kg
+            if (!seByDate[date]) seByDate[date] = [];
+            seByDate[date].push(pricePerKg);
+        }
+    }
+    
+    // Compute daily averages
+    const dates = [...new Set([...Object.keys(noByDate), ...Object.keys(seByDate)])].sort();
+    const noSeries = dates.map(d => noByDate[d] ? noByDate[d].reduce((a,b)=>a+b,0)/noByDate[d].length : null);
+    const seSeries = dates.map(d => seByDate[d] ? seByDate[d].reduce((a,b)=>a+b,0)/seByDate[d].length : null);
+    const diffSeries = dates.map((d, i) => (noSeries[i] != null && seSeries[i] != null) ? noSeries[i] - seSeries[i] : null);
+    
+    return { dates, noSeries, seSeries, diffSeries };
+}
+
+// Open modal with butter price history chart
+let butterChart = null;
+function openButterChartModal() {
+    const history = buildButterHistory();
+    
+    // Create modal if it doesn't exist
+    let modal = document.getElementById("butter-chart-modal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "butter-chart-modal";
+        modal.className = "modal";
+        modal.innerHTML = `
+            <div class="modal-content" style="max-width:900px;">
+                <div class="modal-header">
+                    <h2>Butter Price History: Norway vs Sweden</h2>
+                    <button class="modal-close" onclick="closeButterChartModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <canvas id="butter-history-chart" height="300"></canvas>
+                    <div class="chart-legend" style="margin-top:1rem; font-size:0.85rem; color:var(--muted);">
+                        <span style="color:var(--color-norway);">● Norway (avg SEK/kg)</span> &nbsp;
+                        <span style="color:var(--color-sweden);">● Sweden (avg SEK/kg)</span> &nbsp;
+                        <span style="color:var(--accent);">● Difference (NO − SE)</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+    }
+    
+    modal.style.display = "flex";
+    
+    // Render chart
+    const ctx = document.getElementById("butter-history-chart").getContext("2d");
+    if (butterChart) butterChart.destroy();
+    
+    butterChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: history.dates,
+            datasets: [
+                {
+                    label: "Norway avg (SEK/kg)",
+                    data: history.noSeries,
+                    borderColor: "var(--color-norway)",
+                    backgroundColor: "var(--color-norway)",
+                    fill: false,
+                    tension: 0.2,
+                    pointRadius: 4,
+                },
+                {
+                    label: "Sweden avg (SEK/kg)",
+                    data: history.seSeries,
+                    borderColor: "var(--color-sweden)",
+                    backgroundColor: "var(--color-sweden)",
+                    fill: false,
+                    tension: 0.2,
+                    pointRadius: 4,
+                },
+                {
+                    label: "Difference (NO − SE)",
+                    data: history.diffSeries,
+                    borderColor: "var(--accent)",
+                    backgroundColor: "var(--accent)",
+                    fill: false,
+                    tension: 0.2,
+                    pointRadius: 3,
+                    borderDash: [5, 5],
+                    yAxisID: "y1",
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: "index", intersect: false },
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: ctx => `${ctx.dataset.label}: ${ctx.raw != null ? ctx.raw.toFixed(2) : "—"} SEK/kg`
+                    }
+                }
+            },
+            scales: {
+                x: { title: { display: true, text: "Date" } },
+                y: { 
+                    type: "linear", 
+                    position: "left",
+                    title: { display: true, text: "Price (SEK/kg)" },
+                    beginAtZero: false
+                },
+                y1: {
+                    type: "linear",
+                    position: "right",
+                    title: { display: true, text: "Difference (SEK/kg)" },
+                    grid: { drawOnChartArea: false },
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+}
+
+function closeButterChartModal() {
+    const modal = document.getElementById("butter-chart-modal");
+    if (modal) modal.style.display = "none";
+}
+
 // Get the most comparable price for a product (per-unit normalized).
 // Returns { value, unit } where unit is "per 100ml", "per kg", "per piece", or "".
 function comparablePrice(p) {
@@ -595,15 +780,29 @@ function updateDisplay() {
     // Render grouped rows with collapsible headers
     const productsTbody = document.getElementById("products-body");
     productsTbody.innerHTML = "";
+    
+    // Compute group average prices per gram for display
+    const groupAvgs = computeGroupAverages();
+    
     finalRows.forEach((row) => {
         if (row.kind === "group-header") {
             const tr = document.createElement("tr");
             tr.className = "group-header";
             const groupCount = (groupedRows[row.group] || ungroupedRows || []).length;
+            const avg = groupAvgs[row.group];
+            let avgHtml = "";
+            if (avg) {
+                avgHtml = `<span class="group-avg">${avg.noAvg?.toFixed(2) || "—"} SEK/kg (NO) vs ${avg.seAvg?.toFixed(2) || "—"} SEK/kg (SE)`;
+                if (row.group === "Butter") {
+                    avgHtml += ` <button class="btn btn-sm" onclick="openButterChartModal()">Show Butter Price History</button>`;
+                }
+                avgHtml += `</span>`;
+            }
             tr.innerHTML = `<td colspan="9" class="group-header-cell">
                 <button class="group-toggle" aria-expanded="true" data-group="${row.group.replace(/\s+/g, '-')}">▼</button>
                 <span class="group-name">${row.group}</span>
                 <span class="group-count">${groupCount} products</span>
+                ${avgHtml}
             </td>`;
             productsTbody.appendChild(tr);
             return;
