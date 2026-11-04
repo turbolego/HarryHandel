@@ -29754,6 +29754,33 @@
         }
       ],
       "market": "sweden"
+    },
+    {
+      "name": "Jarlsberg 500g",
+      "stores": [
+        "Coop"
+      ],
+      "allStores": [
+        {
+          "store": "Coop",
+          "market": "sweden",
+          "url": "https://www.coop.se/handla/varor/ost/palaggsost/ovriga-ostar/jarlsberg-27-7331494124617/",
+          "name": "Jarlsberg 500g"
+        }
+      ],
+      "price": 79.45,
+      "currency": "SEK",
+      "unit_size": 500,
+      "price_per_kg": 158.9,
+      "url": "https://www.coop.se/handla/varor/ost/palaggsost/ovriga-ostar/jarlsberg-27-7331494124617/",
+      "history": [
+        {
+          "date": "2026-11-04T11:39:47.322636",
+          "price": 79.45,
+          "store": "Coop"
+        }
+      ],
+      "market": "coop-sweden"
     }
   ]
 }

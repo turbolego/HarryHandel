@@ -237,6 +237,56 @@ class CoopDealsScraper(PriceScraper):
 
         return products
 
+    def scrape_product_page(self, url: str) -> List[Dict[str, Any]]:
+        """Fetch a specific Coop product page and extract JSON-LD price data.
+
+        Coop product pages carry schema.org Product JSON-LD with name,
+        offers.price, offers.priceCurrency and (in the description or URL
+        slug) the package size.  Returns a single-entry list or [].
+        """
+        import json as _json
+        soup = self.fetch_page(url)
+        if not soup:
+            return []
+
+        for script in soup.find_all('script', type='application/ld+json'):
+            raw = script.string
+            if not raw:
+                continue
+            try:
+                data = _json.loads(raw)
+            except Exception:
+                continue
+            items = data.get('@graph', [data]) if isinstance(data, dict) else data
+            for item in (items if isinstance(items, list) else [items]):
+                if not isinstance(item, dict) or item.get('@type') != 'Product':
+                    continue
+                offers = item.get('offers') or {}
+                # offers may be a list
+                if isinstance(offers, list):
+                    offers = offers[0] if offers else {}
+                price = offers.get('price')
+                currency = offers.get('priceCurrency', 'SEK')
+                name = item.get('name', '')
+                desc = item.get('description', '')
+                # Size is often in the URL slug (e.g. "jarlsberg-27-500g") or description
+                import re
+                size_m = re.search(r'(\d+(?:[.,]\d+)?)\s*(?:g|kg|ml|l)\b', url + ' ' + desc, re.I)
+                entry = {
+                    'name': name,
+                    'category': 'supermarket',
+                    'stores': [self.STORE_NAME],
+                    'price': float(price) if price else None,
+                    'currency': currency,
+                    'url': url,
+                    'market': self.MARKET,
+                }
+                if size_m:
+                    entry['size_text'] = size_m.group(0)
+                print(f"  Coop product page: {name}  price={price} {currency}")
+                return [entry]
+        return []
+
     def _parse_aria(self, aria: str) -> Dict[str, Any] | None:
         """Parse a Coop product-card aria-label string.
 
@@ -1378,6 +1428,14 @@ def main():
     coop_deals = CoopDealsScraper().scrape_deals()
     all_products['sweden'].extend(coop_deals)
     print(f"  Found {len(coop_deals)} products from coop.se")
+
+    # Targeted Coop product pages (JSON-LD) — stable per-product source
+    coop = CoopDealsScraper()
+    coop_jarlsberg = coop.scrape_product_page(
+        "https://www.coop.se/handla/varor/ost/palaggsost/ovriga-ostar/jarlsberg-27-7331494124617/"
+    )
+    all_products['sweden'].extend(coop_jarlsberg)
+    print(f"  Found {len(coop_jarlsberg)} products from coop.se Jarlsberg page")
 
     print("Scraping willys.se (Willys Swedish grocery)...")
     willy_products = WillyScraper().scrape_category("https://willys.se/")
