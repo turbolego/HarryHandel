@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>HarryHandel — Food Prices Norway vs Sweden</title>
-    <meta name="description" content="Compare grocery prices across Norwegian and Swedish retailers. Data updated weekly.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <meta name="description" content="Compare grocery prices across Norwegian and Swedish retailers. Rema + Willy's + Meny.">
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
-    <link rel="stylesheet" href="/HarryHandel/static/style.112233.css?v=1793331357">
-<style></style>
+<link rel="stylesheet" href="/HarryHandel/static/style.css?v=3" type="text/css">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -50,6 +49,8 @@
                     <div class="meta-stat"><dt id="norway-count-label">Products (NO)</dt><dd id="norway-count" aria-describedby="norway-count-label">—</dd></div>
                     <div class="meta-stat"><dt id="sweden-count-label">Products (SE)</dt><dd id="sweden-count" aria-describedby="sweden-count-label">—</dd></div>
                     <div class="meta-stat"><dt id="price-gap-label">Price Gap</dt><dd id="price-gap" aria-describedby="price-gap-label">—</dd></div>
+<div class="meta-stat"><dt id="norway-avg-label">Norway Avg</dt><dd id="norway-avg" aria-describedby="norway-avg-label">—</dd></div>
+<div class="meta-stat"><dt id="sweden-avg-label">Sweden Avg</dt><dd id="sweden-avg" aria-describedby="sweden-avg-label">—</dd></div>
                     <div class="meta-stat"><dt id="last-updated-label">Updated</dt><dd id="last-updated" aria-describedby="last-updated-label">—</dd></div>
                 </dl>
             </div>
@@ -127,9 +128,10 @@
                             <tr>
                                 <th scope="col">Product</th>
                                 <th scope="col">Category</th>
-                                <th scope="col">Stores</th>
-                                <th scope="col" class="numeric">Norway (NOK)</th>
-                                <th scope="col" class="numeric">Sweden (SEK)</th>
+                                <th scope="col">Norway Stores</th>
+                                <th scope="col">Sweden Stores</th>
+                                <th scope="col" class="numeric">Norway (NOK)<br><span class="price-sub">per unit</span></th>
+                                <th scope="col" class="numeric">Sweden (SEK)<br><span class="price-sub">per unit</span></th>
                                 <th scope="col" class="numeric">Gap (SEK)</th>
                                 <th scope="col" class="numeric">Gap %</th>
                                 <th scope="col">History</th>
@@ -150,7 +152,7 @@
             <div class="wrap section-inner">
                 <header class="section-header"><h2 id="about-title">About HarryHandel</h2></header>
                 <div class="about-grid">
-                    <article class="about-card"><h3>Data Sources</h3><ul><li><strong>kassal.app</strong> – Norwegian grocery price comparison</li><li><strong>rema.no</strong> – Rema 1000 (Reitan Retail)</li><li><strong>nordby.se</strong> – Nordby (Sweden)</li></ul></article>
+                    <article class="about-card"><h3>Data Sources</h3><ul><li><strong>Kassalapp API</strong> – shared catalog: one EAN priced across all Norwegian chains</li><li><strong>rema.no</strong> – Rema 1000 (Reitan Retail)</li><li><strong>meny.no</strong> – MENY (NorgesGruppen)</li><li><strong>willys.se</strong> – Willy's (Sweden)</li><li>Product data © <a href="https://kassal.app" rel="noopener">Kassalapp</a> – used with attribution</li></ul></article>
                     <article class="about-card"><h3>Norwegian Chains Covered</h3><ul><li><strong>NorgesGruppen:</strong> KIWI, MENY, SPAR, Joker, Nærbutikken</li><li><strong>Coop Norge:</strong> Coop Extra, Coop Prix, Coop Mega, Obs, Matkroken</li><li><strong>Reitan Retail:</strong> Rema 1000</li></ul></article>
                     <article class="about-card"><h3>Methodology</h3><ul><li>Playwright headless browser scraping</li><li>Weekly GitHub Actions workflow</li><li>Products matched by normalised name</li><li>Prices normalised to SEK for comparison</li></ul></article>
                     <article class="about-card"><h3>Technical</h3><ul><li>Zero API keys / tokens</li><li>GitHub Actions + GitHub Pages</li><li>Playwright + Chart.js</li><li>Open source (MIT)</li></ul></article>
@@ -166,7 +168,7 @@
     <footer class="site-footer" role="contentinfo">
         <div class="wrap footer-inner">
             <p class="copyright">HarryHandel — Food price comparison for Norway & Sweden</p>
-            <p class="footer-links"><a href="https://github.com/turbolego/HarryHandel" target="_blank" rel="noopener">GitHub</a><span aria-hidden="true">·</span><a href="https://turbolego.github.io/PlogeKart/" target="_blank" rel="noopener">PlogeKart</a></p>
+            <p class="footer-links"><a href="https://github.com/turbolego/HarryHandel" target="_blank" rel="noopener">GitHub</a></p>
         </div>
     </footer>
 
