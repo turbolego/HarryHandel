@@ -1381,7 +1381,12 @@ def main():
     print("Scraping willys.se (Willys Swedish grocery)...")
     willy_products = WillyScraper().scrape_category("https://willys.se/")
     all_products['sweden'].extend(willy_products)
-    print(f"  Found {len(willy_products)} products from willys.se")
+    print(f"  Found {len(willy_products)} products from willys.se homepage")
+
+    # Targeted search for key products (butter 500g etc.) not always on homepage
+    willy_smor = WillyScraper().scrape_category("https://www.willys.se/sok?q=sm%C3%B6r")
+    all_products['sweden'].extend(willy_smor)
+    print(f"  Found {len(willy_smor)} products from willys.se 'smör' search")
 
     print("Scraping hemkop.se (Hemköp 'Alltid bra pris', Sweden)...")
     hemkop_products = HemkopScraper().scrape_deals()
