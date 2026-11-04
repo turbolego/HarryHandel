@@ -289,7 +289,7 @@ small, .small { font-size: var(--step-small); }
 
 /* Modal styles */
 .modal {
-    display: none !important;
+    display: none;
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.5);
