@@ -757,16 +757,43 @@ class WillyScraper(PriceScraper):
                     href = str(link.get('href') or '')
                     url = self.BASE_URL + href if href.startswith('/') else href
 
-                jmf_match = re.search(
-                    r'Jmf-pris\s+(\d+[\d,]*)\s*kr/?\s*([a-z]+)', card.get_text()
+                # Size / quantity lives in the card detail (itemprop="brand",
+                # e.g. "Red Bull 25cl" / "Red Bull 4p/25cl").  Append it to the
+                # name so normalize_product converts cl/dl -> ml (25cl = 250ml)
+                # and computes a comparable per-100ml price.
+                detail_el = card.select_one('[itemprop="brand"]')
+                detail = self.clean_text(detail_el.get_text(strip=True)) if detail_el else ""
+                size_tokens = re.findall(
+                    r'\d+(?:[.,]\d+)?\s*(?:cl|dl|ml|l|kg|g)\b|\b\d+\s*p\b',
+                    detail, re.I,
+                ) or re.findall(
+                    r'\d+(?:[.,]\d+)?\s*(?:cl|dl|ml|l|kg|g)\b|\b\d+\s*p\b',
+                    card.get_text(), re.I,
                 )
-                if not jmf_match:
-                    continue
+                if size_tokens:
+                    name = f"{name} {' '.join(size_tokens)}"
 
-                price = float(jmf_match.group(1).replace(',', '.'))
-                unit = jmf_match.group(2).strip() or 'per item'
+                # Item price: prefer meta[itemprop="price"] (the real per-item
+                # price, e.g. "12,90").  Fall back to the Jmf-pris reference.
+                price_meta = card.select_one('meta[itemprop="price"]')
+                price = None
+                unit = 'per item'
+                if price_meta is not None:
+                    content = price_meta.get('content')
+                    if isinstance(content, str) and content:
+                        raw = content.replace(',', '.').strip()
+                        if raw:
+                            price = float(raw)
+                if price is None:
+                    jmf_match = re.search(
+                        r'Jmf-pris\s+(\d+[\d,]*)\s*kr/?\s*([a-z]+)', card.get_text()
+                    )
+                    if not jmf_match:
+                        continue
+                    price = float(jmf_match.group(1).replace(',', '.'))
+                    unit = f'kr/{jmf_match.group(2).strip() or "item"}'
 
-                if not _price_is_plausible(price):
+                if price is None or not _price_is_plausible(price):
                     continue
 
                 prod: Dict[str, Any] = {
