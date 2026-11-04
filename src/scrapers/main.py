@@ -1134,6 +1134,101 @@ class KassalApiScraper:
             return []
         return self._fetch()
 
+class CoopScraper(PriceScraper):
+    """Scrape Swedish grocery prices from coop.se/handla/ (second SW source).
+
+    Listing pages carry product cards:
+        [data-testid="product-card"] > a[href='/handla/varor/.../<EAN>']
+        aria-label: "Krossade tomater, Coop, 390 g, Ordinarie pris 9 kronor..."
+        card text:  "Krossade tomater Coop. 390 g. LÄGRE PRIS 9,50 kr/st
+                     Jfr pris 24,36 kr/kg."
+    EAN lives in the href tail -> usable for exact cross-country matching.
+    Pagination: ?page=N (48 cards per page) over grocery sections only.
+
+    Emits: price = current per-st price (SEK), unit "st",
+    unit_price/unit_price_unit = "jfr pris" per kg/l/st when present,
+    market = "coop-sweden", stores = ["Coop"].
+    """
+
+    BASE = "https://www.coop.se"
+    LIST_URL = "https://www.coop.se/handla/varor"
+    SECTIONS = [
+        'brod-bageri', 'delikatesser', 'dryck', 'fardigmat-mellanmal',
+        'fisk-skaldjur', 'frukt-gronsaker', 'frys', 'godis-glass-snacks',
+        'kott-fagel-chark', 'kryddor-smaksattare', 'mejeri-agg', 'ost',
+        'skafferi', 'vegetariskt',
+    ]
+    PAGES = 2
+
+    RE_ST = re.compile(r'(\d+[ \u00a0]?[.,]\d{1,2})\s*kr/st', re.I)
+    RE_UNIT = re.compile(r'(\d+[ \u00a0]?[.,]\d{1,2})\s*kr/(kg|g|l|liter|stk|cl|dl)', re.I)
+    RE_EAN = re.compile(r'-(\d{10,14})/?$')
+
+    def scrape(self) -> List[Dict[str, Any]]:
+        products: List[Dict[str, Any]] = []
+        seen_eans = set()
+        urls = [f"{self.LIST_URL}/{s}?page={page}"
+                for s in self.SECTIONS for page in range(1, self.PAGES + 1)]
+        for url in urls:
+            soup = self.fetch_page(url)
+            if not soup:
+                continue
+            cards = soup.select('[data-testid="product-card"]')
+            for card in cards:
+                a = card.select_one('a[href]')
+                if not a:
+                    continue
+                href = (a.get('href') or '').rstrip('/')
+                m = self.RE_EAN.search(href)
+                if not m:
+                    continue
+                ean = m.group(1)
+                if ean in seen_eans:
+                    continue
+
+                name = self.clean_text((a.get('aria-label') or '').split(',')[0])
+                if not _name_is_plausible(name):
+                    continue
+
+                text = card.get_text(' ', strip=True)
+                st = self.RE_ST.search(text)
+                if not st:
+                    continue
+                try:
+                    price = float(st.group(1).replace(' ', '').replace(',', '.'))
+                except ValueError:
+                    continue
+                if not _price_is_plausible(price):
+                    continue
+
+                item = {
+                    'name': name,
+                    'category': 'supermarket',
+                    'stores': ['Coop'],
+                    'price': price,
+                    'currency': 'SEK',
+                    'unit': 'st',
+                    'market': 'coop-sweden',
+                    'ean': ean,
+                }
+                up = self.RE_UNIT.search(text)
+                if up:
+                    try:
+                        unit_price = float(up.group(1).replace(' ', '').replace(',', '.'))
+                        unit = (up.group(2) or '').lower()
+                        unit = {'g': 'kg', 'cl': 'l', 'dl': 'l', 'liter': 'l'}.get(unit, unit)
+                        if _price_is_plausible(unit_price) and unit in ('kg', 'l', 'st'):
+                            item['unit_price'] = unit_price
+                            item['unit_price_unit'] = unit
+                    except ValueError:
+                        pass
+                seen_eans.add(ean)
+                products.append(item)
+        gates = len(seen_eans)
+        print(f"  Coop: {len(products)} grocery prices parsed (unique)")
+        return products
+
+
 def load_existing_data(output_path: Path) -> Dict[str, Any]:
     """Load existing price data from file."""
     if output_path.exists():
@@ -1423,6 +1518,14 @@ def main():
     nordby_deals = NordbyDealsScraper().scrape_deals()
     all_products['sweden'].extend(nordby_deals)
     print(f"  Found {len(nordby_deals)} products from nordbysupermarket.se")
+
+    # Coop SE: second Swedish source (per-st price + EAN + unit price).
+    print("Scraping coop.se/handla/ (second Swedish source)...")
+    coop_products = CoopScraper().scrape()
+    all_products['sweden'].extend(coop_products)
+    print(f"  Found {len(coop_products)} products from Coop")
+
+    print("Skipping nordby.se (homepage is deals, not groceries)")
 
     print("Scraping coop.se (Coop active deals, Sweden)...")
     coop_deals = CoopDealsScraper().scrape_deals()
