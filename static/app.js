@@ -184,6 +184,7 @@ function openButterChartModal() {
         modal = document.createElement("div");
         modal.id = "butter-chart-modal";
         modal.className = "modal";
+        modal.style.position = "fixed";
         modal.innerHTML = `
             <div class="modal-content" style="max-width:900px;">
                 <div class="modal-header">
@@ -326,6 +327,7 @@ function openPairHistoryModal(idx) {
         modal = document.createElement("div");
         modal.id = "pair-history-modal";
         modal.className = "modal";
+        modal.style.position = "fixed";
         modal.innerHTML = `
             <div class="modal-content" style="max-width:900px;">
                 <div class="modal-header">
