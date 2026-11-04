@@ -39,6 +39,13 @@ jobs:
           # cwd is src/ here, so copy the scraper output to the repo root
           cp data/prices.json ../data/prices.json
 
+      - name: Run e2e modal tests
+        run: |
+          pip install playwright
+          playwright install chromium
+          python3 test_modal.py
+          python3 test_butter.py
+
       - name: Generate fallback data if no products found
         if: failure() || steps.scraper.outcome == 'skipped'
         # This step runs only if the scraper didn't find products or failed
