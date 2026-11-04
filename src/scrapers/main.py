@@ -543,6 +543,12 @@ class RemaScraper(PriceScraper):
                     }
                     if url:
                         prod['url'] = url
+                    else:
+                        # Fall back to search URL for Rema products
+                        if 'Rema 1000' in prod['stores']:
+                            prod['url'] = f"https://www.rema.no/search?q={urllib.parse.quote_plus(name)}"
+                        else:
+                            prod['url'] = None
                     products.append(prod)
             except Exception as e:
                 print(f"Warning: Failed to parse rema price element: {e}")
