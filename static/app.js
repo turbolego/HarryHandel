@@ -955,12 +955,22 @@ function updateDisplay() {
         const diffPct = diff !== null && seCp ? (diff / seCp) * 100 : null;
         const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
 
-        // Register in pairHistoryArr and build the 📈 button for 1:1 matched pairs
+        // Register in pairHistoryArr and build the 📈 button for matched pairs
+        // and single products (history shown for whichever side exists)
         let histBtn = "";
+        let histPair = null;
         if (row.kind === "pair" && no && se) {
             const idx = pairHistoryArr.length;
             pairHistoryArr.push({ no, se, name: no.name });
-            const safeTitle = no.name.replace(/"/g, "&quot;");
+            histPair = { no, se, name: no.name };
+        } else if (no || se) {
+            const idx = pairHistoryArr.length;
+            pairHistoryArr.push({ no: no || null, se: se || null, name: (no || se).name });
+            histPair = { no: no || null, se: se || null, name: (no || se).name };
+        }
+        if (histPair) {
+            const idx = pairHistoryArr.indexOf(histPair);
+            const safeTitle = histPair.name.replace(/"/g, "&quot;");
             histBtn = `<button class="hist-btn" onclick="openPairHistoryModal(${idx})" title="Price history: ${safeTitle}">📈</button>`;
         }
 
