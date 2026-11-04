@@ -216,8 +216,14 @@ class CoopDealsScraper(PriceScraper):
                     "unit": unit,
                     "market": self.MARKET,
                 }
+                # Append size to name for normalization (e.g. "500g" -> unit_size=500)
                 if parsed.get("size"):
-                    entry["size"] = parsed["size"]
+                    size_tokens = re.findall(
+                        r'\d+(?:[.,]\d+)?\s*(?:cl|dl|ml|l|kg|g)\b|\b\d+\s*p\b',
+                        parsed["size"], re.I
+                    )
+                    if size_tokens:
+                        entry["name"] = f"{entry['name']} {' '.join(size_tokens)}"
                 # Direct product link (e.g. /handla/varor/skafferi/tex-mex/...)
                 href = str(link.get("href") or "")
                 if href.startswith("/"):
@@ -339,6 +345,14 @@ class HemkopScraper(PriceScraper):
             name, price, unit = result
             if not _name_is_plausible(name) or not _price_is_plausible(price):
                 continue
+
+            # Extract size tokens (e.g. "500g", "25cl") from the link text
+            size_tokens = re.findall(
+                r'\d+(?:[.,]\d+)?\s*(?:cl|dl|ml|l|kg|g)\b|\b\d+\s*p\b',
+                text, re.I
+            )
+            if size_tokens:
+                name = f"{name} {' '.join(size_tokens)}"
 
             # Full product URL, e.g.
             # https://www.hemkop.se/produkt/Smor-Normalsaltat-82procent-101017249_ST
@@ -1279,6 +1293,12 @@ def merge_products(existing: List[Dict], new_products: List[Dict], country: str)
             existing_p['unit'] = new_p.get('unit', existing_p.get('unit', 'per item'))
             existing_p['stores'] = new_p.get('stores', existing_p.get('stores', []))
             existing_p['category'] = new_p.get('category', existing_p.get('category', 'supermarket'))
+            # Keep the richer/newer scraped name when it carries size tokens.
+            # This prevents losing "500g" / "25cl" / "1kg" details during merges.
+            if len(str(new_p.get('name', ''))) > len(str(existing_p.get('name', ''))):
+                existing_p['name'] = new_p['name']
+            elif re.search(r'\d+(?:[.,]\d+)?\s*(?:cl|dl|ml|l|kg|g)\b|\b\d+\s*p\b', new_p.get('name', ''), re.I) and not re.search(r'\d+(?:[.,]\d+)?\s*(?:cl|dl|ml|l|kg|g)\b|\b\d+\s*p\b', existing_p.get('name', ''), re.I):
+                existing_p['name'] = new_p['name']
             if new_p.get('url'):
                 existing_p['url'] = new_p['url']
             if new_p.get('size'):
