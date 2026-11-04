@@ -19,7 +19,8 @@ const PRODUCT_GROUPS = [
     {
         name: "Butter",
         keywords: ["smör", "smør", "meierismør"],
-        filterFn: (p) => !/margarin/i.test(p.name) && !/smörolja|raps.?smör/i.test(p.name)
+        filterFn: (p) => !/margarin/i.test(p.name) && !/smörolja|raps.?smör/i.test(p.name),
+        sizes: [250, 500, 1000]
     },
     {
         name: "Energy drinks",
@@ -67,6 +68,11 @@ function getProductGroup(product) {
     for (const g of PRODUCT_GROUPS) {
         if (g.keywords.some(kw => name.includes(kw.toLowerCase()))) {
             if (g.filterFn && !g.filterFn(product)) continue;
+            // Size constraint: only include products whose unit_size matches
+            if (g.sizes) {
+                const us = product.unit_size;
+                if (us == null || !g.sizes.includes(us)) continue;
+            }
             return g.name;
         }
     }
