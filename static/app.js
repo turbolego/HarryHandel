@@ -19,17 +19,35 @@ const PRODUCT_GROUPS = [
     {
         name: "Butter",
         keywords: ["smör", "smør", "meierismør"],
-        filterFn: (p) => !/margarin/i.test(p.name) && !/smörolja|raps.?smör/i.test(p.name),
+        // Pure butter only: Meierismør (NO) / Smör Normalsaltat, Osaltat,
+        // Extrasaltat, Ekologiskt (SE).  Excludes every blend, spread,
+        // nut-butter, biscuit and soup variant.
+        filterFn: (p) => {
+            const n = p.name.toLowerCase();
+            if (/margarin/.test(n)) return false;
+            if (/\s*&\s*|raps/.test(n)) return false;        // "Smör & Raps" blends
+            if (/olja|olje/.test(n)) return false;           // Smör & Rapsolja, Smörolja
+            if (/mandel|pean|peanut|almond/.test(n)) return false;  // nut butters
+            if (/kjes|myk|stav/.test(n)) return false;       // biscuits, stick, spread
+            if (/sandefjord|smörmyk|smørmyk/.test(n)) return false;
+            if (/honning|hone/.test(n)) return false;        // honey butter
+            return true;
+        },
         sizes: [250, 500, 1000]
+    },
+    {
+        name: "Spreads & blends",
+        keywords: ["smör", "smør", "margarin", "smörolja"],
+        // Everything smör/smør/margarin that is NOT pure butter:
+        // margarine, butter+oil blends, nut butters, sticks, spreads, biscuits
+        filterFn: (p) => {
+            const n = p.name.toLowerCase();
+            return /margarin|raps|olja|olje|mandel|pean|peanut|almond|kjes|myk|stav|sandefjord|honning|hone/i.test(n);
+        }
     },
     {
         name: "Energy drinks",
         keywords: ["red bull", "redbull", "energidryck", "energy drink"]
-    },
-    {
-        name: "Margarine & oils",
-        keywords: ["margarin", "smörolja", "raps.?smör", "flytande"],
-        filterFn: (p) => /margarin|smörolja|raps.?smör|flytande/i.test(p.name)
     },
     {
         name: "Milk & cream",
