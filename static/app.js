@@ -207,6 +207,9 @@ function openButterChartModal() {
     }
     
     modal.style.display = "flex";
+    modal.style.position = "fixed";
+    modal.style.inset = "0";
+    modal.style.zIndex = "1000";
     
     // Render chart
     const ctx = document.getElementById("butter-history-chart").getContext("2d");
@@ -356,6 +359,9 @@ function openPairHistoryModal(idx) {
             : `${hist.dates.length} data point(s) across Norway and Sweden.`;
 
     modal.style.display = "flex";
+    modal.style.position = "fixed";
+    modal.style.inset = "0";
+    modal.style.zIndex = "1000";
     const ctx = document.getElementById("pair-history-chart").getContext("2d");
     if (pairChart) pairChart.destroy();
     pairChart = new Chart(ctx, {
