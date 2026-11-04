@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 import re, json
 
 def fetch_html(url, timeout=60000):
+    # Existing fetch_html function
+
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -65,7 +67,21 @@ def analyze(url, label):
     return html
 
 
-# Test multiple sites
+
+def test_modal_popup():
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto("https://turbolego.github.io/HarryHandel/", wait_until="networkidle")
+        # Wait for the first history button to be present
+        page.wait_for_selector("button[onclick*='openPairHistoryModal']")
+        page.click("button[onclick*='openPairHistoryModal']")
+        # Verify the modal is displayed (display should be 'flex')
+        display = page.eval_on_selector("#pair-history-modal", "el => getComputedStyle(el).display")
+        print("Modal display:", display)
+        browser.close()
+
 results = {}
 
 # Sweden - ICA (main)
@@ -89,3 +105,6 @@ print("Summary")
 print("="*60)
 for k, v in results.items():
     print(f"{k}: {'OK' if isinstance(v, str) else 'FAILED'}")
+# Run modal popup test
+test_modal_popup()
+
