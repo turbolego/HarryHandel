@@ -12,6 +12,67 @@ const FX_RATES = {
     EUR: 0.085
 };
 
+// Product groups for collapsible sections
+// Each group has: name (display), keywords (match either country's product names),
+// and an optional filterFn for complex logic (e.g. butter but NOT margarine)
+const PRODUCT_GROUPS = [
+    {
+        name: "Butter",
+        keywords: ["smör", "smør", "meierismør"],
+        filterFn: (p) => !/margarin/i.test(p.name) && !/smörolja|raps.?smör/i.test(p.name)
+    },
+    {
+        name: "Energy drinks",
+        keywords: ["red bull", "redbull", "energidryck", "energy drink"]
+    },
+    {
+        name: "Margarine & oils",
+        keywords: ["margarin", "smörolja", "raps.?smör", "flytande"],
+        filterFn: (p) => /margarin|smörolja|raps.?smör|flytande/i.test(p.name)
+    },
+    {
+        name: "Milk & cream",
+        keywords: ["mjölk", "melk", "grädde", "fløyte", "grädd"]
+    },
+    {
+        name: "Cheese",
+        keywords: ["ost", "färskost", "ferskost"]
+    },
+    {
+        name: "Bread",
+        keywords: ["bröd", "brød"]
+    },
+    {
+        name: "Meat & charcuterie",
+        keywords: ["skinka", "skinke", "korv", "pølse", "färs", "kjøtt", "kött"]
+    },
+    {
+        name: "Fruit & veg",
+        keywords: ["banan", "äpple", "eple", "apelsin", "appelsin", "gurka", "agurk", "morötter", "gulrot", "lök", "løk", "tomater", "sallad", "salat", "broccoli", "brokoli"]
+    },
+    {
+        name: "Coffee & tea",
+        keywords: ["kaffe", "te", "zoegas"]
+    },
+    {
+        name: "Snacks & sweets",
+        keywords: ["chips", "godis", "sjokolade", "sukker", "kex", "kiks"]
+    }
+];
+
+// Which group a product belongs to (first match wins)
+function getProductGroup(product) {
+    if (!product || !product.name) return null;
+    const name = product.name.toLowerCase();
+    for (const g of PRODUCT_GROUPS) {
+        if (g.keywords.some(kw => name.includes(kw.toLowerCase()))) {
+            if (g.filterFn && !g.filterFn(product)) continue;
+            return g.name;
+        }
+    }
+    return null;
+}
+
 // Get the most comparable price for a product (per-unit normalized).
 // Returns { value, unit } where unit is "per 100ml", "per kg", "per piece", or "".
 function comparablePrice(p) {
@@ -418,6 +479,20 @@ function updateDisplay() {
     document.getElementById("products-count").textContent =
         `${rows.length} products (${matchedKeys.length} matched pairs)`;
 
+    // Group rows by product group
+    const groupedRows = {};
+    const ungroupedRows = [];
+    for (const row of rows) {
+        const product = row.no || row.se;
+        const group = getProductGroup(product);
+        if (group) {
+            if (!groupedRows[group]) groupedRows[group] = [];
+            groupedRows[group].push(row);
+        } else {
+            ungroupedRows.push(row);
+        }
+    }
+
     // Sort: matched pairs first, then by the selected comparator where
     // applicable; unmatched rows sort by their own price.
     const sortBy = document.getElementById("products-sort").value;
@@ -448,7 +523,29 @@ function updateDisplay() {
     const sortFns = { "gap-desc": gapSort, "gap-asc": gapSort,
                       "name-asc": nameSort, "name-desc": nameSort,
                       "norway-price-desc": priceSort, "sweden-price-desc": priceSort };
-    rows.sort((a, b) => pairFirst(a, b) || (sortFns[sortBy] || gapSort)(a, b));
+    // Sort each group's rows
+    for (const g of Object.values(groupedRows)) {
+        g.sort((a, b) => pairFirst(a, b) || (sortFns[sortBy] || gapSort)(a, b));
+    }
+    ungroupedRows.sort((a, b) => pairFirst(a, b) || (sortFns[sortBy] || gapSort)(a, b));
+
+    // Build final rows array with group headers
+    const orderedGroups = [...Object.keys(groupedRows)].sort();
+    const finalRows = [];
+    for (const group of orderedGroups) {
+        finalRows.push({ kind: "group-header", group });
+        for (const r of groupedRows[group]) {
+            finalRows.push({ ...r, group });
+        }
+    }
+    if (ungroupedRows.length) {
+        finalRows.push({ kind: "group-header", group: "Other" });
+        for (const r of ungroupedRows) {
+            finalRows.push({ ...r, group: "Other" });
+        }
+    }
+
+    // Render rows
 
     // All fuzzy-matched pairs, sorted by price gap (descending).  CHART_PAIRS
     // is built from these and updateChart() renders the comparison chart (it
@@ -471,8 +568,24 @@ function updateDisplay() {
         se: comparablePrice(row.se).value,                  // Sweden, in SEK
     }));
 
-    rows.forEach((row) => {
+    // Render grouped rows with collapsible headers
+    const productsTbody = document.getElementById("products-body");
+    productsTbody.innerHTML = "";
+    finalRows.forEach((row) => {
+        if (row.kind === "group-header") {
+            const tr = document.createElement("tr");
+            tr.className = "group-header";
+            const groupCount = (groupedRows[row.group] || ungroupedRows || []).length;
+            tr.innerHTML = `<td colspan="9" class="group-header-cell">
+                <button class="group-toggle" aria-expanded="true" data-group="${row.group.replace(/\s+/g, '-')}">▼</button>
+                <span class="group-name">${row.group}</span>
+                <span class="group-count">${groupCount} products</span>
+            </td>`;
+            productsTbody.appendChild(tr);
+            return;
+        }
         const tr = document.createElement("tr");
+        tr.dataset.group = row.group || "";
         const no = row.no;
         const se = row.se;
         // Use comparable (per-unit normalized) prices for gap calculation
@@ -516,6 +629,20 @@ function updateDisplay() {
         ${gapPctCell}
         <td class="sparkline-cell">${sparkline}</td>`;
         document.getElementById("products-body").appendChild(tr);
+    });
+
+    // --- Collapse/expand group headers ---
+    productsTbody.querySelectorAll(".group-toggle").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const expanded = btn.getAttribute("aria-expanded") === "true";
+            btn.setAttribute("aria-expanded", String(!expanded));
+            btn.textContent = expanded ? "▶" : "▼";
+            const groupName = btn.dataset.group;
+            // Toggle rows in this group
+            productsTbody.querySelectorAll(`tr[data-group]`).forEach((tr) => {
+                if (tr.dataset.group === groupName) tr.hidden = expanded;
+            });
+        });
     });
 
     // --- Update the bar chart ---

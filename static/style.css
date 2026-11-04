@@ -252,3 +252,19 @@ small, .small { font-size: var(--step-small); }
 /* Legend swatches */
 .legend-swatch.norway { background: var(--color-norway); }
 .legend-swatch.sweden { background: var(--color-sweden); }
+
+/* Product group headers */
+.group-header { background: var(--surface); border-top: 2px solid var(--border); border-bottom: 1px solid var(--border); }
+.group-header-cell { padding: 0.75rem 1rem; }
+.group-toggle {
+    background: none; border: none; cursor: pointer; font-size: 0.9rem;
+    color: var(--accent); margin-right: 0.5rem; width: 1.2em; text-align: center;
+}
+.group-name {
+    font-weight: 700; font-size: 1.05rem; color: var(--ink);
+    text-transform: uppercase; letter-spacing: 0.03em;
+}
+.group-count {
+    margin-left: 0.75rem; font-size: 0.8rem; color: var(--muted); font-weight: 400;
+}
+.group-header:hover .group-name { color: var(--accent); }
