@@ -15713,6 +15713,78 @@
       "unit_size": 473.0,
       "size_unit": "ml",
       "price_per_100ml": 195.78
+    },
+    {
+      "name": "Jarlsberg 250g",
+      "stores": [
+        "Meny"
+      ],
+      "allStores": [
+        {
+          "store": "Meny",
+          "market": "norway"
+        }
+      ],
+      "price": 39.9,
+      "currency": "NOK",
+      "unit_size": 250,
+      "price_per_kg": 159.6,
+      "history": [
+        {
+          "date": "2026-11-04T10:48:35.882055",
+          "price": 39.9,
+          "store": "Meny"
+        }
+      ],
+      "market": "norway"
+    },
+    {
+      "name": "Jarlsberg 500g",
+      "stores": [
+        "Meny"
+      ],
+      "allStores": [
+        {
+          "store": "Meny",
+          "market": "norway"
+        }
+      ],
+      "price": 74.9,
+      "currency": "NOK",
+      "unit_size": 500,
+      "price_per_kg": 149.8,
+      "history": [
+        {
+          "date": "2026-11-04T10:48:35.882055",
+          "price": 74.9,
+          "store": "Meny"
+        }
+      ],
+      "market": "norway"
+    },
+    {
+      "name": "Jarlsberg 1kg",
+      "stores": [
+        "Meny"
+      ],
+      "allStores": [
+        {
+          "store": "Meny",
+          "market": "norway"
+        }
+      ],
+      "price": 139.9,
+      "currency": "NOK",
+      "unit_size": 1000,
+      "price_per_kg": 139.9,
+      "history": [
+        {
+          "date": "2026-11-04T10:48:35.882055",
+          "price": 139.9,
+          "store": "Meny"
+        }
+      ],
+      "market": "norway"
     }
   ],
   "sweden": [
@@ -29610,6 +29682,78 @@
       "unit_size": 180.0,
       "size_unit": "g",
       "price_per_kg": 2661.11
+    },
+    {
+      "name": "Jarlsberg 250g",
+      "stores": [
+        "Willys"
+      ],
+      "allStores": [
+        {
+          "store": "Willys",
+          "market": "sweden"
+        }
+      ],
+      "price": 41.9,
+      "currency": "SEK",
+      "unit_size": 250,
+      "price_per_kg": 167.6,
+      "history": [
+        {
+          "date": "2026-11-04T10:48:35.882055",
+          "price": 41.9,
+          "store": "Willys"
+        }
+      ],
+      "market": "sweden"
+    },
+    {
+      "name": "Jarlsberg 500g",
+      "stores": [
+        "Willys"
+      ],
+      "allStores": [
+        {
+          "store": "Willys",
+          "market": "sweden"
+        }
+      ],
+      "price": 79.9,
+      "currency": "SEK",
+      "unit_size": 500,
+      "price_per_kg": 159.8,
+      "history": [
+        {
+          "date": "2026-11-04T10:48:35.882055",
+          "price": 79.9,
+          "store": "Willys"
+        }
+      ],
+      "market": "sweden"
+    },
+    {
+      "name": "Jarlsberg 1kg",
+      "stores": [
+        "Willys"
+      ],
+      "allStores": [
+        {
+          "store": "Willys",
+          "market": "sweden"
+        }
+      ],
+      "price": 149.9,
+      "currency": "SEK",
+      "unit_size": 1000,
+      "price_per_kg": 149.9,
+      "history": [
+        {
+          "date": "2026-11-04T10:48:35.882055",
+          "price": 149.9,
+          "store": "Willys"
+        }
+      ],
+      "market": "sweden"
     }
   ]
 }

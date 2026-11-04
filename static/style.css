@@ -269,6 +269,17 @@ small, .small { font-size: var(--step-small); }
 }
 .group-header:hover .group-name { color: var(--accent); }
 
+/* Per-pair price-history button */
+.hist-btn-wrap { margin-top: 0.35rem; }
+.hist-btn {
+    display: inline-flex; align-items: center; gap: 0.2rem;
+    background: var(--accent); color: #fff;
+    border: none; border-radius: 4px;
+    padding: 0.15rem 0.5rem; font-size: 0.7rem;
+    cursor: pointer; line-height: 1; transition: opacity 0.15s;
+}
+.hist-btn:hover { opacity: 0.85; }
+
 .group-avg {
     margin-left: 1rem;
     font-size: var(--step-small);

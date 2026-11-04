@@ -285,6 +285,110 @@ function closeButterChartModal() {
     if (modal) modal.style.display = "none";
 }
 
+// ---- Generic 1:1 matched-product price-history modal ----
+// pairHistoryArr is rebuilt on every updateDisplay() render: index →
+// { no, se, name }.  The 📈 button on each matched pair row stores the
+// index in its onclick and calls openPairHistoryModal(idx).
+let pairHistoryArr = [];
+let pairChart = null;
+
+// Build a 3-series chart dataset from a single NO product + single SE product.
+// Falls back to the current price (dated today) when a product has no history,
+// so the graph still shows something on the first scrape.
+function buildPairHistory(no, se) {
+    function pts(p, convertNo) {
+        const out = [];
+        if (!p || !p.unit_size) return out;
+        const perKg = price => price / p.unit_size * 1000 * (convertNo ? FX_RATES.SEK : 1);
+        if (p.history && p.history.length) {
+            for (const h of p.history) out.push({ date: String(h.date).split("T")[0], sekg: perKg(h.price) });
+        } else if (p.price != null) {
+            out.push({ date: new Date().toISOString().slice(0, 10), sekg: perKg(p.price) });
+        }
+        return out;
+    }
+    const noPts = pts(no, true);
+    const sePts = pts(se, false);
+    const dates = [...new Set([...noPts, ...sePts].map(o => o.date))].sort();
+    const noSeries = dates.map(d => { const p = noPts.find(o => o.date === d); return p ? p.sekg : null; });
+    const seSeries = dates.map(d => { const p = sePts.find(o => o.date === d); return p ? p.sekg : null; });
+    const diffSeries = dates.map((d, i) => (noSeries[i] != null && seSeries[i] != null) ? noSeries[i] - seSeries[i] : null);
+    return { dates, noSeries, seSeries, diffSeries };
+}
+
+function openPairHistoryModal(idx) {
+    const pair = pairHistoryArr[idx];
+    if (!pair) return;
+    const hist = buildPairHistory(pair.no, pair.se);
+
+    let modal = document.getElementById("pair-history-modal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "pair-history-modal";
+        modal.className = "modal";
+        modal.innerHTML = `
+            <div class="modal-content" style="max-width:900px;">
+                <div class="modal-header">
+                    <h2 id="pair-history-title">Price History</h2>
+                    <button class="modal-close" onclick="closePairHistoryModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div style="position:relative; height:340px;">
+                        <canvas id="pair-history-chart"></canvas>
+                    </div>
+                    <div class="chart-legend" style="margin-top:1rem; font-size:0.85rem; color:var(--muted);">
+                        <span style="color:#d03e2d;">● Norway (SEK/kg)</span> &nbsp;
+                        <span style="color:#006aa7;">● Sweden (SEK/kg)</span> &nbsp;
+                        <span style="color:#7a4b9e;">● Difference (NO − SE)</span>
+                    </div>
+                    <div class="chart-note" id="pair-history-note" style="margin-top:0.5rem; font-size:0.8rem; color:var(--muted);"></div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+    }
+    document.getElementById("pair-history-title").textContent = `${pair.name} — Price History (NO vs SE)`;
+    document.getElementById("pair-history-note").textContent =
+        hist.dates.length <= 1
+            ? "Showing the current price only — more data points appear as the daily scraper runs."
+            : `${hist.dates.length} data point(s) across Norway and Sweden.`;
+
+    modal.style.display = "flex";
+    const ctx = document.getElementById("pair-history-chart").getContext("2d");
+    if (pairChart) pairChart.destroy();
+    pairChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: hist.dates,
+            datasets: [
+                { label: "Norway (SEK/kg)", data: hist.noSeries, borderColor: "#d03e2d", backgroundColor: "#d03e2d", fill: false, tension: 0.2, pointRadius: 4 },
+                { label: "Sweden (SEK/kg)", data: hist.seSeries, borderColor: "#006aa7", backgroundColor: "#006aa7", fill: false, tension: 0.2, pointRadius: 4 },
+                { label: "Difference (NO − SE)", data: hist.diffSeries, borderColor: "#7a4b9e", backgroundColor: "#7a4b9e", fill: false, tension: 0.2, pointRadius: 3, borderDash: [5, 5], yAxisID: "y1" }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: false,
+            interaction: { mode: "index", intersect: false },
+            plugins: {
+                legend: { display: false },
+                tooltip: { callbacks: { label: c => `${c.dataset.label}: ${c.raw != null ? c.raw.toFixed(2) : "—"} SEK/kg` } }
+            },
+            scales: {
+                x: { title: { display: true, text: "Date" } },
+                y: { type: "linear", position: "left", title: { display: true, text: "Price (SEK/kg)" }, beginAtZero: false },
+                y1: { type: "linear", position: "right", title: { display: true, text: "Difference (SEK/kg)" }, grid: { drawOnChartArea: false }, beginAtZero: false }
+            }
+        }
+    });
+}
+
+function closePairHistoryModal() {
+    const modal = document.getElementById("pair-history-modal");
+    if (modal) modal.style.display = "none";
+}
+
 // Get the most comparable price for a product (per-unit normalized).
 // Returns { value, unit } where unit is "per 100ml", "per kg", "per piece", or "".
 function comparablePrice(p) {
@@ -364,6 +468,7 @@ async function loadPrices() {
 
 // ----- 2. Update the UI display -----
 function updateDisplay() {
+    pairHistoryArr = [];  // reset per-pair modal registry each render
     // Update display with proper date formatting
     const dateStr = allPrices.last_updated ? new Date(allPrices.last_updated).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) : "—";
     const lastUpdatedEl = document.getElementById("last-updated");
@@ -552,11 +657,31 @@ function updateDisplay() {
             }
         }
         if (!best) return null;
-        // Tie-break on size when the Norwegian product has a size.
+        // Hard size guard: if both products have a size and they differ by
+        // more than ~2×, reject the match even if the words score well.
+        // (e.g. "Jarlsberg 120g" must NOT match "Jarlsberg 250g".)
         if (noSize != null) {
-            const noSizeExact = noSize;
+            const bestSize = sizeOf(best);
+            if (bestSize != null) {
+                const hardDelta = Math.abs(Math.log(bestSize / noSize));
+                if (hardDelta > 0.7) {
+                    // Best match has too-different size; look for a size-compatible
+                    // candidate within the top-scoring group instead.
+                    let sizeBest = null, sizeBestDelta = Infinity;
+                    for (const sk of swedenKeys) {
+                        const s = combinedScore(nw, sigWords(sk));
+                        if (s < bestScore * 0.75) continue;
+                        const seSize = sizeOf(sk);
+                        if (seSize == null) continue;
+                        const delta = Math.abs(Math.log(seSize / noSize));
+                        if (delta < sizeBestDelta) { sizeBestDelta = delta; sizeBest = sk; }
+                    }
+                    if (sizeBest != null && sizeBestDelta <= 0.35) return sizeBest;
+                    return null;  // no size-compatible match found
+                }
+            }
+            // Soft size tie-break (for close-size matches)
             let sizeBest = null, sizeBestDelta = Infinity;
-            // Consider candidates within 15% of the top score for a size tie-break.
             const candidates = [];
             for (const sk of swedenKeys) {
                 const s = combinedScore(nw, sigWords(sk));
@@ -565,10 +690,10 @@ function updateDisplay() {
             for (const c of candidates) {
                 const seSize = sizeOf(c.sk);
                 if (seSize == null) continue;
-                const delta = Math.abs(Math.log(seSize / noSizeExact)); // ~0 means same size
+                const delta = Math.abs(Math.log(seSize / noSize));
                 if (delta < sizeBestDelta) { sizeBestDelta = delta; sizeBest = c.sk; }
             }
-            if (sizeBest != null && sizeBestDelta <= 0.35) return sizeBest; // <=0.35 ≈ 1.4x size
+            if (sizeBest != null && sizeBestDelta <= 0.35) return sizeBest;
         }
         return isGoodMatch(nw, sigWords(best), bestScore) ? best : null;
     }
@@ -822,6 +947,15 @@ function updateDisplay() {
         const diffPct = diff !== null && seCp ? (diff / seCp) * 100 : null;
         const sparkline = no ? generateSparkline(no.history) : (se ? generateSparkline(se.history) : "");
 
+        // Register in pairHistoryArr and build the 📈 button for 1:1 matched pairs
+        let histBtn = "";
+        if (row.kind === "pair" && no && se) {
+            const idx = pairHistoryArr.length;
+            pairHistoryArr.push({ no, se, name: no.name });
+            const safeTitle = no.name.replace(/"/g, "&quot;");
+            histBtn = `<button class="hist-btn" onclick="openPairHistoryModal(${idx})" title="Price history: ${safeTitle}">📈</button>`;
+        }
+
         const noStores = no ? storeLinks(no.allStores) : "—";
         const seStores = se ? storeLinks(se.allStores) : "—";
 
@@ -853,7 +987,7 @@ function updateDisplay() {
         ${seCell}
         ${gapCell}
         ${gapPctCell}
-        <td class="sparkline-cell">${sparkline}</td>`;
+        <td class="sparkline-cell">${sparkline}${histBtn ? `<div class="hist-btn-wrap">${histBtn}</div>` : ""}</td>`;
         document.getElementById("products-body").appendChild(tr);
     });
 

@@ -925,6 +925,7 @@ class KassalApiScraper:
         'bacon', 'cola', 'melkesjokolade', 'chips', 'energidrikk',
         'smågodt', 'egg', 'smør', 'gullmelk', 'grovbrød', 'kaffe',
         'kjøttdeig', 'lettmelk', 'appelsinjuice', 'salami', 'kjeks',
+        'ost', 'jarlsberg',
     ]
 
     def __init__(self, token: str | None = None):
@@ -1395,6 +1396,14 @@ def main():
     willy_redbull = WillyScraper().scrape_category("https://www.willys.se/sok?q=red+burn")
     all_products['sweden'].extend(willy_redbull)
     print(f"  Found {len(willy_redbull)} products from willys.se 'red bull' search")
+
+    willy_ost = WillyScraper().scrape_category("https://www.willys.se/sok?q=ost")
+    all_products['sweden'].extend(willy_ost)
+    print(f"  Found {len(willy_ost)} products from willys.se 'ost' search")
+
+    willy_jarlsberg = WillyScraper().scrape_category("https://www.willys.se/sok?q=jarlsberg")
+    all_products['sweden'].extend(willy_jarlsberg)
+    print(f"  Found {len(willy_jarlsberg)} products from willys.se 'jarlsberg' search")
 
     print("Scraping hemkop.se (Hemköp 'Alltid bra pris', Sweden)...")
     hemkop_products = HemkopScraper().scrape_deals()
