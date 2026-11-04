@@ -958,20 +958,17 @@ function updateDisplay() {
         // Register in pairHistoryArr and build the 📈 button for matched pairs
         // and single products (history shown for whichever side exists)
         let histBtn = "";
-        let histPair = null;
+        let histIdx = -1;
         if (row.kind === "pair" && no && se) {
-            const idx = pairHistoryArr.length;
+            histIdx = pairHistoryArr.length;
             pairHistoryArr.push({ no, se, name: no.name });
-            histPair = { no, se, name: no.name };
         } else if (no || se) {
-            const idx = pairHistoryArr.length;
+            histIdx = pairHistoryArr.length;
             pairHistoryArr.push({ no: no || null, se: se || null, name: (no || se).name });
-            histPair = { no: no || null, se: se || null, name: (no || se).name };
         }
-        if (histPair) {
-            const idx = pairHistoryArr.indexOf(histPair);
-            const safeTitle = histPair.name.replace(/"/g, "&quot;");
-            histBtn = `<button class="hist-btn" onclick="openPairHistoryModal(${idx})" title="Price history: ${safeTitle}">📈</button>`;
+        if (histIdx >= 0) {
+            const safeTitle = (no || se).name.replace(/"/g, "&quot;");
+            histBtn = `<button class="hist-btn" onclick="openPairHistoryModal(${histIdx})" title="Price history: ${safeTitle}">📈</button>`;
         }
 
         const noStores = no ? storeLinks(no.allStores) : "—";
