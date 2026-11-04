@@ -191,11 +191,13 @@ function openButterChartModal() {
                     <button class="modal-close" onclick="closeButterChartModal()">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <canvas id="butter-history-chart" height="300"></canvas>
+                    <div style="position:relative; height:340px;">
+                        <canvas id="butter-history-chart"></canvas>
+                    </div>
                     <div class="chart-legend" style="margin-top:1rem; font-size:0.85rem; color:var(--muted);">
-                        <span style="color:var(--color-norway);">● Norway (avg SEK/kg)</span> &nbsp;
-                        <span style="color:var(--color-sweden);">● Sweden (avg SEK/kg)</span> &nbsp;
-                        <span style="color:var(--accent);">● Difference (NO − SE)</span>
+                        <span style="color:#d03e2d;">● Norway (avg SEK/kg)</span> &nbsp;
+                        <span style="color:#006aa7;">● Sweden (avg SEK/kg)</span> &nbsp;
+                        <span style="color:#7a4b9e;">● Difference (NO − SE)</span>
                     </div>
                 </div>
             </div>
@@ -217,8 +219,8 @@ function openButterChartModal() {
                 {
                     label: "Norway avg (SEK/kg)",
                     data: history.noSeries,
-                    borderColor: "var(--color-norway)",
-                    backgroundColor: "var(--color-norway)",
+                    borderColor: "#d03e2d",
+                    backgroundColor: "#d03e2d",
                     fill: false,
                     tension: 0.2,
                     pointRadius: 4,
@@ -226,8 +228,8 @@ function openButterChartModal() {
                 {
                     label: "Sweden avg (SEK/kg)",
                     data: history.seSeries,
-                    borderColor: "var(--color-sweden)",
-                    backgroundColor: "var(--color-sweden)",
+                    borderColor: "#006aa7",
+                    backgroundColor: "#006aa7",
                     fill: false,
                     tension: 0.2,
                     pointRadius: 4,
@@ -235,8 +237,8 @@ function openButterChartModal() {
                 {
                     label: "Difference (NO − SE)",
                     data: history.diffSeries,
-                    borderColor: "var(--accent)",
-                    backgroundColor: "var(--accent)",
+                    borderColor: "#7a4b9e",
+                    backgroundColor: "#7a4b9e",
                     fill: false,
                     tension: 0.2,
                     pointRadius: 3,
@@ -248,6 +250,7 @@ function openButterChartModal() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            animation: false,
             interaction: { mode: "index", intersect: false },
             plugins: {
                 legend: { display: false },
