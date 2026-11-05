@@ -556,6 +556,7 @@ function updateDisplay() {
         "pr", "stk", "g", "kg", "l", "ml", "dl", "klass", "ekologisk",
         "original", "klasses", "sverige", "import", "per", "st", "stkk",
         "cm", "pk", "bx", "pack",
+        "pose", "påse", "pase", "bag", "box", "pakke", "kasse", "burk", "flaske", "dose", "tetra",
         "100", "200", "400", "500", "600", "750", "180", "250", "330",
         "390", "473", "150", "130", "65", "80", "85", "42", "72", "78",
         "1000", "2000", "4000", "500", "1500",
@@ -597,10 +598,21 @@ function updateDisplay() {
     // Does the shorter term occur inside the longer one (compound/substring
     // match), treating only terms of >= 4 letters as significant so a match
     // like "smör" inside "meierismör" counts while 3-letter noise does not.
+    // BUT prevent matches where the longer word is a container/packaging word
+    // (e.g. "brødpose", "avfallsose", "fryspåse") and the shorter word is
+    // the content (e.g. "brød", "avfalls", "frys") — they are different products.
+    const CONTAINER_SUFFIXES = ["pose", "påse", "pase", "bag", "box", "pakke", "kasse", "burk", "flaske", "dose", "tetra"];
     function isCompound(a, b) {
         const s = a.length <= b.length ? a : b;
         const l = a.length <= b.length ? b : a;
-        return s.length >= 4 && l.length > s.length && l.includes(s);
+        if (s.length < 4 || l.length <= s.length || !l.includes(s)) return false;
+        // Prevent "brød" matching inside "brødpose", "avfalls" in "avfallsose", etc.
+        for (const suffix of CONTAINER_SUFFIXES) {
+            if (l.endsWith(suffix) && (l === s + suffix || l === s + "s" + suffix)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     // Significant terms shared between two name sets: exact matches plus
@@ -719,6 +731,17 @@ function updateDisplay() {
         }
     }
 
+    // Apply curated direct product URLs (overrides scraped URLs that may be search fallbacks)
+    function applyCuratedUrls(products) {
+        for (const p of products) {
+            if (p && p.name && CURATED_URLS[p.name]) {
+                p.url = CURATED_URLS[p.name];
+            }
+        }
+    }
+    applyCuratedUrls(allPrices.norway);
+    applyCuratedUrls(allPrices.sweden);
+
     // --- Render the table.  The old design only showed products that had
     // a name match between Norway and Sweden, but the two countries use
     // completely different names for the same items (e.g. "Bananer pr stk"
@@ -780,6 +803,15 @@ function updateDisplay() {
         "Willys":          "https://www.willys.se/sok?q={q}",
         "Hemköp":          "https://www.hemkop.se/sok?q={q}",
         "Hemkop":          "https://www.hemkop.se/sok?q={q}",
+    };
+
+    // Curated direct product URLs — override scraped URLs (which may be search
+    // fallbacks) with verified direct product pages. Keys are exact product names
+    // as they appear in data/prices.json.
+    const CURATED_URLS = {
+        // Norway
+        "BRØDPOSE 6L": "https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/",
+        // Sweden - add known direct URLs here as needed
     };
 
     // Render store names as links to their source; fall back to plain text
