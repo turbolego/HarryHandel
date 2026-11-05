@@ -1,0 +1,60 @@
+# HarryHandel Norwegian <-> Swedish product-name wordlist
+#
+# This is the SE_TO_NO translation map that static/app.js uses to match
+# Norwegian and Swedish product names WITHOUT fuzzy/substring/Jaccard
+# scoring.  Each line is:  swedish_term <tab> norwegian_term
+#
+# A Norwegian product and a Swedish product are considered the SAME product
+# only when, after (1) lowercasing, (2) stripping weight/volume suffixes,
+# (3) dropping stopwords, and (4) translating Swedish words via this map,
+# the two remaining word-sets are identical.  Size then acts only as a hard
+# guard (reject matches >2x apart), never to patch a mismatch.
+#
+# Keep this file in sync with the SE_TO_NO object in static/app.js.
+# To add a new cross-country equivalent, add a line here AND the same entry
+# to SE_TO_NO.
+
+# Produce
+vitkål	hodekål
+huvudkål	hodekål
+sötpotatis	søtpotatis
+apelsin	appelsin
+blåbär	blåbær
+morötter	gulrot
+citron	sitron
+gurka	agurk
+sallad	salat
+isberg	salat
+sallads	salat
+broccoli	brokoli
+champinjoner	champignon
+picklad	sylta
+rödløk	rødløk
+lök	løk
+jordgubbar	jordbær
+päron	pære
+pär	pære
+kebabsås	kebabsaus
+
+# Butter / dairy
+smør	smør
+margarin	margarin
+grädd	grädde
+grädde	fløyte
+mjölk	melk
+färskost	ferskost
+skinka	skinke
+korv	pølse
+bröd	brød
+grön	grønn
+frosen	frys
+frost	frys
+färs	färs
+meierismør	meierismør
+
+# Freezer bags (the canonical example: Meny "Fryseposer 6L" ~ Coop "Fryspåsar 6 liter")
+fryspåsar	fryseposer
+fryspåse	frysepose
+
+# Dairy (Swedish kvarg ~ Norwegian kyr)
+kvarg	kyr

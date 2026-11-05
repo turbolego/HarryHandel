@@ -579,8 +579,9 @@ function updateDisplay() {
         "grädde": "fløyte", "mjölk": "melk", "färskost": "ferskost",
         "skinka": "skinke", "korv": "pølse", "bröd": "brød",
         "grön": "grønn", "frosen": "frys", "frost": "frys",
-        "färs": "färs", "skinka": "skinke", "sallads": "salat",
-        "meierismør": "meierismør",
+        "färs": "färs", "meierismør": "meierismør",
+        "fryspåsar": "fryseposer", "fryspåse": "frysepose",
+        "kvarg": "kyr"
     };
     const SUFFIX_RE = /\s+\d+(?:[.,]\d+)?\s*(?:g|kg|l|ml|dl|st|stk|pack|bx|boks|cl|liter|litre|cm)\b/i;
     const WORD_RE = /[a-zà-ÿ]{2,}/g;
@@ -595,68 +596,21 @@ function updateDisplay() {
         return new Set(words);
     }
 
-    // Does the shorter term occur inside the longer one (compound/substring
-    // match), treating only terms of >= 4 letters as significant so a match
-    // like "smör" inside "meierismör" counts while 3-letter noise does not.
-    // BUT prevent matches where the longer word is a container/packaging word
-    // (e.g. "brødpose", "avfallsose", "fryspåse") and the shorter word is
-    // the content (e.g. "brød", "avfalls", "frys") — they are different products.
-    const CONTAINER_SUFFIXES = ["pose", "påse", "pase", "bag", "box", "pakke", "kasse", "burk", "flaske", "dose", "tetra", "ose"];
-    function isCompound(a, b) {
-        const s = a.length <= b.length ? a : b;
-        const l = a.length <= b.length ? b : a;
-        if (s.length < 4 || l.length <= s.length || !l.includes(s)) return false;
-        // Prevent "brød" matching inside "brødpose", "avfalls" in "avfallsose", etc.
-        for (const suffix of CONTAINER_SUFFIXES) {
-            if (l.endsWith(suffix) && (l === s + suffix || l === s + "s" + suffix)) {
-                return false;
-            }
-        }
-        // Prevent simple plural/singular matches (e.g. "bagel" vs "bagels") —
-        // they are the same word, not a meaningful compound.
-        if (l === s + "s" || l + "s" === s) return false;
+    // Exact term matching — no fuzzy / substring / Jaccard scoring.  Two
+    // products match only when their significant words are identical after
+    // the SE→NO wordlist translation (sigWords).  Size is used only as a
+    // hard guard, never to "repair" a mismatch.
+    function matchBase(noName, seName) {
+        const noW = sigWords(noName);
+        const seW = sigWords(seName);
+        if (!noW.size || !seW.size) return false;
+        if (noW.size !== seW.size) return false;
+        for (const w of noW) if (!seW.has(w)) return false;
         return true;
     }
 
-    // Significant terms shared between two name sets: exact matches plus
-    // compound (substring) matches.
-    function sharedTerms(a, b) {
-        const shared = [];
-        a.forEach((w) => {
-            if (b.has(w)) { shared.push(w); return; }
-            b.forEach((v) => { if (w !== v && isCompound(w, v)) shared.push(w); });
-        });
-        return shared;
-    }
-
-    // Combined score: exact overlap (Jaccard) plus a compound bonus, so a
-    // Norwegian compound like "Meierismør" can match the Swedish "smör".
-    function combinedScore(a, b) {
-        if (!a.size || !b.size) return 0;
-        let inter = 0;
-        a.forEach((w) => {
-            if (b.has(w)) { inter++; return; }
-            b.forEach((v) => { if (w !== v && isCompound(w, v)) inter++; });
-        });
-        const union = a.size + b.size - inter;
-        return union ? inter / union : 0;
-    }
-
-    // Pair counts only when overlap is clear: enough shared terms, or a
-    // single distinctive shared word (>= 5 chars), or a shared compound
-    // term (>= 4 chars) with a decent score.
-    function isGoodMatch(a, b, score) {
-        if (score < 0.25) return false;
-        const shared = sharedTerms(a, b);
-        if (shared.length >= 2) return true;
-        if (shared.some((w) => w.length >= 5)) return true;
-        if (shared.length === 1 && shared[0].length >= 4 && score >= 0.34) return true;
-        return false;
-    }
-
-    // Size-aware fuzzy match: pick the best Swedish product by combined
-    // score, and among near-ties prefer one whose weight/volume is closest
-    // to the Norwegian product's (so 500 g butter matches 500 g butter).
+    // Normalise a product's weight/volume to grams/ml so "500 g" and
+    // "0.5 kg" compare consistently (used only as a size guard).
     function sizeOf(key) {
         const m = key.toLowerCase().match(/(\d+(?:[.,]\d+)?)\s*(kg|g|l|ml|dl|cl)\b/);
         if (!m) return null;
@@ -670,55 +624,24 @@ function updateDisplay() {
     }
 
     function fuzzyMatch(norwayKey, swedenKeys) {
-        const nw = sigWords(norwayKey);
         const noSize = sizeOf(norwayKey);
-        let best = null, bestScore = 0;
+        let best = null, bestDelta = Infinity;
         for (const sk of swedenKeys) {
-            let score = combinedScore(nw, sigWords(sk));
-            if (score > bestScore + 0.0001 || (score === bestScore && best === null)) {
-                bestScore = score; best = sk;
-            }
-        }
-        if (!best) return null;
-        // Hard size guard: if both products have a size and they differ by
-        // more than ~2×, reject the match even if the words score well.
-        // (e.g. "Jarlsberg 120g" must NOT match "Jarlsberg 250g".)
-        if (noSize != null) {
-            const bestSize = sizeOf(best);
-            if (bestSize != null) {
-                const hardDelta = Math.abs(Math.log(bestSize / noSize));
-                if (hardDelta > 0.7) {
-                    // Best match has too-different size; look for a size-compatible
-                    // candidate within the top-scoring group instead.
-                    let sizeBest = null, sizeBestDelta = Infinity;
-                    for (const sk of swedenKeys) {
-                        const s = combinedScore(nw, sigWords(sk));
-                        if (s < bestScore * 0.75) continue;
-                        const seSize = sizeOf(sk);
-                        if (seSize == null) continue;
-                        const delta = Math.abs(Math.log(seSize / noSize));
-                        if (delta < sizeBestDelta) { sizeBestDelta = delta; sizeBest = sk; }
-                    }
-                    if (sizeBest != null && sizeBestDelta <= 0.35) return sizeBest;
-                    return null;  // no size-compatible match found
+            if (!matchBase(norwayKey, sk)) continue;
+            if (noSize != null) {
+                const seSize = sizeOf(sk);
+                if (seSize != null) {
+                    const delta = Math.abs(Math.log(seSize / noSize));
+                    if (delta > 0.7) continue;              // >2× size apart → reject
+                    if (delta < bestDelta) { bestDelta = delta; best = sk; }
+                } else if (best == null) {
+                    best = sk;
                 }
+            } else if (best == null) {
+                best = sk;
             }
-            // Soft size tie-break (for close-size matches)
-            let sizeBest = null, sizeBestDelta = Infinity;
-            const candidates = [];
-            for (const sk of swedenKeys) {
-                const s = combinedScore(nw, sigWords(sk));
-                if (s >= bestScore * 0.85) candidates.push({ sk, s });
-            }
-            for (const c of candidates) {
-                const seSize = sizeOf(c.sk);
-                if (seSize == null) continue;
-                const delta = Math.abs(Math.log(seSize / noSize));
-                if (delta < sizeBestDelta) { sizeBestDelta = delta; sizeBest = c.sk; }
-            }
-            if (sizeBest != null && sizeBestDelta <= 0.35) return sizeBest;
         }
-        return isGoodMatch(nw, sigWords(best), bestScore) ? best : null;
+        return best;
     }
 
     const swedenKeys = Object.keys(swedenMap);
@@ -733,6 +656,16 @@ function updateDisplay() {
             matchedSweden[nk] = sk;
         }
     }
+
+    // Curated direct product URLs — override scraped URLs (which may be search
+    // fallbacks) with verified direct product pages. Keys are exact product names
+    // as they appear in data/prices.json.  Declared here (before applyCuratedUrls
+    // runs) to avoid a Temporal Dead Zone ReferenceError.
+    const CURATED_URLS = {
+        // Norway
+        "BRØDPOSE 6L": "https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/",
+        // Sweden - add known direct URLs here as needed
+    };
 
     // Apply curated direct product URLs (overrides scraped URLs that may be search fallbacks)
     function applyCuratedUrls(products) {
@@ -806,15 +739,6 @@ function updateDisplay() {
         "Willys":          "https://www.willys.se/sok?q={q}",
         "Hemköp":          "https://www.hemkop.se/sok?q={q}",
         "Hemkop":          "https://www.hemkop.se/sok?q={q}",
-    };
-
-    // Curated direct product URLs — override scraped URLs (which may be search
-    // fallbacks) with verified direct product pages. Keys are exact product names
-    // as they appear in data/prices.json.
-    const CURATED_URLS = {
-        // Norway
-        "BRØDPOSE 6L": "https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/",
-        // Sweden - add known direct URLs here as needed
     };
 
     // Render store names as links to their source; fall back to plain text
