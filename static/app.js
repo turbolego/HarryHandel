@@ -519,10 +519,10 @@ function updateDisplay() {
     // Curated per-store DIRECT product links.  Keys are the NORMALISED product
     // name (lower-case, single spaces) as grouped in data/prices.json.  Each
     // value is a list of { store, url } — verified direct product pages that
-    // override both the scraped URLs (which may be search fallbacks or 404s)
-    // and the STORE_SEARCH fallback.  Use this for any product whose scraped
-    // link is a 404 or a search-query URL.  Must be applied BEFORE
-    // buildByCountry() so the per-store link rows pick it up.
+    // override both the scraped URLs (which may be 404s) and the homepage
+    // fallback.  Use this for any product whose scraped link is a 404 or whose
+    // no-direct-page link should point at a real product page.  Must be applied
+    // BEFORE buildByCountry() so the per-store link rows pick it up.
     const CURATED_STORES = {
         // BRØDPOSE 6L — scraped from Rema but the verified Oda product page is
         // the right direct link, so the label shows "Oda", not "Rema 1000".
@@ -543,6 +543,38 @@ function updateDisplay() {
             { store: "Oda",   url: "https://oda.com/no/products/130-tine-ekte-meierismor/" },
             { store: "Meny",  url: "https://meny.no/varer/palegg-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
             { store: "Joker", url: "https://joker.no/varer/frokost-palegg/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
+        ],
+        // ---- Meny direct pages (the Meny search renders a blank results page,
+        //      so these no-URL Meny products get verified direct links) ----
+        "grovt bondebrød 660g": [
+            { store: "Meny", url: "https://meny.no/varer/bakeri/brod/grovt-bondebrod-2665" },
+        ],
+        "hverdagsgrovt 750g bakehuset": [
+            { store: "Meny", url: "https://meny.no/varer/bakeri/brod/hverdagsgrovt-7041614000867" },
+        ],
+        "rislunsj jordbær 150g tine": [
+            { store: "Meny", url: "https://meny.no/varer/dessert-og-iskrem/riskrem/rislunsj-7038010035463" },
+        ],
+        "jarlsberg 27% skivet 120g tine": [
+            { store: "Meny", url: "https://meny.no/varer/ost/gulost/jarlsberg-27-7038010021145" },
+        ],
+        "norvegia 26% skivet 150g tine": [
+            { store: "Meny", url: "https://meny.no/varer/ost/gulost/norvegia-26-7038010013966" },
+        ],
+        "servelat 110g gilde": [
+            { store: "Meny", url: "https://meny.no/varer/palegg-frokost/kjottpalegg/servelater/servelat/servelat-7037206100008" },
+        ],
+        "sjokolademelk 0,5l q": [
+            { store: "Meny", url: "https://meny.no/varer/meieri-egg/melk/sjokolademelk/sjokolademelk-7048840090174" },
+        ],
+        "ananas 200g cevita": [
+            { store: "Meny", url: "https://meny.no/varer/frukt-gront/frukt/ananas/ananas-7023026110587" },
+        ],
+        "peanøtter 275g eldorado": [
+            { store: "Meny", url: "https://meny.no/varer/snacks-godteri/notter/peanotter/peanotter-7035620035678" },
+        ],
+        "bananer pr stk": [
+            { store: "Meny", url: "https://meny.no/varer/frukt-gront/frukt/bananer/bananer-4011" },
         ],
     };
 
@@ -754,25 +786,30 @@ function updateDisplay() {
         "hemkop-sweden":       "https://www.hemkop.se/",
     };
 
-    // Per-store product-search URL templates. When a store has no scraped
-    // direct product page, we fall back to a search that lands on the product.
-    // Verified to resolve (200) for the stores below.
-    const STORE_SEARCH = {
-        // Norway (Kassal chain codes + scraper store names)
-        "ODA_NO":          "https://www.oda.no/sok/?q={q}",
-        "MENY_NO":         "https://www.meny.no/sok?q={q}",
-        "Meny":            "https://www.meny.no/sok?q={q}",
-        "SPAR_NO":         "https://www.spar.no/sok?q={q}",
-        "JOKER_NO":        "https://www.joker.no/sok?q={q}",
-        "BUNNPRIS":        "https://www.bunnpris.no/sok?q={q}",
-        "EUROPRIS_NO":     "https://www.europris.no/sok?q={q}",
-        "FUDI":            "https://www.fudi.no/search?q={q}",
-        "Rema 1000":       "https://www.rema.no/search?q={q}",
-        "Kassal":          "https://kassal.app/?q={q}",
+    // Per-store HOMEPAGE fallbacks, keyed by the CLEAN store label (the store
+    // name with any _NO/_SE chain-code suffix stripped).  When a product has
+    // no scraped/curated direct page, its store link points here instead of to
+    // a store SEARCH — because many store searches (Meny, Rema) render a blank
+    // results page, i.e. a link that "goes nowhere".  A homepage always loads.
+    // All verified to resolve (200).
+    const STORE_HOMEPAGE = {
+        // Norway
+        "Rema 1000":    "https://www.rema.no/",
+        "Meny":         "https://www.meny.no/",
+        "Joker":        "https://www.joker.no/",
+        "Spar":         "https://www.spar.no/",
+        "Oda":          "https://www.oda.no/",
+        "Bunnpris":     "https://www.bunnpris.no/",
+        "Europris":     "https://www.europris.no/",
+        "Fudi":         "https://www.fudi.no/",
+        "Engrossnett":  "https://kassal.app/",   // wholesaler, no public price page
+        "Kassal":       "https://kassal.app/",
         // Sweden
-        "Willys":          "https://www.willys.se/sok?q={q}",
-        "Hemköp":          "https://www.hemkop.se/sok?q={q}",
-        "Hemkop":          "https://www.hemkop.se/sok?q={q}",
+        "Willys":            "https://www.willys.se/",
+        "Hemköp":           "https://www.hemkop.se/",
+        "Hemkop":           "https://www.hemkop.se/",
+        "Nordby Supermarket":"https://www.nordbysupermarket.se/",
+        "Grensemat":         "https://www.nordbysupermarket.se/",
     };
 
     // Render store names as links to their source; fall back to plain text
@@ -782,18 +819,18 @@ function updateDisplay() {
     // Each store links to the SPECIFIC product:
     //   1. the verified direct product page (e.url) — set by the scraper or by
     //      a CURATED_STORES override (used to fix 404 / search-fallback links),
-    //   2. that store's product search (lands on the product) otherwise,
-    //   3. the chain homepage as a last resort.
+    //   2. that store's HOMEPAGE as a safe fallback (always a live page, never a
+    //      blank search result or a 404).  We deliberately do NOT fall back to a
+    //      store search query: many (e.g. Meny) render a blank results page,
+    //      so a search link "goes nowhere".  A direct page or the homepage is
+    //      always somewhere you can actually browse.
     function storeLinks(allStores) {
         if (!allStores || !allStores.length) return "—";
         const clean = (s) => String(s).replace(/_NO\b/i, "").replace(/_SE\b/i, "").trim();
         return allStores.map((e) => {
             let href = e.url || null;
-            if (!href && STORE_SEARCH[e.store]) {
-                href = STORE_SEARCH[e.store].replace("{q}", encodeURIComponent(e.name || ""));
-            }
-            if (!href) href = SOURCE_URLS[e.market] || "";
             const label = clean(e.store);
+            if (!href) href = STORE_HOMEPAGE[label] || STORE_HOMEPAGE[e.store] || SOURCE_URLS[e.market] || "";
             if (!href) return `<span class="store-plain">${label}</span>`;
             return `<a class="store-link" href="${href}" target="_blank" rel="noopener noreferrer" title="${label}">${label}</a>`;
         }).join(" · ");
