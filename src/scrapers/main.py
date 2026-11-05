@@ -543,12 +543,6 @@ class RemaScraper(PriceScraper):
                     }
                     if url:
                         prod['url'] = url
-                    else:
-                        # Fall back to search URL for Rema products
-                        if 'Rema 1000' in prod['stores']:
-                            prod['url'] = f"https://www.rema.no/search?q={urllib.parse.quote_plus(name)}"
-                        else:
-                            prod['url'] = None
                     products.append(prod)
             except Exception as e:
                 print(f"Warning: Failed to parse rema price element: {e}")
@@ -1585,6 +1579,15 @@ def main():
     for country in ['norway', 'sweden']:
         for p in all_products[country]:
             normalize_product(p)
+
+    # Curated product URLs override (keeps direct product pages instead of search fallbacks)
+    CURATED_URLS = {
+        'BRØDPOSE 6L': 'https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/',
+    }
+    for country in ['norway', 'sweden']:
+        for p in all_products[country]:
+            if p.get('name') in CURATED_URLS:
+                p['url'] = CURATED_URLS[p['name']]
 
     # Sort by price (lowest first)
     for country in ['norway', 'sweden']:
