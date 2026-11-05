@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-11-04T03:14:37.141822",
+  "last_updated": "2026-11-05T14:05:59.404418",
   "norway": [
+    {
+      "name": "Meierismør 500g",
+      "category": "supermarket",
+      "stores": [
+        "Spar"
+      ],
+      "price": 49.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-spar_no",
+      "url": "https://spar.no/varer/palegg-og-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187",
+      "quantity": 1,
+      "unit_size": 500.0,
+      "size_unit": "g",
+      "price_per_kg": 99.8,
+      "history": [
+        {
+          "date": "2026-11-05T14:05:59.404418",
+          "price": 49.9
+        }
+      ],
+      "first_seen": "2026-11-05T14:05:59.404418",
+      "last_seen": "2026-11-05T14:05:59.404418"
+    },
+    {
+      "name": "Meierismør 500g",
+      "category": "supermarket",
+      "stores": [
+        "Oda"
+      ],
+      "price": 61.4,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-oda_no",
+      "url": "https://oda.com/no/products/130-tine-ekte-meierismor/",
+      "quantity": 1,
+      "unit_size": 500.0,
+      "size_unit": "g",
+      "price_per_kg": 122.8,
+      "history": [
+        {
+          "date": "2026-11-05T14:05:59.404418",
+          "price": 61.4
+        }
+      ],
+      "first_seen": "2026-11-05T14:05:59.404418",
+      "last_seen": "2026-11-05T14:05:59.404418"
+    },
+    {
+      "name": "Meierismør 500g",
+      "category": "supermarket",
+      "stores": [
+        "Meny"
+      ],
+      "price": 68.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-meny_no",
+      "url": "https://meny.no/varer/palegg-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187",
+      "quantity": 1,
+      "unit_size": 500.0,
+      "size_unit": "g",
+      "price_per_kg": 137.8,
+      "history": [
+        {
+          "date": "2026-11-05T14:05:59.404418",
+          "price": 68.9
+        }
+      ],
+      "first_seen": "2026-11-05T14:05:59.404418",
+      "last_seen": "2026-11-05T14:05:59.404418"
+    },
+    {
+      "name": "Meierismør 500g",
+      "category": "supermarket",
+      "stores": [
+        "Joker"
+      ],
+      "price": 72.9,
+      "currency": "NOK",
+      "unit": "per item",
+      "market": "kassal-joker_no",
+      "url": "https://joker.no/varer/frokost-palegg/smor-margarin-og-matfett/smor/meierismor-7038010010187",
+      "quantity": 1,
+      "unit_size": 500.0,
+      "size_unit": "g",
+      "price_per_kg": 145.8,
+      "history": [
+        {
+          "date": "2026-11-05T14:05:59.404418",
+          "price": 72.9
+        }
+      ],
+      "first_seen": "2026-11-05T14:05:59.404418",
+      "last_seen": "2026-11-05T14:05:59.404418"
+    },
     {
       "name": "Bananer pr stk",
       "category": "supermarket",
@@ -9913,22 +10009,6 @@
       "first_seen": "2026-10-30T06:19:31.669293",
       "last_seen": "2026-11-04T03:14:37.112006",
       "quantity": 1
-    },
-    {
-      "name": "Meierismør 500g",
-      "category": "supermarket",
-      "stores": [
-        "Kassal"
-      ],
-      "price": 39.9,
-      "currency": "NOK",
-      "unit": "per item",
-      "market": "kassal-spar_no",
-      "url": "https://www.spar.no/produkter/meierismor-500g-101017301_ST",
-      "quantity": 1,
-      "unit_size": 500.0,
-      "size_unit": "g",
-      "price_per_kg": 79.8
     },
     {
       "name": "NUDLER BIFFSMAK",

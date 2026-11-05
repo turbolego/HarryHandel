@@ -173,6 +173,16 @@ small, .small { font-size: var(--step-small); }
 }
 .store-link:hover { text-decoration: underline; }
 .store-plain { color: var(--muted, #6b6b6b); }
+/* Per-store price shown next to each store name in the Stores columns.
+   The lowest one is highlighted (green + bold). */
+.store-price {
+    color: var(--muted, #6b6b6b);
+    font-size: .82em;
+    font-weight: 500;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+.store-price--min { color: #0a7d2c; font-weight: 700; }
 
 /* Gap cells */
 .more-expensive { color: var(--accent); font-weight: 600; }

@@ -536,14 +536,6 @@ function updateDisplay() {
             { store: "Joker", url: "https://joker.no/varer/bakerivarer/brod/mors-grovbrod-7035020002539" },
             { store: "Spar",  url: "https://spar.no/varer/brod-og-bakervarer/brod/mors-grovbrod-7035020002539" },
         ],
-        // Meierismør 500g — the scraped Spar link 404s.  Verified direct pages
-        // in the four chains that carry it.
-        "meierismør 500g": [
-            { store: "Spar",  url: "https://spar.no/varer/palegg-og-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
-            { store: "Oda",   url: "https://oda.com/no/products/130-tine-ekte-meierismor/" },
-            { store: "Meny",  url: "https://meny.no/varer/palegg-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
-            { store: "Joker", url: "https://joker.no/varer/frokost-palegg/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
-        ],
         // ---- Meny direct pages (the Meny search renders a blank results page,
         //      so these no-URL Meny products get verified direct links) ----
         "grovt bondebrød 660g": [
@@ -622,7 +614,7 @@ function updateDisplay() {
                         const id = `${s}|${p.market}`;
                         if (seen.has(id)) return;
                         seen.add(id);
-                        cheapest.allStores.push({ store: s, market: p.market, url: p.url || null, name: p.name });
+                        cheapest.allStores.push({ store: s, market: p.market, url: p.url || null, name: p.name, price: p.price });
                     });
                 });
             }
@@ -825,15 +817,26 @@ function updateDisplay() {
     //      so a search link "goes nowhere".  A direct page or the homepage is
     //      always somewhere you can actually browse.
     function storeLinks(allStores) {
-        if (!allStores || !allStores.length) return "—";
-        const clean = (s) => String(s).replace(/_NO\b/i, "").replace(/_SE\b/i, "").trim();
-        return allStores.map((e) => {
-            let href = e.url || null;
-            const label = clean(e.store);
-            if (!href) href = STORE_HOMEPAGE[label] || STORE_HOMEPAGE[e.store] || SOURCE_URLS[e.market] || "";
-            if (!href) return `<span class="store-plain">${label}</span>`;
-            return `<a class="store-link" href="${href}" target="_blank" rel="noopener noreferrer" title="${label}">${label}</a>`;
-        }).join(" · ");
+    if (!allStores || !allStores.length) return "—";
+    const clean = (s) => String(s).replace(/_NO\b/i, "").replace(/_SE\b/i, "").trim();
+    // Lowest price across the listed stores — shown highlighted so the
+    // cheapest store is obvious at a glance.
+    const minPrice = allStores.some((e) => e.price != null)
+        ? Math.min(...allStores.filter((e) => e.price != null).map((e) => e.price))
+        : null;
+    return allStores.map((e) => {
+        let href = e.url || null;
+        const label = clean(e.store);
+        if (!href) href = STORE_HOMEPAGE[label] || STORE_HOMEPAGE[e.store] || SOURCE_URLS[e.market] || "";
+        const linkHtml = !href
+            ? `<span class="store-plain">${label}</span>`
+            : `<a class="store-link" href="${href}" target="_blank" rel="noopener noreferrer" title="${label}">${label}</a>`;
+        // Per-store price next to the store name (lowest one highlighted).
+        const priceHtml = e.price != null
+            ? ` <span class="store-price${(minPrice != null && e.price === minPrice) ? " store-price--min" : ""}">${e.price.toFixed(2)}</span>`
+            : "";
+        return linkHtml + priceHtml;
+    }).join(" · ");
     }
 
     const rows = [];
