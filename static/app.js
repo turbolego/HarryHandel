@@ -516,6 +516,54 @@ function updateDisplay() {
     // we keep the cheapest entry (for price/gap math) but also attach
     // `allStores` — every store that carries the product — so the store
     // columns can link to ALL of them, not just the cheapest.
+    // Curated per-store DIRECT product links.  Keys are the NORMALISED product
+    // name (lower-case, single spaces) as grouped in data/prices.json.  Each
+    // value is a list of { store, url } — verified direct product pages that
+    // override both the scraped URLs (which may be search fallbacks or 404s)
+    // and the STORE_SEARCH fallback.  Use this for any product whose scraped
+    // link is a 404 or a search-query URL.  Must be applied BEFORE
+    // buildByCountry() so the per-store link rows pick it up.
+    const CURATED_STORES = {
+        // BRØDPOSE 6L — scraped from Rema but the verified Oda product page is
+        // the right direct link, so the label shows "Oda", not "Rema 1000".
+        "brødpose 6l": [
+            { store: "Oda", url: "https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/" },
+        ],
+        // Mors Grovbrød 750g Bakehuset — the JOKER_NO / SPAR_NO records have no
+        // scraped URL (so the frontend fell back to search links).  Verified
+        // direct product pages instead.
+        "mors grovbrød 750g bakehuset": [
+            { store: "Joker", url: "https://joker.no/varer/bakerivarer/brod/mors-grovbrod-7035020002539" },
+            { store: "Spar",  url: "https://spar.no/varer/brod-og-bakervarer/brod/mors-grovbrod-7035020002539" },
+        ],
+        // Meierismør 500g — the scraped Spar link 404s.  Verified direct pages
+        // in the four chains that carry it.
+        "meierismør 500g": [
+            { store: "Spar",  url: "https://spar.no/varer/palegg-og-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
+            { store: "Oda",   url: "https://oda.com/no/products/130-tine-ekte-meierismor/" },
+            { store: "Meny",  url: "https://meny.no/varer/palegg-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
+            { store: "Joker", url: "https://joker.no/varer/frokost-palegg/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
+        ],
+    };
+
+    // Apply curated per-store direct links.  Sets p.url to the primary curated
+    // link (used by the NO/SE chip) and p.curatedStores (used for the full
+    // per-store link row).  Overwrites a scraped URL that may be a 404 or a
+    // search fallback.
+    function applyCuratedStores(products) {
+        for (const p of products) {
+            if (!p || !p.name) continue;
+            const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
+            const curated = CURATED_STORES[key];
+            if (curated && curated.length) {
+                p.curatedStores = curated;
+                p.url = curated[0].url;
+            }
+        }
+    }
+    applyCuratedStores(allPrices.norway);
+    applyCuratedStores(allPrices.sweden);
+
     function buildByCountry(prices) {
         const byName = {};
         prices.forEach((p) => {
@@ -663,54 +711,6 @@ function updateDisplay() {
             matchedSweden[nk] = sk;
         }
     }
-
-    // Curated per-store DIRECT product links.  Keys are the NORMALISED product
-    // name (lower-case, single spaces) as grouped in data/prices.json.  Each
-    // value is a list of { store, url } — verified direct product pages that
-    // override both the scraped URLs (which may be search fallbacks or 404s)
-    // and the STORE_SEARCH fallback.  Use this for any product whose scraped
-    // link is a 404 or a search-query URL.  Declared here (before
-    // applyCuratedStores runs) to avoid a Temporal Dead Zone ReferenceError.
-    const CURATED_STORES = {
-        // BRØDPOSE 6L — scraped from Rema but the verified Oda product page is
-        // the right direct link, so the label shows "Oda", not "Rema 1000".
-        "brødpose 6l": [
-            { store: "Oda", url: "https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/" },
-        ],
-        // Mors Grovbrød 750g Bakehuset — the JOKER_NO / SPAR_NO records have no
-        // scraped URL (so the frontend fell back to search links).  Verified
-        // direct product pages instead.
-        "mors grovbrød 750g bakehuset": [
-            { store: "Joker", url: "https://joker.no/varer/bakerivarer/brod/mors-grovbrod-7035020002539" },
-            { store: "Spar",  url: "https://spar.no/varer/brod-og-bakervarer/brod/mors-grovbrod-7035020002539" },
-        ],
-        // Meierismør 500g — the scraped Spar link 404s.  Verified direct pages
-        // in the four chains that carry it.
-        "meierismør 500g": [
-            { store: "Spar",  url: "https://spar.no/varer/palegg-og-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
-            { store: "Oda",   url: "https://oda.com/no/products/130-tine-ekte-meierismor/" },
-            { store: "Meny",  url: "https://meny.no/varer/palegg-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
-            { store: "Joker", url: "https://joker.no/varer/frokost-palegg/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
-        ],
-    };
-
-    // Apply curated per-store direct links.  Sets p.url to the primary curated
-    // link (used by the NO/SE chip) and p.curatedStores (used for the full
-    // per-store link row).  Overwrites a scraped URL that may be a 404 or a
-    // search fallback.
-    function applyCuratedStores(products) {
-        for (const p of products) {
-            if (!p || !p.name) continue;
-            const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
-            const curated = CURATED_STORES[key];
-            if (curated && curated.length) {
-                p.curatedStores = curated;
-                p.url = curated[0].url;
-            }
-        }
-    }
-    applyCuratedStores(allPrices.norway);
-    applyCuratedStores(allPrices.sweden);
 
     // --- Render the table.  The old design only showed products that had
     // a name match between Norway and Sweden, but the two countries use
