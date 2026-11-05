@@ -531,14 +531,21 @@ function updateDisplay() {
             cheapest.avgPrice = list.reduce((s, p) => s + p.price, 0) / list.length;
             const seen = new Set();
             cheapest.allStores = [];
-            list.forEach((p) => {
-                (p.stores && p.stores.length ? p.stores : [p.market]).forEach((s) => {
-                    const id = `${s}|${p.market}`;
-                    if (seen.has(id)) return;
-                    seen.add(id);
-                    cheapest.allStores.push({ store: s, market: p.market, url: p.url || null, name: p.name });
+            // A curated direct-link list (CURATED_STORES) wins over the
+            // auto-built store links, so 404 / search-fallback scraped URLs
+            // are replaced by verified direct product pages.
+            if (cheapest.curatedStores && cheapest.curatedStores.length) {
+                cheapest.allStores = cheapest.curatedStores;
+            } else {
+                list.forEach((p) => {
+                    (p.stores && p.stores.length ? p.stores : [p.market]).forEach((s) => {
+                        const id = `${s}|${p.market}`;
+                        if (seen.has(id)) return;
+                        seen.add(id);
+                        cheapest.allStores.push({ store: s, market: p.market, url: p.url || null, name: p.name });
+                    });
                 });
-            });
+            }
             map[key] = cheapest;
         });
         return map;
@@ -657,26 +664,53 @@ function updateDisplay() {
         }
     }
 
-    // Curated direct product URLs — override scraped URLs (which may be search
-    // fallbacks) with verified direct product pages. Keys are exact product names
-    // as they appear in data/prices.json.  Declared here (before applyCuratedUrls
-    // runs) to avoid a Temporal Dead Zone ReferenceError.
-    const CURATED_URLS = {
-        // Norway
-        "BRØDPOSE 6L": "https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/",
-        // Sweden - add known direct URLs here as needed
+    // Curated per-store DIRECT product links.  Keys are the NORMALISED product
+    // name (lower-case, single spaces) as grouped in data/prices.json.  Each
+    // value is a list of { store, url } — verified direct product pages that
+    // override both the scraped URLs (which may be search fallbacks or 404s)
+    // and the STORE_SEARCH fallback.  Use this for any product whose scraped
+    // link is a 404 or a search-query URL.  Declared here (before
+    // applyCuratedStores runs) to avoid a Temporal Dead Zone ReferenceError.
+    const CURATED_STORES = {
+        // BRØDPOSE 6L — scraped from Rema but the verified Oda product page is
+        // the right direct link, so the label shows "Oda", not "Rema 1000".
+        "brødpose 6l": [
+            { store: "Oda", url: "https://oda.com/no/products/5308-prima-lavpris-brodpose-6l/" },
+        ],
+        // Mors Grovbrød 750g Bakehuset — the JOKER_NO / SPAR_NO records have no
+        // scraped URL (so the frontend fell back to search links).  Verified
+        // direct product pages instead.
+        "mors grovbrød 750g bakehuset": [
+            { store: "Joker", url: "https://joker.no/varer/bakerivarer/brod/mors-grovbrod-7035020002539" },
+            { store: "Spar",  url: "https://spar.no/varer/brod-og-bakervarer/brod/mors-grovbrod-7035020002539" },
+        ],
+        // Meierismør 500g — the scraped Spar link 404s.  Verified direct pages
+        // in the four chains that carry it.
+        "meierismør 500g": [
+            { store: "Spar",  url: "https://spar.no/varer/palegg-og-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
+            { store: "Oda",   url: "https://oda.com/no/products/130-tine-ekte-meierismor/" },
+            { store: "Meny",  url: "https://meny.no/varer/palegg-frokost/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
+            { store: "Joker", url: "https://joker.no/varer/frokost-palegg/smor-margarin-og-matfett/smor/meierismor-7038010010187" },
+        ],
     };
 
-    // Apply curated direct product URLs (overrides scraped URLs that may be search fallbacks)
-    function applyCuratedUrls(products) {
+    // Apply curated per-store direct links.  Sets p.url to the primary curated
+    // link (used by the NO/SE chip) and p.curatedStores (used for the full
+    // per-store link row).  Overwrites a scraped URL that may be a 404 or a
+    // search fallback.
+    function applyCuratedStores(products) {
         for (const p of products) {
-            if (p && p.name && CURATED_URLS[p.name]) {
-                p.url = CURATED_URLS[p.name];
+            if (!p || !p.name) continue;
+            const key = p.name.toLowerCase().replace(/\s+/g, " ").trim();
+            const curated = CURATED_STORES[key];
+            if (curated && curated.length) {
+                p.curatedStores = curated;
+                p.url = curated[0].url;
             }
         }
     }
-    applyCuratedUrls(allPrices.norway);
-    applyCuratedUrls(allPrices.sweden);
+    applyCuratedStores(allPrices.norway);
+    applyCuratedStores(allPrices.sweden);
 
     // --- Render the table.  The old design only showed products that had
     // a name match between Norway and Sweden, but the two countries use
@@ -746,7 +780,8 @@ function updateDisplay() {
     // "_NO"/"_SE" chain-code suffix from display names.
     //
     // Each store links to the SPECIFIC product:
-    //   1. the scraped direct product page (product.url) when available,
+    //   1. the verified direct product page (e.url) — set by the scraper or by
+    //      a CURATED_STORES override (used to fix 404 / search-fallback links),
     //   2. that store's product search (lands on the product) otherwise,
     //   3. the chain homepage as a last resort.
     function storeLinks(allStores) {
