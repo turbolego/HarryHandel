@@ -601,7 +601,7 @@ function updateDisplay() {
     // BUT prevent matches where the longer word is a container/packaging word
     // (e.g. "brødpose", "avfallsose", "fryspåse") and the shorter word is
     // the content (e.g. "brød", "avfalls", "frys") — they are different products.
-    const CONTAINER_SUFFIXES = ["pose", "påse", "pase", "bag", "box", "pakke", "kasse", "burk", "flaske", "dose", "tetra"];
+    const CONTAINER_SUFFIXES = ["pose", "påse", "pase", "bag", "box", "pakke", "kasse", "burk", "flaske", "dose", "tetra", "ose"];
     function isCompound(a, b) {
         const s = a.length <= b.length ? a : b;
         const l = a.length <= b.length ? b : a;
@@ -612,6 +612,9 @@ function updateDisplay() {
                 return false;
             }
         }
+        // Prevent simple plural/singular matches (e.g. "bagel" vs "bagels") —
+        // they are the same word, not a meaningful compound.
+        if (l === s + "s" || l + "s" === s) return false;
         return true;
     }
 
